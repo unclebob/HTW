@@ -1,0 +1,3428 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestFirstTest</rootPath>
+    <result>
+    <counts>
+      <right>17</right>
+      <wrong>0</wrong>
+      <ignores>2</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-8774958741654034715');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-8774958741654034715"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-8774958741654034715"><table border="1" cellspacing="0" _TABLENUMBER=1096853706804691185>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7234244887775380066>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7707211323768354364');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7707211323768354364"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="-7707211323768354364"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-2408577624360608306');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2408577624360608306"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-2408577624360608306"><table border="1" cellspacing="0" _TABLENUMBER=6469804454025210063>
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with content</td>
+<td colspan="2">@content</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8594832985722526505>
+<tr><td>scenario</td>
+<td>given page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>nothing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6791973001751193053>
+<tr><td>scenario</td>
+<td>given test page</td>
+<td>page</td>
+</tr>
+<tr><td>given page</td>
+<td colspan="2">@page</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td>a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1310155770178975114>
+<tr><td>scenario</td>
+<td>given slim test page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>!define TEST_SYSTEM {slim}</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td colspan="2">a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5501317225618830531>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;a href="@target"&gt;</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@source</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2706570519423762087>
+<tr><td>scenario</td>
+<td>it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6109034957225000730>
+<tr><td>scenario</td>
+<td>and it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=560059693024650092>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have creating link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2429019031433152442>
+<tr><td>scenario</td>
+<td>it should have creating link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have creating link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5415057522536331683>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=592385387908071886>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7094909701713367566>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8910989555713141339>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8491324455253121835>
+<tr><td>scenario</td>
+<td>it should not contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should not contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6883451970020904810>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td>text</td>
+<td>in line</td>
+<td>symbol</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>$@symbol=</td>
+<td>line number containing</td>
+<td colspan="3">@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6985840159733585554>
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should match</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3887432766946212646>
+<tr><td>scenario</td>
+<td>test results for page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2077962845813175386>
+<tr><td>scenario</td>
+<td>its test results should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>test results for page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2557117372138594571>
+<tr><td>scenario</td>
+<td>test ressults for page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=800526939709253184>
+<tr><td>scenario</td>
+<td>and should contain</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7361091249496380073>
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=595887805240566492>
+<tr><td>scenario</td>
+<td>and should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3667855457971058760>
+<tr><td>scenario</td>
+<td>widget</td>
+<td>wikiText</td>
+<td>should render</td>
+<td>htmlText</td>
+</tr>
+<tr><td>create page</td>
+<td>WidgetPage</td>
+<td>with content</td>
+<td colspan="2">@wikiText</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>WidgetPage</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@htmlText</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6253723955653594182>
+<tr><td>scenario</td>
+<td>the line</td>
+<td>after</td>
+<td>should come after</td>
+<td>before</td>
+</tr>
+<tr><td>check</td>
+<td>echo int</td>
+<td>$@before</td>
+<td colspan="2">&lt; $@after</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+When you execute a suite page with a specified start test, FitNesse should only run tests that start after the start test.<br/><br/><hr/>
+<br/><br/>Create a Suite page<br/><br/><table border="1" cellspacing="0" _TABLENUMBER=8372142550189206816>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!path classes</td>
+</tr>
+<tr><td>line</td>
+<td>!path fitnesse.jar</td>
+</tr>
+<tr><td>page</td>
+<td>SuitePage</td>
+</tr>
+</table>
+<br/>Create two sub pages<br/><br/><table border="1" cellspacing="0" _TABLENUMBER=1869618240678878432>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>|!-fitnesse.testutil.PassFixture-!|</td>
+</tr>
+<tr><td>page</td>
+<td>SuitePage.TestPageOne</td>
+</tr>
+</table>
+<br/><br/><table border="1" cellspacing="0" _TABLENUMBER=7041827163971523333>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>|!-fitnesse.testutil.PassFixture-!|</td>
+</tr>
+<tr><td>page</td>
+<td>SuitePage.TestPageTwo</td>
+</tr>
+</table>
+<br/>Now run the suite page.<br/><br/><table border="1" cellspacing="0" _TABLENUMBER=539302845871260357>
+<tr><td colspan="2"><span class="pass">Response Requester.</span></td>
+</tr>
+<tr><td>uri</td>
+<td>valid?</td>
+</tr>
+<tr><td>SuitePage?responder=suite&firstTest=TestPageTwo</td>
+<td><span class="pass">true</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2598764165591368104>
+<tr><td><span class="pass">Response Examiner.</span></td>
+</tr>
+<tr><td>contents?</td>
+</tr>
+<tr><td><span class="ignore">HTTP/1.1 200 OK
+Connection: close
+Server: FitNesse-v20091014
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+905
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Suite Results: SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Suite button--&gt;
+				&lt;a href="SuitePage?suite" accesskey=""&gt;Suite&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SuitePage" class="page_title"&gt;SuitePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Suite Results&lt;/span&gt;
+&amp;nbsp;&lt;a style="font-size:small;" href="SuitePage?pageHistory"&gt; [history]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;div id="test-summary"&gt;Running Tests ...&lt;/div&gt;
+
+62
+&lt;div class="test_summaries" id="test_summaries"&gt;
+	&lt;h2 class="centered"&gt;Test Summaries&lt;/h2&gt;
+&lt;/div&gt;
+
+e3
+&lt;div id="stop-test"&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;
+		&lt;img src="/files/images/stop.gif"/&gt;
+	&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;Stop Test&lt;/a&gt;
+&lt;/div&gt;
+
+c5
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "&lt;h3&gt;fit:fit.FitServer&lt;/h3&gt;\n";
+&lt;/script&gt;
+
+26
+&lt;h2 class="centered"&gt;Test Output&lt;/h2&gt;
+
+39
+&lt;h2 class="centered"&gt;Test System: fit:fit.FitServer&lt;/h2&gt;
+
+b3
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;div id=\"progressBar\" class=\"pass\" style=\"width:0.0%\"&gt;Running&amp;nbsp;tests&amp;nbsp;...&amp;nbsp;(1/1)&lt;/div&gt;\n";&lt;/script&gt;
+
+b2
+&lt;div class="test_output_name"&gt;
+	&lt;a href="SuitePage.TestPageTwo" id="TestPageTwo1" class="test_name"&gt;TestPageTwo&lt;/a&gt;
+	&lt;a href="#test_summaries" class="top_of_page"&gt;Top&lt;/a&gt;
+&lt;/div&gt;
+
+21
+&lt;div class="alternating_block_1"&gt;
+6a
+&lt;table border="1" cellspacing="0" class="pass"&gt;
+&lt;tr&gt;&lt;td&gt;fitnesse.testutil.PassFixture&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+7
+&lt;/div&gt;
+
+18b
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "\t\t&lt;div class=\"alternating_row_2\"&gt;\n\t\t\t&lt;span class=\"test_summary_results pass\"&gt;1 right, 0 wrong, 0 ignored, 0 exceptions&lt;/span&gt;\n\t\t\t&lt;a href=\"#TestPageTwo1\" class=\"test_summary_link\"&gt;TestPageTwo&lt;/a&gt;\n\t\t&lt;/div&gt;\n";
+&lt;/script&gt;
+
+46
+&lt;script&gt;document.getElementById("stop-test").innerHTML = "";&lt;/script&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+b4
+&lt;div id="execution-status"&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;&lt;img src="/files/images/executionStatus/ok.gif"/&gt;
+&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;Tests Executed OK&lt;/a&gt;
+&lt;/div&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+21
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+0
+Exit-Code: 0
+
+</span></td>
+</tr>
+</table>
+<br/>The suite should report the TestPages<a title="create page" href="FitNesse.SuiteAcceptanceTests.SuiteResponderTests.SuiteTestResponders.SuiteResponder.TestPages?edit&nonExistent=true">[?]</a> and should show no errors.<br/><br/><table border="1" cellspacing="0" _TABLENUMBER=2549255460287415937>
+<tr><td colspan="3"><span class="pass">Response Examiner.</span></td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+</tr>
+<tr><td>contents</td>
+<td>TestPageTwo</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>contents</td>
+<td>TestPageOne</td>
+<td><span class="pass">false</span></td>
+</tr>
+<tr><td>contents</td>
+<td>Test Pages:.*1 right</td>
+<td><span class="pass">true</span></td>
+</tr>
+</table>
+<br/>The error log page should not have any errors<br/><br/><table border="1" cellspacing="0" _TABLENUMBER=9045169841225975104>
+<tr><td colspan="2"><span class="pass">Response Requester.</span></td>
+</tr>
+<tr><td>uri</td>
+<td>valid?</td>
+</tr>
+<tr><td>ErrorLogs.SuitePage</td>
+<td><span class="pass">true</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2592346068304866749>
+<tr><td><span class="pass">Response Examiner.</span></td>
+</tr>
+<tr><td>contents?</td>
+</tr>
+<tr><td><span class="ignore">HTTP/1.1 200 OK
+Content-Length: 4147
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;ErrorLogs.SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;a href="/ErrorLogs"&gt;ErrorLogs&lt;/a&gt;.
+				&lt;br/&gt;&lt;span class="page_title"&gt;SuitePage&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;h3&gt;fit&lt;/h3&gt;&lt;table border="1" cellspacing="0"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;10:38:44 AM (CEST) on Thursday, October 15, 2009&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Test Page: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="SuitePage"&gt;.SuitePage&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Command: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;java -cp classes:fitnesse.jar fit.FitServer BobsMacbook.local 9123 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Exit code: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Time elapsed: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0.664 seconds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to SuitePage&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="ErrorLogs.SuitePage" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=506061320187538864>
+<tr><td colspan="3"><span class="pass">Response Examiner.</span></td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+</tr>
+<tr><td>contents</td>
+<td>Exit code.*0.*Time</td>
+<td><span class="pass">true</span></td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-4155733309049579558');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4155733309049579558"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-4155733309049579558"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3444243589203450066>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestFirstTest</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_2</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[nothing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_4</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_5</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given slim test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!define TEST_SYSTEM {slim}]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_6</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a href="@target"&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@source]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_7</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_9</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_10</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_11</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_12</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_13</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_15</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_16</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+                    <col><![CDATA[in line]]></col>
+                    <col><![CDATA[symbol]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$@symbol=]]></col>
+                    <col><![CDATA[line number containing]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_17</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_19</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[its test results should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_20</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test ressults for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_21</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_22</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_24</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[widget]]></col>
+                    <col><![CDATA[wikiText]]></col>
+                    <col><![CDATA[should render]]></col>
+                    <col><![CDATA[htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@wikiText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_25</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the line]]></col>
+                    <col><![CDATA[after]]></col>
+                    <col><![CDATA[should come after]]></col>
+                    <col><![CDATA[before]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo int]]></col>
+                    <col><![CDATA[$@before]]></col>
+                    <col><![CDATA[&lt; $@after]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_26</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!path classes]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!path fitnesse.jar]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuitePage]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_27</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[|!-fitnesse.testutil.PassFixture-!|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuitePage.TestPageOne]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_28</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[|!-fitnesse.testutil.PassFixture-!|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuitePage.TestPageTwo]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_29</name>
+                <row>
+                    <col><![CDATA[pass(Response Requester.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[uri]]></col>
+                    <col><![CDATA[valid?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[SuitePage?responder=suite&firstTest=TestPageTwo]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_30</name>
+                <row>
+                    <col><![CDATA[pass(Response Examiner.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[contents?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[<span class="ignore">HTTP/1.1 200 OK
+Connection: close
+Server: FitNesse-v20091014
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+905
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Suite Results: SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Suite button--&gt;
+				&lt;a href="SuitePage?suite" accesskey=""&gt;Suite&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SuitePage" class="page_title"&gt;SuitePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Suite Results&lt;/span&gt;
+&amp;nbsp;&lt;a style="font-size:small;" href="SuitePage?pageHistory"&gt; [history]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;div id="test-summary"&gt;Running Tests ...&lt;/div&gt;
+
+62
+&lt;div class="test_summaries" id="test_summaries"&gt;
+	&lt;h2 class="centered"&gt;Test Summaries&lt;/h2&gt;
+&lt;/div&gt;
+
+e3
+&lt;div id="stop-test"&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;
+		&lt;img src="/files/images/stop.gif"/&gt;
+	&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;Stop Test&lt;/a&gt;
+&lt;/div&gt;
+
+c5
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "&lt;h3&gt;fit:fit.FitServer&lt;/h3&gt;\n";
+&lt;/script&gt;
+
+26
+&lt;h2 class="centered"&gt;Test Output&lt;/h2&gt;
+
+39
+&lt;h2 class="centered"&gt;Test System: fit:fit.FitServer&lt;/h2&gt;
+
+b3
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;div id=\"progressBar\" class=\"pass\" style=\"width:0.0%\"&gt;Running&amp;nbsp;tests&amp;nbsp;...&amp;nbsp;(1/1)&lt;/div&gt;\n";&lt;/script&gt;
+
+b2
+&lt;div class="test_output_name"&gt;
+	&lt;a href="SuitePage.TestPageTwo" id="TestPageTwo1" class="test_name"&gt;TestPageTwo&lt;/a&gt;
+	&lt;a href="#test_summaries" class="top_of_page"&gt;Top&lt;/a&gt;
+&lt;/div&gt;
+
+21
+&lt;div class="alternating_block_1"&gt;
+6a
+&lt;table border="1" cellspacing="0" class="pass"&gt;
+&lt;tr&gt;&lt;td&gt;fitnesse.testutil.PassFixture&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+7
+&lt;/div&gt;
+
+18b
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "\t\t&lt;div class=\"alternating_row_2\"&gt;\n\t\t\t&lt;span class=\"test_summary_results pass\"&gt;1 right, 0 wrong, 0 ignored, 0 exceptions&lt;/span&gt;\n\t\t\t&lt;a href=\"#TestPageTwo1\" class=\"test_summary_link\"&gt;TestPageTwo&lt;/a&gt;\n\t\t&lt;/div&gt;\n";
+&lt;/script&gt;
+
+46
+&lt;script&gt;document.getElementById("stop-test").innerHTML = "";&lt;/script&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+b4
+&lt;div id="execution-status"&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;&lt;img src="/files/images/executionStatus/ok.gif"/&gt;
+&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;Tests Executed OK&lt;/a&gt;
+&lt;/div&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+21
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+0
+Exit-Code: 0
+
+</span>]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_31</name>
+                <row>
+                    <col><![CDATA[pass(Response Examiner.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[type]]></col>
+                    <col><![CDATA[pattern]]></col>
+                    <col><![CDATA[matches?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[contents]]></col>
+                    <col><![CDATA[TestPageTwo]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[contents]]></col>
+                    <col><![CDATA[TestPageOne]]></col>
+                    <col><![CDATA[pass(false)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[contents]]></col>
+                    <col><![CDATA[Test Pages:.*1 right]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_32</name>
+                <row>
+                    <col><![CDATA[pass(Response Requester.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[uri]]></col>
+                    <col><![CDATA[valid?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ErrorLogs.SuitePage]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_33</name>
+                <row>
+                    <col><![CDATA[pass(Response Examiner.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[contents?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[<span class="ignore">HTTP/1.1 200 OK
+Content-Length: 4147
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;ErrorLogs.SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;a href="/ErrorLogs"&gt;ErrorLogs&lt;/a&gt;.
+				&lt;br/&gt;&lt;span class="page_title"&gt;SuitePage&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;h3&gt;fit&lt;/h3&gt;&lt;table border="1" cellspacing="0"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;10:38:44 AM (CEST) on Thursday, October 15, 2009&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Test Page: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="SuitePage"&gt;.SuitePage&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Command: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;java -cp classes:fitnesse.jar fit.FitServer BobsMacbook.local 9123 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Exit code: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Time elapsed: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0.664 seconds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to SuitePage&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="ErrorLogs.SuitePage" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</span>]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_34</name>
+                <row>
+                    <col><![CDATA[pass(Response Examiner.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[type]]></col>
+                    <col><![CDATA[pattern]]></col>
+                    <col><![CDATA[matches?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[contents]]></col>
+                    <col><![CDATA[Exit code.*0.*Time]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_35</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_26_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_26_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_26_1, call, scriptTableActor, line, !path classes]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_26_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_26_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_26_2, call, scriptTableActor, line, !path fitnesse.jar]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_26_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_26_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_26_3, call, scriptTableActor, page, SuitePage]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_26_3</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_26_3</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_27_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_27_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_27_1, call, scriptTableActor, line, |!-fitnesse.testutil.PassFixture-!|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_27_2, call, scriptTableActor, page, SuitePage.TestPageOne]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_28_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_1, call, scriptTableActor, line, |!-fitnesse.testutil.PassFixture-!|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_2, call, scriptTableActor, page, SuitePage.TestPageTwo]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_0, make, decisionTable_29, ResponseRequester]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_29_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Response Requester.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Response Requester.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_1, call, decisionTable_29, table, [[uri, valid?], [SuitePage?responder=suite&firstTest=TestPageTwo, true]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.ResponseRequester.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_2, call, decisionTable_29, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_3, call, decisionTable_29, setUri, SuitePage?responder=suite&firstTest=TestPageTwo]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_29_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[SuitePage?responder=suite&firstTest=TestPageTwo]]></expected>
+                              <evaluationMessage><![CDATA[SuitePage?responder=suite&firstTest=TestPageTwo]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_4, call, decisionTable_29, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_5, call, decisionTable_29, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_29_5</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_0, make, decisionTable_30, ResponseExaminer]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Response Examiner.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Response Examiner.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_1, call, decisionTable_30, table, [[contents?], []]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.ResponseExaminer.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_2, call, decisionTable_30, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_3, call, decisionTable_30, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_4, call, decisionTable_30, contents]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Server: FitNesse-v20091014
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+905
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Suite Results: SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Suite button--&gt;
+				&lt;a href="SuitePage?suite" accesskey=""&gt;Suite&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SuitePage" class="page_title"&gt;SuitePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Suite Results&lt;/span&gt;
+&amp;nbsp;&lt;a style="font-size:small;" href="SuitePage?pageHistory"&gt; [history]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;div id="test-summary"&gt;Running Tests ...&lt;/div&gt;
+
+62
+&lt;div class="test_summaries" id="test_summaries"&gt;
+	&lt;h2 class="centered"&gt;Test Summaries&lt;/h2&gt;
+&lt;/div&gt;
+
+e3
+&lt;div id="stop-test"&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;
+		&lt;img src="/files/images/stop.gif"/&gt;
+	&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;Stop Test&lt;/a&gt;
+&lt;/div&gt;
+
+c5
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "&lt;h3&gt;fit:fit.FitServer&lt;/h3&gt;\n";
+&lt;/script&gt;
+
+26
+&lt;h2 class="centered"&gt;Test Output&lt;/h2&gt;
+
+39
+&lt;h2 class="centered"&gt;Test System: fit:fit.FitServer&lt;/h2&gt;
+
+b3
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;div id=\"progressBar\" class=\"pass\" style=\"width:0.0%\"&gt;Running&amp;nbsp;tests&amp;nbsp;...&amp;nbsp;(1/1)&lt;/div&gt;\n";&lt;/script&gt;
+
+b2
+&lt;div class="test_output_name"&gt;
+	&lt;a href="SuitePage.TestPageTwo" id="TestPageTwo1" class="test_name"&gt;TestPageTwo&lt;/a&gt;
+	&lt;a href="#test_summaries" class="top_of_page"&gt;Top&lt;/a&gt;
+&lt;/div&gt;
+
+21
+&lt;div class="alternating_block_1"&gt;
+6a
+&lt;table border="1" cellspacing="0" class="pass"&gt;
+&lt;tr&gt;&lt;td&gt;fitnesse.testutil.PassFixture&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+7
+&lt;/div&gt;
+
+18b
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "\t\t&lt;div class=\"alternating_row_2\"&gt;\n\t\t\t&lt;span class=\"test_summary_results pass\"&gt;1 right, 0 wrong, 0 ignored, 0 exceptions&lt;/span&gt;\n\t\t\t&lt;a href=\"#TestPageTwo1\" class=\"test_summary_link\"&gt;TestPageTwo&lt;/a&gt;\n\t\t&lt;/div&gt;\n";
+&lt;/script&gt;
+
+46
+&lt;script&gt;document.getElementById("stop-test").innerHTML = "";&lt;/script&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+b4
+&lt;div id="execution-status"&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;&lt;img src="/files/images/executionStatus/ok.gif"/&gt;
+&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;Tests Executed OK&lt;/a&gt;
+&lt;/div&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+21
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+0
+Exit-Code: 0
+
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_30_4</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Connection: close
+Server: FitNesse-v20091014
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+905
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Suite Results: SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Suite button--&gt;
+				&lt;a href="SuitePage?suite" accesskey=""&gt;Suite&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SuitePage" class="page_title"&gt;SuitePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Suite Results&lt;/span&gt;
+&amp;nbsp;&lt;a style="font-size:small;" href="SuitePage?pageHistory"&gt; [history]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;div id="test-summary"&gt;Running Tests ...&lt;/div&gt;
+
+62
+&lt;div class="test_summaries" id="test_summaries"&gt;
+	&lt;h2 class="centered"&gt;Test Summaries&lt;/h2&gt;
+&lt;/div&gt;
+
+e3
+&lt;div id="stop-test"&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;
+		&lt;img src="/files/images/stop.gif"/&gt;
+	&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;Stop Test&lt;/a&gt;
+&lt;/div&gt;
+
+c5
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "&lt;h3&gt;fit:fit.FitServer&lt;/h3&gt;\n";
+&lt;/script&gt;
+
+26
+&lt;h2 class="centered"&gt;Test Output&lt;/h2&gt;
+
+39
+&lt;h2 class="centered"&gt;Test System: fit:fit.FitServer&lt;/h2&gt;
+
+b3
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;div id=\"progressBar\" class=\"pass\" style=\"width:0.0%\"&gt;Running&amp;nbsp;tests&amp;nbsp;...&amp;nbsp;(1/1)&lt;/div&gt;\n";&lt;/script&gt;
+
+b2
+&lt;div class="test_output_name"&gt;
+	&lt;a href="SuitePage.TestPageTwo" id="TestPageTwo1" class="test_name"&gt;TestPageTwo&lt;/a&gt;
+	&lt;a href="#test_summaries" class="top_of_page"&gt;Top&lt;/a&gt;
+&lt;/div&gt;
+
+21
+&lt;div class="alternating_block_1"&gt;
+6a
+&lt;table border="1" cellspacing="0" class="pass"&gt;
+&lt;tr&gt;&lt;td&gt;fitnesse.testutil.PassFixture&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+7
+&lt;/div&gt;
+
+18b
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "\t\t&lt;div class=\"alternating_row_2\"&gt;\n\t\t\t&lt;span class=\"test_summary_results pass\"&gt;1 right, 0 wrong, 0 ignored, 0 exceptions&lt;/span&gt;\n\t\t\t&lt;a href=\"#TestPageTwo1\" class=\"test_summary_link\"&gt;TestPageTwo&lt;/a&gt;\n\t\t&lt;/div&gt;\n";
+&lt;/script&gt;
+
+46
+&lt;script&gt;document.getElementById("stop-test").innerHTML = "";&lt;/script&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+b4
+&lt;div id="execution-status"&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;&lt;img src="/files/images/executionStatus/ok.gif"/&gt;
+&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;Tests Executed OK&lt;/a&gt;
+&lt;/div&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+21
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+0
+Exit-Code: 0
+
+]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[<span class="ignore">HTTP/1.1 200 OK
+Connection: close
+Server: FitNesse-v20091014
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+905
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Suite Results: SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Suite button--&gt;
+				&lt;a href="SuitePage?suite" accesskey=""&gt;Suite&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SuitePage" class="page_title"&gt;SuitePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Suite Results&lt;/span&gt;
+&amp;nbsp;&lt;a style="font-size:small;" href="SuitePage?pageHistory"&gt; [history]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;div id="test-summary"&gt;Running Tests ...&lt;/div&gt;
+
+62
+&lt;div class="test_summaries" id="test_summaries"&gt;
+	&lt;h2 class="centered"&gt;Test Summaries&lt;/h2&gt;
+&lt;/div&gt;
+
+e3
+&lt;div id="stop-test"&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;
+		&lt;img src="/files/images/stop.gif"/&gt;
+	&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;Stop Test&lt;/a&gt;
+&lt;/div&gt;
+
+c5
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "&lt;h3&gt;fit:fit.FitServer&lt;/h3&gt;\n";
+&lt;/script&gt;
+
+26
+&lt;h2 class="centered"&gt;Test Output&lt;/h2&gt;
+
+39
+&lt;h2 class="centered"&gt;Test System: fit:fit.FitServer&lt;/h2&gt;
+
+b3
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;div id=\"progressBar\" class=\"pass\" style=\"width:0.0%\"&gt;Running&amp;nbsp;tests&amp;nbsp;...&amp;nbsp;(1/1)&lt;/div&gt;\n";&lt;/script&gt;
+
+b2
+&lt;div class="test_output_name"&gt;
+	&lt;a href="SuitePage.TestPageTwo" id="TestPageTwo1" class="test_name"&gt;TestPageTwo&lt;/a&gt;
+	&lt;a href="#test_summaries" class="top_of_page"&gt;Top&lt;/a&gt;
+&lt;/div&gt;
+
+21
+&lt;div class="alternating_block_1"&gt;
+6a
+&lt;table border="1" cellspacing="0" class="pass"&gt;
+&lt;tr&gt;&lt;td&gt;fitnesse.testutil.PassFixture&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+7
+&lt;/div&gt;
+
+18b
+&lt;script&gt;var existingContent = document.getElementById("test_summaries").innerHTML;
+document.getElementById("test_summaries").innerHTML = existingContent + "\t\t&lt;div class=\"alternating_row_2\"&gt;\n\t\t\t&lt;span class=\"test_summary_results pass\"&gt;1 right, 0 wrong, 0 ignored, 0 exceptions&lt;/span&gt;\n\t\t\t&lt;a href=\"#TestPageTwo1\" class=\"test_summary_link\"&gt;TestPageTwo&lt;/a&gt;\n\t\t&lt;/div&gt;\n";
+&lt;/script&gt;
+
+46
+&lt;script&gt;document.getElementById("stop-test").innerHTML = "";&lt;/script&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+b4
+&lt;div id="execution-status"&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;&lt;img src="/files/images/executionStatus/ok.gif"/&gt;
+&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="ErrorLogs.SuitePage"&gt;Tests Executed OK&lt;/a&gt;
+&lt;/div&gt;
+
+12e
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Test Pages:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;Assertions:&lt;/strong&gt; 1 right, 0 wrong, 0 ignored, 0 exceptions";document.getElementById("test-summary").className = "pass";&lt;/script&gt;
+
+21
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+0
+Exit-Code: 0
+
+</span>]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_0, make, decisionTable_31, ResponseExaminer]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_31_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Response Examiner.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Response Examiner.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_1, call, decisionTable_31, table, [[type, pattern, matches?], [contents, TestPageTwo, true], [contents, TestPageOne, false], [contents, Test Pages:.*1 right, true]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.ResponseExaminer.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_2, call, decisionTable_31, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_3, call, decisionTable_31, setType, contents]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_31_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[contents]]></expected>
+                              <evaluationMessage><![CDATA[contents]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_4, call, decisionTable_31, setPattern, TestPageTwo]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_31_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[TestPageTwo]]></expected>
+                              <evaluationMessage><![CDATA[TestPageTwo]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_5, call, decisionTable_31, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_6, call, decisionTable_31, matches]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_31_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_7, call, decisionTable_31, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_8, call, decisionTable_31, setType, contents]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_31_8</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[contents]]></expected>
+                              <evaluationMessage><![CDATA[contents]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_9, call, decisionTable_31, setPattern, TestPageOne]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_31_9</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[TestPageOne]]></expected>
+                              <evaluationMessage><![CDATA[TestPageOne]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_10, call, decisionTable_31, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_11, call, decisionTable_31, matches]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_31_11</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[false]]></expected>
+                              <evaluationMessage><![CDATA[pass(false)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_12, call, decisionTable_31, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_13, call, decisionTable_31, setType, contents]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_31_13</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[contents]]></expected>
+                              <evaluationMessage><![CDATA[contents]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_14, call, decisionTable_31, setPattern, Test Pages:.*1 right]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_31_14</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[Test Pages:.*1 right]]></expected>
+                              <evaluationMessage><![CDATA[Test Pages:.*1 right]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_15, call, decisionTable_31, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_16, call, decisionTable_31, matches]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_31_16</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_32_0, make, decisionTable_32, ResponseRequester]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_32_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Response Requester.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Response Requester.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_32_1, call, decisionTable_32, table, [[uri, valid?], [ErrorLogs.SuitePage, true]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.ResponseRequester.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_32_2, call, decisionTable_32, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_32_3, call, decisionTable_32, setUri, ErrorLogs.SuitePage]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_32_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[ErrorLogs.SuitePage]]></expected>
+                              <evaluationMessage><![CDATA[ErrorLogs.SuitePage]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_32_4, call, decisionTable_32, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_32_5, call, decisionTable_32, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_32_5</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_33_0, make, decisionTable_33, ResponseExaminer]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_33_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Response Examiner.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Response Examiner.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_33_1, call, decisionTable_33, table, [[contents?], []]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.ResponseExaminer.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_33_2, call, decisionTable_33, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_33_3, call, decisionTable_33, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_33_4, call, decisionTable_33, contents]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 4147
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;ErrorLogs.SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;a href="/ErrorLogs"&gt;ErrorLogs&lt;/a&gt;.
+				&lt;br/&gt;&lt;span class="page_title"&gt;SuitePage&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;h3&gt;fit&lt;/h3&gt;&lt;table border="1" cellspacing="0"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;10:38:44 AM (CEST) on Thursday, October 15, 2009&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Test Page: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="SuitePage"&gt;.SuitePage&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Command: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;java -cp classes:fitnesse.jar fit.FitServer BobsMacbook.local 9123 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Exit code: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Time elapsed: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0.664 seconds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to SuitePage&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="ErrorLogs.SuitePage" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_33_4</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 4147
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;ErrorLogs.SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;a href="/ErrorLogs"&gt;ErrorLogs&lt;/a&gt;.
+				&lt;br/&gt;&lt;span class="page_title"&gt;SuitePage&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;h3&gt;fit&lt;/h3&gt;&lt;table border="1" cellspacing="0"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;10:38:44 AM (CEST) on Thursday, October 15, 2009&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Test Page: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="SuitePage"&gt;.SuitePage&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Command: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;java -cp classes:fitnesse.jar fit.FitServer BobsMacbook.local 9123 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Exit code: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Time elapsed: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0.664 seconds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to SuitePage&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="ErrorLogs.SuitePage" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[<span class="ignore">HTTP/1.1 200 OK
+Content-Length: 4147
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;ErrorLogs.SuitePage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="ErrorLogs.SuitePage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;a href="/ErrorLogs"&gt;ErrorLogs&lt;/a&gt;.
+				&lt;br/&gt;&lt;span class="page_title"&gt;SuitePage&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;h3&gt;fit&lt;/h3&gt;&lt;table border="1" cellspacing="0"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;10:38:44 AM (CEST) on Thursday, October 15, 2009&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Test Page: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="SuitePage"&gt;.SuitePage&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Command: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;java -cp classes:fitnesse.jar fit.FitServer BobsMacbook.local 9123 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Exit code: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Time elapsed: &lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;0.664 seconds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to SuitePage&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="ErrorLogs.SuitePage" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</span>]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_34_0, make, decisionTable_34, ResponseExaminer]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_34_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Response Examiner.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Response Examiner.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_34_1, call, decisionTable_34, table, [[type, pattern, matches?], [contents, Exit code.*0.*Time, true]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.ResponseExaminer.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_34_2, call, decisionTable_34, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_34_3, call, decisionTable_34, setType, contents]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_34_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[contents]]></expected>
+                              <evaluationMessage><![CDATA[contents]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_34_4, call, decisionTable_34, setPattern, Exit code.*0.*Time]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_34_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[Exit code.*0.*Time]]></expected>
+                              <evaluationMessage><![CDATA[Exit code.*0.*Time]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_34_5, call, decisionTable_34, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_34_6, call, decisionTable_34, matches]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_34_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_35_0, make, decisionTable_35, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_35_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_35_1, call, decisionTable_35, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

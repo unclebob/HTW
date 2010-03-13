@@ -1,0 +1,3050 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestHash</rootPath>
+    <result>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-2506510794680535684');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2506510794680535684"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteWidgetTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-2506510794680535684"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('1593047193858480633');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img1593047193858480633"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SetUp">&lt;SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="1593047193858480633"><table border="1" cellspacing="0" _TABLENUMBER=1032859896757574048>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5558881786187475195>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4126178205962143672>
+<tr><td>script</td>
+<td><span class="pass">page driver</span></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-2502549146401918776');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2502549146401918776"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="-2502549146401918776"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('4998329014396007791');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img4998329014396007791"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="4998329014396007791"><table border="1" cellspacing="0" _TABLENUMBER=2840479883774800830>
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with content</td>
+<td colspan="2">@content</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8824404270989410433>
+<tr><td>scenario</td>
+<td>given page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>nothing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7024658484779142878>
+<tr><td>scenario</td>
+<td>given test page</td>
+<td>page</td>
+</tr>
+<tr><td>given page</td>
+<td colspan="2">@page</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td>a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3857079915612158914>
+<tr><td>scenario</td>
+<td>given slim test page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>!define TEST_SYSTEM {slim}</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td colspan="2">a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4830524593668590830>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;a href="@target"&gt;</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@source</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=345748984869286617>
+<tr><td>scenario</td>
+<td>it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8175283727048832116>
+<tr><td>scenario</td>
+<td>and it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7746632215285327429>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have creating link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3235710253374252783>
+<tr><td>scenario</td>
+<td>it should have creating link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have creating link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2947950479138428163>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7717115070183878697>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2308505012075171821>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1469007466450712982>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8371534413935336573>
+<tr><td>scenario</td>
+<td>it should not contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should not contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1479952385780449012>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td>text</td>
+<td>in line</td>
+<td>symbol</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>$@symbol=</td>
+<td>line number containing</td>
+<td colspan="3">@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3243152751076526912>
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should match</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2770608161912811534>
+<tr><td>scenario</td>
+<td>test results for page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8757185638408483112>
+<tr><td>scenario</td>
+<td>its test results should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>test results for page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7564529899308784766>
+<tr><td>scenario</td>
+<td>test ressults for page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8997233479534116290>
+<tr><td>scenario</td>
+<td>and should contain</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=871466449681808075>
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3003104918540828326>
+<tr><td>scenario</td>
+<td>and should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1563791405448760290>
+<tr><td>scenario</td>
+<td>widget</td>
+<td>wikiText</td>
+<td>should render</td>
+<td>htmlText</td>
+</tr>
+<tr><td>create page</td>
+<td>WidgetPage</td>
+<td>with content</td>
+<td colspan="2">@wikiText</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>WidgetPage</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@htmlText</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1381000800728854720>
+<tr><td>scenario</td>
+<td>the line</td>
+<td>after</td>
+<td>should come after</td>
+<td>before</td>
+</tr>
+<tr><td>check</td>
+<td>echo int</td>
+<td>$@before</td>
+<td colspan="2">&lt; $@after</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<table border="1" cellspacing="0" _TABLENUMBER=3243350206270620558>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td class=pass>given page</td>
+<td class=pass>HashPage</td>
+<td class=pass>with content</td>
+<td class=pass>!{a:b}</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('7785149958735221423');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7785149958735221423"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="7785149958735221423"><table border="1" cellspacing="0" _TABLENUMBER=1942575749502076182 table_name="scriptTable_27_0/scriptTable_3">
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>HashPage</td>
+<td>with content</td>
+<td colspan="2">!{a:b}</td>
+</tr>
+<tr><td>$IT<-[HashPage]</td>
+<td>echo</td>
+<td colspan="3">HashPage</td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>it should match</td>
+<td colspan="3" class=pass>.table class="hash_table"&gt;.*tr class="hash_row"&gt;.*td class="hash_key"&gt;.*a.*/td&gt;.*td class="hash_value"&gt;.*b.*/td&gt;.*/tr&gt;.*/tr&gt;.*/table&gt;</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('4700474927473183394');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img4700474927473183394"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="4700474927473183394"><table border="1" cellspacing="0" _TABLENUMBER=8923391910012612321 table_name="scriptTable_27_1/scriptTable_18">
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td class=pass>page</td>
+<td class=pass>$IT->[HashPage]</td>
+<td class=pass>should match</td>
+<td class=pass>.table class="hash_table">.*tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr>.*/tr>.*/table></td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-105309910639722579');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-105309910639722579"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-105309910639722579"><table border="1" cellspacing="0" _TABLENUMBER=2243106940330662897 table_name="scriptTable_27_1/scriptTable_18_0/scriptTable_14">
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[HashPage]</td>
+<td colspan="2"><span class="pass">200</span></td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content matches</td>
+<td colspan="3">.table class="hash_table">.*tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr>.*/tr>.*/table></td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 3688
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;HashPage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="HashPage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="HashPage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="HashPage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="HashPage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="HashPage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;span class="page_title"&gt;HashPage&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table class="hash_table"&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;a&lt;/td&gt;&lt;td class="hash_value"&gt;b&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to HashPage&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="HashPage" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2750975809916761052>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td class=pass>given page</td>
+<td class=pass>HashPageTwo</td>
+<td class=pass>with content</td>
+<td class=pass>!{a:b,c:d}</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-2648127823207285467');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2648127823207285467"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-2648127823207285467"><table border="1" cellspacing="0" _TABLENUMBER=8166238696452242526 table_name="scriptTable_28_0/scriptTable_3">
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>HashPageTwo</td>
+<td>with content</td>
+<td colspan="2">!{a:b,c:d}</td>
+</tr>
+<tr><td>$IT<-[HashPageTwo]</td>
+<td>echo</td>
+<td colspan="3">HashPageTwo</td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>it should match</td>
+<td colspan="3" class=pass>.tr class="hash_row"&gt;.*td class="hash_key"&gt;.*a.*/td&gt;.*td class="hash_value"&gt;.*b.*/td&gt;.*/tr&gt;</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('2366824048031057825');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2366824048031057825"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="2366824048031057825"><table border="1" cellspacing="0" _TABLENUMBER=7772355166385349162 table_name="scriptTable_28_1/scriptTable_18">
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td class=pass>page</td>
+<td class=pass>$IT->[HashPageTwo]</td>
+<td class=pass>should match</td>
+<td class=pass>.tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr></td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('8888467449827767522');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8888467449827767522"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="8888467449827767522"><table border="1" cellspacing="0" _TABLENUMBER=7476630211130706278 table_name="scriptTable_28_1/scriptTable_18_0/scriptTable_14">
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[HashPageTwo]</td>
+<td colspan="2"><span class="pass">200</span></td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content matches</td>
+<td colspan="3">.tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr></td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 3797
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;HashPageTwo&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="HashPageTwo?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="HashPageTwo?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="HashPageTwo?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="HashPageTwo?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="HashPageTwo?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;span class="page_title"&gt;HashPageTwo&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table class="hash_table"&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;a&lt;/td&gt;&lt;td class="hash_value"&gt;b&lt;/td&gt;&lt;/tr&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;c&lt;/td&gt;&lt;td class="hash_value"&gt;d&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to HashPageTwo&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="HashPageTwo" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>it should match</td>
+<td colspan="3" class=pass>.tr class="hash_row"&gt;.*td class="hash_key"&gt;.*c.*/td&gt;.*td class="hash_value"&gt;.*d.*/td&gt;.*/tr&gt;</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-3758588618555296773');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-3758588618555296773"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-3758588618555296773"><table border="1" cellspacing="0" _TABLENUMBER=3910512068096034163 table_name="scriptTable_28_2/scriptTable_18">
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td class=pass>page</td>
+<td class=pass>$IT->[HashPageTwo]</td>
+<td class=pass>should match</td>
+<td class=pass>.tr class="hash_row">.*td class="hash_key">.*c.*/td>.*td class="hash_value">.*d.*/td>.*/tr></td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-4473347976824433570');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4473347976824433570"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-4473347976824433570"><table border="1" cellspacing="0" _TABLENUMBER=4513646558570068218 table_name="scriptTable_28_2/scriptTable_18_0/scriptTable_14">
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[HashPageTwo]</td>
+<td colspan="2"><span class="pass">200</span></td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content matches</td>
+<td colspan="3">.tr class="hash_row">.*td class="hash_key">.*c.*/td>.*td class="hash_value">.*d.*/td>.*/tr></td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 3797
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;HashPageTwo&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="HashPageTwo?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="HashPageTwo?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="HashPageTwo?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="HashPageTwo?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="HashPageTwo?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;span class="page_title"&gt;HashPageTwo&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table class="hash_table"&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;a&lt;/td&gt;&lt;td class="hash_value"&gt;b&lt;/td&gt;&lt;/tr&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;c&lt;/td&gt;&lt;td class="hash_value"&gt;d&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to HashPageTwo&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="HashPageTwo" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('727567771178735080');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img727567771178735080"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="727567771178735080"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=9193243949987494884>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestHash</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(page driver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_4</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[nothing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_5</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_6</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given slim test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!define TEST_SYSTEM {slim}]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_7</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a href="@target"&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@source]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_9</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_10</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_11</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_12</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_13</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_15</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_16</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_17</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+                    <col><![CDATA[in line]]></col>
+                    <col><![CDATA[symbol]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$@symbol=]]></col>
+                    <col><![CDATA[line number containing]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_19</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_20</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[its test results should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_21</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test ressults for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_22</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_24</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_25</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[widget]]></col>
+                    <col><![CDATA[wikiText]]></col>
+                    <col><![CDATA[should render]]></col>
+                    <col><![CDATA[htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@wikiText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_26</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the line]]></col>
+                    <col><![CDATA[after]]></col>
+                    <col><![CDATA[should come after]]></col>
+                    <col><![CDATA[before]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo int]]></col>
+                    <col><![CDATA[$@before]]></col>
+                    <col><![CDATA[&lt; $@after]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_27</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[HashPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!{a:b}]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_27_0/scriptTable_3)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[.table class="hash_table"&gt;.*tr class="hash_row"&gt;.*td class="hash_key"&gt;.*a.*/td&gt;.*td class="hash_value"&gt;.*b.*/td&gt;.*/tr&gt;.*/tr&gt;.*/table&gt;]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_27_1/scriptTable_18)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_27_0/scriptTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[HashPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!{a:b}]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT<-[HashPage]]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[HashPage]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_27_1/scriptTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT->[HashPage]]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[.table class="hash_table">.*tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr>.*/tr>.*/table>]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_27_1/scriptTable_18_0/scriptTable_14)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_27_1/scriptTable_18_0/scriptTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[HashPage]]]></col>
+                    <col><![CDATA[pass(200)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[.table class="hash_table">.*tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr>.*/tr>.*/table>]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 3688
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;HashPage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="HashPage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="HashPage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="HashPage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="HashPage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="HashPage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;span class="page_title"&gt;HashPage&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table class="hash_table"&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;a&lt;/td&gt;&lt;td class="hash_value"&gt;b&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to HashPage&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="HashPage" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_28</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[HashPageTwo]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!{a:b,c:d}]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_28_0/scriptTable_3)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[.tr class="hash_row"&gt;.*td class="hash_key"&gt;.*a.*/td&gt;.*td class="hash_value"&gt;.*b.*/td&gt;.*/tr&gt;]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_28_1/scriptTable_18)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[.tr class="hash_row"&gt;.*td class="hash_key"&gt;.*c.*/td&gt;.*td class="hash_value"&gt;.*d.*/td&gt;.*/tr&gt;]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_28_2/scriptTable_18)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_28_0/scriptTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[HashPageTwo]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!{a:b,c:d}]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT<-[HashPageTwo]]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[HashPageTwo]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_28_1/scriptTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT->[HashPageTwo]]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[.tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr>]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_28_1/scriptTable_18_0/scriptTable_14)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_28_1/scriptTable_18_0/scriptTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[HashPageTwo]]]></col>
+                    <col><![CDATA[pass(200)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[.tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr>]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 3797
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;HashPageTwo&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="HashPageTwo?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="HashPageTwo?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="HashPageTwo?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="HashPageTwo?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="HashPageTwo?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;span class="page_title"&gt;HashPageTwo&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table class="hash_table"&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;a&lt;/td&gt;&lt;td class="hash_value"&gt;b&lt;/td&gt;&lt;/tr&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;c&lt;/td&gt;&lt;td class="hash_value"&gt;d&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to HashPageTwo&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="HashPageTwo" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_28_2/scriptTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT->[HashPageTwo]]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[.tr class="hash_row">.*td class="hash_key">.*c.*/td>.*td class="hash_value">.*d.*/td>.*/tr>]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_28_2/scriptTable_18_0/scriptTable_14)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_28_2/scriptTable_18_0/scriptTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[HashPageTwo]]]></col>
+                    <col><![CDATA[pass(200)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[.tr class="hash_row">.*td class="hash_key">.*c.*/td>.*td class="hash_value">.*d.*/td>.*/tr>]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 3797
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;HashPageTwo&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="HashPageTwo?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="HashPageTwo?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="HashPageTwo?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="HashPageTwo?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="HashPageTwo?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;span class="page_title"&gt;HashPageTwo&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table class="hash_table"&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;a&lt;/td&gt;&lt;td class="hash_value"&gt;b&lt;/td&gt;&lt;/tr&gt;&lt;tr class="hash_row"&gt;&lt;td class="hash_key"&gt;c&lt;/td&gt;&lt;td class="hash_value"&gt;d&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br/&gt;&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to HashPageTwo&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="HashPageTwo" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_29</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, make, scriptTableActor, PageDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[page driver]]></expected>
+                              <evaluationMessage><![CDATA[pass(page driver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_27_0/scriptTable_3_0, call, scriptTableActor, createPageWithContent, HashPage, !{a:b}]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_0/scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_0/scriptTable_3_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_0/scriptTable_3_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[create page]]></expected>
+                              <evaluationMessage><![CDATA[create page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_27_0/scriptTable_3_1, callAndAssign, IT, scriptTableActor, echo, HashPage]]]></instruction>
+        <slimResult><![CDATA[HashPage]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_0/scriptTable_3_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>SymbolAssignmentExpectation</type>
+                    <actual><![CDATA[HashPage]]></actual>
+                              <expected><![CDATA[$IT=]]></expected>
+                              <evaluationMessage><![CDATA[$IT<-[HashPage]]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_0/scriptTable_3_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_27_1/scriptTable_18_0/scriptTable_14_0, call, scriptTableActor, requestPage, $IT]]]></instruction>
+        <slimResult><![CDATA[200]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_27_1/scriptTable_18_0/scriptTable_14_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[200]]></actual>
+                              <expected><![CDATA[200]]></expected>
+                              <evaluationMessage><![CDATA[pass(200)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_1/scriptTable_18_0/scriptTable_14_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_27_1/scriptTable_18_0/scriptTable_14_1, call, scriptTableActor, contentMatches, .table class="hash_table">.*tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr>.*/tr>.*/table>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_27_1/scriptTable_18_0/scriptTable_14_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_1/scriptTable_18_0/scriptTable_14_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_27_1/scriptTable_18_0/scriptTable_14_2, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 3688
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>HashPage</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions">
+				<!--Edit button-->
+				<a href="HashPage?edit" accesskey="e">Edit</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Properties button-->
+				<a href="HashPage?properties" accesskey="p">Properties</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Refactor button-->
+				<a href="HashPage?refactor" accesskey="r">Refactor</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Where Used button-->
+				<a href="HashPage?whereUsed" accesskey="w">Where Used</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Search button-->
+				<a href="?searchForm" accesskey="s">Search</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Files button-->
+				<a href="/files" accesskey="f">Files</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Versions button-->
+				<a href="HashPage?versions" accesskey="v">Versions</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Recent Changes button-->
+				<a href="/RecentChanges" accesskey="">Recent Changes</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--User Guide button-->
+				<a href=".FitNesse.UserGuide" accesskey="">User Guide</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Test History button-->
+				<a href="?testHistory" accesskey="">Test History</a>
+				<div class="nav_break">&nbsp;</div>
+				<div class="nav_break">&nbsp;</div>
+			</div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><span class="page_title">HashPage</span>
+<a style="font-size:small;" onclick="popup('addChildPopup')"> [add child]</a>			</div>
+			<div class="main"><table class="hash_table"><tr class="hash_row"><td class="hash_key">a</td><td class="hash_value">b</td></tr></table><br/><div class="footer">
+</div>
+<div id="addChildPopup" class="popup_window">
+  <div class="popup_title">Add Child Page to HashPage</div>
+  <div class="popup_content">
+    <form action="HashPage" method="get">
+      <input type="hidden" name="responder" value="addChild"/>
+      <table border="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+          <td>
+            <input type="radio" name="pageType" value="Normal"/> Normal<br/>
+            <input type="radio" name="pageType" value="Test"/> Test<br/>
+            <input type="radio" name="pageType" value="Suite"/> Suite<br/>
+            <input type="radio" name="pageType" value="Default" checked="checked"/> Default<br/>
+          </td>
+          <td>
+            <table border="0" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="childName">Name</label></td?
+                <td><input size="50" id="childName" type="text" name="name"/></td>
+              </tr>
+              <tr>
+                <td><label for="childContent">Content</label></td>
+                <td><input size="50" id="childContent" type="text" name="content" value="!contents"/></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/>
+            <input value="Add" type="submit"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div></div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_27_1/scriptTable_18_0/scriptTable_14_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 3688
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>HashPage</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions">
+				<!--Edit button-->
+				<a href="HashPage?edit" accesskey="e">Edit</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Properties button-->
+				<a href="HashPage?properties" accesskey="p">Properties</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Refactor button-->
+				<a href="HashPage?refactor" accesskey="r">Refactor</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Where Used button-->
+				<a href="HashPage?whereUsed" accesskey="w">Where Used</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Search button-->
+				<a href="?searchForm" accesskey="s">Search</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Files button-->
+				<a href="/files" accesskey="f">Files</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Versions button-->
+				<a href="HashPage?versions" accesskey="v">Versions</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Recent Changes button-->
+				<a href="/RecentChanges" accesskey="">Recent Changes</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--User Guide button-->
+				<a href=".FitNesse.UserGuide" accesskey="">User Guide</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Test History button-->
+				<a href="?testHistory" accesskey="">Test History</a>
+				<div class="nav_break">&nbsp;</div>
+				<div class="nav_break">&nbsp;</div>
+			</div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><span class="page_title">HashPage</span>
+<a style="font-size:small;" onclick="popup('addChildPopup')"> [add child]</a>			</div>
+			<div class="main"><table class="hash_table"><tr class="hash_row"><td class="hash_key">a</td><td class="hash_value">b</td></tr></table><br/><div class="footer">
+</div>
+<div id="addChildPopup" class="popup_window">
+  <div class="popup_title">Add Child Page to HashPage</div>
+  <div class="popup_content">
+    <form action="HashPage" method="get">
+      <input type="hidden" name="responder" value="addChild"/>
+      <table border="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+          <td>
+            <input type="radio" name="pageType" value="Normal"/> Normal<br/>
+            <input type="radio" name="pageType" value="Test"/> Test<br/>
+            <input type="radio" name="pageType" value="Suite"/> Suite<br/>
+            <input type="radio" name="pageType" value="Default" checked="checked"/> Default<br/>
+          </td>
+          <td>
+            <table border="0" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="childName">Name</label></td?
+                <td><input size="50" id="childName" type="text" name="name"/></td>
+              </tr>
+              <tr>
+                <td><label for="childContent">Content</label></td>
+                <td><input size="50" id="childContent" type="text" name="content" value="!contents"/></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/>
+            <input value="Add" type="submit"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div></div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_0/scriptTable_3_0, call, scriptTableActor, createPageWithContent, HashPageTwo, !{a:b,c:d}]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_0/scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_0/scriptTable_3_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_0/scriptTable_3_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[create page]]></expected>
+                              <evaluationMessage><![CDATA[create page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_0/scriptTable_3_1, callAndAssign, IT, scriptTableActor, echo, HashPageTwo]]]></instruction>
+        <slimResult><![CDATA[HashPageTwo]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_0/scriptTable_3_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>SymbolAssignmentExpectation</type>
+                    <actual><![CDATA[HashPageTwo]]></actual>
+                              <expected><![CDATA[$IT=]]></expected>
+                              <evaluationMessage><![CDATA[$IT<-[HashPageTwo]]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_0/scriptTable_3_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_1/scriptTable_18_0/scriptTable_14_0, call, scriptTableActor, requestPage, $IT]]]></instruction>
+        <slimResult><![CDATA[200]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_28_1/scriptTable_18_0/scriptTable_14_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[200]]></actual>
+                              <expected><![CDATA[200]]></expected>
+                              <evaluationMessage><![CDATA[pass(200)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_1/scriptTable_18_0/scriptTable_14_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_1/scriptTable_18_0/scriptTable_14_1, call, scriptTableActor, contentMatches, .tr class="hash_row">.*td class="hash_key">.*a.*/td>.*td class="hash_value">.*b.*/td>.*/tr>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_28_1/scriptTable_18_0/scriptTable_14_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_1/scriptTable_18_0/scriptTable_14_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_1/scriptTable_18_0/scriptTable_14_2, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 3797
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>HashPageTwo</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions">
+				<!--Edit button-->
+				<a href="HashPageTwo?edit" accesskey="e">Edit</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Properties button-->
+				<a href="HashPageTwo?properties" accesskey="p">Properties</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Refactor button-->
+				<a href="HashPageTwo?refactor" accesskey="r">Refactor</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Where Used button-->
+				<a href="HashPageTwo?whereUsed" accesskey="w">Where Used</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Search button-->
+				<a href="?searchForm" accesskey="s">Search</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Files button-->
+				<a href="/files" accesskey="f">Files</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Versions button-->
+				<a href="HashPageTwo?versions" accesskey="v">Versions</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Recent Changes button-->
+				<a href="/RecentChanges" accesskey="">Recent Changes</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--User Guide button-->
+				<a href=".FitNesse.UserGuide" accesskey="">User Guide</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Test History button-->
+				<a href="?testHistory" accesskey="">Test History</a>
+				<div class="nav_break">&nbsp;</div>
+				<div class="nav_break">&nbsp;</div>
+			</div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><span class="page_title">HashPageTwo</span>
+<a style="font-size:small;" onclick="popup('addChildPopup')"> [add child]</a>			</div>
+			<div class="main"><table class="hash_table"><tr class="hash_row"><td class="hash_key">a</td><td class="hash_value">b</td></tr><tr class="hash_row"><td class="hash_key">c</td><td class="hash_value">d</td></tr></table><br/><div class="footer">
+</div>
+<div id="addChildPopup" class="popup_window">
+  <div class="popup_title">Add Child Page to HashPageTwo</div>
+  <div class="popup_content">
+    <form action="HashPageTwo" method="get">
+      <input type="hidden" name="responder" value="addChild"/>
+      <table border="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+          <td>
+            <input type="radio" name="pageType" value="Normal"/> Normal<br/>
+            <input type="radio" name="pageType" value="Test"/> Test<br/>
+            <input type="radio" name="pageType" value="Suite"/> Suite<br/>
+            <input type="radio" name="pageType" value="Default" checked="checked"/> Default<br/>
+          </td>
+          <td>
+            <table border="0" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="childName">Name</label></td?
+                <td><input size="50" id="childName" type="text" name="name"/></td>
+              </tr>
+              <tr>
+                <td><label for="childContent">Content</label></td>
+                <td><input size="50" id="childContent" type="text" name="content" value="!contents"/></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/>
+            <input value="Add" type="submit"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div></div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_1/scriptTable_18_0/scriptTable_14_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 3797
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>HashPageTwo</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions">
+				<!--Edit button-->
+				<a href="HashPageTwo?edit" accesskey="e">Edit</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Properties button-->
+				<a href="HashPageTwo?properties" accesskey="p">Properties</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Refactor button-->
+				<a href="HashPageTwo?refactor" accesskey="r">Refactor</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Where Used button-->
+				<a href="HashPageTwo?whereUsed" accesskey="w">Where Used</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Search button-->
+				<a href="?searchForm" accesskey="s">Search</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Files button-->
+				<a href="/files" accesskey="f">Files</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Versions button-->
+				<a href="HashPageTwo?versions" accesskey="v">Versions</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Recent Changes button-->
+				<a href="/RecentChanges" accesskey="">Recent Changes</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--User Guide button-->
+				<a href=".FitNesse.UserGuide" accesskey="">User Guide</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Test History button-->
+				<a href="?testHistory" accesskey="">Test History</a>
+				<div class="nav_break">&nbsp;</div>
+				<div class="nav_break">&nbsp;</div>
+			</div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><span class="page_title">HashPageTwo</span>
+<a style="font-size:small;" onclick="popup('addChildPopup')"> [add child]</a>			</div>
+			<div class="main"><table class="hash_table"><tr class="hash_row"><td class="hash_key">a</td><td class="hash_value">b</td></tr><tr class="hash_row"><td class="hash_key">c</td><td class="hash_value">d</td></tr></table><br/><div class="footer">
+</div>
+<div id="addChildPopup" class="popup_window">
+  <div class="popup_title">Add Child Page to HashPageTwo</div>
+  <div class="popup_content">
+    <form action="HashPageTwo" method="get">
+      <input type="hidden" name="responder" value="addChild"/>
+      <table border="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+          <td>
+            <input type="radio" name="pageType" value="Normal"/> Normal<br/>
+            <input type="radio" name="pageType" value="Test"/> Test<br/>
+            <input type="radio" name="pageType" value="Suite"/> Suite<br/>
+            <input type="radio" name="pageType" value="Default" checked="checked"/> Default<br/>
+          </td>
+          <td>
+            <table border="0" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="childName">Name</label></td?
+                <td><input size="50" id="childName" type="text" name="name"/></td>
+              </tr>
+              <tr>
+                <td><label for="childContent">Content</label></td>
+                <td><input size="50" id="childContent" type="text" name="content" value="!contents"/></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/>
+            <input value="Add" type="submit"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div></div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_2/scriptTable_18_0/scriptTable_14_0, call, scriptTableActor, requestPage, $IT]]]></instruction>
+        <slimResult><![CDATA[200]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_28_2/scriptTable_18_0/scriptTable_14_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[200]]></actual>
+                              <expected><![CDATA[200]]></expected>
+                              <evaluationMessage><![CDATA[pass(200)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_2/scriptTable_18_0/scriptTable_14_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_2/scriptTable_18_0/scriptTable_14_1, call, scriptTableActor, contentMatches, .tr class="hash_row">.*td class="hash_key">.*c.*/td>.*td class="hash_value">.*d.*/td>.*/tr>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_28_2/scriptTable_18_0/scriptTable_14_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_2/scriptTable_18_0/scriptTable_14_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_28_2/scriptTable_18_0/scriptTable_14_2, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 3797
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>HashPageTwo</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions">
+				<!--Edit button-->
+				<a href="HashPageTwo?edit" accesskey="e">Edit</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Properties button-->
+				<a href="HashPageTwo?properties" accesskey="p">Properties</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Refactor button-->
+				<a href="HashPageTwo?refactor" accesskey="r">Refactor</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Where Used button-->
+				<a href="HashPageTwo?whereUsed" accesskey="w">Where Used</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Search button-->
+				<a href="?searchForm" accesskey="s">Search</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Files button-->
+				<a href="/files" accesskey="f">Files</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Versions button-->
+				<a href="HashPageTwo?versions" accesskey="v">Versions</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Recent Changes button-->
+				<a href="/RecentChanges" accesskey="">Recent Changes</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--User Guide button-->
+				<a href=".FitNesse.UserGuide" accesskey="">User Guide</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Test History button-->
+				<a href="?testHistory" accesskey="">Test History</a>
+				<div class="nav_break">&nbsp;</div>
+				<div class="nav_break">&nbsp;</div>
+			</div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><span class="page_title">HashPageTwo</span>
+<a style="font-size:small;" onclick="popup('addChildPopup')"> [add child]</a>			</div>
+			<div class="main"><table class="hash_table"><tr class="hash_row"><td class="hash_key">a</td><td class="hash_value">b</td></tr><tr class="hash_row"><td class="hash_key">c</td><td class="hash_value">d</td></tr></table><br/><div class="footer">
+</div>
+<div id="addChildPopup" class="popup_window">
+  <div class="popup_title">Add Child Page to HashPageTwo</div>
+  <div class="popup_content">
+    <form action="HashPageTwo" method="get">
+      <input type="hidden" name="responder" value="addChild"/>
+      <table border="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+          <td>
+            <input type="radio" name="pageType" value="Normal"/> Normal<br/>
+            <input type="radio" name="pageType" value="Test"/> Test<br/>
+            <input type="radio" name="pageType" value="Suite"/> Suite<br/>
+            <input type="radio" name="pageType" value="Default" checked="checked"/> Default<br/>
+          </td>
+          <td>
+            <table border="0" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="childName">Name</label></td?
+                <td><input size="50" id="childName" type="text" name="name"/></td>
+              </tr>
+              <tr>
+                <td><label for="childContent">Content</label></td>
+                <td><input size="50" id="childContent" type="text" name="content" value="!contents"/></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/>
+            <input value="Add" type="submit"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div></div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_28_2/scriptTable_18_0/scriptTable_14_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 3797
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>HashPageTwo</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions">
+				<!--Edit button-->
+				<a href="HashPageTwo?edit" accesskey="e">Edit</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Properties button-->
+				<a href="HashPageTwo?properties" accesskey="p">Properties</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Refactor button-->
+				<a href="HashPageTwo?refactor" accesskey="r">Refactor</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Where Used button-->
+				<a href="HashPageTwo?whereUsed" accesskey="w">Where Used</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Search button-->
+				<a href="?searchForm" accesskey="s">Search</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Files button-->
+				<a href="/files" accesskey="f">Files</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Versions button-->
+				<a href="HashPageTwo?versions" accesskey="v">Versions</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Recent Changes button-->
+				<a href="/RecentChanges" accesskey="">Recent Changes</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--User Guide button-->
+				<a href=".FitNesse.UserGuide" accesskey="">User Guide</a>
+				<div class="nav_break">&nbsp;</div>
+				<!--Test History button-->
+				<a href="?testHistory" accesskey="">Test History</a>
+				<div class="nav_break">&nbsp;</div>
+				<div class="nav_break">&nbsp;</div>
+			</div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><span class="page_title">HashPageTwo</span>
+<a style="font-size:small;" onclick="popup('addChildPopup')"> [add child]</a>			</div>
+			<div class="main"><table class="hash_table"><tr class="hash_row"><td class="hash_key">a</td><td class="hash_value">b</td></tr><tr class="hash_row"><td class="hash_key">c</td><td class="hash_value">d</td></tr></table><br/><div class="footer">
+</div>
+<div id="addChildPopup" class="popup_window">
+  <div class="popup_title">Add Child Page to HashPageTwo</div>
+  <div class="popup_content">
+    <form action="HashPageTwo" method="get">
+      <input type="hidden" name="responder" value="addChild"/>
+      <table border="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+          <td>
+            <input type="radio" name="pageType" value="Normal"/> Normal<br/>
+            <input type="radio" name="pageType" value="Test"/> Test<br/>
+            <input type="radio" name="pageType" value="Suite"/> Suite<br/>
+            <input type="radio" name="pageType" value="Default" checked="checked"/> Default<br/>
+          </td>
+          <td>
+            <table border="0" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="childName">Name</label></td?
+                <td><input size="50" id="childName" type="text" name="name"/></td>
+              </tr>
+              <tr>
+                <td><label for="childContent">Content</label></td>
+                <td><input size="50" id="childContent" type="text" name="content" value="!contents"/></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/>
+            <input value="Add" type="submit"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div></div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_0, make, decisionTable_29, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_29_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_1, call, decisionTable_29, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

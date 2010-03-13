@@ -1,0 +1,2426 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TopLevelHistoryShouldHaveTitle</rootPath>
+    <result>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-5936762815351538898');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5936762815351538898"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SuiteTestHistory.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteTestHistory.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteTestHistory.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-5936762815351538898"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('4802329871581111278');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img4802329871581111278"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SetUp">&lt;SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="4802329871581111278"><table border="1" cellspacing="0" _TABLENUMBER=418140853062527533>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6390152009712575974>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4587292025741242522>
+<tr><td>script</td>
+<td><span class="pass">page driver</span></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-5280202855558779531');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5280202855558779531"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="-5280202855558779531"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('8333168261694214112');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8333168261694214112"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="8333168261694214112"><table border="1" cellspacing="0" _TABLENUMBER=8385424110758809558>
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with content</td>
+<td colspan="2">@content</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1453253971637079563>
+<tr><td>scenario</td>
+<td>given page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>nothing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1532784515171132382>
+<tr><td>scenario</td>
+<td>given test page</td>
+<td>page</td>
+</tr>
+<tr><td>given page</td>
+<td colspan="2">@page</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td>a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=175818069828124658>
+<tr><td>scenario</td>
+<td>given slim test page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>!define TEST_SYSTEM {slim}</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td colspan="2">a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2902759520064071418>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;a href="@target"&gt;</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@source</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5900431206355447710>
+<tr><td>scenario</td>
+<td>it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7709901127488484970>
+<tr><td>scenario</td>
+<td>and it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7283626085571794362>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have creating link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4660593670037494278>
+<tr><td>scenario</td>
+<td>it should have creating link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have creating link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2844513816037720505>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1677794336991242434>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=125065646980091018>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1999962889012192720>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4509171361954806768>
+<tr><td>scenario</td>
+<td>it should not contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should not contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4459662660945821897>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td>text</td>
+<td>in line</td>
+<td>symbol</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>$@symbol=</td>
+<td>line number containing</td>
+<td colspan="3">@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7491167031825170551>
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should match</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8970943826768382200>
+<tr><td>scenario</td>
+<td>test results for page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7275561116092532776>
+<tr><td>scenario</td>
+<td>its test results should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>test results for page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8185144470808806895>
+<tr><td>scenario</td>
+<td>test ressults for page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=386289740818083844>
+<tr><td>scenario</td>
+<td>and should contain</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6878240985659520256>
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2983849002099733005>
+<tr><td>scenario</td>
+<td>and should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1650294462120089420>
+<tr><td>scenario</td>
+<td>widget</td>
+<td>wikiText</td>
+<td>should render</td>
+<td>htmlText</td>
+</tr>
+<tr><td>create page</td>
+<td>WidgetPage</td>
+<td>with content</td>
+<td colspan="2">@wikiText</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>WidgetPage</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@htmlText</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2089789374065220349>
+<tr><td>scenario</td>
+<td>the line</td>
+<td>after</td>
+<td>should come after</td>
+<td>before</td>
+</tr>
+<tr><td>check</td>
+<td>echo int</td>
+<td>$@before</td>
+<td colspan="2">&lt; $@after</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('2109797837102896147');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2109797837102896147"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteTestHistory.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.SuiteTestHistory.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteTestHistory.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="2109797837102896147"><table border="1" cellspacing="0" _TABLENUMBER=954151863768148008>
+<tr><td>scenario</td>
+<td>get history for page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@page?pageHistory</td>
+<td>200</td>
+</tr>
+<tr><td>$TESTPAGE=</td>
+<td>echo</td>
+<td colspan="2">@page</td>
+</tr>
+<tr><td>show</td>
+<td colspan="3">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2717352233359193203>
+<tr><td>scenario</td>
+<td colspan="3">get top level history</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>?testHistory</td>
+<td>200</td>
+</tr>
+<tr><td>show</td>
+<td colspan="3">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7574383579716494372>
+<tr><td>scenario</td>
+<td>the number of page histories should be</td>
+<td colspan="4">number</td>
+</tr>
+<tr><td>check</td>
+<td>count of tag</td>
+<td>TR</td>
+<td>with id prefix</td>
+<td>pageHistoryRow</td>
+<td>@number</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4047667623871843982>
+<tr><td>scenario</td>
+<td>the page history bar for</td>
+<td>date</td>
+<td>should have</td>
+<td>number</td>
+<td>elements of class</td>
+<td colspan="6">class</td>
+</tr>
+<tr><td>$date=</td>
+<td>page history date signature of</td>
+<td colspan="10">@date</td>
+</tr>
+<tr><td>check</td>
+<td>count of tag</td>
+<td>TD</td>
+<td>with id</td>
+<td>element</td>
+<td>and with class</td>
+<td>@class</td>
+<td>below tag</td>
+<td>TR</td>
+<td>with id prefix</td>
+<td>pageHistoryRow_$date</td>
+<td>@number</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6191188704795115016>
+<tr><td>scenario</td>
+<td>the page title should be</td>
+<td>title</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td>&lt;span class="page_title"&gt;@title&lt;/span&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4375108850795341243>
+<tr><td>scenario</td>
+<td>the page title should be a link to</td>
+<td>page</td>
+<td>with value</td>
+<td>value</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;span class="page_title"&gt;&lt;a href="/@page"&gt;@value&lt;/a&gt;&lt;/span&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8469780474305131157>
+<tr><td>scenario</td>
+<td>the bread crumb</td>
+<td>crumb</td>
+<td>should be a link to</td>
+<td>page</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;a class="bread_crumb" href="/@page"&gt;@crumb&lt;/a&gt;.</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1405529387777529720>
+<tr><td>scenario</td>
+<td>The page history bar for</td>
+<td>date</td>
+<td>should have a</td>
+<td>id</td>
+<td>with class</td>
+<td>class</td>
+<td>and value</td>
+<td>value</td>
+</tr>
+<tr><td>$date=</td>
+<td>page history date signature of</td>
+<td colspan="7">@date</td>
+</tr>
+<tr><td>ensure</td>
+<td>content of tag with id</td>
+<td>pageHistoryRow_$date</td>
+<td>contains</td>
+<td colspan="5">&lt;td id="@id" class="@class"&gt;@value&lt;/td&gt;</td>
+</tr>
+<tr><td>show</td>
+<td>content of tag with id</td>
+<td colspan="7">pageHistoryRow_$date</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=33784125314538315>
+<tr><td>scenario</td>
+<td>The page history bar for</td>
+<td>date</td>
+<td>should have a date field with class</td>
+<td>class</td>
+</tr>
+<tr><td>$date=</td>
+<td>page history date signature of</td>
+<td colspan="3">@date</td>
+</tr>
+<tr><td>ensure</td>
+<td>content of tag with id</td>
+<td>pageHistoryRow_$date</td>
+<td>contains</td>
+<td>&lt;td id="date_field" class="@class"&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=432150530982440550>
+<tr><td>scenario</td>
+<td>the top level history line for</td>
+<td>page</td>
+<td>is a link to the page history</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="2">&lt;a href="/@page?pageHistory"&gt;@page&lt;/a&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2976923843980501902>
+<tr><td>scenario</td>
+<td>The page history line for</td>
+<td>date</td>
+<td>should be a link to result</td>
+<td>resultDate</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;a href="$TESTPAGE?pageHistory&amp;resultDate=@resultDate"&gt;@date&lt;/a&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4779783827951835354>
+<tr><td>scenario</td>
+<td>the top level history line for</td>
+<td>page</td>
+<td>should have a</td>
+<td>class</td>
+<td>link with</td>
+<td>sign</td>
+<td>to result</td>
+<td>resultDate</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="7">&lt;td class="@class"&gt;&lt;a style="text-decoration:none" href="@page?pageHistory&amp;resultDate=@resultDate"&gt;@sign&lt;/a&gt;&lt;/td&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4360118723196848554>
+<tr><td>scenario</td>
+<td>the top level history line for</td>
+<td>page</td>
+<td>should not have a link to</td>
+<td>resultDate</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">&lt;a style="text-decoration:none" href="@page?pageHistory&amp;resultDate=@resultDate"&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7775803031026527518>
+<tr><td>scenario</td>
+<td>class for pass fail in top level history line</td>
+<td>page</td>
+<td>&nbsp;</td>
+<td>pass class</td>
+<td>&nbsp;</td>
+<td>pass count</td>
+<td>&nbsp;</td>
+<td>fail class</td>
+<td>&nbsp;</td>
+<td>fail count</td>
+</tr>
+<tr><td>ensure</td>
+<td>html contains</td>
+<td colspan="9">&lt;a href="/@page?pageHistory"&gt;@page&lt;/a&gt;&lt;/td&gt; &lt;td class="@passClass"&gt;@passCount&lt;/td&gt; &lt;td class="@failClass"&gt;@failCount&lt;/td&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7592363452790828022>
+<tr><td>scenario</td>
+<td>assume time is</td>
+<td>time</td>
+</tr>
+<tr><td>set xml formatter time to</td>
+<td colspan="2">@time</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8018638494707518631>
+<tr><td>scenario</td>
+<td>with subpage</td>
+<td>name</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>$IT.@name</td>
+<td>with content</td>
+<td colspan="2">@content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4609564119744576179>
+<tr><td>scenario</td>
+<td>run suite</td>
+<td colspan="2">name</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@name?suite</td>
+<td>200</td>
+</tr>
+</table>
+<br/></div>
+</div>
+</div>
+</div>
+<table border="1" cellspacing="0" _TABLENUMBER=2793484265744802406>
+<tr><td colspan="6"><span class="pass">page history</span></td>
+</tr>
+<tr><td>name</td>
+<td>date</td>
+<td>right</td>
+<td>wrong</td>
+<td>ignores</td>
+<td>exceptions</td>
+</tr>
+<tr><td>SuitePage.TestPage</td>
+<td>5-May-2009</td>
+<td>20</td>
+<td>30</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=9065596390368891702>
+<tr><td colspan="2">script</td>
+</tr>
+<tr><td colspan="2" class=pass>get top level history</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-2798591924326480687');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2798591924326480687"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-2798591924326480687"><table border="1" cellspacing="0" _TABLENUMBER=8210043681110665954 table_name="scriptTable_45_0/scriptTable_28">
+<tr><td>scenario</td>
+<td colspan="3">get top level history</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>?testHistory</td>
+<td><span class="pass">200</span></td>
+</tr>
+<tr><td>show</td>
+<td colspan="3">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 2036
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Test History&lt;/title&gt;
+  &lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+  &lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+  &lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="sidebar"&gt;
+  &lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+  &lt;div class="actions"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="mainbar"&gt;
+  &lt;div class="header"&gt;
+    &lt;span class="page_title"&gt;Test History&lt;/span&gt;  &lt;br/&gt;
+  &lt;span class="page_type"&gt;Test History&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="main"&gt;
+&lt;table style="border:none;background:none"&gt;
+  &lt;tr&gt;
+    &lt;td style="border:none"&gt;
+      &lt;form action="" method="get"&gt;
+        &lt;input type="hidden" value="purgeHistory" name="responder"/&gt;
+        &lt;input type="hidden" value="30" name="days"/&gt;
+        &lt;input type="submit" VALUE="Purge &gt;30days"/&gt;
+      &lt;/form&gt;
+    &lt;/td&gt;
+    &lt;td style="border:none"&gt;
+      &lt;form action="" method="get"&gt;
+        &lt;input type="hidden" value="purgeHistory" name="responder"/&gt;
+        &lt;input type="hidden" value="7" name="days"/&gt;
+        &lt;input type="submit" VALUE="Purge &gt;7days"/&gt;
+      &lt;/form&gt;
+    &lt;/td&gt;
+    &lt;td style="border:none"&gt;
+      &lt;form action="" method="get"&gt;
+        &lt;input type="hidden" value="purgeHistory" name="responder"/&gt;
+        &lt;input type="hidden" value="0" name="days"/&gt;
+        &lt;input type="submit" VALUE="Purge All"/&gt;
+      &lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Page&lt;/th&gt;
+    &lt;th&gt;Pass&lt;/th&gt;
+    &lt;th&gt;Fail&lt;/th&gt;
+    &lt;th&gt;Latest&lt;/th&gt;
+    &lt;th colspan="20"&gt;Last 20 Results&lt;/th&gt;
+  &lt;/tr&gt;
+    
+  &lt;tr&gt;
+    
+        
+        
+    &lt;td&gt;&lt;a href="/SuitePage.TestPage?pageHistory"&gt;SuitePage.TestPage&lt;/a&gt;&lt;/td&gt;
+    &lt;td class="ignore"&gt;0&lt;/td&gt;
+    &lt;td class="fail"&gt;1&lt;/td&gt;
+    &lt;td&gt;05 May, 09 00:00&lt;/td&gt;
+        
+    &lt;td class="fail"&gt;&lt;a style="text-decoration:none" href="SuitePage.TestPage?pageHistory&amp;resultDate=20090505000000"&gt;-&lt;/a&gt;&lt;/td&gt;
+    &lt;/td&gt;
+        
+  &lt;/tr&gt;
+    
+&lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>the page title should be</td>
+<td class=pass>Test History</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('5242062252710008083');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5242062252710008083"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="5242062252710008083"><table border="1" cellspacing="0" _TABLENUMBER=4587138464541414371 table_name="scriptTable_45_1/scriptTable_31">
+<tr><td>scenario</td>
+<td>the page title should be</td>
+<td>title</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content contains</td>
+<td>&lt;span class="page_title"&gt;Test History&lt;/span&gt;</td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table>
+<br/><br/><br/><br/><br/><br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('8156132258782987481');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8156132258782987481"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="8156132258782987481"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6028265085402259858>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TopLevelHistoryShouldHaveTitle</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(page driver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_4</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[nothing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_5</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_6</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given slim test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!define TEST_SYSTEM {slim}]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_7</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a href="@target"&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@source]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_9</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_10</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_11</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_12</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_13</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_15</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_16</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_17</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+                    <col><![CDATA[in line]]></col>
+                    <col><![CDATA[symbol]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$@symbol=]]></col>
+                    <col><![CDATA[line number containing]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_19</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_20</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[its test results should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_21</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test ressults for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_22</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_24</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_25</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[widget]]></col>
+                    <col><![CDATA[wikiText]]></col>
+                    <col><![CDATA[should render]]></col>
+                    <col><![CDATA[htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@wikiText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_26</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the line]]></col>
+                    <col><![CDATA[after]]></col>
+                    <col><![CDATA[should come after]]></col>
+                    <col><![CDATA[before]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo int]]></col>
+                    <col><![CDATA[$@before]]></col>
+                    <col><![CDATA[&lt; $@after]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[get history for page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@page?pageHistory]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$TESTPAGE=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[get top level history]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[?testHistory]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_29</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the number of page histories should be]]></col>
+                    <col><![CDATA[number]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[count of tag]]></col>
+                    <col><![CDATA[TR]]></col>
+                    <col><![CDATA[with id prefix]]></col>
+                    <col><![CDATA[pageHistoryRow]]></col>
+                    <col><![CDATA[@number]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_30</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the page history bar for]]></col>
+                    <col><![CDATA[date]]></col>
+                    <col><![CDATA[should have]]></col>
+                    <col><![CDATA[number]]></col>
+                    <col><![CDATA[elements of class]]></col>
+                    <col><![CDATA[class]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$date=]]></col>
+                    <col><![CDATA[page history date signature of]]></col>
+                    <col><![CDATA[@date]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[count of tag]]></col>
+                    <col><![CDATA[TD]]></col>
+                    <col><![CDATA[with id]]></col>
+                    <col><![CDATA[element]]></col>
+                    <col><![CDATA[and with class]]></col>
+                    <col><![CDATA[@class]]></col>
+                    <col><![CDATA[below tag]]></col>
+                    <col><![CDATA[TR]]></col>
+                    <col><![CDATA[with id prefix]]></col>
+                    <col><![CDATA[pageHistoryRow_$date]]></col>
+                    <col><![CDATA[@number]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_31</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the page title should be]]></col>
+                    <col><![CDATA[title]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;span class="page_title"&gt;@title&lt;/span&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_32</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the page title should be a link to]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with value]]></col>
+                    <col><![CDATA[value]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;span class="page_title"&gt;&lt;a href="/@page"&gt;@value&lt;/a&gt;&lt;/span&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_33</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the bread crumb]]></col>
+                    <col><![CDATA[crumb]]></col>
+                    <col><![CDATA[should be a link to]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a class="bread_crumb" href="/@page"&gt;@crumb&lt;/a&gt;.]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_34</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[The page history bar for]]></col>
+                    <col><![CDATA[date]]></col>
+                    <col><![CDATA[should have a]]></col>
+                    <col><![CDATA[id]]></col>
+                    <col><![CDATA[with class]]></col>
+                    <col><![CDATA[class]]></col>
+                    <col><![CDATA[and value]]></col>
+                    <col><![CDATA[value]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$date=]]></col>
+                    <col><![CDATA[page history date signature of]]></col>
+                    <col><![CDATA[@date]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content of tag with id]]></col>
+                    <col><![CDATA[pageHistoryRow_$date]]></col>
+                    <col><![CDATA[contains]]></col>
+                    <col><![CDATA[&lt;td id="@id" class="@class"&gt;@value&lt;/td&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content of tag with id]]></col>
+                    <col><![CDATA[pageHistoryRow_$date]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_35</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[The page history bar for]]></col>
+                    <col><![CDATA[date]]></col>
+                    <col><![CDATA[should have a date field with class]]></col>
+                    <col><![CDATA[class]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$date=]]></col>
+                    <col><![CDATA[page history date signature of]]></col>
+                    <col><![CDATA[@date]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content of tag with id]]></col>
+                    <col><![CDATA[pageHistoryRow_$date]]></col>
+                    <col><![CDATA[contains]]></col>
+                    <col><![CDATA[&lt;td id="date_field" class="@class"&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_36</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the top level history line for]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[is a link to the page history]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a href="/@page?pageHistory"&gt;@page&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_37</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[The page history line for]]></col>
+                    <col><![CDATA[date]]></col>
+                    <col><![CDATA[should be a link to result]]></col>
+                    <col><![CDATA[resultDate]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a href="$TESTPAGE?pageHistory&amp;resultDate=@resultDate"&gt;@date&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_38</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the top level history line for]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[should have a]]></col>
+                    <col><![CDATA[class]]></col>
+                    <col><![CDATA[link with]]></col>
+                    <col><![CDATA[sign]]></col>
+                    <col><![CDATA[to result]]></col>
+                    <col><![CDATA[resultDate]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;td class="@class"&gt;&lt;a style="text-decoration:none" href="@page?pageHistory&amp;resultDate=@resultDate"&gt;@sign&lt;/a&gt;&lt;/td&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_39</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the top level history line for]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[should not have a link to]]></col>
+                    <col><![CDATA[resultDate]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a style="text-decoration:none" href="@page?pageHistory&amp;resultDate=@resultDate"&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_40</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[class for pass fail in top level history line]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pass class]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pass count]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[fail class]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[fail count]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[html contains]]></col>
+                    <col><![CDATA[&lt;a href="/@page?pageHistory"&gt;@page&lt;/a&gt;&lt;/td&gt; &lt;td class="@passClass"&gt;@passCount&lt;/td&gt; &lt;td class="@failClass"&gt;@failCount&lt;/td&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_41</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[assume time is]]></col>
+                    <col><![CDATA[time]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[set xml formatter time to]]></col>
+                    <col><![CDATA[@time]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_42</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[with subpage]]></col>
+                    <col><![CDATA[name]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[$IT.@name]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_43</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[run suite]]></col>
+                    <col><![CDATA[name]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@name?suite]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44</name>
+                <row>
+                    <col><![CDATA[pass(page history)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[name]]></col>
+                    <col><![CDATA[date]]></col>
+                    <col><![CDATA[right]]></col>
+                    <col><![CDATA[wrong]]></col>
+                    <col><![CDATA[ignores]]></col>
+                    <col><![CDATA[exceptions]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[SuitePage.TestPage]]></col>
+                    <col><![CDATA[5-May-2009]]></col>
+                    <col><![CDATA[20]]></col>
+                    <col><![CDATA[30]]></col>
+                    <col><![CDATA[0]]></col>
+                    <col><![CDATA[0]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_45</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[get top level history]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_45_0/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[the page title should be]]></col>
+                    <col><![CDATA[Test History]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_45_1/scriptTable_31)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_45_0/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[get top level history]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[?testHistory]]></col>
+                    <col><![CDATA[pass(200)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2036
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Test History&lt;/title&gt;
+  &lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+  &lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+  &lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="sidebar"&gt;
+  &lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+  &lt;div class="actions"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="mainbar"&gt;
+  &lt;div class="header"&gt;
+    &lt;span class="page_title"&gt;Test History&lt;/span&gt;  &lt;br/&gt;
+  &lt;span class="page_type"&gt;Test History&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="main"&gt;
+&lt;table style="border:none;background:none"&gt;
+  &lt;tr&gt;
+    &lt;td style="border:none"&gt;
+      &lt;form action="" method="get"&gt;
+        &lt;input type="hidden" value="purgeHistory" name="responder"/&gt;
+        &lt;input type="hidden" value="30" name="days"/&gt;
+        &lt;input type="submit" VALUE="Purge &gt;30days"/&gt;
+      &lt;/form&gt;
+    &lt;/td&gt;
+    &lt;td style="border:none"&gt;
+      &lt;form action="" method="get"&gt;
+        &lt;input type="hidden" value="purgeHistory" name="responder"/&gt;
+        &lt;input type="hidden" value="7" name="days"/&gt;
+        &lt;input type="submit" VALUE="Purge &gt;7days"/&gt;
+      &lt;/form&gt;
+    &lt;/td&gt;
+    &lt;td style="border:none"&gt;
+      &lt;form action="" method="get"&gt;
+        &lt;input type="hidden" value="purgeHistory" name="responder"/&gt;
+        &lt;input type="hidden" value="0" name="days"/&gt;
+        &lt;input type="submit" VALUE="Purge All"/&gt;
+      &lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Page&lt;/th&gt;
+    &lt;th&gt;Pass&lt;/th&gt;
+    &lt;th&gt;Fail&lt;/th&gt;
+    &lt;th&gt;Latest&lt;/th&gt;
+    &lt;th colspan="20"&gt;Last 20 Results&lt;/th&gt;
+  &lt;/tr&gt;
+    
+  &lt;tr&gt;
+    
+        
+        
+    &lt;td&gt;&lt;a href="/SuitePage.TestPage?pageHistory"&gt;SuitePage.TestPage&lt;/a&gt;&lt;/td&gt;
+    &lt;td class="ignore"&gt;0&lt;/td&gt;
+    &lt;td class="fail"&gt;1&lt;/td&gt;
+    &lt;td&gt;05 May, 09 00:00&lt;/td&gt;
+        
+    &lt;td class="fail"&gt;&lt;a style="text-decoration:none" href="SuitePage.TestPage?pageHistory&amp;resultDate=20090505000000"&gt;-&lt;/a&gt;&lt;/td&gt;
+    &lt;/td&gt;
+        
+  &lt;/tr&gt;
+    
+&lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_45_1/scriptTable_31</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the page title should be]]></col>
+                    <col><![CDATA[title]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;span class="page_title"&gt;Test History&lt;/span&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_46</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, make, scriptTableActor, PageDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[page driver]]></expected>
+                              <evaluationMessage><![CDATA[pass(page driver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_0, make, decisionTable_44, PageHistory]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[page history]]></expected>
+                              <evaluationMessage><![CDATA[pass(page history)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_1, call, decisionTable_44, table, [[name, date, right, wrong, ignores, exceptions], [SuitePage.TestPage, 5-May-2009, 20, 30, 0, 0]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.PageHistory.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_2, call, decisionTable_44, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.PageHistory.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_3, call, decisionTable_44, setName, SuitePage.TestPage]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[SuitePage.TestPage]]></expected>
+                              <evaluationMessage><![CDATA[SuitePage.TestPage]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_4, call, decisionTable_44, setDate, 5-May-2009]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[5-May-2009]]></expected>
+                              <evaluationMessage><![CDATA[5-May-2009]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_5, call, decisionTable_44, setRight, 20]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_5</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[20]]></expected>
+                              <evaluationMessage><![CDATA[20]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_6, call, decisionTable_44, setWrong, 30]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_6</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[30]]></expected>
+                              <evaluationMessage><![CDATA[30]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_7, call, decisionTable_44, setIgnores, 0]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_7</instructionId>
+          <col>4</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[0]]></expected>
+                              <evaluationMessage><![CDATA[0]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_8, call, decisionTable_44, setExceptions, 0]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_8</instructionId>
+          <col>5</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[0]]></expected>
+                              <evaluationMessage><![CDATA[0]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_9, call, decisionTable_44, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_45_0/scriptTable_28_0, call, scriptTableActor, requestPage, ?testHistory]]]></instruction>
+        <slimResult><![CDATA[200]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_45_0/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[200]]></actual>
+                              <expected><![CDATA[200]]></expected>
+                              <evaluationMessage><![CDATA[pass(200)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_45_0/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_45_0/scriptTable_28_1, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2036
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+<html>
+<head>
+  <title>Test History</title>
+  <link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+  <script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="art_niche" onclick="document.location='FrontPage'"></div>
+  <div class="actions"></div>
+</div>
+<div class="mainbar">
+  <div class="header">
+    <span class="page_title">Test History</span>  <br/>
+  <span class="page_type">Test History</span></div>
+  <div class="main">
+<table style="border:none;background:none">
+  <tr>
+    <td style="border:none">
+      <form action="" method="get">
+        <input type="hidden" value="purgeHistory" name="responder"/>
+        <input type="hidden" value="30" name="days"/>
+        <input type="submit" VALUE="Purge >30days"/>
+      </form>
+    </td>
+    <td style="border:none">
+      <form action="" method="get">
+        <input type="hidden" value="purgeHistory" name="responder"/>
+        <input type="hidden" value="7" name="days"/>
+        <input type="submit" VALUE="Purge >7days"/>
+      </form>
+    </td>
+    <td style="border:none">
+      <form action="" method="get">
+        <input type="hidden" value="purgeHistory" name="responder"/>
+        <input type="hidden" value="0" name="days"/>
+        <input type="submit" VALUE="Purge All"/>
+      </form>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Page</th>
+    <th>Pass</th>
+    <th>Fail</th>
+    <th>Latest</th>
+    <th colspan="20">Last 20 Results</th>
+  </tr>
+    
+  <tr>
+    
+        
+        
+    <td><a href="/SuitePage.TestPage?pageHistory">SuitePage.TestPage</a></td>
+    <td class="ignore">0</td>
+    <td class="fail">1</td>
+    <td>05 May, 09 00:00</td>
+        
+    <td class="fail"><a style="text-decoration:none" href="SuitePage.TestPage?pageHistory&resultDate=20090505000000">-</a></td>
+    </td>
+        
+  </tr>
+    
+</table>
+    </div>
+  </div>
+</body>
+</html>]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_45_0/scriptTable_28_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2036
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+<html>
+<head>
+  <title>Test History</title>
+  <link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+  <script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="art_niche" onclick="document.location='FrontPage'"></div>
+  <div class="actions"></div>
+</div>
+<div class="mainbar">
+  <div class="header">
+    <span class="page_title">Test History</span>  <br/>
+  <span class="page_type">Test History</span></div>
+  <div class="main">
+<table style="border:none;background:none">
+  <tr>
+    <td style="border:none">
+      <form action="" method="get">
+        <input type="hidden" value="purgeHistory" name="responder"/>
+        <input type="hidden" value="30" name="days"/>
+        <input type="submit" VALUE="Purge >30days"/>
+      </form>
+    </td>
+    <td style="border:none">
+      <form action="" method="get">
+        <input type="hidden" value="purgeHistory" name="responder"/>
+        <input type="hidden" value="7" name="days"/>
+        <input type="submit" VALUE="Purge >7days"/>
+      </form>
+    </td>
+    <td style="border:none">
+      <form action="" method="get">
+        <input type="hidden" value="purgeHistory" name="responder"/>
+        <input type="hidden" value="0" name="days"/>
+        <input type="submit" VALUE="Purge All"/>
+      </form>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Page</th>
+    <th>Pass</th>
+    <th>Fail</th>
+    <th>Latest</th>
+    <th colspan="20">Last 20 Results</th>
+  </tr>
+    
+  <tr>
+    
+        
+        
+    <td><a href="/SuitePage.TestPage?pageHistory">SuitePage.TestPage</a></td>
+    <td class="ignore">0</td>
+    <td class="fail">1</td>
+    <td>05 May, 09 00:00</td>
+        
+    <td class="fail"><a style="text-decoration:none" href="SuitePage.TestPage?pageHistory&resultDate=20090505000000">-</a></td>
+    </td>
+        
+  </tr>
+    
+</table>
+    </div>
+  </div>
+</body>
+</html>]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_45_1/scriptTable_31_0, call, scriptTableActor, contentContains, <span class="page_title">Test History</span>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_45_1/scriptTable_31_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_45_1/scriptTable_31_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_46_0, make, decisionTable_46, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_46_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_46_1, call, decisionTable_46, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

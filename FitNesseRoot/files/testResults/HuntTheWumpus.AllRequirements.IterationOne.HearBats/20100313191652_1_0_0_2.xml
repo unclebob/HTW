@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20100312</FitNesseVersion>
+  <rootPath>HearBats</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('7756510556774066971');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7756510556774066971"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="7756510556774066971"><table border="1" cellspacing="0" _TABLENUMBER=8712028519174221770>
+<tr><td>Import</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+<br/><table class="plain_text_table" _TABLENUMBER=3421900883260017176><tr><td>Library</td>
+</tr>
+<tr><td><span class="pass">Game driver</span></td>
+</tr>
+</table></div>
+</div>
+<h3>When the player is adjacent to a cavern with bats, he should hear chirping sounds.</h3><br/><table border="1" cellspacing="0" _TABLENUMBER=9200768864262835770>
+<tr><td>tbd <span class="error">Could not invoke constructor for tbd[0]</span></td>
+</tr>
+</table>
+<br/>]]></content>
+    <relativePageName>HearBats</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[HuntTheWumpus.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>library_1</name>
+                <row>
+                    <col><![CDATA[Library]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(Game driver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_2</name>
+                <row>
+                    <col><![CDATA[tbd error(Could not invoke constructor for tbd[0])]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, HuntTheWumpus.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[library_1_0, make, library1, GameDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>library_1_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Game driver]]></expected>
+                              <evaluationMessage><![CDATA[pass(Game driver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_0, make, decisionTable_2, tbd]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for tbd[0]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for tbd[0]]]></actual>
+                              <expected><![CDATA[tbd]]></expected>
+                              <evaluationMessage><![CDATA[tbd error(Could not invoke constructor for tbd[0])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_1, call, decisionTable_2, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

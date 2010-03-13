@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TimeRangeDivision</rootPath>
+    <result>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('5952847535254074761');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5952847535254074761"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="5952847535254074761"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit.decorator</td>
+</tr>
+<tr><td>fit.decorator.performance</td>
+</tr>
+<tr><td>eg</td>
+</tr>
+</table>
+</div>
+</div>
+What if you want to specify a time range for your fitnesse fixtures?<br/><br/><table border="1" cellspacing="0">
+<tr><td>Time Range</td>
+<td class="pass">0<hr>actual 1.0</td>
+<td>milliseconds min and max</td>
+<td class="pass">50<hr>actual 1.0</td>
+<td>milliseconds</td>
+</tr>
+<tr><td colspan="5">Division</td>
+</tr>
+<tr><td>numerator</td>
+<td>denominator</td>
+<td colspan="3">quotient()</td>
+</tr>
+<tr><td>10</td>
+<td>2</td>
+<td colspan="3" class="pass">5</td>
+</tr>
+<tr><td>12.6</td>
+<td>3</td>
+<td colspan="3" class="pass">4.2</td>
+</tr>
+<tr><td>100</td>
+<td>4</td>
+<td colspan="3" class="pass">25</td>
+</tr>
+</table>
+<br/>In this example, you want to make sure all the division don't take less than 0 milliseconds and more than 50 milliseconds.<br/><br/>By now you should be aware that these decorators ignore alternative column names.<br/><br/><table border="1" cellspacing="0">
+<tr><td>Time Range</td>
+<td class="pass">0<hr>actual 28.0</td>
+<td>alternative column values are ignored</td>
+<td class="pass">50<hr>actual 28.0</td>
+<td>this is ignored as well</td>
+</tr>
+<tr><td colspan="5">Division</td>
+</tr>
+<tr><td>numerator</td>
+<td>denominator</td>
+<td colspan="3">quotient()</td>
+</tr>
+<tr><td>10</td>
+<td>2</td>
+<td colspan="3" class="pass">5</td>
+</tr>
+<tr><td>12.6</td>
+<td>3</td>
+<td colspan="3" class="pass">4.2</td>
+</tr>
+<tr><td>100</td>
+<td>4</td>
+<td colspan="3" class="pass">25</td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('7951059658327804240');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7951059658327804240"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown">.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="7951059658327804240"><table border="1" cellspacing="0">
+<tr><td>fit.Summary</td>
+</tr>
+<tr>
+<td> <span class="fit_grey">EncapsulatedFixtureName</span></td>
+<td> <span class="fit_grey">Division</span></td></tr>
+<tr>
+<td> <span class="fit_grey">actualTimeTaken</span></td>
+<td> <span class="fit_grey">28</span></td></tr>
+<tr>
+<td> <span class="fit_grey">counts</span></td>
+<td class="pass"> <span class="fit_grey">10 right, 0 wrong, 0 ignored, 0 exceptions</span></td></tr>
+<tr>
+<td> <span class="fit_grey">maxTime</span></td>
+<td> <span class="fit_grey">50</span></td></tr>
+<tr>
+<td> <span class="fit_grey">minTime</span></td>
+<td> <span class="fit_grey">0</span></td></tr>
+<tr>
+<td> <span class="fit_grey">run date</span></td>
+<td> <span class="fit_grey">Fri Oct 16 08:45:29 CEST 2009</span></td></tr>
+<tr>
+<td> <span class="fit_grey">run elapsed time</span></td>
+<td> <span class="fit_grey">0:00.06</span></td></tr></table>
+</div>
+</div>
+]]></content>
+    <relativePageName>TimeRangeDivision</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

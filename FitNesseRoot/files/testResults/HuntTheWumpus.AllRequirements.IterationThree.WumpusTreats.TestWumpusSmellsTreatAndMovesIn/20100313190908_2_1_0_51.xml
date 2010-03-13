@@ -1,0 +1,1169 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20100312</FitNesseVersion>
+  <rootPath>TestWumpusSmellsTreatAndMovesIn</rootPath>
+    <result>
+    <counts>
+      <right>2</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>51</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('5843477738574900450');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5843477738574900450"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="5843477738574900450"><table border="1" cellspacing="0" _TABLENUMBER=7542278292780954160>
+<tr><td>Import</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6127661232691811851>
+<tr><td>script</td>
+<td><span class="pass">Game driver</span></td>
+</tr>
+</table>
+</div>
+</div>
+If the wumpus moves into a cavern next to a cavern that has a treat, the wumpus will smell the treat and move into that cavern and eat the treat.<br/><pre><br/>      [6]<br/>      [7]<br/>[1][2][3][4][5]<br/>      [8]<br/>      [9]<br/></pre><br/><br/><div id="test_exceptions27"><H3> <span class="fail">Exceptions</span></H3><br/><a name="decisionTable_2_26"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('-1424750015114422192');"><img src="/files/images/collapsableClosed.gif" class="left" id="img-1424750015114422192"/></a>&nbsp;<span class="meta">decisionTable_2_26 </span>
+
+	<div class="hidden" id="-1424750015114422192"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at HuntTheWumpus.Game.addPath(Game.java:27)
+	at HuntTheWumpus.fixtures.MakeMap.execute(MakeMap.java:10)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div>
+</div><a name="decisionTable_2_31"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('-2390392991557094322');"><img src="/files/images/collapsableClosed.gif" class="left" id="img-2390392991557094322"/></a>&nbsp;<span class="meta">decisionTable_2_31 </span>
+
+	<div class="hidden" id="-2390392991557094322"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at HuntTheWumpus.Game.addPath(Game.java:27)
+	at HuntTheWumpus.fixtures.MakeMap.execute(MakeMap.java:10)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div>
+</div><a name="decisionTable_2_16"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('-6863535392283299596');"><img src="/files/images/collapsableClosed.gif" class="left" id="img-6863535392283299596"/></a>&nbsp;<span class="meta">decisionTable_2_16 </span>
+
+	<div class="hidden" id="-6863535392283299596"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at HuntTheWumpus.Game.addPath(Game.java:27)
+	at HuntTheWumpus.fixtures.MakeMap.execute(MakeMap.java:10)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div>
+</div><a name="decisionTable_2_36"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('-8310117007905858644');"><img src="/files/images/collapsableClosed.gif" class="left" id="img-8310117007905858644"/></a>&nbsp;<span class="meta">decisionTable_2_36 </span>
+
+	<div class="hidden" id="-8310117007905858644"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at HuntTheWumpus.Game.addPath(Game.java:27)
+	at HuntTheWumpus.fixtures.MakeMap.execute(MakeMap.java:10)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div>
+</div><a name="decisionTable_2_21"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('7368848096314784636');"><img src="/files/images/collapsableClosed.gif" class="left" id="img7368848096314784636"/></a>&nbsp;<span class="meta">decisionTable_2_21 </span>
+
+	<div class="hidden" id="7368848096314784636"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at HuntTheWumpus.Game.addPath(Game.java:27)
+	at HuntTheWumpus.fixtures.MakeMap.execute(MakeMap.java:10)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div>
+</div><a name="decisionTable_2_11"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('4867835959659035389');"><img src="/files/images/collapsableClosed.gif" class="left" id="img4867835959659035389"/></a>&nbsp;<span class="meta">decisionTable_2_11 </span>
+
+	<div class="hidden" id="4867835959659035389"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at HuntTheWumpus.Game.addPath(Game.java:27)
+	at HuntTheWumpus.fixtures.MakeMap.execute(MakeMap.java:10)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div>
+</div><a name="decisionTable_2_6"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('-8502279992409721912');"><img src="/files/images/collapsableClosed.gif" class="left" id="img-8502279992409721912"/></a>&nbsp;<span class="meta">decisionTable_2_6 </span>
+
+	<div class="hidden" id="-8502279992409721912"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at HuntTheWumpus.Game.addPath(Game.java:27)
+	at HuntTheWumpus.fixtures.MakeMap.execute(MakeMap.java:10)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div>
+</div></div><hr/><table border="1" cellspacing="0" _TABLENUMBER=3042103799300489195>
+<tr><td colspan="3"><span class="pass">Make map</span></td>
+</tr>
+<tr><td>1</td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td>2 <span class="error">Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>3 <span class="error">Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>E <span class="error">Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+</tr>
+<tr><td>3 <span class="error">Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>4 <span class="error">Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>E <span class="error">Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+</tr>
+<tr><td>4 <span class="error">Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>5 <span class="error">Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>E <span class="error">Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+</tr>
+<tr><td>6 <span class="error">Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>7 <span class="error">Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>S <span class="error">Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+</tr>
+<tr><td>7 <span class="error">Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>3 <span class="error">Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>S <span class="error">Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+</tr>
+<tr><td>3 <span class="error">Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>8 <span class="error">Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>S <span class="error">Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+</tr>
+<tr><td>8 <span class="error">Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>9 <span class="error">Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+<td>S <span class="error">Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7867529373465251016>
+<tr><td><span class="fail">put: Bad table: <br/><pre>fitnesse.slimTables.SlimTable$SyntaxError: Table has 4 header column(s), but row 2 only has 2 column(s).
+	at fitnesse.slimTables.DecisionTable$DecisionTableCaller.checkRow(DecisionTable.java:82)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.invokeRow(DecisionTable.java:129)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.invokeRows(DecisionTable.java:125)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.call(DecisionTable.java:119)
+	at fitnesse.slimTables.DecisionTable.appendInstructions(DecisionTable.java:29)
+	at fitnesse.slimTables.SlimTable.appendInstructions(SlimTable.java:83)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.createInstructions(SlimTestSystem.java:276)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processTablesAndGetHtml(SlimTestSystem.java:258)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processAllTablesOnPage(SlimTestSystem.java:245)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.runTestsAndGenerateHtml(SlimTestSystem.java:201)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestSystemPages(MultipleTestsRunner.java:121)
+	at fitnesse.responders.run.MultipleTestsRunner.startTestSystemAndExecutePages(MultipleTestsRunner.java:101)
+	at fitnesse.responders.run.MultipleTestsRunner.executePagesInTestSystem(MultipleTestsRunner.java:87)
+	at fitnesse.responders.run.MultipleTestsRunner.internalExecuteTestPages(MultipleTestsRunner.java:78)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestPages(MultipleTestsRunner.java:57)
+	at fitnesse.responders.run.SuiteResponder.performExecution(SuiteResponder.java:47)
+	at fitnesse.responders.run.TestResponder.doSending(TestResponder.java:45)
+	at fitnesse.responders.ChunkingResponder.startSending(ChunkingResponder.java:67)
+	at fitnesse.responders.ChunkingResponder.access$000(ChunkingResponder.java:17)
+	at fitnesse.responders.ChunkingResponder$RespondingRunnable.run(ChunkingResponder.java:106)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></span> <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>treat</td>
+<td>in cavern</td>
+<td colspan="3">3</td>
+</tr>
+<tr><td>put</td>
+<td>wumpus</td>
+<td>in cavern</td>
+<td colspan="3">6</td>
+</tr>
+<tr><td>make wumpus move</td>
+<td colspan="5">south</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>3</td>
+<td>has</td>
+<td>wumpus</td>
+<td>true</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>3</td>
+<td>has</td>
+<td>treat</td>
+<td>false</td>
+</tr>
+<tr><td>check</td>
+<td>message</td>
+<td>You hear a joyous moan of delight as the Wumpus gobbles down your treat.</td>
+<td>was printed</td>
+<td colspan="2">true</td>
+</tr>
+</table>
+]]></content>
+    <relativePageName>TestWumpusSmellsTreatAndMovesIn</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[HuntTheWumpus.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_1</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Game driver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_2</name>
+                <row>
+                    <col><![CDATA[pass(Make map)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[2 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[3 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[E error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[3 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[4 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[E error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[4 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[5 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[E error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[6 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[7 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[S error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[7 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[3 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[S error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[3 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[8 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[S error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[8 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[9 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+                    <col><![CDATA[S error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_3</name>
+                <row>
+                    <col><![CDATA[<span class="fail">put: Bad table: <br/><pre>fitnesse.slimTables.SlimTable$SyntaxError: Table has 4 header column(s), but row 2 only has 2 column(s).
+	at fitnesse.slimTables.DecisionTable$DecisionTableCaller.checkRow(DecisionTable.java:82)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.invokeRow(DecisionTable.java:129)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.invokeRows(DecisionTable.java:125)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.call(DecisionTable.java:119)
+	at fitnesse.slimTables.DecisionTable.appendInstructions(DecisionTable.java:29)
+	at fitnesse.slimTables.SlimTable.appendInstructions(SlimTable.java:83)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.createInstructions(SlimTestSystem.java:276)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processTablesAndGetHtml(SlimTestSystem.java:258)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processAllTablesOnPage(SlimTestSystem.java:245)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.runTestsAndGenerateHtml(SlimTestSystem.java:201)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestSystemPages(MultipleTestsRunner.java:121)
+	at fitnesse.responders.run.MultipleTestsRunner.startTestSystemAndExecutePages(MultipleTestsRunner.java:101)
+	at fitnesse.responders.run.MultipleTestsRunner.executePagesInTestSystem(MultipleTestsRunner.java:87)
+	at fitnesse.responders.run.MultipleTestsRunner.internalExecuteTestPages(MultipleTestsRunner.java:78)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestPages(MultipleTestsRunner.java:57)
+	at fitnesse.responders.run.SuiteResponder.performExecution(SuiteResponder.java:47)
+	at fitnesse.responders.run.TestResponder.doSending(TestResponder.java:45)
+	at fitnesse.responders.ChunkingResponder.startSending(ChunkingResponder.java:67)
+	at fitnesse.responders.ChunkingResponder.access$000(ChunkingResponder.java:17)
+	at fitnesse.responders.ChunkingResponder$RespondingRunnable.run(ChunkingResponder.java:106)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></span> <span class="error">Could not invoke constructor for put[3]</span>]]></col>
+                    <col><![CDATA[treat]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[put]]></col>
+                    <col><![CDATA[wumpus]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[6]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make wumpus move]]></col>
+                    <col><![CDATA[south]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[wumpus]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[treat]]></col>
+                    <col><![CDATA[false]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear a joyous moan of delight as the Wumpus gobbles down your treat.]]></col>
+                    <col><![CDATA[was printed]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, HuntTheWumpus.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_0, make, scriptTableActor, GameDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_1_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Game driver]]></expected>
+                              <evaluationMessage><![CDATA[pass(Game driver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_0, make, decisionTable_2, MakeMap]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_2_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Make map]]></expected>
+                              <evaluationMessage><![CDATA[pass(Make map)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_1, call, decisionTable_2, table, [[1, 2, E], [2, 3, E], [3, 4, E], [4, 5, E], [6, 7, S], [7, 3, S], [3, 8, S], [8, 9, S]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_2, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_3, call, decisionTable_2, set1, 2]]]></instruction>
+        <slimResult><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[2 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_4, call, decisionTable_2, set2, 3]]]></instruction>
+        <slimResult><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_5, call, decisionTable_2, setE, E]]]></instruction>
+        <slimResult><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_5</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_6, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#decisionTable_2_6>decisionTable_2_6</a>]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_7, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_8, call, decisionTable_2, set1, 3]]]></instruction>
+        <slimResult><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_8</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_9, call, decisionTable_2, set2, 4]]]></instruction>
+        <slimResult><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_9</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[4 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_10, call, decisionTable_2, setE, E]]]></instruction>
+        <slimResult><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_10</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_11, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#decisionTable_2_11>decisionTable_2_11</a>]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_12, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_13, call, decisionTable_2, set1, 4]]]></instruction>
+        <slimResult><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_13</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[4 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_14, call, decisionTable_2, set2, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_14</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_15, call, decisionTable_2, setE, E]]]></instruction>
+        <slimResult><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_15</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_16, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#decisionTable_2_16>decisionTable_2_16</a>]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_17, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_18, call, decisionTable_2, set1, 6]]]></instruction>
+        <slimResult><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_18</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[6]]></expected>
+                              <evaluationMessage><![CDATA[6 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_19, call, decisionTable_2, set2, 7]]]></instruction>
+        <slimResult><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_19</instructionId>
+          <col>1</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[7]]></expected>
+                              <evaluationMessage><![CDATA[7 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_20, call, decisionTable_2, setE, S]]]></instruction>
+        <slimResult><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_20</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_21, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#decisionTable_2_21>decisionTable_2_21</a>]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_22, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_23, call, decisionTable_2, set1, 7]]]></instruction>
+        <slimResult><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_23</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[7]]></expected>
+                              <evaluationMessage><![CDATA[7 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_24, call, decisionTable_2, set2, 3]]]></instruction>
+        <slimResult><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_24</instructionId>
+          <col>1</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_25, call, decisionTable_2, setE, S]]]></instruction>
+        <slimResult><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_25</instructionId>
+          <col>2</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_26, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#decisionTable_2_26>decisionTable_2_26</a>]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_27, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_28, call, decisionTable_2, set1, 3]]]></instruction>
+        <slimResult><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_28</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_29, call, decisionTable_2, set2, 8]]]></instruction>
+        <slimResult><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_29</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[8]]></expected>
+                              <evaluationMessage><![CDATA[8 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_30, call, decisionTable_2, setE, S]]]></instruction>
+        <slimResult><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_30</instructionId>
+          <col>2</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_31, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#decisionTable_2_31>decisionTable_2_31</a>]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_32, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_33, call, decisionTable_2, set1, 8]]]></instruction>
+        <slimResult><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_33</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[8]]></expected>
+                              <evaluationMessage><![CDATA[8 error(Method set1[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_34, call, decisionTable_2, set2, 9]]]></instruction>
+        <slimResult><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_34</instructionId>
+          <col>1</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[9]]></expected>
+                              <evaluationMessage><![CDATA[9 error(Method set2[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_35, call, decisionTable_2, setE, S]]]></instruction>
+        <slimResult><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_35</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S error(Method setE[1] not found in HuntTheWumpus.fixtures.MakeMap.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_36, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#decisionTable_2_36>decisionTable_2_36</a>]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_3_0, make, decisionTable_3, put, treat, in cavern, 3]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_3_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[<span class="fail">put: Bad table: <br/><pre>fitnesse.slimTables.SlimTable$SyntaxError: Table has 4 header column(s), but row 2 only has 2 column(s).
+	at fitnesse.slimTables.DecisionTable$DecisionTableCaller.checkRow(DecisionTable.java:82)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.invokeRow(DecisionTable.java:129)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.invokeRows(DecisionTable.java:125)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.call(DecisionTable.java:119)
+	at fitnesse.slimTables.DecisionTable.appendInstructions(DecisionTable.java:29)
+	at fitnesse.slimTables.SlimTable.appendInstructions(SlimTable.java:83)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.createInstructions(SlimTestSystem.java:276)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processTablesAndGetHtml(SlimTestSystem.java:258)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processAllTablesOnPage(SlimTestSystem.java:245)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.runTestsAndGenerateHtml(SlimTestSystem.java:201)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestSystemPages(MultipleTestsRunner.java:121)
+	at fitnesse.responders.run.MultipleTestsRunner.startTestSystemAndExecutePages(MultipleTestsRunner.java:101)
+	at fitnesse.responders.run.MultipleTestsRunner.executePagesInTestSystem(MultipleTestsRunner.java:87)
+	at fitnesse.responders.run.MultipleTestsRunner.internalExecuteTestPages(MultipleTestsRunner.java:78)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestPages(MultipleTestsRunner.java:57)
+	at fitnesse.responders.run.SuiteResponder.performExecution(SuiteResponder.java:47)
+	at fitnesse.responders.run.TestResponder.doSending(TestResponder.java:45)
+	at fitnesse.responders.ChunkingResponder.startSending(ChunkingResponder.java:67)
+	at fitnesse.responders.ChunkingResponder.access$000(ChunkingResponder.java:17)
+	at fitnesse.responders.ChunkingResponder$RespondingRunnable.run(ChunkingResponder.java:106)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></span>]]></expected>
+                              <evaluationMessage><![CDATA[<span class="fail">put: Bad table: <br/><pre>fitnesse.slimTables.SlimTable$SyntaxError: Table has 4 header column(s), but row 2 only has 2 column(s).
+	at fitnesse.slimTables.DecisionTable$DecisionTableCaller.checkRow(DecisionTable.java:82)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.invokeRow(DecisionTable.java:129)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.invokeRows(DecisionTable.java:125)
+	at fitnesse.slimTables.DecisionTable$FixtureCaller.call(DecisionTable.java:119)
+	at fitnesse.slimTables.DecisionTable.appendInstructions(DecisionTable.java:29)
+	at fitnesse.slimTables.SlimTable.appendInstructions(SlimTable.java:83)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.createInstructions(SlimTestSystem.java:276)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processTablesAndGetHtml(SlimTestSystem.java:258)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.processAllTablesOnPage(SlimTestSystem.java:245)
+	at fitnesse.responders.run.slimResponder.SlimTestSystem.runTestsAndGenerateHtml(SlimTestSystem.java:201)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestSystemPages(MultipleTestsRunner.java:121)
+	at fitnesse.responders.run.MultipleTestsRunner.startTestSystemAndExecutePages(MultipleTestsRunner.java:101)
+	at fitnesse.responders.run.MultipleTestsRunner.executePagesInTestSystem(MultipleTestsRunner.java:87)
+	at fitnesse.responders.run.MultipleTestsRunner.internalExecuteTestPages(MultipleTestsRunner.java:78)
+	at fitnesse.responders.run.MultipleTestsRunner.executeTestPages(MultipleTestsRunner.java:57)
+	at fitnesse.responders.run.SuiteResponder.performExecution(SuiteResponder.java:47)
+	at fitnesse.responders.run.TestResponder.doSending(TestResponder.java:45)
+	at fitnesse.responders.ChunkingResponder.startSending(ChunkingResponder.java:67)
+	at fitnesse.responders.ChunkingResponder.access$000(ChunkingResponder.java:17)
+	at fitnesse.responders.ChunkingResponder$RespondingRunnable.run(ChunkingResponder.java:106)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></span> <span class="error">Could not invoke constructor for put[3]</span>]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_3_1, call, decisionTable_3, table, [[put, wumpus, in cavern, 6], [make wumpus move, south], [check, cavern, 3, has, wumpus, true], [check, cavern, 3, has, treat, false], [check, message, You hear a joyous moan of delight as the Wumpus gobbles down your treat., was printed, true]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] HuntTheWumpus.fixtures.CheckRandomWumpusMovement.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_3_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] HuntTheWumpus.fixtures.CheckRandomWumpusMovement.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></actual>
+                              <expected><![CDATA[treat]]></expected>
+                              <evaluationMessage><![CDATA[treat]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_3_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] HuntTheWumpus.fixtures.CheckRandomWumpusMovement.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_3_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] HuntTheWumpus.fixtures.CheckRandomWumpusMovement.>>
+	at fitnesse.slim.MethodExecutionResult$NoMethod.returnValue(MethodExecutionResult.java:25)
+	at fitnesse.slim.MethodExecutionResults.returnValue(MethodExecutionResults.java:16)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:162)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:637)
+]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

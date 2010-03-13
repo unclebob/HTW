@@ -1,0 +1,3926 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestCommandAbbreviations</rootPath>
+    <result>
+    <counts>
+      <right>74</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('7902057164545098157');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7902057164545098157"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="7902057164545098157"><table border="1" cellspacing="0" _TABLENUMBER=2522799785997406819>
+<tr><td>script</td>
+<td><span class="pass">HuntTheWumpus.fixtures.GameDriver</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5890891143900286840>
+<tr><td>Import</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+There are a number of abbreviations for the navigation commands.  You can see them being used below:<br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('4513770331126241517');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img4513770331126241517"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="HuntTheWumpus.AllRequirements.IterationOne.NavigatePlayer.DonutMap">DonutMap</a> <a href="HuntTheWumpus.AllRequirements.IterationOne.NavigatePlayer.DonutMap?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="4513770331126241517"><table border="1" cellspacing="0" _TABLENUMBER=261964738717938244>
+<tr><td colspan="3"><span class="pass">Make map.</span></td>
+</tr>
+<tr><td>start</td>
+<td>end</td>
+<td>direction</td>
+</tr>
+<tr><td>1</td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td>2</td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr><td>3</td>
+<td>4</td>
+<td>S</td>
+</tr>
+<tr><td>4</td>
+<td>5</td>
+<td>S</td>
+</tr>
+<tr><td>5</td>
+<td>6</td>
+<td>W</td>
+</tr>
+<tr><td>6</td>
+<td>7</td>
+<td>W</td>
+</tr>
+<tr><td>7</td>
+<td>8</td>
+<td>N</td>
+</tr>
+<tr><td>8</td>
+<td>1</td>
+<td>N</td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=473811774069631691>
+<tr><td colspan="6">script</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''Go East''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">Go East</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''E -&gt; Go East''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">E</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''e -&gt; Go East''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">e</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''go east -&gt; Go East''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">go east</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''East -&gt; Go East''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">East</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''east -&gt; Go East''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">east</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''Go South''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">Go South</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''S -&gt; Go South''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">S</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''s -&gt; Go South''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">s</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''go south-&gt; Go South''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">go south</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''South -&gt; Go South''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">South</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''south -&gt; Go South''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">south</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''Go West''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">Go West</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''W -&gt; Go West''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">W</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''w -&gt; Go West''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">w</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''go west -&gt; Go West''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">go west</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''West -&gt; Go West''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">West</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''west -&gt; Go West''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">west</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''Go North''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">Go North</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''N -&gt; Go North''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">N</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''n -&gt; Go North''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">n</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''go north -&gt; Go North''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">go north</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''North -&gt; Go North''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">North</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''north -&gt; Go North''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">north</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+</table>
+<br/><br/>]]></content>
+    <relativePageName>TestCommandAbbreviations</relativePageName>
+    
+        <tables>
+            <table>
+        <name>scriptTable_0</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>import_1</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[HuntTheWumpus.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_2</name>
+                <row>
+                    <col><![CDATA[pass(Make map.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[start]]></col>
+                    <col><![CDATA[end]]></col>
+                    <col><![CDATA[direction]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[W]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[7]]></col>
+                    <col><![CDATA[W]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[7]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[N]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[N]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_3</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''Go East'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[Go East]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''E -&gt; Go East'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''e -&gt; Go East'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[e]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''go east -&gt; Go East'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[go east]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''East -&gt; Go East'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[East]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''east -&gt; Go East'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[east]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''Go South'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[Go South]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''S -&gt; Go South'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''s -&gt; Go South'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[s]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''go south-&gt; Go South'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[go south]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''South -&gt; Go South'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[South]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''south -&gt; Go South'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[south]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''Go West'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[Go West]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''W -&gt; Go West'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[W]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''w -&gt; Go West'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[w]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''go west -&gt; Go West'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[go west]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''West -&gt; Go West'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[West]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''west -&gt; Go West'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[west]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''Go North'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[Go North]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''N -&gt; Go North'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[N]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''n -&gt; Go North'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[n]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''go north -&gt; Go North'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[go north]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''North -&gt; Go North'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[North]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''north -&gt; Go North'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[north]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_0_0, make, scriptTableActor, HuntTheWumpus.fixtures.GameDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_0_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[HuntTheWumpus.fixtures.GameDriver]]></expected>
+                              <evaluationMessage><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[import_1_0, import, HuntTheWumpus.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_0, make, decisionTable_2, MakeMap]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_2_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Make map.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Make map.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_1, call, decisionTable_2, table, [[start, end, direction], [1, 2, E], [2, 3, E], [3, 4, S], [4, 5, S], [5, 6, W], [6, 7, W], [7, 8, N], [8, 1, N]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_2, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_3, call, decisionTable_2, setStart, 1]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_4, call, decisionTable_2, setEnd, 2]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[2]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_5, call, decisionTable_2, setDirection, E]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_5</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_6, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_7, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_8, call, decisionTable_2, setStart, 2]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_8</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[2]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_9, call, decisionTable_2, setEnd, 3]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_9</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_10, call, decisionTable_2, setDirection, E]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_10</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_11, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_12, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_13, call, decisionTable_2, setStart, 3]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_13</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_14, call, decisionTable_2, setEnd, 4]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_14</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[4]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_15, call, decisionTable_2, setDirection, S]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_15</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_16, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_17, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_18, call, decisionTable_2, setStart, 4]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_18</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[4]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_19, call, decisionTable_2, setEnd, 5]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_19</instructionId>
+          <col>1</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_20, call, decisionTable_2, setDirection, S]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_20</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_21, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_22, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_23, call, decisionTable_2, setStart, 5]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_23</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_24, call, decisionTable_2, setEnd, 6]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_24</instructionId>
+          <col>1</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[6]]></expected>
+                              <evaluationMessage><![CDATA[6]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_25, call, decisionTable_2, setDirection, W]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_25</instructionId>
+          <col>2</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[W]]></expected>
+                              <evaluationMessage><![CDATA[W]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_26, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_27, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_28, call, decisionTable_2, setStart, 6]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_28</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[6]]></expected>
+                              <evaluationMessage><![CDATA[6]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_29, call, decisionTable_2, setEnd, 7]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_29</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[7]]></expected>
+                              <evaluationMessage><![CDATA[7]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_30, call, decisionTable_2, setDirection, W]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_30</instructionId>
+          <col>2</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[W]]></expected>
+                              <evaluationMessage><![CDATA[W]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_31, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_32, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_33, call, decisionTable_2, setStart, 7]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_33</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[7]]></expected>
+                              <evaluationMessage><![CDATA[7]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_34, call, decisionTable_2, setEnd, 8]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_34</instructionId>
+          <col>1</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[8]]></expected>
+                              <evaluationMessage><![CDATA[8]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_35, call, decisionTable_2, setDirection, N]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_35</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[N]]></expected>
+                              <evaluationMessage><![CDATA[N]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_36, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_37, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_38, call, decisionTable_2, setStart, 8]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_38</instructionId>
+          <col>0</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[8]]></expected>
+                              <evaluationMessage><![CDATA[8]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_39, call, decisionTable_2, setEnd, 1]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_39</instructionId>
+          <col>1</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_40, call, decisionTable_2, setDirection, N]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_40</instructionId>
+          <col>2</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[N]]></expected>
+                              <evaluationMessage><![CDATA[N]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_41, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_0, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_1, call, scriptTableActor, enterCommand, Go East]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_2, call, scriptTableActor, cavernHas, 2, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>5</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>4</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_3, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_3</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_3</instructionId>
+          <col>3</col>
+          <row>7</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_3</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_4, call, scriptTableActor, enterCommand, E]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_4</instructionId>
+          <col>1</col>
+          <row>8</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_4</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_5, call, scriptTableActor, cavernHas, 2, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_5</instructionId>
+          <col>5</col>
+          <row>9</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_5</instructionId>
+          <col>2</col>
+          <row>9</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_5</instructionId>
+          <col>4</col>
+          <row>9</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_6, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_6</instructionId>
+          <col>1</col>
+          <row>12</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_6</instructionId>
+          <col>3</col>
+          <row>12</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_6</instructionId>
+          <col>0</col>
+          <row>12</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_7, call, scriptTableActor, enterCommand, e]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_7</instructionId>
+          <col>1</col>
+          <row>13</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_7</instructionId>
+          <col>0</col>
+          <row>13</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_8, call, scriptTableActor, cavernHas, 2, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_8</instructionId>
+          <col>5</col>
+          <row>14</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_8</instructionId>
+          <col>2</col>
+          <row>14</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_8</instructionId>
+          <col>4</col>
+          <row>14</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_9, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_9</instructionId>
+          <col>1</col>
+          <row>17</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_9</instructionId>
+          <col>3</col>
+          <row>17</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_9</instructionId>
+          <col>0</col>
+          <row>17</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_10, call, scriptTableActor, enterCommand, go east]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_10</instructionId>
+          <col>1</col>
+          <row>18</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_10</instructionId>
+          <col>0</col>
+          <row>18</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_11, call, scriptTableActor, cavernHas, 2, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_11</instructionId>
+          <col>5</col>
+          <row>19</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_11</instructionId>
+          <col>2</col>
+          <row>19</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_11</instructionId>
+          <col>4</col>
+          <row>19</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_12, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_12</instructionId>
+          <col>1</col>
+          <row>22</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_12</instructionId>
+          <col>3</col>
+          <row>22</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_12</instructionId>
+          <col>0</col>
+          <row>22</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_13, call, scriptTableActor, enterCommand, East]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_13</instructionId>
+          <col>1</col>
+          <row>23</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_13</instructionId>
+          <col>0</col>
+          <row>23</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_14, call, scriptTableActor, cavernHas, 2, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_14</instructionId>
+          <col>5</col>
+          <row>24</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_14</instructionId>
+          <col>2</col>
+          <row>24</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_14</instructionId>
+          <col>4</col>
+          <row>24</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_15, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_15</instructionId>
+          <col>1</col>
+          <row>27</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_15</instructionId>
+          <col>3</col>
+          <row>27</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_15</instructionId>
+          <col>0</col>
+          <row>27</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_16, call, scriptTableActor, enterCommand, east]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_16</instructionId>
+          <col>1</col>
+          <row>28</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_16</instructionId>
+          <col>0</col>
+          <row>28</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_17, call, scriptTableActor, cavernHas, 2, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_17</instructionId>
+          <col>5</col>
+          <row>29</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_17</instructionId>
+          <col>2</col>
+          <row>29</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_17</instructionId>
+          <col>4</col>
+          <row>29</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_18, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_18</instructionId>
+          <col>1</col>
+          <row>32</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_18</instructionId>
+          <col>3</col>
+          <row>32</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_18</instructionId>
+          <col>0</col>
+          <row>32</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_19, call, scriptTableActor, enterCommand, Go South]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_19</instructionId>
+          <col>1</col>
+          <row>33</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_19</instructionId>
+          <col>0</col>
+          <row>33</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_20, call, scriptTableActor, cavernHas, 8, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_20</instructionId>
+          <col>5</col>
+          <row>34</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_20</instructionId>
+          <col>2</col>
+          <row>34</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_20</instructionId>
+          <col>4</col>
+          <row>34</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_21, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_21</instructionId>
+          <col>1</col>
+          <row>37</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_21</instructionId>
+          <col>3</col>
+          <row>37</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_21</instructionId>
+          <col>0</col>
+          <row>37</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_22, call, scriptTableActor, enterCommand, S]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_22</instructionId>
+          <col>1</col>
+          <row>38</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_22</instructionId>
+          <col>0</col>
+          <row>38</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_23, call, scriptTableActor, cavernHas, 8, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_23</instructionId>
+          <col>5</col>
+          <row>39</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_23</instructionId>
+          <col>2</col>
+          <row>39</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_23</instructionId>
+          <col>4</col>
+          <row>39</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_24, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_24</instructionId>
+          <col>1</col>
+          <row>42</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_24</instructionId>
+          <col>3</col>
+          <row>42</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_24</instructionId>
+          <col>0</col>
+          <row>42</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_25, call, scriptTableActor, enterCommand, s]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_25</instructionId>
+          <col>1</col>
+          <row>43</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_25</instructionId>
+          <col>0</col>
+          <row>43</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_26, call, scriptTableActor, cavernHas, 8, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_26</instructionId>
+          <col>5</col>
+          <row>44</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_26</instructionId>
+          <col>2</col>
+          <row>44</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_26</instructionId>
+          <col>4</col>
+          <row>44</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_27, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_27</instructionId>
+          <col>1</col>
+          <row>47</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_27</instructionId>
+          <col>3</col>
+          <row>47</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_27</instructionId>
+          <col>0</col>
+          <row>47</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_28, call, scriptTableActor, enterCommand, go south]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_28</instructionId>
+          <col>1</col>
+          <row>48</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_28</instructionId>
+          <col>0</col>
+          <row>48</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_29, call, scriptTableActor, cavernHas, 8, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_29</instructionId>
+          <col>5</col>
+          <row>49</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_29</instructionId>
+          <col>2</col>
+          <row>49</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_29</instructionId>
+          <col>4</col>
+          <row>49</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_30, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_30</instructionId>
+          <col>1</col>
+          <row>52</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_30</instructionId>
+          <col>3</col>
+          <row>52</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_30</instructionId>
+          <col>0</col>
+          <row>52</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_31, call, scriptTableActor, enterCommand, South]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_31</instructionId>
+          <col>1</col>
+          <row>53</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_31</instructionId>
+          <col>0</col>
+          <row>53</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_32, call, scriptTableActor, cavernHas, 8, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_32</instructionId>
+          <col>5</col>
+          <row>54</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_32</instructionId>
+          <col>2</col>
+          <row>54</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_32</instructionId>
+          <col>4</col>
+          <row>54</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_33, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_33</instructionId>
+          <col>1</col>
+          <row>57</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_33</instructionId>
+          <col>3</col>
+          <row>57</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_33</instructionId>
+          <col>0</col>
+          <row>57</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_34, call, scriptTableActor, enterCommand, south]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_34</instructionId>
+          <col>1</col>
+          <row>58</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_34</instructionId>
+          <col>0</col>
+          <row>58</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_35, call, scriptTableActor, cavernHas, 8, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_35</instructionId>
+          <col>5</col>
+          <row>59</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_35</instructionId>
+          <col>2</col>
+          <row>59</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_35</instructionId>
+          <col>4</col>
+          <row>59</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_36, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_36</instructionId>
+          <col>1</col>
+          <row>62</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_36</instructionId>
+          <col>3</col>
+          <row>62</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_36</instructionId>
+          <col>0</col>
+          <row>62</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_37, call, scriptTableActor, enterCommand, Go West]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_37</instructionId>
+          <col>1</col>
+          <row>63</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_37</instructionId>
+          <col>0</col>
+          <row>63</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_38, call, scriptTableActor, cavernHas, 6, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_38</instructionId>
+          <col>5</col>
+          <row>64</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_38</instructionId>
+          <col>2</col>
+          <row>64</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_38</instructionId>
+          <col>4</col>
+          <row>64</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_39, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_39</instructionId>
+          <col>1</col>
+          <row>67</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_39</instructionId>
+          <col>3</col>
+          <row>67</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_39</instructionId>
+          <col>0</col>
+          <row>67</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_40, call, scriptTableActor, enterCommand, W]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_40</instructionId>
+          <col>1</col>
+          <row>68</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_40</instructionId>
+          <col>0</col>
+          <row>68</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_41, call, scriptTableActor, cavernHas, 6, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_41</instructionId>
+          <col>5</col>
+          <row>69</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_41</instructionId>
+          <col>2</col>
+          <row>69</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_41</instructionId>
+          <col>4</col>
+          <row>69</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_42, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_42</instructionId>
+          <col>1</col>
+          <row>72</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_42</instructionId>
+          <col>3</col>
+          <row>72</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_42</instructionId>
+          <col>0</col>
+          <row>72</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_43, call, scriptTableActor, enterCommand, w]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_43</instructionId>
+          <col>1</col>
+          <row>73</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_43</instructionId>
+          <col>0</col>
+          <row>73</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_44, call, scriptTableActor, cavernHas, 6, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_44</instructionId>
+          <col>5</col>
+          <row>74</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_44</instructionId>
+          <col>2</col>
+          <row>74</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_44</instructionId>
+          <col>4</col>
+          <row>74</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_45, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_45</instructionId>
+          <col>1</col>
+          <row>77</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_45</instructionId>
+          <col>3</col>
+          <row>77</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_45</instructionId>
+          <col>0</col>
+          <row>77</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_46, call, scriptTableActor, enterCommand, go west]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_46</instructionId>
+          <col>1</col>
+          <row>78</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_46</instructionId>
+          <col>0</col>
+          <row>78</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_47, call, scriptTableActor, cavernHas, 6, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_47</instructionId>
+          <col>5</col>
+          <row>79</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_47</instructionId>
+          <col>2</col>
+          <row>79</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_47</instructionId>
+          <col>4</col>
+          <row>79</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_48, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_48</instructionId>
+          <col>1</col>
+          <row>82</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_48</instructionId>
+          <col>3</col>
+          <row>82</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_48</instructionId>
+          <col>0</col>
+          <row>82</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_49, call, scriptTableActor, enterCommand, West]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_49</instructionId>
+          <col>1</col>
+          <row>83</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_49</instructionId>
+          <col>0</col>
+          <row>83</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_50, call, scriptTableActor, cavernHas, 6, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_50</instructionId>
+          <col>5</col>
+          <row>84</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_50</instructionId>
+          <col>2</col>
+          <row>84</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_50</instructionId>
+          <col>4</col>
+          <row>84</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_51, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_51</instructionId>
+          <col>1</col>
+          <row>87</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_51</instructionId>
+          <col>3</col>
+          <row>87</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_51</instructionId>
+          <col>0</col>
+          <row>87</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_52, call, scriptTableActor, enterCommand, west]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_52</instructionId>
+          <col>1</col>
+          <row>88</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_52</instructionId>
+          <col>0</col>
+          <row>88</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_53, call, scriptTableActor, cavernHas, 6, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_53</instructionId>
+          <col>5</col>
+          <row>89</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_53</instructionId>
+          <col>2</col>
+          <row>89</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_53</instructionId>
+          <col>4</col>
+          <row>89</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_54, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_54</instructionId>
+          <col>1</col>
+          <row>92</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_54</instructionId>
+          <col>3</col>
+          <row>92</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_54</instructionId>
+          <col>0</col>
+          <row>92</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_55, call, scriptTableActor, enterCommand, Go North]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_55</instructionId>
+          <col>1</col>
+          <row>93</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_55</instructionId>
+          <col>0</col>
+          <row>93</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_56, call, scriptTableActor, cavernHas, 4, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_56</instructionId>
+          <col>5</col>
+          <row>94</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_56</instructionId>
+          <col>2</col>
+          <row>94</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_56</instructionId>
+          <col>4</col>
+          <row>94</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_57, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_57</instructionId>
+          <col>1</col>
+          <row>97</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_57</instructionId>
+          <col>3</col>
+          <row>97</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_57</instructionId>
+          <col>0</col>
+          <row>97</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_58, call, scriptTableActor, enterCommand, N]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_58</instructionId>
+          <col>1</col>
+          <row>98</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_58</instructionId>
+          <col>0</col>
+          <row>98</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_59, call, scriptTableActor, cavernHas, 4, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_59</instructionId>
+          <col>5</col>
+          <row>99</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_59</instructionId>
+          <col>2</col>
+          <row>99</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_59</instructionId>
+          <col>4</col>
+          <row>99</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_60, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_60</instructionId>
+          <col>1</col>
+          <row>102</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_60</instructionId>
+          <col>3</col>
+          <row>102</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_60</instructionId>
+          <col>0</col>
+          <row>102</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_61, call, scriptTableActor, enterCommand, n]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_61</instructionId>
+          <col>1</col>
+          <row>103</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_61</instructionId>
+          <col>0</col>
+          <row>103</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_62, call, scriptTableActor, cavernHas, 4, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_62</instructionId>
+          <col>5</col>
+          <row>104</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_62</instructionId>
+          <col>2</col>
+          <row>104</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_62</instructionId>
+          <col>4</col>
+          <row>104</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_63, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_63</instructionId>
+          <col>1</col>
+          <row>107</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_63</instructionId>
+          <col>3</col>
+          <row>107</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_63</instructionId>
+          <col>0</col>
+          <row>107</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_64, call, scriptTableActor, enterCommand, go north]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_64</instructionId>
+          <col>1</col>
+          <row>108</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_64</instructionId>
+          <col>0</col>
+          <row>108</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_65, call, scriptTableActor, cavernHas, 4, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_65</instructionId>
+          <col>5</col>
+          <row>109</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_65</instructionId>
+          <col>2</col>
+          <row>109</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_65</instructionId>
+          <col>4</col>
+          <row>109</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_66, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_66</instructionId>
+          <col>1</col>
+          <row>112</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_66</instructionId>
+          <col>3</col>
+          <row>112</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_66</instructionId>
+          <col>0</col>
+          <row>112</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_67, call, scriptTableActor, enterCommand, North]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_67</instructionId>
+          <col>1</col>
+          <row>113</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_67</instructionId>
+          <col>0</col>
+          <row>113</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_68, call, scriptTableActor, cavernHas, 4, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_68</instructionId>
+          <col>5</col>
+          <row>114</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_68</instructionId>
+          <col>2</col>
+          <row>114</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_68</instructionId>
+          <col>4</col>
+          <row>114</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_69, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_69</instructionId>
+          <col>1</col>
+          <row>117</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_69</instructionId>
+          <col>3</col>
+          <row>117</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_69</instructionId>
+          <col>0</col>
+          <row>117</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_70, call, scriptTableActor, enterCommand, north]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_70</instructionId>
+          <col>1</col>
+          <row>118</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_70</instructionId>
+          <col>0</col>
+          <row>118</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_71, call, scriptTableActor, cavernHas, 4, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_71</instructionId>
+          <col>5</col>
+          <row>119</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_71</instructionId>
+          <col>2</col>
+          <row>119</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_71</instructionId>
+          <col>4</col>
+          <row>119</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

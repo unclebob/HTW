@@ -1,0 +1,3537 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestFileSectionOrder</rootPath>
+    <result>
+    <counts>
+      <right>33</right>
+      <wrong>0</wrong>
+      <ignores>1</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-4973798053609358916');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4973798053609358916"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-4973798053609358916"><table border="1" cellspacing="0" _TABLENUMBER=1626017938155214951>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4883774482475539037>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-8631148760091385006');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-8631148760091385006"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="-8631148760091385006"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-5224577876642547098');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5224577876642547098"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-5224577876642547098"><table border="1" cellspacing="0" _TABLENUMBER=4291013820428157139>
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with content</td>
+<td colspan="2">@content</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6279925963854824210>
+<tr><td>scenario</td>
+<td>given page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>nothing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3215312590886762674>
+<tr><td>scenario</td>
+<td>given test page</td>
+<td>page</td>
+</tr>
+<tr><td>given page</td>
+<td colspan="2">@page</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td>a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7587850923344689528>
+<tr><td>scenario</td>
+<td>given slim test page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>!define TEST_SYSTEM {slim}</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td colspan="2">a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5087702304690284848>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;a href="@target"&gt;</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@source</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5879110479441582255>
+<tr><td>scenario</td>
+<td>it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1460302595441663337>
+<tr><td>scenario</td>
+<td>and it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3348491495199434344>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have creating link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5510474920684546258>
+<tr><td>scenario</td>
+<td>it should have creating link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have creating link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1577160339162752112>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8677292329379461285>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7710457588484733177>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4560757373243973073>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4874991759927181425>
+<tr><td>scenario</td>
+<td>it should not contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should not contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4600745238369940036>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td>text</td>
+<td>in line</td>
+<td>symbol</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>$@symbol=</td>
+<td>line number containing</td>
+<td colspan="3">@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2956063831536297302>
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should match</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6631713821994306416>
+<tr><td>scenario</td>
+<td>test results for page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3096392501360008181>
+<tr><td>scenario</td>
+<td>its test results should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>test results for page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7515200381064959804>
+<tr><td>scenario</td>
+<td>test ressults for page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8145389948283097126>
+<tr><td>scenario</td>
+<td>and should contain</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1772884494613220264>
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6132202952747739502>
+<tr><td>scenario</td>
+<td>and should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2766423077516529357>
+<tr><td>scenario</td>
+<td>widget</td>
+<td>wikiText</td>
+<td>should render</td>
+<td>htmlText</td>
+</tr>
+<tr><td>create page</td>
+<td>WidgetPage</td>
+<td>with content</td>
+<td colspan="2">@wikiText</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>WidgetPage</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@htmlText</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5069721593234785358>
+<tr><td>scenario</td>
+<td>the line</td>
+<td>after</td>
+<td>should come after</td>
+<td>before</td>
+</tr>
+<tr><td>check</td>
+<td>echo int</td>
+<td>$@before</td>
+<td colspan="2">&lt; $@after</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+!The directory listing in the files section displays directories in alphabetical order - directories first, then files.<br/><br/>Create the file section<br/><table border="1" cellspacing="0" _TABLENUMBER=2981976210365910390>
+<tr><td><span class="pass">file section</span></td>
+<td>setup</td>
+</tr>
+</table>
+<br/>Add some files<br/><table border="1" cellspacing="0" _TABLENUMBER=5883600146974741317>
+<tr><td colspan="3"><span class="pass">file section file adder</span></td>
+</tr>
+<tr><td>path</td>
+<td>type</td>
+<td>valid?</td>
+</tr>
+<tr><td>cFile.txt</td>
+<td>file</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>dDir</td>
+<td>dir</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>cDir</td>
+<td>dir</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>bFile.txt</td>
+<td>file</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>dFile.txt</td>
+<td>file</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>bDir</td>
+<td>dir</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>aFile.txt</td>
+<td>file</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>aDir</td>
+<td>dir</td>
+<td><span class="pass">true</span></td>
+</tr>
+</table>
+<br/>Verify that it's present through the file system<br/><table border="1" cellspacing="0" _TABLENUMBER=4910155473213276696>
+<tr><td><span class="pass">query:file section directory listing</span></td>
+</tr>
+<tr><td>path</td>
+</tr>
+<tr><td><span class="pass">aFile.txt</span></td>
+</tr>
+<tr><td><span class="pass">bFile.txt</span></td>
+</tr>
+<tr><td><span class="pass">cFile.txt</span></td>
+</tr>
+<tr><td><span class="pass">dFile.txt</span></td>
+</tr>
+<tr><td><span class="pass">aDir</span></td>
+</tr>
+<tr><td><span class="pass">bDir</span></td>
+</tr>
+<tr><td><span class="pass">cDir</span></td>
+</tr>
+<tr><td><span class="pass">dDir</span></td>
+</tr>
+</table>
+<br/>Now request the directory through fitnesse<br/><table border="1" cellspacing="0" _TABLENUMBER=8094958975658657410>
+<tr><td colspan="3"><span class="pass">Response Requester</span></td>
+</tr>
+<tr><td>uri</td>
+<td>valid?</td>
+<td>contents?</td>
+</tr>
+<tr><td>files/</td>
+<td><span class="pass">true</span></td>
+<td><span class="ignore"><pre>HTTP/1.1 200 OK
+Content-Length: 4686
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Files: files/&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--FrontPage button--&gt;
+				&lt;a href="/FrontPage" accesskey="f"&gt;FrontPage&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/files" class="page_title"&gt;files&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Files Section&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table border="0" cellspacing="0" class="dirListing"&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Name&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Size&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Date&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;span class="caps"&gt;Action&lt;/span&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+aDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+bDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+cDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+dDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;&lt;form method="post" action="/files/" enctype="multipart/form-data" class="left"&gt;&lt;!--upload form--&gt;
+	&lt;span class="caps"&gt;Upload a file:&lt;/span&gt;
+	&lt;input type="hidden" name="responder" value="upload"/&gt;
+&lt;br/&gt;
+	&lt;input type="file" name="file" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Upload"/&gt;
+&lt;/form&gt;
+&lt;form method="get" action="/files/" class="right"&gt;
+	&lt;input type="hidden" name="responder" value="createDir"/&gt;
+&lt;!--create directory form--&gt;
+	&lt;span class="caps"&gt;Create a directory:&lt;/span&gt;
+&lt;br/&gt;
+	&lt;input type="text" name="dirname" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Create"/&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2456150997139212514>
+<tr><td colspan="2"><span class="pass">Response Examiner</span></td>
+</tr>
+<tr><td>line</td>
+<td>inOrder?</td>
+</tr>
+<tr><td>&lt;a href="aDir/"&gt;</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>&lt;a href="bDir/"&gt;</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>&lt;a href="cDir/"&gt;</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>&lt;a href="dDir/"&gt;</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;</td>
+<td><span class="pass">true</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5139808363297994563>
+<tr><td><span class="pass">file section</span></td>
+<td>teardown</td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-2609357155635737143');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2609357155635737143"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-2609357155635737143"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6153332721469906093>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestFileSectionOrder</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_2</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[nothing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_4</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_5</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given slim test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!define TEST_SYSTEM {slim}]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_6</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a href="@target"&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@source]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_7</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_9</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_10</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_11</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_12</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_13</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_15</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_16</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+                    <col><![CDATA[in line]]></col>
+                    <col><![CDATA[symbol]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$@symbol=]]></col>
+                    <col><![CDATA[line number containing]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_17</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_19</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[its test results should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_20</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test ressults for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_21</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_22</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_24</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[widget]]></col>
+                    <col><![CDATA[wikiText]]></col>
+                    <col><![CDATA[should render]]></col>
+                    <col><![CDATA[htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@wikiText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_25</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the line]]></col>
+                    <col><![CDATA[after]]></col>
+                    <col><![CDATA[should come after]]></col>
+                    <col><![CDATA[before]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo int]]></col>
+                    <col><![CDATA[$@before]]></col>
+                    <col><![CDATA[&lt; $@after]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_26</name>
+                <row>
+                    <col><![CDATA[pass(file section)]]></col>
+                    <col><![CDATA[setup]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_27</name>
+                <row>
+                    <col><![CDATA[pass(file section file adder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[path]]></col>
+                    <col><![CDATA[type]]></col>
+                    <col><![CDATA[valid?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[cFile.txt]]></col>
+                    <col><![CDATA[file]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[dDir]]></col>
+                    <col><![CDATA[dir]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[cDir]]></col>
+                    <col><![CDATA[dir]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[bFile.txt]]></col>
+                    <col><![CDATA[file]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[dFile.txt]]></col>
+                    <col><![CDATA[file]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[bDir]]></col>
+                    <col><![CDATA[dir]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[aFile.txt]]></col>
+                    <col><![CDATA[file]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[aDir]]></col>
+                    <col><![CDATA[dir]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>queryTable_28</name>
+                <row>
+                    <col><![CDATA[pass(query:file section directory listing)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[path]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(aFile.txt)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(bFile.txt)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(cFile.txt)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(dFile.txt)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(aDir)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(bDir)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(cDir)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(dDir)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_29</name>
+                <row>
+                    <col><![CDATA[pass(Response Requester)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[uri]]></col>
+                    <col><![CDATA[valid?]]></col>
+                    <col><![CDATA[contents?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[files/]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+                    <col><![CDATA[<span class="ignore"><pre>HTTP/1.1 200 OK
+Content-Length: 4686
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Files: files/&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--FrontPage button--&gt;
+				&lt;a href="/FrontPage" accesskey="f"&gt;FrontPage&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/files" class="page_title"&gt;files&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Files Section&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table border="0" cellspacing="0" class="dirListing"&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Name&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Size&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Date&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;span class="caps"&gt;Action&lt;/span&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+aDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+bDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+cDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+dDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;&lt;form method="post" action="/files/" enctype="multipart/form-data" class="left"&gt;&lt;!--upload form--&gt;
+	&lt;span class="caps"&gt;Upload a file:&lt;/span&gt;
+	&lt;input type="hidden" name="responder" value="upload"/&gt;
+&lt;br/&gt;
+	&lt;input type="file" name="file" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Upload"/&gt;
+&lt;/form&gt;
+&lt;form method="get" action="/files/" class="right"&gt;
+	&lt;input type="hidden" name="responder" value="createDir"/&gt;
+&lt;!--create directory form--&gt;
+	&lt;span class="caps"&gt;Create a directory:&lt;/span&gt;
+&lt;br/&gt;
+	&lt;input type="text" name="dirname" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Create"/&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></span>]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_30</name>
+                <row>
+                    <col><![CDATA[pass(Response Examiner)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[inOrder?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[&lt;a href="aDir/"&gt;]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[&lt;a href="bDir/"&gt;]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[&lt;a href="cDir/"&gt;]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[&lt;a href="dDir/"&gt;]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_31</name>
+                <row>
+                    <col><![CDATA[pass(file section)]]></col>
+                    <col><![CDATA[teardown]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_32</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_26_0, make, decisionTable_26, FileSection, setup]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_26_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[file section]]></expected>
+                              <evaluationMessage><![CDATA[pass(file section)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_26_1, call, decisionTable_26, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.FileSection.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_26_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.FileSection.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></actual>
+                              <expected><![CDATA[setup]]></expected>
+                              <evaluationMessage><![CDATA[setup]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_0, make, decisionTable_27, FileSectionFileAdder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_27_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[file section file adder]]></expected>
+                              <evaluationMessage><![CDATA[pass(file section file adder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_1, call, decisionTable_27, table, [[path, type, valid?], [cFile.txt, file, true], [dDir, dir, true], [cDir, dir, true], [bFile.txt, file, true], [dFile.txt, file, true], [bDir, dir, true], [aFile.txt, file, true], [aDir, dir, true]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_2, call, decisionTable_27, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_3, call, decisionTable_27, setPath, cFile.txt]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[cFile.txt]]></expected>
+                              <evaluationMessage><![CDATA[cFile.txt]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_4, call, decisionTable_27, setType, file]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[file]]></expected>
+                              <evaluationMessage><![CDATA[file]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_5, call, decisionTable_27, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_6, call, decisionTable_27, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_27_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_7, call, decisionTable_27, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_8, call, decisionTable_27, setPath, dDir]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_8</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[dDir]]></expected>
+                              <evaluationMessage><![CDATA[dDir]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_9, call, decisionTable_27, setType, dir]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_9</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[dir]]></expected>
+                              <evaluationMessage><![CDATA[dir]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_10, call, decisionTable_27, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_11, call, decisionTable_27, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_27_11</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_12, call, decisionTable_27, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_13, call, decisionTable_27, setPath, cDir]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_13</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[cDir]]></expected>
+                              <evaluationMessage><![CDATA[cDir]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_14, call, decisionTable_27, setType, dir]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_14</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[dir]]></expected>
+                              <evaluationMessage><![CDATA[dir]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_15, call, decisionTable_27, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_16, call, decisionTable_27, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_27_16</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_17, call, decisionTable_27, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_18, call, decisionTable_27, setPath, bFile.txt]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_18</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[bFile.txt]]></expected>
+                              <evaluationMessage><![CDATA[bFile.txt]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_19, call, decisionTable_27, setType, file]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_19</instructionId>
+          <col>1</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[file]]></expected>
+                              <evaluationMessage><![CDATA[file]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_20, call, decisionTable_27, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_21, call, decisionTable_27, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_27_21</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_22, call, decisionTable_27, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_23, call, decisionTable_27, setPath, dFile.txt]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_23</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[dFile.txt]]></expected>
+                              <evaluationMessage><![CDATA[dFile.txt]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_24, call, decisionTable_27, setType, file]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_24</instructionId>
+          <col>1</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[file]]></expected>
+                              <evaluationMessage><![CDATA[file]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_25, call, decisionTable_27, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_26, call, decisionTable_27, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_27_26</instructionId>
+          <col>2</col>
+          <row>6</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_27, call, decisionTable_27, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_28, call, decisionTable_27, setPath, bDir]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_28</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[bDir]]></expected>
+                              <evaluationMessage><![CDATA[bDir]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_29, call, decisionTable_27, setType, dir]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_29</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[dir]]></expected>
+                              <evaluationMessage><![CDATA[dir]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_30, call, decisionTable_27, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_31, call, decisionTable_27, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_27_31</instructionId>
+          <col>2</col>
+          <row>7</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_32, call, decisionTable_27, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_33, call, decisionTable_27, setPath, aFile.txt]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_33</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[aFile.txt]]></expected>
+                              <evaluationMessage><![CDATA[aFile.txt]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_34, call, decisionTable_27, setType, file]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_34</instructionId>
+          <col>1</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[file]]></expected>
+                              <evaluationMessage><![CDATA[file]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_35, call, decisionTable_27, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_36, call, decisionTable_27, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_27_36</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_37, call, decisionTable_27, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_38, call, decisionTable_27, setPath, aDir]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_38</instructionId>
+          <col>0</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[aDir]]></expected>
+                              <evaluationMessage><![CDATA[aDir]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_39, call, decisionTable_27, setType, dir]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_27_39</instructionId>
+          <col>1</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[dir]]></expected>
+                              <evaluationMessage><![CDATA[dir]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_40, call, decisionTable_27, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] fitnesse.fixtures.FileSectionFileAdder.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_27_41, call, decisionTable_27, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_27_41</instructionId>
+          <col>2</col>
+          <row>9</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[queryTable_28_0, make, queryTable_28, FileSectionDirectoryListing]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>queryTable_28_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[query:file section directory listing]]></expected>
+                              <evaluationMessage><![CDATA[pass(query:file section directory listing)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[queryTable_28_1, call, queryTable_28, table, [[path], [aFile.txt], [bFile.txt], [cFile.txt], [dFile.txt], [aDir], [bDir], [cDir], [dDir]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.FileSectionDirectoryListing.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[queryTable_28_2, call, queryTable_28, query]]]></instruction>
+        <slimResult><![CDATA[[[[path, aDir]], [[path, aFile.txt]], [[path, bDir]], [[path, bFile.txt]], [[path, cDir]], [[path, cFile.txt]], [[path, dDir]], [[path, dFile.txt]]]]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_0, make, decisionTable_29, ResponseRequester]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_29_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Response Requester]]></expected>
+                              <evaluationMessage><![CDATA[pass(Response Requester)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_1, call, decisionTable_29, table, [[uri, valid?, contents?], [files/, true, ]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.ResponseRequester.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_2, call, decisionTable_29, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_3, call, decisionTable_29, setUri, files/]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_29_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[files/]]></expected>
+                              <evaluationMessage><![CDATA[files/]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_4, call, decisionTable_29, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_5, call, decisionTable_29, valid]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_29_5</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_29_6, call, decisionTable_29, contents]]]></instruction>
+        <slimResult><![CDATA[<pre>HTTP/1.1 200 OK
+Content-Length: 4686
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Files: files/&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--FrontPage button--&gt;
+				&lt;a href="/FrontPage" accesskey="f"&gt;FrontPage&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/files" class="page_title"&gt;files&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Files Section&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table border="0" cellspacing="0" class="dirListing"&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Name&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Size&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Date&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;span class="caps"&gt;Action&lt;/span&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+aDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+bDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+cDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+dDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;&lt;form method="post" action="/files/" enctype="multipart/form-data" class="left"&gt;&lt;!--upload form--&gt;
+	&lt;span class="caps"&gt;Upload a file:&lt;/span&gt;
+	&lt;input type="hidden" name="responder" value="upload"/&gt;
+&lt;br/&gt;
+	&lt;input type="file" name="file" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Upload"/&gt;
+&lt;/form&gt;
+&lt;form method="get" action="/files/" class="right"&gt;
+	&lt;input type="hidden" name="responder" value="createDir"/&gt;
+&lt;!--create directory form--&gt;
+	&lt;span class="caps"&gt;Create a directory:&lt;/span&gt;
+&lt;br/&gt;
+	&lt;input type="text" name="dirname" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Create"/&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre>]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_29_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[<pre>HTTP/1.1 200 OK
+Content-Length: 4686
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Files: files/&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--FrontPage button--&gt;
+				&lt;a href="/FrontPage" accesskey="f"&gt;FrontPage&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/files" class="page_title"&gt;files&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Files Section&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table border="0" cellspacing="0" class="dirListing"&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Name&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Size&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Date&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;span class="caps"&gt;Action&lt;/span&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+aDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+bDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+cDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+dDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;&lt;form method="post" action="/files/" enctype="multipart/form-data" class="left"&gt;&lt;!--upload form--&gt;
+	&lt;span class="caps"&gt;Upload a file:&lt;/span&gt;
+	&lt;input type="hidden" name="responder" value="upload"/&gt;
+&lt;br/&gt;
+	&lt;input type="file" name="file" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Upload"/&gt;
+&lt;/form&gt;
+&lt;form method="get" action="/files/" class="right"&gt;
+	&lt;input type="hidden" name="responder" value="createDir"/&gt;
+&lt;!--create directory form--&gt;
+	&lt;span class="caps"&gt;Create a directory:&lt;/span&gt;
+&lt;br/&gt;
+	&lt;input type="text" name="dirname" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Create"/&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre>]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[<span class="ignore"><pre>HTTP/1.1 200 OK
+Content-Length: 4686
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Files: files/&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--FrontPage button--&gt;
+				&lt;a href="/FrontPage" accesskey="f"&gt;FrontPage&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/files" class="page_title"&gt;files&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Files Section&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;table border="0" cellspacing="0" class="dirListing"&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Name&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Size&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			&lt;span class="caps"&gt;Date&lt;/span&gt;
+		&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;span class="caps"&gt;Action&lt;/span&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+aDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+bDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+cDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dDir/"&gt;
+				&lt;img src="/files/images/folder.gif" class="left"/&gt;
+dDir			&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dDir"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dDir"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=aFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=aFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=bFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=bFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #FFFFFF;"&gt;
+		&lt;td&gt;
+			&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=cFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=cFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr style="background-color: #EFEFEF;"&gt;
+		&lt;td&gt;
+			&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;
+		&lt;/td&gt;
+		&lt;td&gt;0 bytes&lt;/td&gt;
+		&lt;td&gt;Oct 16, 2009, 08:45 AM&lt;/td&gt;
+		&lt;td style="text-align: right;"&gt;
+			&lt;a href="?responder=renameConfirmation&amp;filename=dFile.txt"&gt;Rename&lt;/a&gt;
+|			&lt;a href="?responder=deleteConfirmation&amp;filename=dFile.txt"&gt;Delete&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr/&gt;&lt;form method="post" action="/files/" enctype="multipart/form-data" class="left"&gt;&lt;!--upload form--&gt;
+	&lt;span class="caps"&gt;Upload a file:&lt;/span&gt;
+	&lt;input type="hidden" name="responder" value="upload"/&gt;
+&lt;br/&gt;
+	&lt;input type="file" name="file" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Upload"/&gt;
+&lt;/form&gt;
+&lt;form method="get" action="/files/" class="right"&gt;
+	&lt;input type="hidden" name="responder" value="createDir"/&gt;
+&lt;!--create directory form--&gt;
+	&lt;span class="caps"&gt;Create a directory:&lt;/span&gt;
+&lt;br/&gt;
+	&lt;input type="text" name="dirname" value=""/&gt;
+&lt;br/&gt;
+	&lt;input type="submit" name="" value="Create"/&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></span>]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_0, make, decisionTable_30, ResponseExaminer]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Response Examiner]]></expected>
+                              <evaluationMessage><![CDATA[pass(Response Examiner)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_1, call, decisionTable_30, table, [[line, inOrder?], [&lt;a href="aDir/"&gt;, true], [&lt;a href="bDir/"&gt;, true], [&lt;a href="cDir/"&gt;, true], [&lt;a href="dDir/"&gt;, true], [&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;, true], [&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;, true], [&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;, true], [&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;, true]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.ResponseExaminer.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_2, call, decisionTable_30, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_3, call, decisionTable_30, setLine, <a href="aDir/">]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_30_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[&lt;a href="aDir/"&gt;]]></expected>
+                              <evaluationMessage><![CDATA[&lt;a href="aDir/"&gt;]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_4, call, decisionTable_30, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_5, call, decisionTable_30, inOrder]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_5</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_6, call, decisionTable_30, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_7, call, decisionTable_30, setLine, <a href="bDir/">]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_30_7</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[&lt;a href="bDir/"&gt;]]></expected>
+                              <evaluationMessage><![CDATA[&lt;a href="bDir/"&gt;]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_8, call, decisionTable_30, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_9, call, decisionTable_30, inOrder]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_9</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_10, call, decisionTable_30, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_11, call, decisionTable_30, setLine, <a href="cDir/">]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_30_11</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[&lt;a href="cDir/"&gt;]]></expected>
+                              <evaluationMessage><![CDATA[&lt;a href="cDir/"&gt;]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_12, call, decisionTable_30, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_13, call, decisionTable_30, inOrder]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_13</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_14, call, decisionTable_30, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_15, call, decisionTable_30, setLine, <a href="dDir/">]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_30_15</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[&lt;a href="dDir/"&gt;]]></expected>
+                              <evaluationMessage><![CDATA[&lt;a href="dDir/"&gt;]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_16, call, decisionTable_30, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_17, call, decisionTable_30, inOrder]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_17</instructionId>
+          <col>1</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_18, call, decisionTable_30, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_19, call, decisionTable_30, setLine, <a href="aFile.txt">aFile.txt</a>]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_30_19</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;]]></expected>
+                              <evaluationMessage><![CDATA[&lt;a href="aFile.txt"&gt;aFile.txt&lt;/a&gt;]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_20, call, decisionTable_30, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_21, call, decisionTable_30, inOrder]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_21</instructionId>
+          <col>1</col>
+          <row>6</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_22, call, decisionTable_30, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_23, call, decisionTable_30, setLine, <a href="bFile.txt">bFile.txt</a>]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_30_23</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;]]></expected>
+                              <evaluationMessage><![CDATA[&lt;a href="bFile.txt"&gt;bFile.txt&lt;/a&gt;]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_24, call, decisionTable_30, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_25, call, decisionTable_30, inOrder]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_25</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_26, call, decisionTable_30, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_27, call, decisionTable_30, setLine, <a href="cFile.txt">cFile.txt</a>]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_30_27</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;]]></expected>
+                              <evaluationMessage><![CDATA[&lt;a href="cFile.txt"&gt;cFile.txt&lt;/a&gt;]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_28, call, decisionTable_30, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_29, call, decisionTable_30, inOrder]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_29</instructionId>
+          <col>1</col>
+          <row>8</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_30, call, decisionTable_30, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_31, call, decisionTable_30, setLine, <a href="dFile.txt">dFile.txt</a>]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_30_31</instructionId>
+          <col>0</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;]]></expected>
+                              <evaluationMessage><![CDATA[&lt;a href="dFile.txt"&gt;dFile.txt&lt;/a&gt;]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_32, call, decisionTable_30, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_30_33, call, decisionTable_30, inOrder]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_30_33</instructionId>
+          <col>1</col>
+          <row>9</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_0, make, decisionTable_31, FileSection, teardown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_31_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[file section]]></expected>
+                              <evaluationMessage><![CDATA[pass(file section)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_1, call, decisionTable_31, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.FileSection.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_31_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.FileSection.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></actual>
+                              <expected><![CDATA[teardown]]></expected>
+                              <evaluationMessage><![CDATA[teardown]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_32_0, make, decisionTable_32, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_32_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_32_1, call, decisionTable_32, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

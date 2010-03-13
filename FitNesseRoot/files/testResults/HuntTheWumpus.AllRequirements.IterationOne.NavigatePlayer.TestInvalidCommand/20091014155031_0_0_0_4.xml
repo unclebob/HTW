@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestInvalidCommand</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>4</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-8557526456332977415');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-8557526456332977415"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-8557526456332977415"><table border="1" cellspacing="0">
+<tr><td colspan="2">fitlibrary.DoFixture</td>
+</tr>
+<tr><td>start</td>
+<td>HuntTheWumpus.fixtures.GameDriver</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+<table border="1" cellspacing="0">
+<tr><td class="error">reject<hr/> <span class="fit_label">Missing method: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>enter command</td>
+<td colspan="3">zorch</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult messageWasPrinted(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>message</td>
+<td>I don't know how to zorch.</td>
+<td>was printed</td>
+<td>true</td>
+</tr>
+</table>
+<br/>Make sure valid commands don't cause error messages.<br/><br/><table border="1" cellspacing="0">
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="4">rest</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult messageWasPrinted(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>message</td>
+<td>I don't know how to rest.</td>
+<td>was printed</td>
+<td>false</td>
+</tr>
+</table>
+<br/>]]></content>
+    <relativePageName>TestInvalidCommand</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

@@ -1,0 +1,1673 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestAbbreviationsOfShootCommand</rootPath>
+    <result>
+    <counts>
+      <right>22</right>
+      <wrong>20</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-985777681032895248');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-985777681032895248"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-985777681032895248"><table border="1" cellspacing="0" _TABLENUMBER=6376752295964100790>
+<tr><td>script</td>
+<td><span class="pass">HuntTheWumpus.fixtures.GameDriver</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3303329606621083448>
+<tr><td>Import</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+Check all the abbreviations of the shoot command.<br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7318836619327164625');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img-7318836619327164625"/>
+	</a>
+&nbsp;<span class="meta">Included page: CrossMap<a title="create page" href="HuntTheWumpus.AllRequirements.IterationOne.ShootArrow.CrossMap?edit&nonExistent=true">[?]</a> (edit)<a title="create page" href="HuntTheWumpus.AllRequirements.IterationOne.ShootArrow.CrossMap?edit&amp;nonExistent=true">[?]</a></span>
+	<div class="collapsable" id="-7318836619327164625"><span class="meta"><b>Page include failed because the page CrossMap<a title="create page" href="HuntTheWumpus.AllRequirements.IterationOne.ShootArrow.CrossMap?edit&nonExistent=true">[?]</a> does not exist.</b></span></div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=9072122640554948184>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td>note</td>
+<td colspan="3">lets have lots of arrows to shoot</td>
+</tr>
+<tr><td>set quiver to</td>
+<td colspan="3">100</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td>3</td>
+</tr>
+</table>
+<br/><span class="meta">variable defined: destination=6</span><br/><br/><ul>
+	<li>Try the north abbreviations.</li>
+</ul>
+<table border="1" cellspacing="0" _TABLENUMBER=9106984848759065851>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">shoot north</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>6</td>
+<td>[0] <span class="fail">expected [1]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">s north</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>6</td>
+<td>[0] <span class="fail">expected [2]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">shoot n</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>6</td>
+<td>[0] <span class="fail">expected [3]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">s n</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>6</td>
+<td>[0] <span class="fail">expected [4]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">sn</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>6</td>
+<td>[0] <span class="fail">expected [5]</span></td>
+</tr>
+</table>
+<br/><span class="meta">variable defined: destination=9</span><br/><ul>
+	<li>Try the south abbreviations.</li>
+</ul>
+<table border="1" cellspacing="0" _TABLENUMBER=8035020890579569603>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">shoot south</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>9</td>
+<td>[0] <span class="fail">expected [1]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">s south</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>9</td>
+<td>[0] <span class="fail">expected [2]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">shoot s</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>9</td>
+<td>[0] <span class="fail">expected [3]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">s s</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>9</td>
+<td>[0] <span class="fail">expected [4]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">ss</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>9</td>
+<td>[0] <span class="fail">expected [5]</span></td>
+</tr>
+</table>
+<br/><span class="meta">variable defined: destination=1</span><br/><ul>
+	<li>Try the west abbreviations.</li>
+</ul>
+<table border="1" cellspacing="0" _TABLENUMBER=3226226804233439219>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">shoot west</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>1</td>
+<td>[0] <span class="fail">expected [1]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">s west</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>1</td>
+<td>[0] <span class="fail">expected [2]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">shoot w</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>1</td>
+<td>[0] <span class="fail">expected [3]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">s w</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>1</td>
+<td>[0] <span class="fail">expected [4]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">sw</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>1</td>
+<td>[0] <span class="fail">expected [5]</span></td>
+</tr>
+</table>
+<br/><span class="meta">variable defined: destination=5</span><br/><br/><ul>
+	<li>Try the east abbreviations.</li>
+</ul>
+<table border="1" cellspacing="0" _TABLENUMBER=1152921461091224147>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">shoot east</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>5</td>
+<td>[0] <span class="fail">expected [1]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">s east</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>5</td>
+<td>[0] <span class="fail">expected [2]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">shoot e</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>5</td>
+<td>[0] <span class="fail">expected [3]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">s e</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>5</td>
+<td>[0] <span class="fail">expected [4]</span></td>
+</tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="3">se</td>
+</tr>
+<tr><td>check</td>
+<td>arrows in cavern</td>
+<td>5</td>
+<td>[0] <span class="fail">expected [5]</span></td>
+</tr>
+</table>
+]]></content>
+    <relativePageName>TestAbbreviationsOfShootCommand</relativePageName>
+    
+        <tables>
+            <table>
+        <name>scriptTable_0</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>import_1</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[HuntTheWumpus.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[note]]></col>
+                    <col><![CDATA[lets have lots of arrows to shoot]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[set quiver to]]></col>
+                    <col><![CDATA[100]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[3]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_3</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[shoot north]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[[0] fail(expected [1])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[s north]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[[0] fail(expected [2])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[shoot n]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[[0] fail(expected [3])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[s n]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[[0] fail(expected [4])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[sn]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[[0] fail(expected [5])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_4</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[shoot south]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[9]]></col>
+                    <col><![CDATA[[0] fail(expected [1])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[s south]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[9]]></col>
+                    <col><![CDATA[[0] fail(expected [2])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[shoot s]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[9]]></col>
+                    <col><![CDATA[[0] fail(expected [3])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[s s]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[9]]></col>
+                    <col><![CDATA[[0] fail(expected [4])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[ss]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[9]]></col>
+                    <col><![CDATA[[0] fail(expected [5])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[shoot west]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[[0] fail(expected [1])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[s west]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[[0] fail(expected [2])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[shoot w]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[[0] fail(expected [3])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[s w]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[[0] fail(expected [4])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[sw]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[[0] fail(expected [5])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_6</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[shoot east]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[[0] fail(expected [1])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[s east]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[[0] fail(expected [2])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[shoot e]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[[0] fail(expected [3])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[s e]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[[0] fail(expected [4])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[se]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[arrows in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[[0] fail(expected [5])]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_0_0, make, scriptTableActor, HuntTheWumpus.fixtures.GameDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_0_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[HuntTheWumpus.fixtures.GameDriver]]></expected>
+                              <evaluationMessage><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[import_1_0, import, HuntTheWumpus.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, call, scriptTableActor, setQuiverTo, 100]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[set quiver to]]></expected>
+                              <evaluationMessage><![CDATA[set quiver to]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_1, call, scriptTableActor, putInCavern, player, 3]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>3</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_0, call, scriptTableActor, enterCommand, shoot north]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_1, call, scriptTableActor, arrowsInCavern, 6]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [1])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_2, call, scriptTableActor, enterCommand, s north]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_3, call, scriptTableActor, arrowsInCavern, 6]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_3_3</instructionId>
+          <col>3</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [2])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_3</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_4, call, scriptTableActor, enterCommand, shoot n]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_4</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_4</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_5, call, scriptTableActor, arrowsInCavern, 6]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_3_5</instructionId>
+          <col>3</col>
+          <row>8</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [3])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_5</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_6, call, scriptTableActor, enterCommand, s n]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_6</instructionId>
+          <col>1</col>
+          <row>10</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_6</instructionId>
+          <col>0</col>
+          <row>10</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_7, call, scriptTableActor, arrowsInCavern, 6]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_3_7</instructionId>
+          <col>3</col>
+          <row>11</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [4])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_7</instructionId>
+          <col>2</col>
+          <row>11</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_8, call, scriptTableActor, enterCommand, sn]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_8</instructionId>
+          <col>1</col>
+          <row>13</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_8</instructionId>
+          <col>0</col>
+          <row>13</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_9, call, scriptTableActor, arrowsInCavern, 6]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_3_9</instructionId>
+          <col>3</col>
+          <row>14</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [5])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_9</instructionId>
+          <col>2</col>
+          <row>14</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_0, call, scriptTableActor, enterCommand, shoot south]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_1, call, scriptTableActor, arrowsInCavern, 9]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [1])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_2, call, scriptTableActor, enterCommand, s south]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_3, call, scriptTableActor, arrowsInCavern, 9]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_4_3</instructionId>
+          <col>3</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [2])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_3</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_4, call, scriptTableActor, enterCommand, shoot s]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_4</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_4</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_5, call, scriptTableActor, arrowsInCavern, 9]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_4_5</instructionId>
+          <col>3</col>
+          <row>8</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [3])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_5</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_6, call, scriptTableActor, enterCommand, s s]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_6</instructionId>
+          <col>1</col>
+          <row>10</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_6</instructionId>
+          <col>0</col>
+          <row>10</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_7, call, scriptTableActor, arrowsInCavern, 9]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_4_7</instructionId>
+          <col>3</col>
+          <row>11</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [4])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_7</instructionId>
+          <col>2</col>
+          <row>11</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_8, call, scriptTableActor, enterCommand, ss]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_8</instructionId>
+          <col>1</col>
+          <row>13</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_8</instructionId>
+          <col>0</col>
+          <row>13</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_9, call, scriptTableActor, arrowsInCavern, 9]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_4_9</instructionId>
+          <col>3</col>
+          <row>14</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [5])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_9</instructionId>
+          <col>2</col>
+          <row>14</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0, call, scriptTableActor, enterCommand, shoot west]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_1, call, scriptTableActor, arrowsInCavern, 1]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_5_1</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [1])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_2, call, scriptTableActor, enterCommand, s west]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_2</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_2</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_3, call, scriptTableActor, arrowsInCavern, 1]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_5_3</instructionId>
+          <col>3</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [2])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_3</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_4, call, scriptTableActor, enterCommand, shoot w]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_4</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_4</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_5, call, scriptTableActor, arrowsInCavern, 1]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_5_5</instructionId>
+          <col>3</col>
+          <row>8</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [3])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_5</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_6, call, scriptTableActor, enterCommand, s w]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_6</instructionId>
+          <col>1</col>
+          <row>10</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_6</instructionId>
+          <col>0</col>
+          <row>10</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_7, call, scriptTableActor, arrowsInCavern, 1]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_5_7</instructionId>
+          <col>3</col>
+          <row>11</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [4])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_7</instructionId>
+          <col>2</col>
+          <row>11</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_8, call, scriptTableActor, enterCommand, sw]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_8</instructionId>
+          <col>1</col>
+          <row>13</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_8</instructionId>
+          <col>0</col>
+          <row>13</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_9, call, scriptTableActor, arrowsInCavern, 1]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_5_9</instructionId>
+          <col>3</col>
+          <row>14</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [5])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_9</instructionId>
+          <col>2</col>
+          <row>14</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_0, call, scriptTableActor, enterCommand, shoot east]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_6_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_1, call, scriptTableActor, arrowsInCavern, 5]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_6_1</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [1])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_2, call, scriptTableActor, enterCommand, s east]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_2</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_6_2</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_3, call, scriptTableActor, arrowsInCavern, 5]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_6_3</instructionId>
+          <col>3</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [2])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_3</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_4, call, scriptTableActor, enterCommand, shoot e]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_4</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_6_4</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_5, call, scriptTableActor, arrowsInCavern, 5]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_6_5</instructionId>
+          <col>3</col>
+          <row>8</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [3])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_5</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_6, call, scriptTableActor, enterCommand, s e]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_6</instructionId>
+          <col>1</col>
+          <row>10</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_6_6</instructionId>
+          <col>0</col>
+          <row>10</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_7, call, scriptTableActor, arrowsInCavern, 5]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_6_7</instructionId>
+          <col>3</col>
+          <row>11</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [4])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_7</instructionId>
+          <col>2</col>
+          <row>11</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_8, call, scriptTableActor, enterCommand, se]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_8</instructionId>
+          <col>1</col>
+          <row>13</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_6_8</instructionId>
+          <col>0</col>
+          <row>13</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_9, call, scriptTableActor, arrowsInCavern, 5]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_6_9</instructionId>
+          <col>3</col>
+          <row>14</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[[0] fail(expected [5])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_9</instructionId>
+          <col>2</col>
+          <row>14</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

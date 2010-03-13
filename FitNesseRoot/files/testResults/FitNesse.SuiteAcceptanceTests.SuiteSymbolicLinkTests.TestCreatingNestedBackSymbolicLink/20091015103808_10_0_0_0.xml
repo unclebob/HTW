@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestCreatingNestedBackSymbolicLink</rootPath>
+    <result>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('3911878520399552513');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img3911878520399552513"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="3911878520399552513"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-4801897476385295507');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img-4801897476385295507"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateNestedBackSymbolicLink">CreateNestedBackSymbolicLink</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateNestedBackSymbolicLink?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="-4801897476385295507">Create an nested backward symbolic link from a sub-page:<br/><br/>First we need to create some pages to play with.<br/><table border="1" cellspacing="0">
+<tr><td colspan="3">Page creator.</td>
+</tr>
+<tr><td>Page name.</td>
+<td>PageContents.</td>
+<td>valid?</td>
+</tr>
+<tr><td>LinkingPage</td>
+<td>LINKING PAGE</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>LinkingPage.LinkingChild</td>
+<td>LINKING CHILD</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>LinkingPage.LinkingChild.LinkingGrandChild</td>
+<td>LINKING GRAND CHILD</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild</td>
+<td>LINKING GREAT GRAND CHILD</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>LinkingPage.LinkingChild.LinkedChild</td>
+<td>LINKED CHILD</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/>Now we create a symbolic link named SymLink.  This links LinkedPage.LinkedChild as a child of LinkingPage.LinkingChild.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild?responder=symlink&amp;linkName=SymLink&amp;linkPath=&lt;LinkingChild.LinkedChild</td>
+<td class="pass">303</td>
+</tr>
+</table>
+</div>
+</div>
+<br/>Creating a symlink will redirect back to the properties page.<br/><table border="1" cellspacing="0">
+<tr><td colspan="4">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+<td>contents?</td>
+</tr>
+<tr><td>contents</td>
+<td>Location: LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild\?properties</td>
+<td class="pass">true</td>
+<td>&nbsp; <span class="fit_grey">HTTP/1.1 303 See Other
+Content-Length: 0
+Location: LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild?properties
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+</span></td>
+</tr>
+</table>
+<br/>Let's have a look at the properties view.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild?properties</td>
+<td class="pass">200</td>
+</tr>
+</table>
+<br/><div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('8152405906210185080');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8152405906210185080"/>
+	</a>
+&nbsp;<span class="meta">RESPONSE DATA </span>
+	<div class="hidden" id="8152405906210185080"><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>wrappedHtml?</td>
+</tr>
+<tr><td>contents</td>
+<td>&nbsp; <span class="fit_grey"><pre>HTTP/1.1 200 OK
+Content-Length: 5693
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Properties: LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;a href="/LinkingPage"&gt;LinkingPage&lt;/a&gt;.
+				&lt;a href="/LinkingPage.LinkingChild"&gt;LinkingChild&lt;/a&gt;.
+				&lt;a href="/LinkingPage.LinkingChild.LinkingGrandChild"&gt;LinkingGrandChild&lt;/a&gt;.
+				&lt;br/&gt;
+&lt;a href="/LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild" class="page_title"&gt;LinkingGreatGrandChild&lt;/a&gt;
+&lt;br/&gt;
+				&lt;span class="page_type"&gt;Page Properties&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;div class="right"&gt;Last modified anonymously&lt;/div&gt;
+				&lt;form method="post" action="LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild"&gt;
+					&lt;input type="hidden" name="responder" value="saveProperties"/&gt;
+					&lt;div style="width:100%"&gt;
+						&lt;div class="properties"&gt;
+							&lt;div style="float: left; width: 150px;"&gt;Page type: &lt;br/&gt;
+
+								&lt;input type="radio" name="PageType" value="Normal" checked="checked"/&gt; - Normal
+&lt;br/&gt;
+
+								&lt;input type="radio" name="PageType" value="Test"/&gt; - Test
+&lt;br/&gt;
+
+								&lt;input type="radio" name="PageType" value="Suite"/&gt; - Suite
+&lt;br/&gt;
+&lt;br/&gt;
+							&lt;/div&gt;
+							&lt;div style="float: left; width: 180px;"&gt;Actions:&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Edit" checked="true"/&gt; - Edit
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Versions" checked="true"/&gt; - Versions
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Properties" checked="true"/&gt; - Properties
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Refactor" checked="true"/&gt; - Refactor
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="WhereUsed" checked="true"/&gt; - WhereUsed
+&lt;br/&gt;
+&lt;br/&gt;
+							&lt;/div&gt;
+							&lt;div style="float: left; width: 180px;"&gt;Navigation:&lt;br/&gt;
+
+								&lt;input type="checkbox" name="RecentChanges" checked="true"/&gt; - RecentChanges
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Files" checked="true"/&gt; - Files
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Search" checked="true"/&gt; - Search
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Prune"/&gt; - Prune
+&lt;br/&gt;
+&lt;br/&gt;
+							&lt;/div&gt;
+							&lt;div style="float: left; width: 180px;"&gt;Security:&lt;br/&gt;
+
+								&lt;input type="checkbox" name="secure-read"/&gt; - secure-read
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="secure-write"/&gt; - secure-write
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="secure-test"/&gt; - secure-test
+&lt;br/&gt;
+&lt;br/&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="virtual-wiki-properties"&gt;
+							&lt;div style="float: left; width: 450px;"&gt;VirtualWiki URL: 
+								&lt;span style="color: #FF0000;"&gt;(DEPRECATED)&lt;/span&gt;
+&lt;br/&gt;
+
+								&lt;input type="text" name="VirtualWiki" value="" size="40"/&gt;
+&amp;nbsp;&amp;nbsp;							&lt;/div&gt;
+							&lt;div style="float: left; padding-right: 5px"&gt;
+								&lt;div style="float: left;"&gt;Tags:&lt;br/&gt;
+
+									&lt;input type="text" name="Suites" value="" size="40"/&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div style="float: left;"&gt;Help Text:&lt;br/&gt;
+
+								&lt;input type="text" name="HelpText" value="" size="90"/&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div&gt;&lt;br/&gt;
+
+						&lt;input type="submit" name="Save" value="Save Properties" accesskey="s"/&gt;
+					&lt;/div&gt;
+				&lt;/form&gt;
+				&lt;form method="post" action="LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild#end"&gt;&lt;hr/&gt;Wiki Import.  Supply the URL for the wiki you'd like to import.&lt;br/&gt;
+Remote Wiki URL:
+					&lt;input type="text" name="remoteUrl" size="70"/&gt;
+&lt;br/&gt;
+
+					&lt;input type="checkbox" name="autoUpdate" value="checked" checked="true"/&gt;
+- Automatically update imported content when executing tests&lt;br/&gt;
+
+					&lt;input type="hidden" name="responder" value="import"/&gt;
+					&lt;input type="submit" name="save" value="Import"/&gt;
+				&lt;/form&gt;
+				&lt;form method="get" action="LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild" name="symbolics"&gt;&lt;hr/&gt;
+					&lt;input type="hidden" name="responder" value="symlink"/&gt;
+					&lt;strong&gt;Symbolic Links&lt;/strong&gt;
+					&lt;table border="0" cellspacing="0" class="dirListing" style="width:80%"&gt;
+						&lt;tr style="background-color: #EFEFEF;"&gt;
+							&lt;td&gt;
+								&lt;strong&gt;Name&lt;/strong&gt;
+							&lt;/td&gt;
+							&lt;td&gt;
+								&lt;strong&gt;Path to Page&lt;/strong&gt;
+							&lt;/td&gt;
+							&lt;td style="text-align: right;"&gt;
+								&lt;strong&gt;Actions&lt;/strong&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr style="background-color: #FFFFFF;"&gt;
+							&lt;td&gt;SymLink&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a href=".LinkingPage.LinkingChild.LinkedChild"&gt;&amp;lt;LinkingChild.LinkedChild&lt;/a&gt;
+							&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a href="LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild?responder=symlink&amp;removal=SymLink"&gt;Unlink&amp;nbsp;&lt;/a&gt;&lt;a href="javascript:symbolicLinkRename('SymLink','LinkingPage.LinkingChild.LinkingGrandChild.LinkingGreatGrandChild');"&gt;&amp;nbsp;Rename:&lt;/a&gt;
+
+							&lt;/td&gt;
+							&lt;td style="text-align: right;"&gt;
+								&lt;input type="text" name="SymLink" size="16%"/&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr style="background-color: #EFEFEF;"&gt;
+							&lt;td&gt;
+								&lt;input type="text" name="linkName" size="16%"/&gt;
+							&lt;/td&gt;
+							&lt;td&gt;
+								&lt;input type="text" name="linkPath" size="60%"/&gt;
+							&lt;/td&gt;
+							&lt;td style="text-align: right;"&gt;
+								&lt;input type="submit" name="submit" value="Create/Replace" style="width:8em"/&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/table&gt;
+				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></span></td>
+</tr>
+</table>
+</div>
+</div>
+<br/>The newly created symbolic link will be listed along with a link to the linked page.<br/><table border="1" cellspacing="0">
+<tr><td colspan="3">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+</tr>
+<tr><td>contents</td>
+<td>SymLink</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>contents</td>
+<td>&lt;a href=".LinkingPage.LinkingChild.LinkedChild"&gt;&lt;LinkingChild.LinkedChild&lt;/a&gt;</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('3680495965290718329');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img3680495965290718329"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="3680495965290718329"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestCreatingNestedBackSymbolicLink</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

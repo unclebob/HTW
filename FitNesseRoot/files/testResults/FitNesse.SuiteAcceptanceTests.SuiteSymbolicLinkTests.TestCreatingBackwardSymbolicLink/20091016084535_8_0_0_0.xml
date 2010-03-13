@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestCreatingBackwardSymbolicLink</rootPath>
+    <result>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-283260023224255470');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-283260023224255470"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-283260023224255470"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('527943784530980007');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img527943784530980007"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateBackwardSymbolicLink">CreateBackwardSymbolicLink</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateBackwardSymbolicLink?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="527943784530980007">Create an absolute symbolic link from a sub-page:<br/><br/>First we need to create some pages to play with.<br/><table border="1" cellspacing="0">
+<tr><td colspan="3">Page creator.</td>
+</tr>
+<tr><td>Page name.</td>
+<td>PageContents.</td>
+<td>valid?</td>
+</tr>
+<tr><td>LinkingPage</td>
+<td>LINKING PAGE</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>LinkingPage.LinkingChild</td>
+<td>LINKING CHILD</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>LinkingPage.LinkedChild</td>
+<td>LINKED CHILD</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/>Now we create a symbolic link named SymLink.  This links LinkedPage.LinkedChild as a child of LinkingPage.LinkingChild.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage.LinkingChild?responder=symlink&amp;linkName=SymLink&amp;linkPath=&lt;LinkingPage.LinkedChild</td>
+<td class="pass">303</td>
+</tr>
+</table>
+</div>
+</div>
+<br/>Creating a symlink will redirect back to the properties page.<br/><table border="1" cellspacing="0">
+<tr><td colspan="4">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+<td>contents?</td>
+</tr>
+<tr><td>contents</td>
+<td>Location: LinkingPage.LinkingChild\?properties</td>
+<td class="pass">true</td>
+<td>&nbsp; <span class="fit_grey">HTTP/1.1 303 See Other
+Content-Length: 0
+Location: LinkingPage.LinkingChild?properties
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+</span></td>
+</tr>
+</table>
+<br/>Let's have a look at the properties view.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage.LinkingChild?properties</td>
+<td class="pass">200</td>
+</tr>
+</table>
+<br/><div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-9073122707608438929');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-9073122707608438929"/>
+	</a>
+&nbsp;<span class="meta">RESPONSE DATA </span>
+	<div class="hidden" id="-9073122707608438929"><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>wrappedHtml?</td>
+</tr>
+<tr><td>contents</td>
+<td>&nbsp; <span class="fit_grey"><pre>HTTP/1.1 200 OK
+Content-Length: 5243
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Properties: LinkingPage.LinkingChild&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;a href="/LinkingPage"&gt;LinkingPage&lt;/a&gt;.
+				&lt;br/&gt;
+&lt;a href="/LinkingPage.LinkingChild" class="page_title"&gt;LinkingChild&lt;/a&gt;
+&lt;br/&gt;
+				&lt;span class="page_type"&gt;Page Properties&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;div class="right"&gt;Last modified anonymously&lt;/div&gt;
+				&lt;form method="post" action="LinkingPage.LinkingChild"&gt;
+					&lt;input type="hidden" name="responder" value="saveProperties"/&gt;
+					&lt;div style="width:100%"&gt;
+						&lt;div class="properties"&gt;
+							&lt;div style="float: left; width: 150px;"&gt;Page type: &lt;br/&gt;
+
+								&lt;input type="radio" name="PageType" value="Normal" checked="checked"/&gt; - Normal
+&lt;br/&gt;
+
+								&lt;input type="radio" name="PageType" value="Test"/&gt; - Test
+&lt;br/&gt;
+
+								&lt;input type="radio" name="PageType" value="Suite"/&gt; - Suite
+&lt;br/&gt;
+&lt;br/&gt;
+							&lt;/div&gt;
+							&lt;div style="float: left; width: 180px;"&gt;Actions:&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Edit" checked="true"/&gt; - Edit
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Versions" checked="true"/&gt; - Versions
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Properties" checked="true"/&gt; - Properties
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Refactor" checked="true"/&gt; - Refactor
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="WhereUsed" checked="true"/&gt; - WhereUsed
+&lt;br/&gt;
+&lt;br/&gt;
+							&lt;/div&gt;
+							&lt;div style="float: left; width: 180px;"&gt;Navigation:&lt;br/&gt;
+
+								&lt;input type="checkbox" name="RecentChanges" checked="true"/&gt; - RecentChanges
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Files" checked="true"/&gt; - Files
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Search" checked="true"/&gt; - Search
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="Prune"/&gt; - Prune
+&lt;br/&gt;
+&lt;br/&gt;
+							&lt;/div&gt;
+							&lt;div style="float: left; width: 180px;"&gt;Security:&lt;br/&gt;
+
+								&lt;input type="checkbox" name="secure-read"/&gt; - secure-read
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="secure-write"/&gt; - secure-write
+&lt;br/&gt;
+
+								&lt;input type="checkbox" name="secure-test"/&gt; - secure-test
+&lt;br/&gt;
+&lt;br/&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="virtual-wiki-properties"&gt;
+							&lt;div style="float: left; width: 450px;"&gt;VirtualWiki URL: 
+								&lt;span style="color: #FF0000;"&gt;(DEPRECATED)&lt;/span&gt;
+&lt;br/&gt;
+
+								&lt;input type="text" name="VirtualWiki" value="" size="40"/&gt;
+&amp;nbsp;&amp;nbsp;							&lt;/div&gt;
+							&lt;div style="float: left; padding-right: 5px"&gt;
+								&lt;div style="float: left;"&gt;Tags:&lt;br/&gt;
+
+									&lt;input type="text" name="Suites" value="" size="40"/&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div style="float: left;"&gt;Help Text:&lt;br/&gt;
+
+								&lt;input type="text" name="HelpText" value="" size="90"/&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div&gt;&lt;br/&gt;
+
+						&lt;input type="submit" name="Save" value="Save Properties" accesskey="s"/&gt;
+					&lt;/div&gt;
+				&lt;/form&gt;
+				&lt;form method="post" action="LinkingPage.LinkingChild#end"&gt;&lt;hr/&gt;Wiki Import.  Supply the URL for the wiki you'd like to import.&lt;br/&gt;
+Remote Wiki URL:
+					&lt;input type="text" name="remoteUrl" size="70"/&gt;
+&lt;br/&gt;
+
+					&lt;input type="checkbox" name="autoUpdate" value="checked" checked="true"/&gt;
+- Automatically update imported content when executing tests&lt;br/&gt;
+
+					&lt;input type="hidden" name="responder" value="import"/&gt;
+					&lt;input type="submit" name="save" value="Import"/&gt;
+				&lt;/form&gt;
+				&lt;form method="get" action="LinkingPage.LinkingChild" name="symbolics"&gt;&lt;hr/&gt;
+					&lt;input type="hidden" name="responder" value="symlink"/&gt;
+					&lt;strong&gt;Symbolic Links&lt;/strong&gt;
+					&lt;table border="0" cellspacing="0" class="dirListing" style="width:80%"&gt;
+						&lt;tr style="background-color: #EFEFEF;"&gt;
+							&lt;td&gt;
+								&lt;strong&gt;Name&lt;/strong&gt;
+							&lt;/td&gt;
+							&lt;td&gt;
+								&lt;strong&gt;Path to Page&lt;/strong&gt;
+							&lt;/td&gt;
+							&lt;td style="text-align: right;"&gt;
+								&lt;strong&gt;Actions&lt;/strong&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr style="background-color: #FFFFFF;"&gt;
+							&lt;td&gt;SymLink&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a href=".LinkingPage.LinkedChild"&gt;&amp;lt;LinkingPage.LinkedChild&lt;/a&gt;
+							&lt;/td&gt;
+							&lt;td&gt;
+								&lt;a href="LinkingPage.LinkingChild?responder=symlink&amp;removal=SymLink"&gt;Unlink&amp;nbsp;&lt;/a&gt;&lt;a href="javascript:symbolicLinkRename('SymLink','LinkingPage.LinkingChild');"&gt;&amp;nbsp;Rename:&lt;/a&gt;
+
+							&lt;/td&gt;
+							&lt;td style="text-align: right;"&gt;
+								&lt;input type="text" name="SymLink" size="16%"/&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr style="background-color: #EFEFEF;"&gt;
+							&lt;td&gt;
+								&lt;input type="text" name="linkName" size="16%"/&gt;
+							&lt;/td&gt;
+							&lt;td&gt;
+								&lt;input type="text" name="linkPath" size="60%"/&gt;
+							&lt;/td&gt;
+							&lt;td style="text-align: right;"&gt;
+								&lt;input type="submit" name="submit" value="Create/Replace" style="width:8em"/&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/table&gt;
+				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></span></td>
+</tr>
+</table>
+</div>
+</div>
+<br/>The newly created symbolic link will be listed along with a link to the linked page.<br/><table border="1" cellspacing="0">
+<tr><td colspan="3">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+</tr>
+<tr><td>contents</td>
+<td>SymLink</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>contents</td>
+<td>&lt;a href=".LinkingPage.LinkedChild"&gt;&lt;LinkingPage.LinkedChild&lt;/a&gt;</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-1988826097383339182');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-1988826097383339182"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-1988826097383339182"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestCreatingBackwardSymbolicLink</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

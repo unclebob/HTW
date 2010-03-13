@@ -1,0 +1,1341 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestRunnerGeneratesXmlReports</rootPath>
+    <result>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-3582334223256034675');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-3582334223256034675"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-3582334223256034675"><table border="1" cellspacing="0" _TABLENUMBER=5005970841475816151>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4495877646132507245>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+The <a href="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests.TestRunner">TestRunner</a> has the option to generate and XML report.  The idea being that another process may read the XML outputs and generate some other report.  It has been suggested that the XML follow the JUnit format although it doesn't seem to fit.<br/><br/>example command line: <b>java fitnesse.runner.TestRunner -xml stdout localhost 9123 PageName</b><br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('256533417849484391');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img256533417849484391"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests.CreateSamplePages">CreateSamplePages</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests.CreateSamplePages?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="256533417849484391"><br/><table border="1" cellspacing="0" _TABLENUMBER=665485683197893865>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!path classes</td>
+</tr>
+<tr><td>line</td>
+<td>!path fitnesse.jar</td>
+</tr>
+<tr><td>line</td>
+<td>!contents</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=9209824174589799716>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.PassFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestPassing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6078367104583842359>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.FailFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestFailing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=9170425638589363006>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.IgnoreFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestIgnoring</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8697881049425647628>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.ErrorFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestCrashing</td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7893123560198809254>
+<tr><td colspan="3"><span class="pass">Test Runner Fixture</span></td>
+</tr>
+<tr><td>args</td>
+<td>page name</td>
+<td>output?</td>
+</tr>
+<tr><td>-xml stdout</td>
+<td>SuiteFodder.TestPassing</td>
+<td>$testXml<-[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4281508388886653066>
+<tr><td>script</td>
+<td colspan="4"><span class="pass">string comparator</span></td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>string</td>
+<td>$testXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]</td>
+<td>starts with</td>
+<td>&lt;?xml version="1.0"?&gt;</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>string</td>
+<td>$testXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]</td>
+<td>ends with</td>
+<td>&lt;/testResults&gt;\n\n</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>string</td>
+<td>$testXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]</td>
+<td>contains</td>
+<td>&lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6003617487027330701>
+<tr><td colspan="3"><span class="pass">Test Runner Fixture</span></td>
+</tr>
+<tr><td>args</td>
+<td>page name</td>
+<td>output?</td>
+</tr>
+<tr><td>-xml stdout</td>
+<td>SuiteFodder</td>
+<td>$suiteXml<-[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4247027054597989314>
+<tr><td>script</td>
+<td colspan="4"><span class="pass">string comparator</span></td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>string</td>
+<td>$suiteXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]</td>
+<td>contains</td>
+<td>&lt;right&gt;1&lt;/right&gt;</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>string</td>
+<td>$suiteXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]</td>
+<td>contains</td>
+<td>&lt;wrong&gt;1&lt;/wrong&gt;</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>string</td>
+<td>$suiteXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]</td>
+<td>contains</td>
+<td>&lt;ignores&gt;1&lt;/ignores&gt;</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>string</td>
+<td>$suiteXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]</td>
+<td>contains</td>
+<td>&lt;exceptions&gt;1&lt;/exceptions&gt;</td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7611068771674364544');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7611068771674364544"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-7611068771674364544"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=482447807282531852>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestRunnerGeneratesXmlReports</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!path classes]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!path fitnesse.jar]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!contents]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_3</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.PassFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestPassing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_4</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.FailFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestFailing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.IgnoreFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestIgnoring]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_6</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.ErrorFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestCrashing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_7</name>
+                <row>
+                    <col><![CDATA[pass(Test Runner Fixture)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[page name]]></col>
+                    <col><![CDATA[output?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-xml stdout]]></col>
+                    <col><![CDATA[SuiteFodder.TestPassing]]></col>
+                    <col><![CDATA[$testXml<-[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_8</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(string comparator)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[string]]></col>
+                    <col><![CDATA[$testXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></col>
+                    <col><![CDATA[starts with]]></col>
+                    <col><![CDATA[&lt;?xml version="1.0"?&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[string]]></col>
+                    <col><![CDATA[$testXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></col>
+                    <col><![CDATA[ends with]]></col>
+                    <col><![CDATA[&lt;/testResults&gt;\n\n]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[string]]></col>
+                    <col><![CDATA[$testXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></col>
+                    <col><![CDATA[contains]]></col>
+                    <col><![CDATA[&lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9</name>
+                <row>
+                    <col><![CDATA[pass(Test Runner Fixture)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[page name]]></col>
+                    <col><![CDATA[output?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-xml stdout]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[$suiteXml<-[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_10</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(string comparator)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[string]]></col>
+                    <col><![CDATA[$suiteXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></col>
+                    <col><![CDATA[contains]]></col>
+                    <col><![CDATA[&lt;right&gt;1&lt;/right&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[string]]></col>
+                    <col><![CDATA[$suiteXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></col>
+                    <col><![CDATA[contains]]></col>
+                    <col><![CDATA[&lt;wrong&gt;1&lt;/wrong&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[string]]></col>
+                    <col><![CDATA[$suiteXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></col>
+                    <col><![CDATA[contains]]></col>
+                    <col><![CDATA[&lt;ignores&gt;1&lt;/ignores&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[string]]></col>
+                    <col><![CDATA[$suiteXml->[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></col>
+                    <col><![CDATA[contains]]></col>
+                    <col><![CDATA[&lt;exceptions&gt;1&lt;/exceptions&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_11</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_1, call, scriptTableActor, line, !path classes]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_2, call, scriptTableActor, line, !path fitnesse.jar]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_3, call, scriptTableActor, line, !contents]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_3</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_3</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_4, call, scriptTableActor, page, SuiteFodder]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_4</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_4</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_1, call, scriptTableActor, line, !|fitnesse.testutil.PassFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_2, call, scriptTableActor, page, SuiteFodder.TestPassing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_1, call, scriptTableActor, line, !|fitnesse.testutil.FailFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_2, call, scriptTableActor, page, SuiteFodder.TestFailing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_1, call, scriptTableActor, line, !|fitnesse.testutil.IgnoreFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_2, call, scriptTableActor, page, SuiteFodder.TestIgnoring]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_6_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_1, call, scriptTableActor, line, !|fitnesse.testutil.ErrorFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_2, call, scriptTableActor, page, SuiteFodder.TestCrashing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_0, make, decisionTable_7, TestRunnerFixture]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_7_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Test Runner Fixture]]></expected>
+                              <evaluationMessage><![CDATA[pass(Test Runner Fixture)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_1, call, decisionTable_7, table, [[args, page name, output?], [-xml stdout, SuiteFodder.TestPassing, $testXml=]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_2, call, decisionTable_7, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_3, call, decisionTable_7, setArgs, -xml stdout]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[-xml stdout]]></expected>
+                              <evaluationMessage><![CDATA[-xml stdout]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_4, call, decisionTable_7, setPageName, SuiteFodder.TestPassing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[SuiteFodder.TestPassing]]></expected>
+                              <evaluationMessage><![CDATA[SuiteFodder.TestPassing]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_5, call, decisionTable_7, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_6, callAndAssign, testXml, decisionTable_7, output]]]></instruction>
+        <slimResult><![CDATA[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>SymbolAssignmentExpectation</type>
+                    <actual><![CDATA[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]></actual>
+                              <expected><![CDATA[$testXml=]]></expected>
+                              <evaluationMessage><![CDATA[$testXml<-[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084703&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_8_0, make, scriptTableActor, StringComparator]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[string comparator]]></expected>
+                              <evaluationMessage><![CDATA[pass(string comparator)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_8_1, call, scriptTableActor, stringStartsWith, $testXml, <?xml version="1.0"?>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_8_1</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_8_1</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_8_2, call, scriptTableActor, stringEndsWith, $testXml, </testResults>\n\n]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_8_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_8_2</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_8_2</instructionId>
+          <col>4</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_8_3, call, scriptTableActor, stringContains, $testXml, <pageHistoryLink>SuiteFodder.TestPassing?pageHistory]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_8_3</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_8_3</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_8_3</instructionId>
+          <col>4</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_0, make, decisionTable_9, TestRunnerFixture]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Test Runner Fixture]]></expected>
+                              <evaluationMessage><![CDATA[pass(Test Runner Fixture)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_1, call, decisionTable_9, table, [[args, page name, output?], [-xml stdout, SuiteFodder, $suiteXml=]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_2, call, decisionTable_9, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_3, call, decisionTable_9, setArgs, -xml stdout]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[-xml stdout]]></expected>
+                              <evaluationMessage><![CDATA[-xml stdout]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_4, call, decisionTable_9, setPageName, SuiteFodder]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[SuiteFodder]]></expected>
+                              <evaluationMessage><![CDATA[SuiteFodder]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_5, call, decisionTable_9, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_6, callAndAssign, suiteXml, decisionTable_9, output]]]></instruction>
+        <slimResult><![CDATA[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>SymbolAssignmentExpectation</type>
+                    <actual><![CDATA[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]></actual>
+                              <expected><![CDATA[$suiteXml=]]></expected>
+                              <evaluationMessage><![CDATA[$suiteXml<-[&lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084704&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n]]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_10_0, make, scriptTableActor, StringComparator]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_10_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[string comparator]]></expected>
+                              <evaluationMessage><![CDATA[pass(string comparator)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_10_1, call, scriptTableActor, stringContains, $suiteXml, <right>1</right>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_10_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_10_1</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_10_1</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_10_2, call, scriptTableActor, stringContains, $suiteXml, <wrong>1</wrong>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_10_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_10_2</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_10_2</instructionId>
+          <col>4</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_10_3, call, scriptTableActor, stringContains, $suiteXml, <ignores>1</ignores>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_10_3</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_10_3</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_10_3</instructionId>
+          <col>4</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_10_4, call, scriptTableActor, stringContains, $suiteXml, <exceptions>1</exceptions>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_10_4</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_10_4</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_10_4</instructionId>
+          <col>4</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_11_0, make, decisionTable_11, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_11_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_11_1, call, decisionTable_11, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

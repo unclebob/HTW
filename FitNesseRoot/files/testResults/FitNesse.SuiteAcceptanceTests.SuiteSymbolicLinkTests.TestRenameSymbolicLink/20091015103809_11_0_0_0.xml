@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestRenameSymbolicLink</rootPath>
+    <result>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('4439135634421294460');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img4439135634421294460"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="4439135634421294460"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+Renaming a Symbolic Link is done from the properties view of the page containing the link.  Each link in the list will have a <b>Rename</b> link that will initiate the renaming.  The link contains a URL of the form:<br/><div class="invisible"><span class="meta">variable defined: CODE=!lit?0?</span><br/><span class="meta">variable defined: code=!lit?1?</span><br/><span class="meta">variable defined: B=!lit?2?</span><br/><span class="meta">variable defined: b=!lit?3?</span><br/><span class="meta">variable defined: VAR=!lit?4?</span><br/><span class="meta">variable defined: var=!lit?5?</span></div>
+<pre><font size=-1><b>http://host/PathToPage?responder=symlink&rename=</b><font color=blue><em>nameOfLink</em></font><b>&amp;newname=</b><font color=blue><em>newNameForLink</em></font></font></pre><br/><br/>But first we need to create a link to rename.<br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-836082391945994482');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img-836082391945994482"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateRelativeSymbolicLink">CreateRelativeSymbolicLink</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateRelativeSymbolicLink?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="-836082391945994482">Creating a symbolic link is done in the properties view of the page that will contain the link.  There is a form where a user supplies a name for the link and a path for the linked page.  When submitted the URL has the following form:<br/><br/>http://host/PathToPage?responder=symlink&linkName=<linkName>&linkPath=<linkPath><br/><br/>First we need to create some pages to play with.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Page creator.</td>
+</tr>
+<tr><td>Page name.</td>
+<td>valid?</td>
+</tr>
+<tr><td>LinkingPage</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>LinkedPage</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/>Now we create a symbolic link named SymLink.  This links LinkedPage as a child of LinkingPage.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?responder=symlink&amp;linkName=SymLink&amp;linkPath=LinkedPage</td>
+<td class="pass">303</td>
+</tr>
+</table>
+<br/></div>
+</div>
+<br/>When we look at the properties page we'll see the rename link.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?properties</td>
+<td class="pass">200</td>
+</tr>
+</table>
+<table border="1" cellspacing="0">
+<tr><td colspan="3">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+</tr>
+<tr><td>contents</td>
+<td>SymLink</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>contents</td>
+<td>&lt;a href="javascript:symbolicLinkRename\(.*\);"&gt;&amp;nbsp;Rename:&lt;/a&gt;</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/>Now click the <b>Rename</b> link.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?responder=symlink&amp;rename=SymLink&amp;newname=NewLink</td>
+<td class="pass">303</td>
+</tr>
+</table>
+<br/>This should change the name of the symbolic link and redirect back to the properties view.<br/><table border="1" cellspacing="0">
+<tr><td colspan="4">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+<td>contents?</td>
+</tr>
+<tr><td>contents</td>
+<td>Location: LinkingPage\?properties</td>
+<td class="pass">true</td>
+<td>&nbsp; <span class="fit_grey">HTTP/1.1 303 See Other
+Content-Length: 0
+Location: LinkingPage?properties
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+</span></td>
+</tr>
+</table>
+<br/>When we look at the properties page again, the symbolic link will have a different name.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?properties</td>
+<td class="pass">200</td>
+</tr>
+</table>
+<table border="1" cellspacing="0">
+<tr><td colspan="3">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+</tr>
+<tr><td>contents</td>
+<td>NewLink</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>contents</td>
+<td>SymLink</td>
+<td class="pass">false</td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('783167537959516167');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img783167537959516167"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="783167537959516167"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestRenameSymbolicLink</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

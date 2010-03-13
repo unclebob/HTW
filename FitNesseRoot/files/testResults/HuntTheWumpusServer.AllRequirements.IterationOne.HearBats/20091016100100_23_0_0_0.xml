@@ -1,0 +1,1965 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>HearBats</rootPath>
+    <result>
+    <counts>
+      <right>23</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('8588805751672962170');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8588805751672962170"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpusServer.SetUp">.HuntTheWumpusServer.SetUp</a> (edit: <a href="HuntTheWumpusServer.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">locally</a> | <a href="http://10.80.72.121:80/HuntTheWumpus.SetUp?responder=edit&amp;redirectToReferer=true&amp;redirectAction=importAndView">remotely</a>)</span>
+	<div class="hidden" id="8588805751672962170"><table border="1" cellspacing="0" _TABLENUMBER=701329759320576714>
+<tr><td>script</td>
+<td><span class="pass">HuntTheWumpus.fixtures.GameDriver</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6148633757086111386>
+<tr><td>Import</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('142484809604722531');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img142484809604722531"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="142484809604722531"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('6327219521854386293');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img6327219521854386293"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="HuntTheWumpusServer.ScenarioLibrary">.HuntTheWumpusServer.ScenarioLibrary</a> <a href="HuntTheWumpusServer.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="6327219521854386293"><table border="1" cellspacing="0" _TABLENUMBER=9086816021807055292>
+<tr><td>scenario</td>
+<td>message</td>
+<td>msg</td>
+<td>ShouldPrintWhenPlayerMoves</td>
+<td>direction</td>
+<td>FromCavern</td>
+<td>cavern</td>
+</tr>
+<tr><td>put</td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="4">@cavern</td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="6">rest</td>
+</tr>
+<tr><td>reject</td>
+<td>message</td>
+<td>@msg</td>
+<td colspan="4">was printed</td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="6">@direction</td>
+</tr>
+<tr><td>ensure</td>
+<td>message</td>
+<td>@msg</td>
+<td colspan="4">was printed</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8819179441706485008>
+<tr><td>scenario</td>
+<td>message</td>
+<td>msg</td>
+<td>should print when player approaches</td>
+<td colspan="2">object</td>
+</tr>
+<tr><td>put</td>
+<td>@object</td>
+<td>in cavern</td>
+<td colspan="3">3</td>
+</tr>
+<tr><td>message</td>
+<td>@msg</td>
+<td>should print when player moves</td>
+<td>west</td>
+<td>from cavern</td>
+<td>5</td>
+</tr>
+<tr><td>message</td>
+<td>@msg</td>
+<td>should print when player moves</td>
+<td>east</td>
+<td>from cavern</td>
+<td>1</td>
+</tr>
+<tr><td>message</td>
+<td>@msg</td>
+<td>should print when player moves</td>
+<td>north</td>
+<td>from cavern</td>
+<td>9</td>
+</tr>
+<tr><td>message</td>
+<td>@msg</td>
+<td>should print when player moves</td>
+<td>south</td>
+<td>from cavern</td>
+<td>6</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<h3>When the player is adjacent to a cavern with bats, he should hear chirping sounds.</h3><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('8998395616171801408');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8998395616171801408"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="HuntTheWumpus.CrossMap">&lt;HuntTheWumpus.CrossMap</a> <a href="HuntTheWumpus.CrossMap?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="8998395616171801408">Create a convenient map that looks like this:<br/><pre><br/>         [6]<br/>         [7]<br/>   [1][2][3][4][5]<br/>         [8]<br/>         [9]<br/></pre><br/><br/><table border="1" cellspacing="0" _TABLENUMBER=145545947289920045>
+<tr><td colspan="3"><span class="pass">Make map</span></td>
+</tr>
+<tr><td>start</td>
+<td>end</td>
+<td>direction</td>
+</tr>
+<tr><td>1</td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td>2</td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr><td>3</td>
+<td>4</td>
+<td>E</td>
+</tr>
+<tr><td>4</td>
+<td>5</td>
+<td>E</td>
+</tr>
+<tr><td>6</td>
+<td>7</td>
+<td>S</td>
+</tr>
+<tr><td>7</td>
+<td>3</td>
+<td>S</td>
+</tr>
+<tr><td>3</td>
+<td>8</td>
+<td>S</td>
+</tr>
+<tr><td>8</td>
+<td>9</td>
+<td>S</td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2539872090575578025>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td class=pass>message</td>
+<td class=pass>You hear chirping.</td>
+<td class=pass>should print when player approaches</td>
+<td class=pass>bats</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-8718646795391614788');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-8718646795391614788"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-8718646795391614788"><table border="1" cellspacing="0" _TABLENUMBER=8923542169406001746 table_name="scriptTable_5_0/scriptTable_3">
+<tr><td>scenario</td>
+<td>message</td>
+<td>msg</td>
+<td>should print when player approaches</td>
+<td colspan="2">object</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>bats</td>
+<td>in cavern</td>
+<td colspan="3">3</td>
+</tr>
+<tr><td class=pass>message</td>
+<td class=pass>You hear chirping.</td>
+<td class=pass>should print when player moves</td>
+<td class=pass>west</td>
+<td class=pass>from cavern</td>
+<td class=pass>5</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('6131867273035067558');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img6131867273035067558"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="6131867273035067558"><table border="1" cellspacing="0" _TABLENUMBER=733004381183048968 table_name="scriptTable_5_0/scriptTable_3_1/scriptTable_2">
+<tr><td>scenario</td>
+<td>message</td>
+<td>msg</td>
+<td>ShouldPrintWhenPlayerMoves</td>
+<td>direction</td>
+<td>FromCavern</td>
+<td>cavern</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="4">5</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="6">rest</td>
+</tr>
+<tr><td><span class="pass">reject</span></td>
+<td>message</td>
+<td>You hear chirping.</td>
+<td colspan="4">was printed</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="6">west</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>message</td>
+<td>You hear chirping.</td>
+<td colspan="4">was printed</td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>message</td>
+<td class=pass>You hear chirping.</td>
+<td class=pass>should print when player moves</td>
+<td class=pass>east</td>
+<td class=pass>from cavern</td>
+<td class=pass>1</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-904286913832470503');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-904286913832470503"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-904286913832470503"><table border="1" cellspacing="0" _TABLENUMBER=9143757281417614744 table_name="scriptTable_5_0/scriptTable_3_2/scriptTable_2">
+<tr><td>scenario</td>
+<td>message</td>
+<td>msg</td>
+<td>ShouldPrintWhenPlayerMoves</td>
+<td>direction</td>
+<td>FromCavern</td>
+<td>cavern</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="4">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="6">rest</td>
+</tr>
+<tr><td><span class="pass">reject</span></td>
+<td>message</td>
+<td>You hear chirping.</td>
+<td colspan="4">was printed</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="6">east</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>message</td>
+<td>You hear chirping.</td>
+<td colspan="4">was printed</td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>message</td>
+<td class=pass>You hear chirping.</td>
+<td class=pass>should print when player moves</td>
+<td class=pass>north</td>
+<td class=pass>from cavern</td>
+<td class=pass>9</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-5809968965538554327');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5809968965538554327"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-5809968965538554327"><table border="1" cellspacing="0" _TABLENUMBER=1116728393342696410 table_name="scriptTable_5_0/scriptTable_3_3/scriptTable_2">
+<tr><td>scenario</td>
+<td>message</td>
+<td>msg</td>
+<td>ShouldPrintWhenPlayerMoves</td>
+<td>direction</td>
+<td>FromCavern</td>
+<td>cavern</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="4">9</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="6">rest</td>
+</tr>
+<tr><td><span class="pass">reject</span></td>
+<td>message</td>
+<td>You hear chirping.</td>
+<td colspan="4">was printed</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="6">north</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>message</td>
+<td>You hear chirping.</td>
+<td colspan="4">was printed</td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>message</td>
+<td class=pass>You hear chirping.</td>
+<td class=pass>should print when player moves</td>
+<td class=pass>south</td>
+<td class=pass>from cavern</td>
+<td class=pass>6</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-126881445491498336');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-126881445491498336"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-126881445491498336"><table border="1" cellspacing="0" _TABLENUMBER=7536436829357943488 table_name="scriptTable_5_0/scriptTable_3_4/scriptTable_2">
+<tr><td>scenario</td>
+<td>message</td>
+<td>msg</td>
+<td>ShouldPrintWhenPlayerMoves</td>
+<td>direction</td>
+<td>FromCavern</td>
+<td>cavern</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="4">6</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="6">rest</td>
+</tr>
+<tr><td><span class="pass">reject</span></td>
+<td>message</td>
+<td>You hear chirping.</td>
+<td colspan="4">was printed</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="6">south</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>message</td>
+<td>You hear chirping.</td>
+<td colspan="4">was printed</td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+</table>
+]]></content>
+    <relativePageName>HearBats</relativePageName>
+    
+        <tables>
+            <table>
+        <name>scriptTable_0</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>import_1</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[HuntTheWumpus.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_2</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[msg]]></col>
+                    <col><![CDATA[ShouldPrintWhenPlayerMoves]]></col>
+                    <col><![CDATA[direction]]></col>
+                    <col><![CDATA[FromCavern]]></col>
+                    <col><![CDATA[cavern]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[put]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[@cavern]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[rest]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[@direction]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[msg]]></col>
+                    <col><![CDATA[should print when player approaches]]></col>
+                    <col><![CDATA[object]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[put]]></col>
+                    <col><![CDATA[@object]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[west]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[east]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[north]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[9]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[south]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[6]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_4</name>
+                <row>
+                    <col><![CDATA[pass(Make map)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[start]]></col>
+                    <col><![CDATA[end]]></col>
+                    <col><![CDATA[direction]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[7]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[7]]></col>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[9]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[should print when player approaches]]></col>
+                    <col><![CDATA[bats]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_5_0/scriptTable_3)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5_0/scriptTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[msg]]></col>
+                    <col><![CDATA[should print when player approaches]]></col>
+                    <col><![CDATA[object]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[bats]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[west]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_5_0/scriptTable_3_1/scriptTable_2)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[east]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_5_0/scriptTable_3_2/scriptTable_2)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[north]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[9]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_5_0/scriptTable_3_3/scriptTable_2)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[south]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_5_0/scriptTable_3_4/scriptTable_2)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5_0/scriptTable_3_1/scriptTable_2</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[msg]]></col>
+                    <col><![CDATA[ShouldPrintWhenPlayerMoves]]></col>
+                    <col><![CDATA[direction]]></col>
+                    <col><![CDATA[FromCavern]]></col>
+                    <col><![CDATA[cavern]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[rest]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(reject)]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[west]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5_0/scriptTable_3_2/scriptTable_2</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[msg]]></col>
+                    <col><![CDATA[ShouldPrintWhenPlayerMoves]]></col>
+                    <col><![CDATA[direction]]></col>
+                    <col><![CDATA[FromCavern]]></col>
+                    <col><![CDATA[cavern]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[rest]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(reject)]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[east]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5_0/scriptTable_3_3/scriptTable_2</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[msg]]></col>
+                    <col><![CDATA[ShouldPrintWhenPlayerMoves]]></col>
+                    <col><![CDATA[direction]]></col>
+                    <col><![CDATA[FromCavern]]></col>
+                    <col><![CDATA[cavern]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[9]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[rest]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(reject)]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[north]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5_0/scriptTable_3_4/scriptTable_2</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[msg]]></col>
+                    <col><![CDATA[ShouldPrintWhenPlayerMoves]]></col>
+                    <col><![CDATA[direction]]></col>
+                    <col><![CDATA[FromCavern]]></col>
+                    <col><![CDATA[cavern]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[6]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[rest]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(reject)]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[south]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[You hear chirping.]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_0_0, make, scriptTableActor, HuntTheWumpus.fixtures.GameDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_0_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[HuntTheWumpus.fixtures.GameDriver]]></expected>
+                              <evaluationMessage><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[import_1_0, import, HuntTheWumpus.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_0, make, decisionTable_4, MakeMap]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_4_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Make map]]></expected>
+                              <evaluationMessage><![CDATA[pass(Make map)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_1, call, decisionTable_4, table, [[start, end, direction], [1, 2, E], [2, 3, E], [3, 4, E], [4, 5, E], [6, 7, S], [7, 3, S], [3, 8, S], [8, 9, S]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_2, call, decisionTable_4, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_3, call, decisionTable_4, setStart, 1]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_4, call, decisionTable_4, setEnd, 2]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[2]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_5, call, decisionTable_4, setDirection, E]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_5</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_6, call, decisionTable_4, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_7, call, decisionTable_4, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_8, call, decisionTable_4, setStart, 2]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_8</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[2]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_9, call, decisionTable_4, setEnd, 3]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_9</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_10, call, decisionTable_4, setDirection, E]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_10</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_11, call, decisionTable_4, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_12, call, decisionTable_4, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_13, call, decisionTable_4, setStart, 3]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_13</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_14, call, decisionTable_4, setEnd, 4]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_14</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[4]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_15, call, decisionTable_4, setDirection, E]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_15</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_16, call, decisionTable_4, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_17, call, decisionTable_4, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_18, call, decisionTable_4, setStart, 4]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_18</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[4]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_19, call, decisionTable_4, setEnd, 5]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_19</instructionId>
+          <col>1</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_20, call, decisionTable_4, setDirection, E]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_20</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_21, call, decisionTable_4, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_22, call, decisionTable_4, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_23, call, decisionTable_4, setStart, 6]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_23</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[6]]></expected>
+                              <evaluationMessage><![CDATA[6]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_24, call, decisionTable_4, setEnd, 7]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_24</instructionId>
+          <col>1</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[7]]></expected>
+                              <evaluationMessage><![CDATA[7]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_25, call, decisionTable_4, setDirection, S]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_25</instructionId>
+          <col>2</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_26, call, decisionTable_4, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_27, call, decisionTable_4, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_28, call, decisionTable_4, setStart, 7]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_28</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[7]]></expected>
+                              <evaluationMessage><![CDATA[7]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_29, call, decisionTable_4, setEnd, 3]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_29</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_30, call, decisionTable_4, setDirection, S]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_30</instructionId>
+          <col>2</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_31, call, decisionTable_4, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_32, call, decisionTable_4, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_33, call, decisionTable_4, setStart, 3]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_33</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_34, call, decisionTable_4, setEnd, 8]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_34</instructionId>
+          <col>1</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[8]]></expected>
+                              <evaluationMessage><![CDATA[8]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_35, call, decisionTable_4, setDirection, S]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_35</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_36, call, decisionTable_4, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_37, call, decisionTable_4, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_38, call, decisionTable_4, setStart, 8]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_38</instructionId>
+          <col>0</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[8]]></expected>
+                              <evaluationMessage><![CDATA[8]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_39, call, decisionTable_4, setEnd, 9]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_39</instructionId>
+          <col>1</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[9]]></expected>
+                              <evaluationMessage><![CDATA[9]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_40, call, decisionTable_4, setDirection, S]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_40</instructionId>
+          <col>2</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_41, call, decisionTable_4, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_0, call, scriptTableActor, putInCavern, bats, 3]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_1/scriptTable_2_0, call, scriptTableActor, putInCavern, player, 5]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_1/scriptTable_2_1, call, scriptTableActor, enterCommand, rest]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_1</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_1/scriptTable_2_2, call, scriptTableActor, messageWasPrinted, You hear chirping.]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>RejectActionExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[reject]]></expected>
+                              <evaluationMessage><![CDATA[pass(reject)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_2</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_1/scriptTable_2_3, call, scriptTableActor, enterCommand, west]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_3</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_3</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_1/scriptTable_2_4, call, scriptTableActor, messageWasPrinted, You hear chirping.]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_4</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_1/scriptTable_2_4</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_2/scriptTable_2_0, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_2/scriptTable_2_1, call, scriptTableActor, enterCommand, rest]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_1</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_2/scriptTable_2_2, call, scriptTableActor, messageWasPrinted, You hear chirping.]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>RejectActionExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[reject]]></expected>
+                              <evaluationMessage><![CDATA[pass(reject)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_2</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_2/scriptTable_2_3, call, scriptTableActor, enterCommand, east]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_3</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_3</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_2/scriptTable_2_4, call, scriptTableActor, messageWasPrinted, You hear chirping.]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_4</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_2/scriptTable_2_4</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_3/scriptTable_2_0, call, scriptTableActor, putInCavern, player, 9]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_3/scriptTable_2_1, call, scriptTableActor, enterCommand, rest]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_1</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_3/scriptTable_2_2, call, scriptTableActor, messageWasPrinted, You hear chirping.]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>RejectActionExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[reject]]></expected>
+                              <evaluationMessage><![CDATA[pass(reject)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_2</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_3/scriptTable_2_3, call, scriptTableActor, enterCommand, north]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_3</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_3</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_3/scriptTable_2_4, call, scriptTableActor, messageWasPrinted, You hear chirping.]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_4</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_3/scriptTable_2_4</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_4/scriptTable_2_0, call, scriptTableActor, putInCavern, player, 6]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_4/scriptTable_2_1, call, scriptTableActor, enterCommand, rest]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_1</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_4/scriptTable_2_2, call, scriptTableActor, messageWasPrinted, You hear chirping.]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>RejectActionExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[reject]]></expected>
+                              <evaluationMessage><![CDATA[pass(reject)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_2</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_4/scriptTable_2_3, call, scriptTableActor, enterCommand, south]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_3</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_3</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0/scriptTable_3_4/scriptTable_2_4, call, scriptTableActor, messageWasPrinted, You hear chirping.]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_4</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_0/scriptTable_3_4/scriptTable_2_4</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

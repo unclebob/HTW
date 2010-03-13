@@ -1,0 +1,3463 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>AlwaysSecureOperation</rootPath>
+    <result>
+    <counts>
+      <right>17</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('8569923634193967195');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8569923634193967195"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="8569923634193967195"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('1370443900548458369');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img1370443900548458369"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SetUp">&lt;SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="1370443900548458369"><table border="1" cellspacing="0" _TABLENUMBER=1108307718956802161>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6350315873508171508>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7549786708574764023>
+<tr><td>script</td>
+<td><span class="pass">page driver</span></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-4778406241764208545');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4778406241764208545"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="-4778406241764208545"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('3522266922877890705');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img3522266922877890705"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="3522266922877890705"><table border="1" cellspacing="0" _TABLENUMBER=7122985130927069814>
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with content</td>
+<td colspan="2">@content</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3114021263624078705>
+<tr><td>scenario</td>
+<td>given page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>nothing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6693299236123941480>
+<tr><td>scenario</td>
+<td>given test page</td>
+<td>page</td>
+</tr>
+<tr><td>given page</td>
+<td colspan="2">@page</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td>a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4609385346829503777>
+<tr><td>scenario</td>
+<td>given slim test page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>!define TEST_SYSTEM {slim}</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td colspan="2">a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5143114165652953177>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;a href="@target"&gt;</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@source</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8134462683331819994>
+<tr><td>scenario</td>
+<td>it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5446776308868566212>
+<tr><td>scenario</td>
+<td>and it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3190625623262742525>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have creating link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7033177325706491148>
+<tr><td>scenario</td>
+<td>it should have creating link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have creating link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5468011764446352733>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4875573957964781456>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8338982853948977559>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5255476012574816263>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7749506802364366943>
+<tr><td>scenario</td>
+<td>it should not contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should not contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4113148888570282004>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td>text</td>
+<td>in line</td>
+<td>symbol</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>$@symbol=</td>
+<td>line number containing</td>
+<td colspan="3">@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=610080382500764940>
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should match</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3890291566173793671>
+<tr><td>scenario</td>
+<td>test results for page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2526566853869690783>
+<tr><td>scenario</td>
+<td>its test results should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>test results for page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5786245378538267426>
+<tr><td>scenario</td>
+<td>test ressults for page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4543300114801897928>
+<tr><td>scenario</td>
+<td>and should contain</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4344884480431262562>
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6005762477276002463>
+<tr><td>scenario</td>
+<td>and should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5363919401255142755>
+<tr><td>scenario</td>
+<td>widget</td>
+<td>wikiText</td>
+<td>should render</td>
+<td>htmlText</td>
+</tr>
+<tr><td>create page</td>
+<td>WidgetPage</td>
+<td>with content</td>
+<td colspan="2">@wikiText</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>WidgetPage</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@htmlText</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2845818277903260341>
+<tr><td>scenario</td>
+<td>the line</td>
+<td>after</td>
+<td>should come after</td>
+<td>before</td>
+</tr>
+<tr><td>check</td>
+<td>echo int</td>
+<td>$@before</td>
+<td colspan="2">&lt; $@after</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('2050438483342760973');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2050438483342760973"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteAuthenticationTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="2050438483342760973"><table border="1" cellspacing="0" _TABLENUMBER=5771840803115069004>
+<tr><td>scenario</td>
+<td colspan="3">it should be readable with no authentication</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td>200</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2638928696496586573>
+<tr><td>scenario</td>
+<td colspan="3">it should not be readable with no authentication</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td>401</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6265524534980113161>
+<tr><td>scenario</td>
+<td>it should be readable by user</td>
+<td>user</td>
+<td>password</td>
+<td colspan="4">password</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td>authenticated by user</td>
+<td>@user</td>
+<td>and password</td>
+<td>@password</td>
+<td>200</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1712667999400111377>
+<tr><td>scenario</td>
+<td>it should not be readable by user</td>
+<td>user</td>
+<td>password</td>
+<td colspan="4">password</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td>authenticated by user</td>
+<td>@user</td>
+<td>and password</td>
+<td>@password</td>
+<td>401</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=396895826354701566>
+<tr><td>scenario</td>
+<td>given read locked page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with authentication</td>
+<td>secure-read=true</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="2">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6199622622852136022>
+<tr><td>scenario</td>
+<td>given write locked page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with authentication</td>
+<td>secure-write=true</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="2">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7103999064391265089>
+<tr><td>scenario</td>
+<td>given test locked page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with authentication</td>
+<td>secure-test=true</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="2">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5623570904601351019>
+<tr><td>scenario</td>
+<td>directory</td>
+<td>dir</td>
+<td>should not be readable with no authentication</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@dir</td>
+<td>401</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=516065112283401041>
+<tr><td>scenario</td>
+<td>directory</td>
+<td>dir</td>
+<td>should not be readable by user</td>
+<td>user</td>
+<td>password</td>
+<td colspan="2">password</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@dir</td>
+<td>authenticated by user</td>
+<td>@user</td>
+<td>and password</td>
+<td>@password</td>
+<td>401</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=9153467048709677073>
+<tr><td>scenario</td>
+<td>directory</td>
+<td>dir</td>
+<td>should be readable by user</td>
+<td>user</td>
+<td>password</td>
+<td colspan="2">password</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@dir</td>
+<td>authenticated by user</td>
+<td>@user</td>
+<td>and password</td>
+<td>@password</td>
+<td>200</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=903658420336272955>
+<tr><td>scenario</td>
+<td colspan="3">it should be not readable with no authentication</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td>401</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1123570420872260693>
+<tr><td>scenario</td>
+<td>it should not be readable by user</td>
+<td>user</td>
+<td>password</td>
+<td colspan="4">password</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td>authenticated by user</td>
+<td>@user</td>
+<td>and password</td>
+<td>@password</td>
+<td>401</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4054188309062782939>
+<tr><td>scenario</td>
+<td>it should be readable by user</td>
+<td>user</td>
+<td>password</td>
+<td colspan="4">password</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td>authenticated by user</td>
+<td>@user</td>
+<td>and password</td>
+<td>@password</td>
+<td>200</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3675637851005642174>
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with bad authentication should fail</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT?@operation</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open please</td>
+<td>401</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7769005218390704102>
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with good authentication should not fail</td>
+</tr>
+<tr><td>check not</td>
+<td>request page</td>
+<td>$IT?@operation</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open sesame</td>
+<td>401</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3530614161016214870>
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td>is authenticated</td>
+</tr>
+<tr><td>operation</td>
+<td>@operation</td>
+<td colspan="2">with bad authentication should fail</td>
+</tr>
+<tr><td>operation</td>
+<td>@operation</td>
+<td colspan="2">with good authentication should not fail</td>
+</tr>
+</table>
+<br/></div>
+</div>
+</div>
+</div>
+<table border="1" cellspacing="0" _TABLENUMBER=1926578793267260895>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td>given user</td>
+<td>Aladdin</td>
+<td>with password</td>
+<td>open sesame</td>
+</tr>
+<tr><td class=pass>given page</td>
+<td colspan="3" class=pass>FrontPage</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-3969286492696830984');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-3969286492696830984"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-3969286492696830984"><table border="1" cellspacing="0" _TABLENUMBER=5474525720545477728 table_name="scriptTable_43_1/scriptTable_4">
+<tr><td>scenario</td>
+<td>given page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td class=pass>given page</td>
+<td class=pass>FrontPage</td>
+<td class=pass>with content</td>
+<td class=pass>nothing</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-5580574897035254415');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5580574897035254415"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-5580574897035254415"><table border="1" cellspacing="0" _TABLENUMBER=8609540771578959405 table_name="scriptTable_43_1/scriptTable_4_0/scriptTable_3">
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>FrontPage</td>
+<td>with content</td>
+<td colspan="2">nothing</td>
+</tr>
+<tr><td>$IT<-[FrontPage]</td>
+<td>echo</td>
+<td colspan="3">FrontPage</td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+</table>
+<br/><span class="note">Make sure saveProperties is last, because it clears the write-lock</span><br/><table border="1" cellspacing="0" _TABLENUMBER=1614127689647289028>
+<tr><td>operation is authenticated</td>
+</tr>
+<tr><td>operation</td>
+</tr>
+<tr><td class=pass>purgeHistory</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('5046078686746693751');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5046078686746693751"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="5046078686746693751"><table border="1" cellspacing="0" _TABLENUMBER=5539301929847772523 table_name="decisionTable_44_0/scriptTable_42">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td>is authenticated</td>
+</tr>
+<tr><td class=pass>operation</td>
+<td class=pass>purgeHistory</td>
+<td colspan="2" class=pass>with bad authentication should fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-2915203401378007821');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2915203401378007821"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-2915203401378007821"><table border="1" cellspacing="0" _TABLENUMBER=2375851828093048076 table_name="decisionTable_44_0/scriptTable_42_0/scriptTable_40">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with bad authentication should fail</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?purgeHistory</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open please</td>
+<td><span class="pass">401</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>operation</td>
+<td class=pass>purgeHistory</td>
+<td colspan="2" class=pass>with good authentication should not fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-7318894509918997782');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7318894509918997782"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-7318894509918997782"><table border="1" cellspacing="0" _TABLENUMBER=1975130409760274966 table_name="decisionTable_44_0/scriptTable_42_1/scriptTable_41">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with good authentication should not fail</td>
+</tr>
+<tr><td>check not</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?purgeHistory</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open sesame</td>
+<td>[400] <span class="pass">expected [401]</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>testHistory</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('3409895239397948716');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img3409895239397948716"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="3409895239397948716"><table border="1" cellspacing="0" _TABLENUMBER=3595476798161326517 table_name="decisionTable_44_1/scriptTable_42">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td>is authenticated</td>
+</tr>
+<tr><td class=pass>operation</td>
+<td class=pass>testHistory</td>
+<td colspan="2" class=pass>with bad authentication should fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('4407918118581222595');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img4407918118581222595"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="4407918118581222595"><table border="1" cellspacing="0" _TABLENUMBER=9208943560491741857 table_name="decisionTable_44_1/scriptTable_42_0/scriptTable_40">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with bad authentication should fail</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?testHistory</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open please</td>
+<td><span class="pass">401</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>operation</td>
+<td class=pass>testHistory</td>
+<td colspan="2" class=pass>with good authentication should not fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-2249439172293992798');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2249439172293992798"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-2249439172293992798"><table border="1" cellspacing="0" _TABLENUMBER=3122133095252851669 table_name="decisionTable_44_1/scriptTable_42_1/scriptTable_41">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with good authentication should not fail</td>
+</tr>
+<tr><td>check not</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?testHistory</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open sesame</td>
+<td>[200] <span class="pass">expected [401]</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>pageHistory</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-9003612445422294122');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-9003612445422294122"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-9003612445422294122"><table border="1" cellspacing="0" _TABLENUMBER=3504777057252475944 table_name="decisionTable_44_2/scriptTable_42">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td>is authenticated</td>
+</tr>
+<tr><td class=pass>operation</td>
+<td class=pass>pageHistory</td>
+<td colspan="2" class=pass>with bad authentication should fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('776212270127205618');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img776212270127205618"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="776212270127205618"><table border="1" cellspacing="0" _TABLENUMBER=8256838966968710377 table_name="decisionTable_44_2/scriptTable_42_0/scriptTable_40">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with bad authentication should fail</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?pageHistory</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open please</td>
+<td><span class="pass">401</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>operation</td>
+<td class=pass>pageHistory</td>
+<td colspan="2" class=pass>with good authentication should not fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-5488606527506360249');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5488606527506360249"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-5488606527506360249"><table border="1" cellspacing="0" _TABLENUMBER=3786576702591835031 table_name="decisionTable_44_2/scriptTable_42_1/scriptTable_41">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with good authentication should not fail</td>
+</tr>
+<tr><td>check not</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?pageHistory</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open sesame</td>
+<td>[200] <span class="pass">expected [401]</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>shutdown</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('878947550243279751');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img878947550243279751"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="878947550243279751"><table border="1" cellspacing="0" _TABLENUMBER=6084535008937261979 table_name="decisionTable_44_3/scriptTable_42">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td>is authenticated</td>
+</tr>
+<tr><td class=pass>operation</td>
+<td class=pass>shutdown</td>
+<td colspan="2" class=pass>with bad authentication should fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-6474841510952422960');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-6474841510952422960"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-6474841510952422960"><table border="1" cellspacing="0" _TABLENUMBER=351918203839925494 table_name="decisionTable_44_3/scriptTable_42_0/scriptTable_40">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with bad authentication should fail</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?shutdown</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open please</td>
+<td><span class="pass">401</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>operation</td>
+<td class=pass>shutdown</td>
+<td colspan="2" class=pass>with good authentication should not fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('3474371806171734514');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img3474371806171734514"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="3474371806171734514"><table border="1" cellspacing="0" _TABLENUMBER=861827879049044262 table_name="decisionTable_44_3/scriptTable_42_1/scriptTable_41">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with good authentication should not fail</td>
+</tr>
+<tr><td>check not</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?shutdown</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open sesame</td>
+<td>[200] <span class="pass">expected [401]</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>renamePage</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-1100077393398646243');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-1100077393398646243"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-1100077393398646243"><table border="1" cellspacing="0" _TABLENUMBER=9094213868293127167 table_name="decisionTable_44_4/scriptTable_42">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td>is authenticated</td>
+</tr>
+<tr><td class=pass>operation</td>
+<td class=pass>renamePage</td>
+<td colspan="2" class=pass>with bad authentication should fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-996632950755932466');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-996632950755932466"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-996632950755932466"><table border="1" cellspacing="0" _TABLENUMBER=3000342057276159090 table_name="decisionTable_44_4/scriptTable_42_0/scriptTable_40">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with bad authentication should fail</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?renamePage</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open please</td>
+<td><span class="pass">401</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>operation</td>
+<td class=pass>renamePage</td>
+<td colspan="2" class=pass>with good authentication should not fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('7829283785939227500');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7829283785939227500"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="7829283785939227500"><table border="1" cellspacing="0" _TABLENUMBER=8150471582032751522 table_name="decisionTable_44_4/scriptTable_42_1/scriptTable_41">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with good authentication should not fail</td>
+</tr>
+<tr><td>check not</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?renamePage</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open sesame</td>
+<td>[400] <span class="pass">expected [401]</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>deletePage</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('7579201187709022855');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7579201187709022855"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="7579201187709022855"><table border="1" cellspacing="0" _TABLENUMBER=6670703777578149736 table_name="decisionTable_44_5/scriptTable_42">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td>is authenticated</td>
+</tr>
+<tr><td class=pass>operation</td>
+<td class=pass>deletePage</td>
+<td colspan="2" class=pass>with bad authentication should fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-7035294773302068581');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7035294773302068581"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-7035294773302068581"><table border="1" cellspacing="0" _TABLENUMBER=8160534436231629911 table_name="decisionTable_44_5/scriptTable_42_0/scriptTable_40">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with bad authentication should fail</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?deletePage</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open please</td>
+<td><span class="pass">401</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>operation</td>
+<td class=pass>deletePage</td>
+<td colspan="2" class=pass>with good authentication should not fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('8176663594458026931');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8176663594458026931"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="8176663594458026931"><table border="1" cellspacing="0" _TABLENUMBER=8032891583060654334 table_name="decisionTable_44_5/scriptTable_42_1/scriptTable_41">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with good authentication should not fail</td>
+</tr>
+<tr><td>check not</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?deletePage</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open sesame</td>
+<td>[303] <span class="pass">expected [401]</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>movePage</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-7769805713437320435');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7769805713437320435"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-7769805713437320435"><table border="1" cellspacing="0" _TABLENUMBER=3775717276574593224 table_name="decisionTable_44_6/scriptTable_42">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td>is authenticated</td>
+</tr>
+<tr><td class=pass>operation</td>
+<td class=pass>movePage</td>
+<td colspan="2" class=pass>with bad authentication should fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('7268178864290110631');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7268178864290110631"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="7268178864290110631"><table border="1" cellspacing="0" _TABLENUMBER=9179267869476883566 table_name="decisionTable_44_6/scriptTable_42_0/scriptTable_40">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with bad authentication should fail</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?movePage</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open please</td>
+<td><span class="pass">401</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>operation</td>
+<td class=pass>movePage</td>
+<td colspan="2" class=pass>with good authentication should not fail</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-1781155250929837032');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-1781155250929837032"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-1781155250929837032"><table border="1" cellspacing="0" _TABLENUMBER=1308308334733454107 table_name="decisionTable_44_6/scriptTable_42_1/scriptTable_41">
+<tr><td>scenario</td>
+<td>operation</td>
+<td>operation</td>
+<td colspan="5">with good authentication should not fail</td>
+</tr>
+<tr><td>check not</td>
+<td>request page</td>
+<td>$IT->[FrontPage]?movePage</td>
+<td>authenticated by user</td>
+<td>Aladdin</td>
+<td>and password</td>
+<td>open sesame</td>
+<td>[400] <span class="pass">expected [401]</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table></div>
+</div></TD></tr>
+</table>
+<br/><br/><br/><br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7748752095597126912');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7748752095597126912"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-7748752095597126912"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3508769979240530057>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>AlwaysSecureOperation</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(page driver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_4</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[nothing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_5</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_6</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given slim test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!define TEST_SYSTEM {slim}]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_7</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a href="@target"&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@source]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_9</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_10</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_11</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_12</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_13</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_15</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_16</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_17</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+                    <col><![CDATA[in line]]></col>
+                    <col><![CDATA[symbol]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$@symbol=]]></col>
+                    <col><![CDATA[line number containing]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_19</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_20</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[its test results should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_21</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test ressults for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_22</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_24</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_25</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[widget]]></col>
+                    <col><![CDATA[wikiText]]></col>
+                    <col><![CDATA[should render]]></col>
+                    <col><![CDATA[htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@wikiText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_26</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the line]]></col>
+                    <col><![CDATA[after]]></col>
+                    <col><![CDATA[should come after]]></col>
+                    <col><![CDATA[before]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo int]]></col>
+                    <col><![CDATA[$@before]]></col>
+                    <col><![CDATA[&lt; $@after]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should be readable with no authentication]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not be readable with no authentication]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[401]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_29</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should be readable by user]]></col>
+                    <col><![CDATA[user]]></col>
+                    <col><![CDATA[password]]></col>
+                    <col><![CDATA[password]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[@user]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[@password]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_30</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not be readable by user]]></col>
+                    <col><![CDATA[user]]></col>
+                    <col><![CDATA[password]]></col>
+                    <col><![CDATA[password]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[@user]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[@password]]></col>
+                    <col><![CDATA[401]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_31</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given read locked page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with authentication]]></col>
+                    <col><![CDATA[secure-read=true]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_32</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given write locked page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with authentication]]></col>
+                    <col><![CDATA[secure-write=true]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_33</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given test locked page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with authentication]]></col>
+                    <col><![CDATA[secure-test=true]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_34</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[directory]]></col>
+                    <col><![CDATA[dir]]></col>
+                    <col><![CDATA[should not be readable with no authentication]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@dir]]></col>
+                    <col><![CDATA[401]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_35</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[directory]]></col>
+                    <col><![CDATA[dir]]></col>
+                    <col><![CDATA[should not be readable by user]]></col>
+                    <col><![CDATA[user]]></col>
+                    <col><![CDATA[password]]></col>
+                    <col><![CDATA[password]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@dir]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[@user]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[@password]]></col>
+                    <col><![CDATA[401]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_36</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[directory]]></col>
+                    <col><![CDATA[dir]]></col>
+                    <col><![CDATA[should be readable by user]]></col>
+                    <col><![CDATA[user]]></col>
+                    <col><![CDATA[password]]></col>
+                    <col><![CDATA[password]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@dir]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[@user]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[@password]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_37</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should be not readable with no authentication]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[401]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_38</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not be readable by user]]></col>
+                    <col><![CDATA[user]]></col>
+                    <col><![CDATA[password]]></col>
+                    <col><![CDATA[password]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[@user]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[@password]]></col>
+                    <col><![CDATA[401]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_39</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should be readable by user]]></col>
+                    <col><![CDATA[user]]></col>
+                    <col><![CDATA[password]]></col>
+                    <col><![CDATA[password]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[@user]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[@password]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_40</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT?@operation]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open please]]></col>
+                    <col><![CDATA[401]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_41</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT?@operation]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open sesame]]></col>
+                    <col><![CDATA[401]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_42</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[is authenticated]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[@operation]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[@operation]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_43</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[with password]]></col>
+                    <col><![CDATA[open sesame]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[FrontPage]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_43_1/scriptTable_4)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_43_1/scriptTable_4</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[FrontPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[nothing]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_43_1/scriptTable_4_0/scriptTable_3)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_43_1/scriptTable_4_0/scriptTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[FrontPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[nothing]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT<-[FrontPage]]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[FrontPage]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44</name>
+                <row>
+                    <col><![CDATA[operation is authenticated]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[purgeHistory]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_0/scriptTable_42)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[testHistory]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_1/scriptTable_42)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pageHistory]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_2/scriptTable_42)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[shutdown]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_3/scriptTable_42)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[renamePage]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_4/scriptTable_42)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[deletePage]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_5/scriptTable_42)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[movePage]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_6/scriptTable_42)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_0/scriptTable_42</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[is authenticated]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[purgeHistory]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_0/scriptTable_42_0/scriptTable_40)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[purgeHistory]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_0/scriptTable_42_1/scriptTable_41)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_0/scriptTable_42_0/scriptTable_40</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?purgeHistory]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open please]]></col>
+                    <col><![CDATA[pass(401)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_0/scriptTable_42_1/scriptTable_41</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?purgeHistory]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open sesame]]></col>
+                    <col><![CDATA[[400] pass(expected [401])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_1/scriptTable_42</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[is authenticated]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[testHistory]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_1/scriptTable_42_0/scriptTable_40)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[testHistory]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_1/scriptTable_42_1/scriptTable_41)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_1/scriptTable_42_0/scriptTable_40</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?testHistory]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open please]]></col>
+                    <col><![CDATA[pass(401)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_1/scriptTable_42_1/scriptTable_41</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?testHistory]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open sesame]]></col>
+                    <col><![CDATA[[200] pass(expected [401])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_2/scriptTable_42</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[is authenticated]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[pageHistory]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_2/scriptTable_42_0/scriptTable_40)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[pageHistory]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_2/scriptTable_42_1/scriptTable_41)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_2/scriptTable_42_0/scriptTable_40</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?pageHistory]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open please]]></col>
+                    <col><![CDATA[pass(401)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_2/scriptTable_42_1/scriptTable_41</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?pageHistory]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open sesame]]></col>
+                    <col><![CDATA[[200] pass(expected [401])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_3/scriptTable_42</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[is authenticated]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[shutdown]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_3/scriptTable_42_0/scriptTable_40)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[shutdown]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_3/scriptTable_42_1/scriptTable_41)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_3/scriptTable_42_0/scriptTable_40</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?shutdown]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open please]]></col>
+                    <col><![CDATA[pass(401)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_3/scriptTable_42_1/scriptTable_41</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?shutdown]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open sesame]]></col>
+                    <col><![CDATA[[200] pass(expected [401])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_4/scriptTable_42</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[is authenticated]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[renamePage]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_4/scriptTable_42_0/scriptTable_40)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[renamePage]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_4/scriptTable_42_1/scriptTable_41)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_4/scriptTable_42_0/scriptTable_40</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?renamePage]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open please]]></col>
+                    <col><![CDATA[pass(401)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_4/scriptTable_42_1/scriptTable_41</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?renamePage]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open sesame]]></col>
+                    <col><![CDATA[[400] pass(expected [401])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_5/scriptTable_42</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[is authenticated]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[deletePage]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_5/scriptTable_42_0/scriptTable_40)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[deletePage]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_5/scriptTable_42_1/scriptTable_41)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_5/scriptTable_42_0/scriptTable_40</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?deletePage]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open please]]></col>
+                    <col><![CDATA[pass(401)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_5/scriptTable_42_1/scriptTable_41</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?deletePage]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open sesame]]></col>
+                    <col><![CDATA[[303] pass(expected [401])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_6/scriptTable_42</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[is authenticated]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[movePage]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_6/scriptTable_42_0/scriptTable_40)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[movePage]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_44_6/scriptTable_42_1/scriptTable_41)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_6/scriptTable_42_0/scriptTable_40</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with bad authentication should fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?movePage]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open please]]></col>
+                    <col><![CDATA[pass(401)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_44_6/scriptTable_42_1/scriptTable_41</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[operation]]></col>
+                    <col><![CDATA[with good authentication should not fail]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[FrontPage]?movePage]]></col>
+                    <col><![CDATA[authenticated by user]]></col>
+                    <col><![CDATA[Aladdin]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[open sesame]]></col>
+                    <col><![CDATA[[400] pass(expected [401])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_45</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, make, scriptTableActor, PageDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[page driver]]></expected>
+                              <evaluationMessage><![CDATA[pass(page driver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_43_0, call, scriptTableActor, givenUserWithPassword, Aladdin, open sesame]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_43_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_43_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_43_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[given user]]></expected>
+                              <evaluationMessage><![CDATA[given user]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_43_1/scriptTable_4_0/scriptTable_3_0, call, scriptTableActor, createPageWithContent, FrontPage, nothing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_43_1/scriptTable_4_0/scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_43_1/scriptTable_4_0/scriptTable_3_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_43_1/scriptTable_4_0/scriptTable_3_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[create page]]></expected>
+                              <evaluationMessage><![CDATA[create page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_43_1/scriptTable_4_0/scriptTable_3_1, callAndAssign, IT, scriptTableActor, echo, FrontPage]]]></instruction>
+        <slimResult><![CDATA[FrontPage]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_43_1/scriptTable_4_0/scriptTable_3_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>SymbolAssignmentExpectation</type>
+                    <actual><![CDATA[FrontPage]]></actual>
+                              <expected><![CDATA[$IT=]]></expected>
+                              <evaluationMessage><![CDATA[$IT<-[FrontPage]]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_43_1/scriptTable_4_0/scriptTable_3_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_0/scriptTable_42_0/scriptTable_40_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?purgeHistory, Aladdin, open please]]]></instruction>
+        <slimResult><![CDATA[401]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_0/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[401]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[pass(401)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_0/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_0/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_0/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_0/scriptTable_42_1/scriptTable_41_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?purgeHistory, Aladdin, open sesame]]]></instruction>
+        <slimResult><![CDATA[400]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_0/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[400]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[[400] pass(expected [401])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_0/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_0/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_0/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_1/scriptTable_42_0/scriptTable_40_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?testHistory, Aladdin, open please]]]></instruction>
+        <slimResult><![CDATA[401]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_1/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[401]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[pass(401)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_1/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_1/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_1/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_1/scriptTable_42_1/scriptTable_41_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?testHistory, Aladdin, open sesame]]]></instruction>
+        <slimResult><![CDATA[200]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_1/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[200]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[[200] pass(expected [401])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_1/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_1/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_1/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_2/scriptTable_42_0/scriptTable_40_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?pageHistory, Aladdin, open please]]]></instruction>
+        <slimResult><![CDATA[401]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_2/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[401]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[pass(401)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_2/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_2/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_2/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_2/scriptTable_42_1/scriptTable_41_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?pageHistory, Aladdin, open sesame]]]></instruction>
+        <slimResult><![CDATA[200]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_2/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[200]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[[200] pass(expected [401])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_2/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_2/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_2/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_3/scriptTable_42_0/scriptTable_40_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?shutdown, Aladdin, open please]]]></instruction>
+        <slimResult><![CDATA[401]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_3/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[401]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[pass(401)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_3/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_3/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_3/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_3/scriptTable_42_1/scriptTable_41_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?shutdown, Aladdin, open sesame]]]></instruction>
+        <slimResult><![CDATA[200]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_3/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[200]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[[200] pass(expected [401])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_3/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_3/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_3/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_4/scriptTable_42_0/scriptTable_40_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?renamePage, Aladdin, open please]]]></instruction>
+        <slimResult><![CDATA[401]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_4/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[401]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[pass(401)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_4/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_4/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_4/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_4/scriptTable_42_1/scriptTable_41_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?renamePage, Aladdin, open sesame]]]></instruction>
+        <slimResult><![CDATA[400]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_4/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[400]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[[400] pass(expected [401])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_4/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_4/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_4/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_5/scriptTable_42_0/scriptTable_40_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?deletePage, Aladdin, open please]]]></instruction>
+        <slimResult><![CDATA[401]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_5/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[401]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[pass(401)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_5/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_5/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_5/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_5/scriptTable_42_1/scriptTable_41_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?deletePage, Aladdin, open sesame]]]></instruction>
+        <slimResult><![CDATA[303]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_5/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[303]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[[303] pass(expected [401])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_5/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_5/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_5/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_6/scriptTable_42_0/scriptTable_40_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?movePage, Aladdin, open please]]]></instruction>
+        <slimResult><![CDATA[401]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_6/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[401]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[pass(401)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_6/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_6/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_6/scriptTable_42_0/scriptTable_40_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_44_6/scriptTable_42_1/scriptTable_41_0, call, scriptTableActor, requestPageAuthenticatedByUserAndPassword, $IT?movePage, Aladdin, open sesame]]]></instruction>
+        <slimResult><![CDATA[400]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_44_6/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>7</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[400]]></actual>
+                              <expected><![CDATA[401]]></expected>
+                              <evaluationMessage><![CDATA[[400] pass(expected [401])]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_6/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_6/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_44_6/scriptTable_42_1/scriptTable_41_0</instructionId>
+          <col>6</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_45_0, make, decisionTable_45, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_45_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_45_1, call, decisionTable_45, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

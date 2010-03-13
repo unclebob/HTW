@@ -1,0 +1,1983 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestRunnerVerboseOutput</rootPath>
+    <result>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('4693770607425028863');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img4693770607425028863"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="4693770607425028863"><table border="1" cellspacing="0" _TABLENUMBER=5364718463813458582>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7217360092608777721>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+When no other options are supplied, the <a href="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests.TestRunner">TestRunner</a> will print simple messages to standard out.  For each passing assertion a . will be printed.  When an error or failure occurs, the failing page's name is diaplayed along with a brief message. The final counts are printed at the end of execution.<br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-5412447707054776484');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img-5412447707054776484"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests.CreateSamplePages">CreateSamplePages</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests.CreateSamplePages?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="-5412447707054776484"><br/><table border="1" cellspacing="0" _TABLENUMBER=5515367449066191786>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!path classes</td>
+</tr>
+<tr><td>line</td>
+<td>!path fitnesse.jar</td>
+</tr>
+<tr><td>line</td>
+<td>!contents</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6435462243704800663>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.PassFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestPassing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1651521231165242241>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.FailFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestFailing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5217196354583899908>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.IgnoreFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestIgnoring</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5127418942900516245>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.ErrorFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestCrashing</td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3324558963224150089>
+<tr><td>script</td>
+<td><span class="pass">Test Runner Fixture</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3797103556682832762>
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td>output for page</td>
+<td>@pageName</td>
+<td>with args</td>
+<td>@args</td>
+<td>matches</td>
+<td colspan="2">@output</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1928144218274330412>
+<tr><td colspan="3">Test Runner Output</td>
+</tr>
+<tr><td>args</td>
+<td>page name</td>
+<td>output</td>
+</tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder.TestPassing</td>
+<td class=pass>Test Runner for Root Path: TestPassing\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('1641139738871615931');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img1641139738871615931"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="1641139738871615931"><table border="1" cellspacing="0" _TABLENUMBER=102069470287377629 table_name="decisionTable_9_0/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder.TestPassing</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">Test Runner for Root Path: TestPassing\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: TestPassing\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084705&amp;amp;format=xml\nTest Pages: 1 right, 0 wrong, 0 ignored, 0 exceptions\nAssertions: 1 right, 0 wrong, 0 ignored, 0 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder.TestFailing</td>
+<td class=pass>Test Runner for Root Path: TestFailing\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-330255226664199650');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-330255226664199650"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-330255226664199650"><table border="1" cellspacing="0" _TABLENUMBER=8287382183682147195 table_name="decisionTable_9_1/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder.TestFailing</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">Test Runner for Root Path: TestFailing\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: TestFailing\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084705&amp;amp;format=xml\nTest Pages: 0 right, 1 wrong, 0 ignored, 0 exceptions\nAssertions: 0 right, 1 wrong, 0 ignored, 0 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder.TestIgnoring</td>
+<td class=pass>Test Runner for Root Path: TestIgnoring\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-1191861510672877170');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-1191861510672877170"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-1191861510672877170"><table border="1" cellspacing="0" _TABLENUMBER=4686144683641025413 table_name="decisionTable_9_2/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder.TestIgnoring</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">Test Runner for Root Path: TestIgnoring\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: TestIgnoring\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084706&amp;amp;format=xml\nTest Pages: 0 right, 0 wrong, 1 ignored, 0 exceptions\nAssertions: 0 right, 0 wrong, 1 ignored, 0 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder.TestCrashing</td>
+<td class=pass>Test Runner for Root Path: TestCrashing\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('198906865602914101');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img198906865602914101"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="198906865602914101"><table border="1" cellspacing="0" _TABLENUMBER=5006595076053232183 table_name="decisionTable_9_3/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder.TestCrashing</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">Test Runner for Root Path: TestCrashing\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: TestCrashing\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084706&amp;amp;format=xml\nTest Pages: 0 right, 0 wrong, 0 ignored, 1 exceptions\nAssertions: 0 right, 0 wrong, 0 ignored, 1 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder</td>
+<td class=pass>Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-346739591234437346');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-346739591234437346"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-346739591234437346"><table border="1" cellspacing="0" _TABLENUMBER=6682697811548409431 table_name="decisionTable_9_4/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084707&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084707&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084707&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084707&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder</td>
+<td class=pass>* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-180545988900156334');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-180545988900156334"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-180545988900156334"><table border="1" cellspacing="0" _TABLENUMBER=1427357236870971546 table_name="decisionTable_9_5/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder</td>
+<td class=pass>Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('6510741663205890089');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img6510741663205890089"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="6510741663205890089"><table border="1" cellspacing="0" _TABLENUMBER=3116658652337793597 table_name="decisionTable_9_6/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder</td>
+<td class=pass>Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('5491723017618101678');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5491723017618101678"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="5491723017618101678"><table border="1" cellspacing="0" _TABLENUMBER=1264268917874995818 table_name="decisionTable_9_7/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder</td>
+<td class=pass>Test Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-4737907701717811772');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4737907701717811772"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-4737907701717811772"><table border="1" cellspacing="0" _TABLENUMBER=7355423476694713537 table_name="decisionTable_9_8/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">Test Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>-v</td>
+<td class=pass>SuiteFodder</td>
+<td class=pass>Assertions: 1 right, 1 wrong, 1 ignored, 1 exceptions</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('2978042584219602472');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2978042584219602472"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="2978042584219602472"><table border="1" cellspacing="0" _TABLENUMBER=7785795676011582762 table_name="decisionTable_9_9/scriptTable_8">
+<tr><td>scenario</td>
+<td>Test Runner Output</td>
+<td>args</td>
+<td>&nbsp;</td>
+<td>pageName</td>
+<td>&nbsp;</td>
+<td>output</td>
+</tr>
+<tr><td><span class="pass">output for page</span></td>
+<td>SuiteFodder</td>
+<td>with args</td>
+<td>-v</td>
+<td>matches</td>
+<td colspan="2">Assertions: 1 right, 1 wrong, 1 ignored, 1 exceptions</td>
+</tr>
+<tr><td>show</td>
+<td colspan="6">output</td>
+<TD>Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n</TD></tr>
+</table></div>
+</div></TD></tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('836163019313300324');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img836163019313300324"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="836163019313300324"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=642445891792020275>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestRunnerVerboseOutput</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!path classes]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!path fitnesse.jar]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!contents]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_3</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.PassFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestPassing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_4</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.FailFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestFailing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.IgnoreFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestIgnoring]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_6</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.ErrorFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestCrashing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_7</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Test Runner Fixture)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[output for page]]></col>
+                    <col><![CDATA[@pageName]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[@args]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[@output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9</name>
+                <row>
+                    <col><![CDATA[Test Runner Output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[page name]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder.TestPassing]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestPassing\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_0/scriptTable_8)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder.TestFailing]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestFailing\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_1/scriptTable_8)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder.TestIgnoring]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestIgnoring\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_2/scriptTable_8)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder.TestCrashing]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestCrashing\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_3/scriptTable_8)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_4/scriptTable_8)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_5/scriptTable_8)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_6/scriptTable_8)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_7/scriptTable_8)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[Test Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_8/scriptTable_8)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[Assertions: 1 right, 1 wrong, 1 ignored, 1 exceptions]]></col>
+                    <col><![CDATA[pass(scenario:decisionTable_9_9/scriptTable_8)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_0/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder.TestPassing]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestPassing\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestPassing\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084705&amp;amp;format=xml\nTest Pages: 1 right, 0 wrong, 0 ignored, 0 exceptions\nAssertions: 1 right, 0 wrong, 0 ignored, 0 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_1/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder.TestFailing]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestFailing\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestFailing\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084705&amp;amp;format=xml\nTest Pages: 0 right, 1 wrong, 0 ignored, 0 exceptions\nAssertions: 0 right, 1 wrong, 0 ignored, 0 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_2/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder.TestIgnoring]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestIgnoring\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestIgnoring\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084706&amp;amp;format=xml\nTest Pages: 0 right, 0 wrong, 1 ignored, 0 exceptions\nAssertions: 0 right, 0 wrong, 1 ignored, 0 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_3/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder.TestCrashing]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestCrashing\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: TestCrashing\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084706&amp;amp;format=xml\nTest Pages: 0 right, 0 wrong, 0 ignored, 1 exceptions\nAssertions: 0 right, 0 wrong, 0 ignored, 1 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_4/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084707&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084707&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084707&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084707&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_5/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_6/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084708&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_7/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084709&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_8/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[Test Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9_9/scriptTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Test Runner Output]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[pageName]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[output]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(output for page)]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[with args]]></col>
+                    <col><![CDATA[-v]]></col>
+                    <col><![CDATA[matches]]></col>
+                    <col><![CDATA[Assertions: 1 right, 1 wrong, 1 ignored, 1 exceptions]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[output]]></col>
+                    <col><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084710&amp;amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_10</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_1, call, scriptTableActor, line, !path classes]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_2, call, scriptTableActor, line, !path fitnesse.jar]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_3, call, scriptTableActor, line, !contents]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_3</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_3</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_4, call, scriptTableActor, page, SuiteFodder]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_4</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_4</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_1, call, scriptTableActor, line, !|fitnesse.testutil.PassFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_2, call, scriptTableActor, page, SuiteFodder.TestPassing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_1, call, scriptTableActor, line, !|fitnesse.testutil.FailFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_2, call, scriptTableActor, page, SuiteFodder.TestFailing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_1, call, scriptTableActor, line, !|fitnesse.testutil.IgnoreFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_2, call, scriptTableActor, page, SuiteFodder.TestIgnoring]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_6_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_1, call, scriptTableActor, line, !|fitnesse.testutil.ErrorFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_2, call, scriptTableActor, page, SuiteFodder.TestCrashing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_7_0, make, scriptTableActor, TestRunnerFixture]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_7_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Test Runner Fixture]]></expected>
+                              <evaluationMessage><![CDATA[pass(Test Runner Fixture)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_0/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder.TestPassing, -v, Test Runner for Root Path: TestPassing\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_0/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_0/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_0/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_0/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_0/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: TestPassing\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084705&amp;format=xml\nTest Pages: 1 right, 0 wrong, 0 ignored, 0 exceptions\nAssertions: 1 right, 0 wrong, 0 ignored, 0 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_0/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: TestPassing\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084705&amp;format=xml\nTest Pages: 1 right, 0 wrong, 0 ignored, 0 exceptions\nAssertions: 1 right, 0 wrong, 0 ignored, 0 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_1/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder.TestFailing, -v, Test Runner for Root Path: TestFailing\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_1/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_1/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_1/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_1/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_1/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: TestFailing\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084705&amp;format=xml\nTest Pages: 0 right, 1 wrong, 0 ignored, 0 exceptions\nAssertions: 0 right, 1 wrong, 0 ignored, 0 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_1/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: TestFailing\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084705&amp;format=xml\nTest Pages: 0 right, 1 wrong, 0 ignored, 0 exceptions\nAssertions: 0 right, 1 wrong, 0 ignored, 0 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_2/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder.TestIgnoring, -v, Test Runner for Root Path: TestIgnoring\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_2/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_2/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_2/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_2/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_2/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: TestIgnoring\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084706&amp;format=xml\nTest Pages: 0 right, 0 wrong, 1 ignored, 0 exceptions\nAssertions: 0 right, 0 wrong, 1 ignored, 0 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_2/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: TestIgnoring\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084706&amp;format=xml\nTest Pages: 0 right, 0 wrong, 1 ignored, 0 exceptions\nAssertions: 0 right, 0 wrong, 1 ignored, 0 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_3/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder.TestCrashing, -v, Test Runner for Root Path: TestCrashing\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_3/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_3/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_3/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_3/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_3/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: TestCrashing\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084706&amp;format=xml\nTest Pages: 0 right, 0 wrong, 0 ignored, 1 exceptions\nAssertions: 0 right, 0 wrong, 0 ignored, 1 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_3/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: TestCrashing\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084706&amp;format=xml\nTest Pages: 0 right, 0 wrong, 0 ignored, 1 exceptions\nAssertions: 0 right, 0 wrong, 0 ignored, 1 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_4/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder, -v, Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_4/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_4/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_4/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_4/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_4/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084707&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084707&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084707&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084707&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_4/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084707&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084707&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084707&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084707&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_5/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder, -v, * Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_5/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_5/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_5/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_5/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_5/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084708&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084708&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084708&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084708&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_5/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084708&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084708&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084708&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084708&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_6/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder, -v, Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_6/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_6/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_6/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_6/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_6/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084708&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_6/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084708&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_7/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder, -v, Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_7/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_7/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_7/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_7/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_7/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_7/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084709&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084709&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_8/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder, -v, Test Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_8/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_8/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_8/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_8/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_8/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_8/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_9/scriptTable_8_0, call, scriptTableActor, outputForPageWithArgsMatches, SuiteFodder, -v, Assertions: 1 right, 1 wrong, 1 ignored, 1 exceptions]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_9/scriptTable_8_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_9/scriptTable_8_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_9/scriptTable_8_0</instructionId>
+          <col>5</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_9_9/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[output for page]]></expected>
+                              <evaluationMessage><![CDATA[pass(output for page)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_9/scriptTable_8_1, call, scriptTableActor, output]]]></instruction>
+        <slimResult><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_9/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Test Runner for Root Path: SuiteFodder\n* Page:TestCrashing right:0, wrong:0, ignored:0, exceptions:1 | SuiteFodder.TestCrashing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n* Page:TestFailing right:0, wrong:1, ignored:0, exceptions:0 | SuiteFodder.TestFailing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n  Page:TestIgnoring right:0, wrong:0, ignored:1, exceptions:0 | SuiteFodder.TestIgnoring?pageHistory&amp;resultDate=20091016084710&amp;format=xml\n  Page:TestPassing right:1, wrong:0, ignored:0, exceptions:0 | SuiteFodder.TestPassing?pageHistory&amp;resultDate=20091016084710&amp;format=xml\nTest Pages: 1 right, 1 wrong, 1 ignored, 1 exceptions\nAssertions: 1 right, 1 wrong, 1 ignored, 1 exceptions\n]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_10_0, make, decisionTable_10, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_10_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_10_1, call, decisionTable_10, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

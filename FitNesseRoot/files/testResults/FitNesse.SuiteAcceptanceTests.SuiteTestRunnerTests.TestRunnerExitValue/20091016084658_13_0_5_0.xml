@@ -1,0 +1,1238 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestRunnerExitValue</rootPath>
+    <result>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>5</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('867817426955760999');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img867817426955760999"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="867817426955760999"><table border="1" cellspacing="0" _TABLENUMBER=3099617685569261295>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3090652979810156164>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+The <a href="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests.TestRunner">TestRunner</a> will exit with a 0 when all tests pass.  Otherwise the number of failing assertions and error occurances will be added together and returned as the exit value.<br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-2522548227746630693');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img-2522548227746630693"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests.CreateSamplePages">CreateSamplePages</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests.CreateSamplePages?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="-2522548227746630693"><br/><table border="1" cellspacing="0" _TABLENUMBER=8423920950482698162>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!path classes</td>
+</tr>
+<tr><td>line</td>
+<td>!path fitnesse.jar</td>
+</tr>
+<tr><td>line</td>
+<td>!contents</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8856805925266125282>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.PassFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestPassing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=708407601793965050>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.FailFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestFailing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=969434249027798822>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.IgnoreFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestIgnoring</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1435368905324777688>
+<tr><td>script</td>
+<td><span class="pass">Page Builder</span></td>
+</tr>
+<tr><td>line</td>
+<td>!|fitnesse.testutil.ErrorFixture|</td>
+</tr>
+<tr><td>page</td>
+<td>SuiteFodder.TestCrashing</td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8517541885335400125>
+<tr><td colspan="4"><span class="pass">Test Runner Fixture</span></td>
+</tr>
+<tr><td>page name</td>
+<td>args</td>
+<td>exit code?</td>
+<td>output?</td>
+</tr>
+<tr><td>SuiteFodder.TestPassing</td>
+<td>-debug</td>
+<td><span class="pass">0</span></td>
+<td><span class="ignore">Args: -debug BobsMacbook.local 9123 SuiteFodder.TestPassing\nSent request: GET /SuiteFodder.TestPassing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084659&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 0 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n</span></td>
+</tr>
+<tr><td>SuiteFodder.TestFailing</td>
+<td>-debug</td>
+<td><span class="pass">1</span></td>
+<td><span class="ignore">Args: -debug BobsMacbook.local 9123 SuiteFodder.TestFailing\nSent request: GET /SuiteFodder.TestFailing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestFailing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084700&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 1 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 1\n</span></td>
+</tr>
+<tr><td>SuiteFodder.TestIgnoring</td>
+<td>-debug</td>
+<td><span class="pass">0</span></td>
+<td><span class="ignore">Args: -debug BobsMacbook.local 9123 SuiteFodder.TestIgnoring\nSent request: GET /SuiteFodder.TestIgnoring?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestIgnoring&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 1 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n</span></td>
+</tr>
+<tr><td>SuiteFodder.TestCrashing</td>
+<td>-debug</td>
+<td><span class="pass">1</span></td>
+<td><span class="ignore">Args: -debug BobsMacbook.local 9123 SuiteFodder.TestCrashing\nSent request: GET /SuiteFodder.TestCrashing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestCrashing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 0 ignored, 1 exceptions\nNo output file to write.\nExit Code: 1\n</span></td>
+</tr>
+<tr><td>SuiteFodder</td>
+<td>-debug</td>
+<td><span class="pass">2</span></td>
+<td><span class="ignore">Args: -debug BobsMacbook.local 9123 SuiteFodder\nSent request: GET /SuiteFodder?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 1 wrong, 1 ignored, 1 exceptions\nNo output file to write.\nExit Code: 2\n</span></td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-188999025733984548');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-188999025733984548"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-188999025733984548"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8544354825941120711>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestRunnerExitValue</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!path classes]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!path fitnesse.jar]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!contents]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_3</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.PassFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestPassing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_4</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.FailFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestFailing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_5</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.IgnoreFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestIgnoring]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_6</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(Page Builder)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[line]]></col>
+                    <col><![CDATA[!|fitnesse.testutil.ErrorFixture|]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[SuiteFodder.TestCrashing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_7</name>
+                <row>
+                    <col><![CDATA[pass(Test Runner Fixture)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page name]]></col>
+                    <col><![CDATA[args]]></col>
+                    <col><![CDATA[exit code?]]></col>
+                    <col><![CDATA[output?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[SuiteFodder.TestPassing]]></col>
+                    <col><![CDATA[-debug]]></col>
+                    <col><![CDATA[pass(0)]]></col>
+                    <col><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder.TestPassing\nSent request: GET /SuiteFodder.TestPassing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084659&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 0 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[SuiteFodder.TestFailing]]></col>
+                    <col><![CDATA[-debug]]></col>
+                    <col><![CDATA[pass(1)]]></col>
+                    <col><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder.TestFailing\nSent request: GET /SuiteFodder.TestFailing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestFailing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084700&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 1 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 1\n)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[SuiteFodder.TestIgnoring]]></col>
+                    <col><![CDATA[-debug]]></col>
+                    <col><![CDATA[pass(0)]]></col>
+                    <col><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder.TestIgnoring\nSent request: GET /SuiteFodder.TestIgnoring?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestIgnoring&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 1 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[SuiteFodder.TestCrashing]]></col>
+                    <col><![CDATA[-debug]]></col>
+                    <col><![CDATA[pass(1)]]></col>
+                    <col><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder.TestCrashing\nSent request: GET /SuiteFodder.TestCrashing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestCrashing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 0 ignored, 1 exceptions\nNo output file to write.\nExit Code: 1\n)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[SuiteFodder]]></col>
+                    <col><![CDATA[-debug]]></col>
+                    <col><![CDATA[pass(2)]]></col>
+                    <col><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder\nSent request: GET /SuiteFodder?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 1 wrong, 1 ignored, 1 exceptions\nNo output file to write.\nExit Code: 2\n)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_8</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_1, call, scriptTableActor, line, !path classes]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_2, call, scriptTableActor, line, !path fitnesse.jar]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_3, call, scriptTableActor, line, !contents]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_3</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_3</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_4, call, scriptTableActor, page, SuiteFodder]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_4</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_4</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_1, call, scriptTableActor, line, !|fitnesse.testutil.PassFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_2, call, scriptTableActor, page, SuiteFodder.TestPassing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_1, call, scriptTableActor, line, !|fitnesse.testutil.FailFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_2, call, scriptTableActor, page, SuiteFodder.TestFailing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_5_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_1, call, scriptTableActor, line, !|fitnesse.testutil.IgnoreFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_5_2, call, scriptTableActor, page, SuiteFodder.TestIgnoring]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_5_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_0, make, scriptTableActor, PageBuilder]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_6_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Page Builder]]></expected>
+                              <evaluationMessage><![CDATA[pass(Page Builder)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_1, call, scriptTableActor, line, !|fitnesse.testutil.ErrorFixture|]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_1</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[line]]></expected>
+                              <evaluationMessage><![CDATA[line]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_6_2, call, scriptTableActor, page, SuiteFodder.TestCrashing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_2</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_6_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[page]]></expected>
+                              <evaluationMessage><![CDATA[page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_0, make, decisionTable_7, TestRunnerFixture]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_7_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Test Runner Fixture]]></expected>
+                              <evaluationMessage><![CDATA[pass(Test Runner Fixture)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_1, call, decisionTable_7, table, [[page name, args, exit code?, output?], [SuiteFodder.TestPassing, -debug, 0, ], [SuiteFodder.TestFailing, -debug, 1, ], [SuiteFodder.TestIgnoring, -debug, 0, ], [SuiteFodder.TestCrashing, -debug, 1, ], [SuiteFodder, -debug, 2, ]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_2, call, decisionTable_7, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_3, call, decisionTable_7, setPageName, SuiteFodder.TestPassing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[SuiteFodder.TestPassing]]></expected>
+                              <evaluationMessage><![CDATA[SuiteFodder.TestPassing]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_4, call, decisionTable_7, setArgs, -debug]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[-debug]]></expected>
+                              <evaluationMessage><![CDATA[-debug]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_5, call, decisionTable_7, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_6, call, decisionTable_7, exitCode]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_7_6</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[0]]></expected>
+                              <evaluationMessage><![CDATA[pass(0)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_7, call, decisionTable_7, output]]]></instruction>
+        <slimResult><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder.TestPassing\nSent request: GET /SuiteFodder.TestPassing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084659&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 0 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_7</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder.TestPassing\nSent request: GET /SuiteFodder.TestPassing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084659&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 0 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder.TestPassing\nSent request: GET /SuiteFodder.TestPassing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestPassing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084659&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 0 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_8, call, decisionTable_7, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_9, call, decisionTable_7, setPageName, SuiteFodder.TestFailing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_9</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[SuiteFodder.TestFailing]]></expected>
+                              <evaluationMessage><![CDATA[SuiteFodder.TestFailing]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_10, call, decisionTable_7, setArgs, -debug]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_10</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[-debug]]></expected>
+                              <evaluationMessage><![CDATA[-debug]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_11, call, decisionTable_7, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_12, call, decisionTable_7, exitCode]]]></instruction>
+        <slimResult><![CDATA[1]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_7_12</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[1]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[pass(1)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_13, call, decisionTable_7, output]]]></instruction>
+        <slimResult><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder.TestFailing\nSent request: GET /SuiteFodder.TestFailing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestFailing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084700&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 1 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 1\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_13</instructionId>
+          <col>3</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder.TestFailing\nSent request: GET /SuiteFodder.TestFailing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestFailing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084700&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 1 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 1\n]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder.TestFailing\nSent request: GET /SuiteFodder.TestFailing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestFailing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084700&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 1 wrong, 0 ignored, 0 exceptions\nNo output file to write.\nExit Code: 1\n)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_14, call, decisionTable_7, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_15, call, decisionTable_7, setPageName, SuiteFodder.TestIgnoring]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_15</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[SuiteFodder.TestIgnoring]]></expected>
+                              <evaluationMessage><![CDATA[SuiteFodder.TestIgnoring]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_16, call, decisionTable_7, setArgs, -debug]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_16</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[-debug]]></expected>
+                              <evaluationMessage><![CDATA[-debug]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_17, call, decisionTable_7, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_18, call, decisionTable_7, exitCode]]]></instruction>
+        <slimResult><![CDATA[0]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_7_18</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[0]]></actual>
+                              <expected><![CDATA[0]]></expected>
+                              <evaluationMessage><![CDATA[pass(0)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_19, call, decisionTable_7, output]]]></instruction>
+        <slimResult><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder.TestIgnoring\nSent request: GET /SuiteFodder.TestIgnoring?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestIgnoring&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 1 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_19</instructionId>
+          <col>3</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder.TestIgnoring\nSent request: GET /SuiteFodder.TestIgnoring?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestIgnoring&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 1 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder.TestIgnoring\nSent request: GET /SuiteFodder.TestIgnoring?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestIgnoring&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;0&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 1 ignored, 0 exceptions\nNo output file to write.\nExit Code: 0\n)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_20, call, decisionTable_7, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_21, call, decisionTable_7, setPageName, SuiteFodder.TestCrashing]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_21</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[SuiteFodder.TestCrashing]]></expected>
+                              <evaluationMessage><![CDATA[SuiteFodder.TestCrashing]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_22, call, decisionTable_7, setArgs, -debug]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_22</instructionId>
+          <col>1</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[-debug]]></expected>
+                              <evaluationMessage><![CDATA[-debug]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_23, call, decisionTable_7, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_24, call, decisionTable_7, exitCode]]]></instruction>
+        <slimResult><![CDATA[1]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_7_24</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[1]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[pass(1)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_25, call, decisionTable_7, output]]]></instruction>
+        <slimResult><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder.TestCrashing\nSent request: GET /SuiteFodder.TestCrashing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestCrashing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 0 ignored, 1 exceptions\nNo output file to write.\nExit Code: 1\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_25</instructionId>
+          <col>3</col>
+          <row>5</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder.TestCrashing\nSent request: GET /SuiteFodder.TestCrashing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestCrashing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 0 ignored, 1 exceptions\nNo output file to write.\nExit Code: 1\n]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder.TestCrashing\nSent request: GET /SuiteFodder.TestCrashing?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;TestCrashing&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084701&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;0&lt;/right&gt;\n    &lt;wrong&gt;0&lt;/wrong&gt;\n    &lt;ignores&gt;0&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 0 right, 0 wrong, 0 ignored, 1 exceptions\nNo output file to write.\nExit Code: 1\n)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_26, call, decisionTable_7, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] fitnesse.fixtures.TestRunnerFixture.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_27, call, decisionTable_7, setPageName, SuiteFodder]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_27</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[SuiteFodder]]></expected>
+                              <evaluationMessage><![CDATA[SuiteFodder]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_28, call, decisionTable_7, setArgs, -debug]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_28</instructionId>
+          <col>1</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[-debug]]></expected>
+                              <evaluationMessage><![CDATA[-debug]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_29, call, decisionTable_7, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_30, call, decisionTable_7, exitCode]]]></instruction>
+        <slimResult><![CDATA[2]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_7_30</instructionId>
+          <col>2</col>
+          <row>6</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[2]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[pass(2)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_31, call, decisionTable_7, output]]]></instruction>
+        <slimResult><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder\nSent request: GET /SuiteFodder?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 1 wrong, 1 ignored, 1 exceptions\nNo output file to write.\nExit Code: 2\n]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_31</instructionId>
+          <col>3</col>
+          <row>6</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[Args: -debug BobsMacbook.local 9123 SuiteFodder\nSent request: GET /SuiteFodder?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 1 wrong, 1 ignored, 1 exceptions\nNo output file to write.\nExit Code: 2\n]]></actual>
+                              <expected><![CDATA[]]></expected>
+                              <evaluationMessage><![CDATA[ignore(Args: -debug BobsMacbook.local 9123 SuiteFodder\nSent request: GET /SuiteFodder?responder=suite&amp;format=xml HTTP/1.1\n\n\nDiscarding header: HTTP/1.1 200 OK\nDiscarding header: Connection: close\nDiscarding header: Server: FitNesse-v20091014\nDiscarding header: Transfer-Encoding: chunked\nDiscarding header: Content-Type: text/xml\nDiscarding header: \nXml Document: &lt;?xml version="1.0"?&gt;\n&lt;testResults&gt;\n  &lt;FitNesseVersion&gt;$formatter.getFitNesseVersion()&lt;/FitNesseVersion&gt;\n  &lt;rootPath&gt;SuiteFodder&lt;/rootPath&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;1&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestCrashing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestCrashing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;1&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestFailing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestFailing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;0&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;1&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestIgnoring&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestIgnoring?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n    &lt;result&gt;\n    &lt;counts&gt;\n      &lt;right&gt;1&lt;/right&gt;\n      &lt;wrong&gt;0&lt;/wrong&gt;\n      &lt;ignores&gt;0&lt;/ignores&gt;\n      &lt;exceptions&gt;0&lt;/exceptions&gt;\n    &lt;/counts&gt;\n    &lt;relativePageName&gt;TestPassing&lt;/relativePageName&gt;\n    &lt;pageHistoryLink&gt;SuiteFodder.TestPassing?pageHistory&amp;amp;resultDate=20091016084702&amp;amp;format=xml&lt;/pageHistoryLink&gt;\n    \n  &lt;/result&gt;\n  \n  &lt;finalCounts&gt;\n    &lt;right&gt;1&lt;/right&gt;\n    &lt;wrong&gt;1&lt;/wrong&gt;\n    &lt;ignores&gt;1&lt;/ignores&gt;\n    &lt;exceptions&gt;1&lt;/exceptions&gt;\n  &lt;/finalCounts&gt;\n\n&lt;/testResults&gt;\n\n\nXml Document Parsed\nGathering Counts...\nCounts: 1 right, 1 wrong, 1 ignored, 1 exceptions\nNo output file to write.\nExit Code: 2\n)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_8_0, make, decisionTable_8, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_8_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_8_1, call, decisionTable_8, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

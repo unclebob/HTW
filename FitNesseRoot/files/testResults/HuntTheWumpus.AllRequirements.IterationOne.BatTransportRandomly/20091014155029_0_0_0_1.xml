@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>BatTransportRandomly</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-3807386126342911188');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-3807386126342911188"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-3807386126342911188"><table border="1" cellspacing="0">
+<tr><td colspan="2">fitlibrary.DoFixture</td>
+</tr>
+<tr><td>start</td>
+<td>HuntTheWumpus.fixtures.GameDriver</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+Make sure the wumpus moves randomly.<br/><br/>use a tiny cross map<br/><pre><br/>   [4]<br/>[1][2][3]<br/>   [5]<br/></pre><br/><br/><table border="1" cellspacing="0">
+<tr><td colspan="3">Make map.</td>
+</tr>
+<tr><td>start</td>
+<td>end</td>
+<td>direction</td>
+</tr>
+<tr><td>1</td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td>2</td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr><td>4</td>
+<td>2</td>
+<td>S</td>
+</tr>
+<tr><td>2</td>
+<td>5</td>
+<td>S</td>
+</tr>
+</table>
+<br/>Use the <i>Check random bat transport</i> fixture.  It looks a lot like the <i>Check random wumpus movement</i> fixture.  It puts the bats in cavern 2, and then repeats the following 1000 times.<br/><ol>
+	<li>put player in cavern 1</li>
+	<li>move east</li>
+	<li>count the cavern the player winds up in.</li>
+</ol>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error">delete me<hr/> <span class="fit_label">Missing methods: public TypeOfResult getDeleteMe() { } OR: public TypeOfResult deleteMe() { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+</tr>
+</table>
+<br/>]]></content>
+    <relativePageName>BatTransportRandomly</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

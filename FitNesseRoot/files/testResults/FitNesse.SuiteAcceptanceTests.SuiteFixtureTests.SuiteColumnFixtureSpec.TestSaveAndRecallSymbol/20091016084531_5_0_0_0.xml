@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestSaveAndRecallSymbol</rootPath>
+    <result>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('5263664727138268977');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5263664727138268977"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="5263664727138268977"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+<h3>You can save and recall symbols in a ColumnFixture.  You do this by using the =id? and id= syntax.</h3><br/><ul>
+	<li>=id? or =id() takes the output of a function and stores it in the symbol named by the cell.  In the example below the integer 1 is stored in the symbol <i>one</i>, and the integer 2 is stored in the symbol <i>two</i>.</li>
+	<li>id= recalls the value of the symbol named by the cell, and puts it in the <i>id</i> variable.</li>
+</ul>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">fitnesse.fixtures.ColumnFixtureTestFixture</td>
+</tr>
+<tr><td>input</td>
+<td>=output?</td>
+</tr>
+<tr><td>1</td>
+<td>one <span class="fit_grey"> = 1</span></td>
+</tr>
+<tr><td>2</td>
+<td>two <span class="fit_grey"> = 2</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">fitnesse.fixtures.ColumnFixtureTestFixture</td>
+</tr>
+<tr><td>input=</td>
+<td>output?</td>
+</tr>
+<tr><td>one <span class="fit_grey"> = 1</span></td>
+<td class="pass">1</td>
+</tr>
+<tr><td>two <span class="fit_grey"> = 2</span></td>
+<td class="pass">2</td>
+</tr>
+</table>
+<br/><b>With classed integral types, there's a chance the value may be null as a correct result:</b><br/><table border="1" cellspacing="0">
+<tr><td colspan="2">fitnesse.fixtures.ColumnFixtureTestFixture</td>
+</tr>
+<tr><td>integerInput</td>
+<td>=integerOutput?</td>
+</tr>
+<tr><td>1</td>
+<td>one <span class="fit_grey"> = 1</span></td>
+</tr>
+<tr><td>2</td>
+<td>two <span class="fit_grey"> = 2</span></td>
+</tr>
+<tr><td>null</td>
+<td>three <span class="fit_grey"> = null</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">fitnesse.fixtures.ColumnFixtureTestFixture</td>
+</tr>
+<tr><td>integerInput=</td>
+<td>integerOutput?</td>
+</tr>
+<tr><td>one <span class="fit_grey"> = 1</span></td>
+<td class="pass">1</td>
+</tr>
+<tr><td>two <span class="fit_grey"> = 2</span></td>
+<td class="pass">2</td>
+</tr>
+<tr><td>three <span class="fit_grey"> = null</span></td>
+<td class="pass">null</td>
+</tr>
+</table>
+<br/><pre><br/>public class ColumnFixtureTestFixture extends ColumnFixture<br/>{<br/>  public int input;<br/>  public int output() {return input;}<br/><br/>  public Integer integerInput;<br/>  public Integer integerOutput() { return integerInput; }<br/><br/>  public boolean exception() throws Exception {throw new Exception("I thowed up");}<br/>}<br/></pre><br/><br/><br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-1765849466495822885');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-1765849466495822885"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-1765849466495822885"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestSaveAndRecallSymbol</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

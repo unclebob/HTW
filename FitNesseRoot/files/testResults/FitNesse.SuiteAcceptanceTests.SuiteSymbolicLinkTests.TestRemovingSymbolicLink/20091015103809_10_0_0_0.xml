@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestRemovingSymbolicLink</rootPath>
+    <result>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-1503595529245194177');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-1503595529245194177"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-1503595529245194177"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+Removing a Symbolic Link is also done from the properties view of the page containing the link.  Each link in the list will have an <b>Unlink</b> link that will perform the removal of the link.  The link contains a URL of the form:<br/><br/><pre><b>http://host/PathToPage?responder=symlink&remove=</b><i>nameOfLink</i></pre><br/><br/>But first we need to create a link to remove.<br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7935743281959137294');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img-7935743281959137294"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateRelativeSymbolicLink">CreateRelativeSymbolicLink</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateRelativeSymbolicLink?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="-7935743281959137294">Creating a symbolic link is done in the properties view of the page that will contain the link.  There is a form where a user supplies a name for the link and a path for the linked page.  When submitted the URL has the following form:<br/><br/>http://host/PathToPage?responder=symlink&linkName=<linkName>&linkPath=<linkPath><br/><br/>First we need to create some pages to play with.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Page creator.</td>
+</tr>
+<tr><td>Page name.</td>
+<td>valid?</td>
+</tr>
+<tr><td>LinkingPage</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>LinkedPage</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/>Now we create a symbolic link named SymLink.  This links LinkedPage as a child of LinkingPage.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?responder=symlink&amp;linkName=SymLink&amp;linkPath=LinkedPage</td>
+<td class="pass">303</td>
+</tr>
+</table>
+<br/></div>
+</div>
+<br/>When we look at the properties page we'll see the Unlink link.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?properties</td>
+<td class="pass">200</td>
+</tr>
+</table>
+<table border="1" cellspacing="0">
+<tr><td colspan="3">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+</tr>
+<tr><td>contents</td>
+<td>SymLink</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>contents</td>
+<td>&lt;a href="LinkingPage\?responder=symlink&amp;removal=SymLink"&gt;Unlink&amp;nbsp;&lt;/a&gt;</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/>Now click the <b>remove</b> link.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?responder=symlink&amp;removal=SymLink</td>
+<td class="pass">303</td>
+</tr>
+</table>
+<br/>This should remove the symbolic link and redirect back to the properties view.<br/><table border="1" cellspacing="0">
+<tr><td colspan="4">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+<td>contents?</td>
+</tr>
+<tr><td>contents</td>
+<td>Location: LinkingPage\?properties</td>
+<td class="pass">true</td>
+<td>&nbsp; <span class="fit_grey">HTTP/1.1 303 See Other
+Content-Length: 0
+Location: LinkingPage?properties
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+</span></td>
+</tr>
+</table>
+<br/>When we look at the properties page again, the symbolic link will no longer be listed.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?properties</td>
+<td class="pass">200</td>
+</tr>
+</table>
+<table border="1" cellspacing="0">
+<tr><td colspan="3">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+</tr>
+<tr><td>contents</td>
+<td>SymLink</td>
+<td class="pass">false</td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-4847205292547797417');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4847205292547797417"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-4847205292547797417"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestRemovingSymbolicLink</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestCanShootWhenThereAreArrows</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>26</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('5131812965026800457');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5131812965026800457"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="5131812965026800457"><table border="1" cellspacing="0">
+<tr><td colspan="2">fitlibrary.DoFixture</td>
+</tr>
+<tr><td class="error">start<hr/> <span class="fit_label">Unknown class: HuntTheWumpus.fixtures.GameDriver</span></td>
+<td>HuntTheWumpus.fixtures.GameDriver</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+If there are arrows in the quiver, we ought to be able to shoot.<br/>The arrow should go as far as possible, and then hit a wall.<br/>The arrow should be left in that cavern where it stopped.<br/>The quiver should have one less arrow.<br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('8226977127605054852');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img8226977127605054852"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="HuntTheWumpus.AllRequirements.IterationOne.ShootArrow.CrossMap">CrossMap</a> <a href="HuntTheWumpus.AllRequirements.IterationOne.ShootArrow.CrossMap?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="8226977127605054852">Create a convenient map that looks like this:<br/><pre><br/>         [6]<br/>         [7]<br/>   [1][2][3][4][5]<br/>         [8]<br/>         [9]<br/></pre><br/><br/><table border="1" cellspacing="0">
+<tr><td colspan="3" class="error">Make Map<hr/> <span class="fit_label">Missing methods: public TypeOfResult getMakeMap() { } OR: public TypeOfResult makeMap() { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+</tr>
+<tr><td class="error">start<hr/> <span class="fit_label">Extra table cells</span></td>
+<td>end</td>
+<td>direction</td>
+</tr>
+<tr><td class="error">1<hr/> <span class="fit_label">Missing methods: public TypeOfResult oneE(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td class="error">2<hr/> <span class="fit_label">Missing methods: public TypeOfResult twoE(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr><td class="error">3<hr/> <span class="fit_label">Missing methods: public TypeOfResult threeE(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>4</td>
+<td>E</td>
+</tr>
+<tr><td class="error">4<hr/> <span class="fit_label">Missing methods: public TypeOfResult fourE(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>5</td>
+<td>E</td>
+</tr>
+<tr><td class="error">6<hr/> <span class="fit_label">Missing methods: public TypeOfResult sixS(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>7</td>
+<td>S</td>
+</tr>
+<tr><td class="error">7<hr/> <span class="fit_label">Missing methods: public TypeOfResult sevenS(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>3</td>
+<td>S</td>
+</tr>
+<tr><td class="error">3<hr/> <span class="fit_label">Missing methods: public TypeOfResult threeS(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>8</td>
+<td>S</td>
+</tr>
+<tr><td class="error">8<hr/> <span class="fit_label">Missing methods: public TypeOfResult eightS(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>9</td>
+<td>S</td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error">set quiver to<hr/> <span class="fit_label">Missing methods: public TypeOfResult setQuiverTo(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="4">5</td>
+</tr>
+<tr><td class="error">put player in cavern<hr/> <span class="fit_label">Missing methods: public TypeOfResult putPlayerInCavern(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="4">3</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="4">shoot east</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult messageWasPrinted(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>message</td>
+<td>The arrow flies away in silence.</td>
+<td>was printed</td>
+<td>true</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult getArrowsInQuiver() { } OR: public TypeOfResult arrowsInQuiver() { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>arrows in quiver</td>
+<td colspan="3">4</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult arrowsInCavern(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>arrows in cavern</td>
+<td>5</td>
+<td colspan="2">1</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="3">shoot south</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult getArrowsInQuiver() { } OR: public TypeOfResult arrowsInQuiver() { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>arrows in quiver</td>
+<td colspan="2">3</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult arrowsInCavern(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>arrows in cavern</td>
+<td>9</td>
+<td>1</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="3">shoot west</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult getArrowsInQuiver() { } OR: public TypeOfResult arrowsInQuiver() { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>arrows in quiver</td>
+<td colspan="2">2</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult arrowsInCavern(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>arrows in cavern</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="3">shoot north</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult getArrowsInQuiver() { } OR: public TypeOfResult arrowsInQuiver() { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>arrows in quiver</td>
+<td colspan="2">1</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult arrowsInCavern(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>arrows in cavern</td>
+<td>6</td>
+<td>1</td>
+</tr>
+</table>
+<br/><br/>]]></content>
+    <relativePageName>TestCanShootWhenThereAreArrows</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

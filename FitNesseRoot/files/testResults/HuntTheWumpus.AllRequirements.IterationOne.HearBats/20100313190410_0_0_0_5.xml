@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20100312</FitNesseVersion>
+  <rootPath>HearBats</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>5</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('2946450991903326576');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2946450991903326576"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="2946450991903326576"><table border="1" cellspacing="0" _TABLENUMBER=8950712240009026177>
+<tr><td>Import</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3841034436854680117>
+<tr><td>script</td>
+<td>Game driver <span class="error">Could not invoke constructor for GameDriver[0]</span></td>
+</tr>
+</table>
+</div>
+</div>
+<h3>When the player is adjacent to a cavern with bats, he should hear chirping sounds.</h3><br/><table border="1" cellspacing="0" _TABLENUMBER=2599236255419813139>
+<tr><td>tbd <span class="error">Could not invoke constructor for tbd[0]</span></td>
+</tr>
+</table>
+<br/>]]></content>
+    <relativePageName>HearBats</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[HuntTheWumpus.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_1</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[Game driver error(Could not invoke constructor for GameDriver[0])]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_2</name>
+                <row>
+                    <col><![CDATA[tbd error(Could not invoke constructor for tbd[0])]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, HuntTheWumpus.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_1_0, make, scriptTableActor, GameDriver]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for GameDriver[0]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_1_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for GameDriver[0]]]></actual>
+                              <expected><![CDATA[Game driver]]></expected>
+                              <evaluationMessage><![CDATA[Game driver error(Could not invoke constructor for GameDriver[0])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_0, make, decisionTable_2, tbd]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for tbd[0]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for tbd[0]]]></actual>
+                              <expected><![CDATA[tbd]]></expected>
+                              <evaluationMessage><![CDATA[tbd error(Could not invoke constructor for tbd[0])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_1, call, decisionTable_2, table, []]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_2. does not exist]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

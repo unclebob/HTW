@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestCreatingRelativeSymbolicLink</rootPath>
+    <result>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-537534760060351171');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-537534760060351171"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-537534760060351171"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-5022388370595665515');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img-5022388370595665515"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateRelativeSymbolicLink">CreateRelativeSymbolicLink</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSymbolicLinkTests.CreateRelativeSymbolicLink?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="-5022388370595665515">Creating a symbolic link is done in the properties view of the page that will contain the link.  There is a form where a user supplies a name for the link and a path for the linked page.  When submitted the URL has the following form:<br/><br/>http://host/PathToPage?responder=symlink&linkName=<linkName>&linkPath=<linkPath><br/><br/>First we need to create some pages to play with.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Page creator.</td>
+</tr>
+<tr><td>Page name.</td>
+<td>valid?</td>
+</tr>
+<tr><td>LinkingPage</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>LinkedPage</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/>Now we create a symbolic link named SymLink.  This links LinkedPage as a child of LinkingPage.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?responder=symlink&amp;linkName=SymLink&amp;linkPath=LinkedPage</td>
+<td class="pass">303</td>
+</tr>
+</table>
+<br/></div>
+</div>
+<br/>Creating a symlink will redirect back to the properties page.<br/><table border="1" cellspacing="0">
+<tr><td colspan="4">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+<td>contents?</td>
+</tr>
+<tr><td>contents</td>
+<td>Location: LinkingPage\?properties</td>
+<td class="pass">true</td>
+<td>&nbsp; <span class="fit_grey">HTTP/1.1 303 See Other
+Content-Length: 0
+Location: LinkingPage?properties
+Connection: close
+Server: FitNesse-v20091014
+Content-Type: text/html; charset=utf-8
+
+</span></td>
+</tr>
+</table>
+<br/>Let's have a look at the properties view.<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>LinkingPage?properties</td>
+<td class="pass">200</td>
+</tr>
+</table>
+<br/>The newly created symbolic link will be listed along with a link to the linked page.<br/><table border="1" cellspacing="0">
+<tr><td colspan="3">Response Examiner.</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+</tr>
+<tr><td>contents</td>
+<td>SymLink</td>
+<td class="pass">true</td>
+</tr>
+<tr><td>contents</td>
+<td>&lt;a href=".LinkedPage"&gt;LinkedPage&lt;/a&gt;</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-568255346902992009');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-568255346902992009"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-568255346902992009"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestCreatingRelativeSymbolicLink</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

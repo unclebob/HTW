@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestIncludedPageInRange</rootPath>
+    <result>
+    <counts>
+      <right>3</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-62669994641087220');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-62669994641087220"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-62669994641087220"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+<h3>BUG.  Thanks John Goodsen.</h3><br/>If a virtual page includes another that is in the same virtual subwiki, it should be able to find it remotely.<br/><br/><table border="1" cellspacing="0">
+<tr><td colspan="4">Page creator.</td>
+</tr>
+<tr><td>Page name.</td>
+<td>Page contents.</td>
+<td>Page attributes.</td>
+<td>valid?</td>
+</tr>
+<tr><td>VirtualPage</td>
+<td>!contents</td>
+<td>VirtualWiki=http://localhost:8080/FitNesse.SuiteAcceptanceTests.AcceptanceTestPage</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester.</td>
+</tr>
+<tr><td>uri</td>
+<td>valid?</td>
+</tr>
+<tr><td>VirtualPage.IncludingPage</td>
+<td class="pass">true</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="4">Response Examiner</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+<td>wrapped html?</td>
+</tr>
+<tr><td>contents</td>
+<td>included page</td>
+<td class="pass">true</td>
+<td>&nbsp; <span class="fit_grey"><pre>HTTP/1.1 200 OK
+Content-Length: 4395
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;VirtualPage.IncludingPage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body class="virtual"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="http://localhost:8080/FitNesse.SuiteAcceptanceTests.AcceptanceTestPage.IncludingPage?whereUsed" target="newWindow" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" target="newWindow" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" target="newWindow" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" target="newWindow" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" target="newWindow" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;a href="/VirtualPage"&gt;VirtualPage&lt;/a&gt;.
+				&lt;br/&gt;
+&lt;span class="page_title"&gt;IncludingPage&lt;/span&gt;
+&lt;a style="font-size:small;" onclick="popup('addChildPopup')"&gt; [add child]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;div class="included"&gt;
+	&lt;div style="float: right;" class="meta"&gt;&lt;a href="javascript:expandAll();"&gt;Expand All&lt;/a&gt; | &lt;a href="javascript:collapseAll();"&gt;Collapse All&lt;/a&gt;&lt;/div&gt;
+	&lt;a href="javascript:toggleCollapsable('6073000710911083675');"&gt;
+		&lt;img src="/files/images/collapsableOpen.gif" class="left" id="img6073000710911083675"/&gt;
+	&lt;/a&gt;
+&amp;nbsp;&lt;span class="meta"&gt;Included page: .FitNesse.SuiteAcceptanceTests.AcceptanceTestPage.IncludedPage&lt;a title="create page" href="FitNesse.SuiteAcceptanceTests.AcceptanceTestPage.IncludedPage?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt; (edit)&lt;a title="create page" href="http://localhost:8080/FitNesse.SuiteAcceptanceTests.AcceptanceTestPage..FitNesse.SuiteAcceptanceTests.AcceptanceTestPage.IncludedPage?edit&amp;amp;nonExistent=true" target=".FitNesse.SuiteAcceptanceTests.AcceptanceTestPage.IncludedPage"&gt;[?]&lt;/a&gt;&lt;/span&gt;
+	&lt;div class="collapsable" id="6073000710911083675"&gt;the included page 00bF&lt;br/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+.FitNesse.SuiteAcceptanceTests.AcceptanceTestPage.IncludingPage.ChildIncludingPage&lt;a title="create page" href="FitNesse.SuiteAcceptanceTests.AcceptanceTestPage.IncludingPage.ChildIncludingPage?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;div class="footer"&gt;
+&lt;/div&gt;
+&lt;div id="addChildPopup" class="popup_window"&gt;
+  &lt;div class="popup_title"&gt;Add Child Page to IncludingPage&lt;/div&gt;
+  &lt;div class="popup_content"&gt;
+    &lt;form action="VirtualPage.IncludingPage" method="get"&gt;
+      &lt;input type="hidden" name="responder" value="addChild"/&gt;
+      &lt;table border="0" cellspacing="0" width="100%" height="100%"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="pageType" value="Normal"/&gt; Normal&lt;br/&gt;
+
+            &lt;input type="radio" name="pageType" value="Test"/&gt; Test&lt;br/&gt;
+
+            &lt;input type="radio" name="pageType" value="Suite"/&gt; Suite&lt;br/&gt;
+
+            &lt;input type="radio" name="pageType" value="Default" checked="checked"/&gt; Default&lt;br/&gt;
+
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="0" cellspacing="0" width="100%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childName"&gt;Name&lt;/label&gt;&lt;/td?
+                &lt;td&gt;&lt;input size="50" id="childName" type="text" name="name"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;label for="childContent"&gt;Content&lt;/label&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;input size="50" id="childContent" type="text" name="content" value="!contents"/&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input TYPE="button" VALUE="Cancel" onClick="popdown('addChildPopup')"/&gt;
+            &lt;input value="Add" type="submit"/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></span></td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('6494204552443113363');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img6494204552443113363"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="6494204552443113363"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestIncludedPageInRange</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

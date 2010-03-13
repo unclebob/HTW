@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestArraysInColumnFixture</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('8139446083554724586');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8139446083554724586"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="8139446083554724586"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+<h3>You can put arrays of objects into ColumnFixture<a title="create page" href="FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteColumnFixtureSpec.ColumnFixture?edit&nonExistent=true">[?]</a> fixtures.</h3><br/><table border="1" cellspacing="0">
+<tr><td colspan="3">fitnesse.fixtures.ComplexAddFixture</td>
+</tr>
+<tr><td>a</td>
+<td>b</td>
+<td>sum?</td>
+</tr>
+<tr><td>1,2</td>
+<td>3,4</td>
+<td class="pass">4,6</td>
+</tr>
+</table>
+<br/><pre><br/>public class ComplexAddFixture extends ColumnFixture<br/>{<br/>  public int[] a;<br/>  public int[] b;<br/>  public int[] sum() {<br/>    return new int[] {a[0]+b[0], a[1]+b[1]};<br/>  }<br/>}<br/></pre><br/><br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-6961151788923881616');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-6961151788923881616"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-6961151788923881616"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestArraysInColumnFixture</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

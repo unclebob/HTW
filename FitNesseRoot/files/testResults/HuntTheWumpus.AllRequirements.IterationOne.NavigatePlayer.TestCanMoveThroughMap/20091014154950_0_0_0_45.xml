@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestCanMoveThroughMap</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>45</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('5570471313393068502');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5570471313393068502"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="5570471313393068502"><table border="1" cellspacing="0">
+<tr><td colspan="2">fitlibrary.DoFixture</td>
+</tr>
+<tr><td class="error">start<hr/> <span class="fit_label">Unknown class: HuntTheWumpus.fixtures.GameDriver</span></td>
+<td>HuntTheWumpus.fixtures.GameDriver</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+Test that we can walk around the map, and back again.  This makes sure we can move both directions through each corridor.<br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('1761197194918700467');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img1761197194918700467"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="HuntTheWumpus.AllRequirements.IterationOne.NavigatePlayer.DonutMap">DonutMap</a> <a href="HuntTheWumpus.AllRequirements.IterationOne.NavigatePlayer.DonutMap?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="1761197194918700467"><table border="1" cellspacing="0">
+<tr><td colspan="3" class="error">Make map.<hr/> <span class="fit_label">Missing methods: public TypeOfResult getMakeMapDot() { } OR: public TypeOfResult makeMapDot() { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+</tr>
+<tr><td class="error">start<hr/> <span class="fit_label">Extra table cells</span></td>
+<td>end</td>
+<td>direction</td>
+</tr>
+<tr><td class="error">1<hr/> <span class="fit_label">Missing methods: public TypeOfResult oneE(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td class="error">2<hr/> <span class="fit_label">Missing methods: public TypeOfResult twoE(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr><td class="error">3<hr/> <span class="fit_label">Missing methods: public TypeOfResult threeS(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>4</td>
+<td>S</td>
+</tr>
+<tr><td class="error">4<hr/> <span class="fit_label">Missing methods: public TypeOfResult fourS(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>5</td>
+<td>S</td>
+</tr>
+<tr><td class="error">5<hr/> <span class="fit_label">Missing methods: public TypeOfResult fiveW(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>6</td>
+<td>W</td>
+</tr>
+<tr><td class="error">6<hr/> <span class="fit_label">Missing methods: public TypeOfResult sixW(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>7</td>
+<td>W</td>
+</tr>
+<tr><td class="error">7<hr/> <span class="fit_label">Missing methods: public TypeOfResult sevenN(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>8</td>
+<td>N</td>
+</tr>
+<tr><td class="error">8<hr/> <span class="fit_label">Missing methods: public TypeOfResult eightN(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>1</td>
+<td>N</td>
+</tr>
+</table>
+</div>
+</div>
+<br/><ul>
+	<li>Walk Clockwise around the donut.</li>
+</ul>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error">put<hr/> <span class="fit_label">Missing methods: public TypeOfResult putInCavern(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">E</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">E</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>3</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">S</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">S</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>5</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">W</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">W</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>7</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">N</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">N</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>1</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><ul>
+	<li>Walk Counter-clockwise around the donut.</li>
+</ul>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error">put<hr/> <span class="fit_label">Missing methods: public TypeOfResult putInCavern(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">S</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">S</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>7</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">E</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">E</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>5</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">N</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">N</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>3</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">W</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="5">W</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult cavernHas(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>cavern</td>
+<td>1</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/>]]></content>
+    <relativePageName>TestCanMoveThroughMap</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

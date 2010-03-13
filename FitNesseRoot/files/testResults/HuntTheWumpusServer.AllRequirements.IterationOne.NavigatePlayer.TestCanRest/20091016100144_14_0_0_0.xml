@@ -1,0 +1,824 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestCanRest</rootPath>
+    <result>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('9191135291329544999');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img9191135291329544999"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpusServer.SetUp">.HuntTheWumpusServer.SetUp</a> (edit: <a href="HuntTheWumpusServer.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">locally</a> | <a href="http://10.80.72.121:80/HuntTheWumpus.SetUp?responder=edit&amp;redirectToReferer=true&amp;redirectAction=importAndView">remotely</a>)</span>
+	<div class="hidden" id="9191135291329544999"><table border="1" cellspacing="0" _TABLENUMBER=2724751053511142481>
+<tr><td>script</td>
+<td><span class="pass">HuntTheWumpus.fixtures.GameDriver</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7885848345152127124>
+<tr><td>Import</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-4463300926343353474');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4463300926343353474"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="-4463300926343353474"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('7407978745340483592');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7407978745340483592"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="HuntTheWumpusServer.ScenarioLibrary">.HuntTheWumpusServer.ScenarioLibrary</a> <a href="HuntTheWumpusServer.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="7407978745340483592"><table border="1" cellspacing="0" _TABLENUMBER=6783383254326506985>
+<tr><td>scenario</td>
+<td>message</td>
+<td>msg</td>
+<td>ShouldPrintWhenPlayerMoves</td>
+<td>direction</td>
+<td>FromCavern</td>
+<td>cavern</td>
+</tr>
+<tr><td>put</td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="4">@cavern</td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="6">rest</td>
+</tr>
+<tr><td>reject</td>
+<td>message</td>
+<td>@msg</td>
+<td colspan="4">was printed</td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="6">@direction</td>
+</tr>
+<tr><td>ensure</td>
+<td>message</td>
+<td>@msg</td>
+<td colspan="4">was printed</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4731190680261314636>
+<tr><td>scenario</td>
+<td>message</td>
+<td>msg</td>
+<td>should print when player approaches</td>
+<td colspan="2">object</td>
+</tr>
+<tr><td>put</td>
+<td>@object</td>
+<td>in cavern</td>
+<td colspan="3">3</td>
+</tr>
+<tr><td>message</td>
+<td>@msg</td>
+<td>should print when player moves</td>
+<td>west</td>
+<td>from cavern</td>
+<td>5</td>
+</tr>
+<tr><td>message</td>
+<td>@msg</td>
+<td>should print when player moves</td>
+<td>east</td>
+<td>from cavern</td>
+<td>1</td>
+</tr>
+<tr><td>message</td>
+<td>@msg</td>
+<td>should print when player moves</td>
+<td>north</td>
+<td>from cavern</td>
+<td>9</td>
+</tr>
+<tr><td>message</td>
+<td>@msg</td>
+<td>should print when player moves</td>
+<td>south</td>
+<td>from cavern</td>
+<td>6</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+A player can rest for his turn.  This is a valid command that does not move the player.<br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('5832526754564763558');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img5832526754564763558"/>
+	</a>
+&nbsp;<span class="meta">Included page: DonutMap<a title="create page" href="HuntTheWumpusServer.AllRequirements.IterationOne.NavigatePlayer.DonutMap?edit&nonExistent=true">[?]</a> (edit: locally<a title="create page" href="HuntTheWumpusServer.AllRequirements.IterationOne.NavigatePlayer.DonutMap?edit&amp;nonExistent=true">[?]</a> | <a href="http://10.80.72.121:80/HuntTheWumpus.AllRequirements.IterationOne.NavigatePlayer.TestCanRest?responder=edit&amp;redirectToReferer=true&amp;redirectAction=importAndView">remotely</a>)</span>
+	<div class="collapsable" id="5832526754564763558"><span class="meta"><b>Page include failed because the page DonutMap<a title="create page" href="HuntTheWumpusServer.AllRequirements.IterationOne.NavigatePlayer.DonutMap?edit&nonExistent=true">[?]</a> does not exist.</b></span></div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2070625716202388529>
+<tr><td colspan="6">script</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">Rest</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>1</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>check</td>
+<td>message</td>
+<td>I don't know how to Rest.</td>
+<td>was printed</td>
+<td colspan="2"><span class="pass">false</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">rest</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>1</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>check</td>
+<td>message</td>
+<td>I don't know how to rest.</td>
+<td>was printed</td>
+<td colspan="2"><span class="pass">false</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">r</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>1</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>check</td>
+<td>message</td>
+<td>I don't know how to r.</td>
+<td>was printed</td>
+<td colspan="2"><span class="pass">false</span></td>
+</tr>
+<tr><td colspan="6">&nbsp;</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">R</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>1</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+<tr><td>check</td>
+<td>message</td>
+<td>I don't know how to R.</td>
+<td>was printed</td>
+<td colspan="2"><span class="pass">false</span></td>
+</tr>
+</table>
+<br/>]]></content>
+    <relativePageName>TestCanRest</relativePageName>
+    
+        <tables>
+            <table>
+        <name>scriptTable_0</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>import_1</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[HuntTheWumpus.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_2</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[msg]]></col>
+                    <col><![CDATA[ShouldPrintWhenPlayerMoves]]></col>
+                    <col><![CDATA[direction]]></col>
+                    <col><![CDATA[FromCavern]]></col>
+                    <col><![CDATA[cavern]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[put]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[@cavern]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[rest]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[@direction]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[was printed]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[msg]]></col>
+                    <col><![CDATA[should print when player approaches]]></col>
+                    <col><![CDATA[object]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[put]]></col>
+                    <col><![CDATA[@object]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[west]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[5]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[east]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[north]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[9]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[@msg]]></col>
+                    <col><![CDATA[should print when player moves]]></col>
+                    <col><![CDATA[south]]></col>
+                    <col><![CDATA[from cavern]]></col>
+                    <col><![CDATA[6]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_4</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[Rest]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[I don't know how to Rest.]]></col>
+                    <col><![CDATA[was printed]]></col>
+                    <col><![CDATA[pass(false)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[rest]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[I don't know how to rest.]]></col>
+                    <col><![CDATA[was printed]]></col>
+                    <col><![CDATA[pass(false)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[r]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[I don't know how to r.]]></col>
+                    <col><![CDATA[was printed]]></col>
+                    <col><![CDATA[pass(false)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[R]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[message]]></col>
+                    <col><![CDATA[I don't know how to R.]]></col>
+                    <col><![CDATA[was printed]]></col>
+                    <col><![CDATA[pass(false)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_0_0, make, scriptTableActor, HuntTheWumpus.fixtures.GameDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_0_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[HuntTheWumpus.fixtures.GameDriver]]></expected>
+                              <evaluationMessage><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[import_1_0, import, HuntTheWumpus.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_0, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_1, call, scriptTableActor, enterCommand, Rest]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_2, call, scriptTableActor, cavernHas, 1, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>5</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_2</instructionId>
+          <col>4</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_3, call, scriptTableActor, messageWasPrinted, I don't know how to Rest.]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_3</instructionId>
+          <col>4</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[false]]></expected>
+                              <evaluationMessage><![CDATA[pass(false)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_3</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_4, call, scriptTableActor, enterCommand, rest]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_4</instructionId>
+          <col>1</col>
+          <row>6</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_4</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_5, call, scriptTableActor, cavernHas, 1, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_5</instructionId>
+          <col>5</col>
+          <row>7</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_5</instructionId>
+          <col>2</col>
+          <row>7</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_5</instructionId>
+          <col>4</col>
+          <row>7</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_6, call, scriptTableActor, messageWasPrinted, I don't know how to rest.]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_6</instructionId>
+          <col>4</col>
+          <row>8</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[false]]></expected>
+                              <evaluationMessage><![CDATA[pass(false)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_6</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_7, call, scriptTableActor, enterCommand, r]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_7</instructionId>
+          <col>1</col>
+          <row>10</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_7</instructionId>
+          <col>0</col>
+          <row>10</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_8, call, scriptTableActor, cavernHas, 1, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_8</instructionId>
+          <col>5</col>
+          <row>11</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_8</instructionId>
+          <col>2</col>
+          <row>11</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_8</instructionId>
+          <col>4</col>
+          <row>11</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_9, call, scriptTableActor, messageWasPrinted, I don't know how to r.]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_9</instructionId>
+          <col>4</col>
+          <row>12</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[false]]></expected>
+                              <evaluationMessage><![CDATA[pass(false)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_9</instructionId>
+          <col>2</col>
+          <row>12</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_10, call, scriptTableActor, enterCommand, R]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_10</instructionId>
+          <col>1</col>
+          <row>14</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_10</instructionId>
+          <col>0</col>
+          <row>14</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_11, call, scriptTableActor, cavernHas, 1, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_11</instructionId>
+          <col>5</col>
+          <row>15</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_11</instructionId>
+          <col>2</col>
+          <row>15</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_11</instructionId>
+          <col>4</col>
+          <row>15</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_4_12, call, scriptTableActor, messageWasPrinted, I don't know how to R.]]]></instruction>
+        <slimResult><![CDATA[false]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_4_12</instructionId>
+          <col>4</col>
+          <row>16</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[false]]></actual>
+                              <expected><![CDATA[false]]></expected>
+                              <evaluationMessage><![CDATA[pass(false)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_4_12</instructionId>
+          <col>2</col>
+          <row>16</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

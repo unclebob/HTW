@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>WumpusMovesRandomly</rootPath>
+    <result>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-447250245431051594');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-447250245431051594"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-447250245431051594"><table border="1" cellspacing="0">
+<tr><td colspan="2">fitlibrary.DoFixture</td>
+</tr>
+<tr><td>start</td>
+<td>HuntTheWumpus.fixtures.GameDriver</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+Make sure the wumpus moves randomly.<br/><br/>use a tiny cross map<br/><pre><br/>   [4]<br/>[1][2][3]<br/>   [5]<br/></pre><br/><br/><table border="1" cellspacing="0">
+<tr><td colspan="3">Make map.</td>
+</tr>
+<tr><td>start</td>
+<td>end</td>
+<td>direction</td>
+</tr>
+<tr><td>1</td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td>2</td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr><td>4</td>
+<td>2</td>
+<td>S</td>
+</tr>
+<tr><td>2</td>
+<td>5</td>
+<td>S</td>
+</tr>
+</table>
+<br/>Now repeat the following 1000 times.<br/><ol>
+	<li>Put the wumpus in cavern 2.</li>
+	<li>rest</li>
+	<li>note where the wumpus is.</li>
+</ol>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Check random wumpus movement</td>
+</tr>
+<tr><td>cavern</td>
+<td>count?</td>
+</tr>
+<tr><td>1</td>
+<td class="pass"><b>206</b>>150</td>
+</tr>
+<tr><td>2</td>
+<td class="pass"><b>182</b>>150</td>
+</tr>
+<tr><td>3</td>
+<td class="pass"><b>191</b>>150</td>
+</tr>
+<tr><td>4</td>
+<td class="pass"><b>226</b>>150</td>
+</tr>
+<tr><td>5</td>
+<td class="pass"><b>195</b>>150</td>
+</tr>
+</table>
+<br/><br/>]]></content>
+    <relativePageName>WumpusMovesRandomly</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

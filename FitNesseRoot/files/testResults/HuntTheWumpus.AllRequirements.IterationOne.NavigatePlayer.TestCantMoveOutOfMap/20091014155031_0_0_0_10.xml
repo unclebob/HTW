@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestCantMoveOutOfMap</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>10</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-5568389011715354180');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5568389011715354180"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-5568389011715354180"><table border="1" cellspacing="0">
+<tr><td colspan="2">fitlibrary.DoFixture</td>
+</tr>
+<tr><td>start</td>
+<td>HuntTheWumpus.fixtures.GameDriver</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+If the player tries to move out of the map, the game should say: <i>"You can't go {} from here."</i>; where {} is the direction.<br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-2107259514418026436');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img-2107259514418026436"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="HuntTheWumpus.AllRequirements.IterationOne.NavigatePlayer.DonutMap">DonutMap</a> <a href="HuntTheWumpus.AllRequirements.IterationOne.NavigatePlayer.DonutMap?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="-2107259514418026436"><table border="1" cellspacing="0">
+<tr><td colspan="3">Make map.</td>
+</tr>
+<tr><td>start</td>
+<td>end</td>
+<td>direction</td>
+</tr>
+<tr><td>1</td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td>2</td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr><td>3</td>
+<td>4</td>
+<td>S</td>
+</tr>
+<tr><td>4</td>
+<td>5</td>
+<td>S</td>
+</tr>
+<tr><td>5</td>
+<td>6</td>
+<td>W</td>
+</tr>
+<tr><td>6</td>
+<td>7</td>
+<td>W</td>
+</tr>
+<tr><td>7</td>
+<td>8</td>
+<td>N</td>
+</tr>
+<tr><td>8</td>
+<td>1</td>
+<td>N</td>
+</tr>
+</table>
+</div>
+</div>
+<br/><br/><table border="1" cellspacing="0">
+<tr><td class="error">put<hr/> <span class="fit_label">Missing methods: public TypeOfResult putInCavern(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td>1</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="3">W</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult messageWasPrinted(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>message was printed</td>
+<td>You can't go west from here.</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="3">N</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult messageWasPrinted(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>message was printed</td>
+<td>You can't go north from here.</td>
+<td>true</td>
+</tr>
+<tr><td class="error">put<hr/> <span class="fit_label">Missing methods: public TypeOfResult putInCavern(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td>5</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="3">E</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult messageWasPrinted(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>message was printed</td>
+<td>You can't go east from here.</td>
+<td>true</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="3">S</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult messageWasPrinted(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>message was printed</td>
+<td>You can't go south from here.</td>
+<td>true</td>
+</tr>
+</table>
+]]></content>
+    <relativePageName>TestCantMoveOutOfMap</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

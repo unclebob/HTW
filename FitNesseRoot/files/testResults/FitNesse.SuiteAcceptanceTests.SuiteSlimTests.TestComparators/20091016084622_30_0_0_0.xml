@@ -1,0 +1,3201 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestComparators</rootPath>
+    <result>
+    <counts>
+      <right>30</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-3562445460685271315');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-3562445460685271315"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteSlimTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-3562445460685271315"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('7351647667747467173');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7351647667747467173"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SetUp">&lt;SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="7351647667747467173"><table border="1" cellspacing="0" _TABLENUMBER=7249729624352865674>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4734714881719403174>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6544184798557473138>
+<tr><td>script</td>
+<td><span class="pass">page driver</span></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7948109898098016962');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7948109898098016962"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="-7948109898098016962"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('3288615264156365622');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img3288615264156365622"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="3288615264156365622"><table border="1" cellspacing="0" _TABLENUMBER=7519216142864213732>
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with content</td>
+<td colspan="2">@content</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7416827957446500284>
+<tr><td>scenario</td>
+<td>given page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>nothing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7957948467827526361>
+<tr><td>scenario</td>
+<td>given test page</td>
+<td>page</td>
+</tr>
+<tr><td>given page</td>
+<td colspan="2">@page</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td>a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1032388265867500174>
+<tr><td>scenario</td>
+<td>given slim test page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>!define TEST_SYSTEM {slim}</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td colspan="2">a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3150806860403112808>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;a href="@target"&gt;</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@source</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3351717453402182872>
+<tr><td>scenario</td>
+<td>it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8239528908881634212>
+<tr><td>scenario</td>
+<td>and it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=31641159544074298>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have creating link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=457916201460764907>
+<tr><td>scenario</td>
+<td>it should have creating link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have creating link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1351553719672272354>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8999671519268814903>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7322044018448452975>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4192529911844401350>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8718458767693239947>
+<tr><td>scenario</td>
+<td>it should not contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should not contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7925425322044978216>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td>text</td>
+<td>in line</td>
+<td>symbol</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>$@symbol=</td>
+<td>line number containing</td>
+<td colspan="3">@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=269242548674206785>
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should match</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6965266335278329367>
+<tr><td>scenario</td>
+<td>test results for page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=39706129023335884>
+<tr><td>scenario</td>
+<td>its test results should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>test results for page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2939722420623172253>
+<tr><td>scenario</td>
+<td>test ressults for page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2943093204022915959>
+<tr><td>scenario</td>
+<td>and should contain</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4336137169867959226>
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4233748980155278481>
+<tr><td>scenario</td>
+<td>and should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7305716628590803453>
+<tr><td>scenario</td>
+<td>widget</td>
+<td>wikiText</td>
+<td>should render</td>
+<td>htmlText</td>
+</tr>
+<tr><td>create page</td>
+<td>WidgetPage</td>
+<td>with content</td>
+<td colspan="2">@wikiText</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>WidgetPage</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@htmlText</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4638503127018485187>
+<tr><td>scenario</td>
+<td>the line</td>
+<td>after</td>
+<td>should come after</td>
+<td>before</td>
+</tr>
+<tr><td>check</td>
+<td>echo int</td>
+<td>$@before</td>
+<td colspan="2">&lt; $@after</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7266216383961365988');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7266216383961365988"/>
+	</a>
+&nbsp;<span class="meta">Scenarios </span>
+	<div class="hidden" id="-7266216383961365988"><table border="1" cellspacing="0" _TABLENUMBER=6333885837694334611>
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>@b</td>
+<td colspan="2">@a</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1821122422939529430>
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>@b</td>
+<td colspan="2">@a</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8064760508106990716>
+<tr><td>script</td>
+<td><span class="pass">echo fixture</span></td>
+</tr>
+</table>
+</div>
+</div>
+<table border="1" cellspacing="0" _TABLENUMBER=6731205968127347131>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>=5</td>
+<td class=pass>accepts</td>
+<td class=pass>5</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('3816980071003748433');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img3816980071003748433"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="3816980071003748433"><table border="1" cellspacing="0" _TABLENUMBER=825036290203551628 table_name="scriptTable_30_0/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>5</td>
+<td colspan="2"><span class="pass">5=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>=5</td>
+<td class=pass>rejects</td>
+<td class=pass>6</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-4604939095022682851');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4604939095022682851"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-4604939095022682851"><table border="1" cellspacing="0" _TABLENUMBER=3288452566699501393 table_name="scriptTable_30_1/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>6</td>
+<td colspan="2"><span class="pass">6=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>!=5</td>
+<td class=pass>accepts</td>
+<td class=pass>6</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-726425641691678057');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-726425641691678057"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-726425641691678057"><table border="1" cellspacing="0" _TABLENUMBER=603041592186268495 table_name="scriptTable_30_2/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>6</td>
+<td colspan="2"><span class="pass">6!=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>!=5</td>
+<td class=pass>rejects</td>
+<td class=pass>5</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-2829313305530236198');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2829313305530236198"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-2829313305530236198"><table border="1" cellspacing="0" _TABLENUMBER=1515875709152929182 table_name="scriptTable_30_3/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>5</td>
+<td colspan="2"><span class="pass">5!=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&gt;=5</td>
+<td class=pass>accepts</td>
+<td class=pass>5</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-4079042277789467282');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4079042277789467282"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-4079042277789467282"><table border="1" cellspacing="0" _TABLENUMBER=7575673029193333595 table_name="scriptTable_30_4/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>5</td>
+<td colspan="2"><span class="pass">5>=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&gt;=5</td>
+<td class=pass>rejects</td>
+<td class=pass>4</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-1969473337644312967');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-1969473337644312967"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-1969473337644312967"><table border="1" cellspacing="0" _TABLENUMBER=1073486685886527103 table_name="scriptTable_30_5/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>4</td>
+<td colspan="2"><span class="pass">4>=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&gt;5</td>
+<td class=pass>accepts</td>
+<td class=pass>6</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('4565600488995478387');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img4565600488995478387"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="4565600488995478387"><table border="1" cellspacing="0" _TABLENUMBER=3659300210074594788 table_name="scriptTable_30_6/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>6</td>
+<td colspan="2"><span class="pass">6>5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&gt;5</td>
+<td class=pass>rejects</td>
+<td class=pass>5</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('7832818517211172164');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7832818517211172164"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="7832818517211172164"><table border="1" cellspacing="0" _TABLENUMBER=761933582943027121 table_name="scriptTable_30_7/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>5</td>
+<td colspan="2"><span class="pass">5>5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&gt;5</td>
+<td class=pass>rejects</td>
+<td class=pass>4</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('1455207994185822277');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img1455207994185822277"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="1455207994185822277"><table border="1" cellspacing="0" _TABLENUMBER=3904753954285958576 table_name="scriptTable_30_8/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>4</td>
+<td colspan="2"><span class="pass">4>5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&lt;=5</td>
+<td class=pass>accepts</td>
+<td class=pass>5</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('4634769150572180732');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img4634769150572180732"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="4634769150572180732"><table border="1" cellspacing="0" _TABLENUMBER=3657999824060930193 table_name="scriptTable_30_9/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>5</td>
+<td colspan="2"><span class="pass">5<=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&lt;=5</td>
+<td class=pass>rejects</td>
+<td class=pass>6</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-5868938627487122701');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5868938627487122701"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-5868938627487122701"><table border="1" cellspacing="0" _TABLENUMBER=7198760927648346613 table_name="scriptTable_30_10/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>6</td>
+<td colspan="2"><span class="pass">6<=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&lt;5</td>
+<td class=pass>accepts</td>
+<td class=pass>4</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('5516125173754854241');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5516125173754854241"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="5516125173754854241"><table border="1" cellspacing="0" _TABLENUMBER=6011994827065116607 table_name="scriptTable_30_11/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>4</td>
+<td colspan="2"><span class="pass">4<5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&lt;5</td>
+<td class=pass>rejects</td>
+<td class=pass>5</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-8127401642172819908');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-8127401642172819908"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-8127401642172819908"><table border="1" cellspacing="0" _TABLENUMBER=2344886803121323948 table_name="scriptTable_30_12/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>5</td>
+<td colspan="2"><span class="pass">5<5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>&lt;5</td>
+<td class=pass>rejects</td>
+<td class=pass>6</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-4521393599168399857');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4521393599168399857"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-4521393599168399857"><table border="1" cellspacing="0" _TABLENUMBER=1670032861871118256 table_name="scriptTable_30_13/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>6</td>
+<td colspan="2"><span class="pass">6<5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>~=5.0</td>
+<td class=pass>accepts</td>
+<td class=pass>4.95</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-4073856840660273850');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4073856840660273850"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-4073856840660273850"><table border="1" cellspacing="0" _TABLENUMBER=3724398714837953011 table_name="scriptTable_30_14/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>4.95</td>
+<td colspan="2"><span class="pass">4.95~=5.0</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>~=5.0</td>
+<td class=pass>accepts</td>
+<td class=pass>5.05</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('7740058627962824348');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7740058627962824348"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="7740058627962824348"><table border="1" cellspacing="0" _TABLENUMBER=924891987570856720 table_name="scriptTable_30_15/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>5.05</td>
+<td colspan="2"><span class="pass">5.05~=5.0</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>~=5.0</td>
+<td class=pass>rejects</td>
+<td class=pass>4.94</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-828702546198730529');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-828702546198730529"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-828702546198730529"><table border="1" cellspacing="0" _TABLENUMBER=6644471723642768561 table_name="scriptTable_30_16/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>4.94</td>
+<td colspan="2"><span class="pass">4.94~=5.0</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>~=5.0</td>
+<td class=pass>rejects</td>
+<td class=pass>5.06</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('4948597442533058706');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img4948597442533058706"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="4948597442533058706"><table border="1" cellspacing="0" _TABLENUMBER=7299129034042124961 table_name="scriptTable_30_17/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>5.06</td>
+<td colspan="2"><span class="pass">5.06~=5.0</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>!~=5.0</td>
+<td class=pass>accepts</td>
+<td class=pass>4.94</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('8615874246166739188');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8615874246166739188"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="8615874246166739188"><table border="1" cellspacing="0" _TABLENUMBER=7634272040670943393 table_name="scriptTable_30_18/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>4.94</td>
+<td colspan="2"><span class="pass">4.94!~=5.0</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>!~=5.0</td>
+<td class=pass>accepts</td>
+<td class=pass>5.06</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('6171318972394281681');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img6171318972394281681"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="6171318972394281681"><table border="1" cellspacing="0" _TABLENUMBER=1313513894658047953 table_name="scriptTable_30_19/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>5.06</td>
+<td colspan="2"><span class="pass">5.06!~=5.0</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>!~=5.0</td>
+<td class=pass>rejects</td>
+<td class=pass>4.95</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-2577745516249626975');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2577745516249626975"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-2577745516249626975"><table border="1" cellspacing="0" _TABLENUMBER=4689531529050140784 table_name="scriptTable_30_20/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>4.95</td>
+<td colspan="2"><span class="pass">4.95!~=5.0</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>!~=5.0</td>
+<td class=pass>rejects</td>
+<td class=pass>5.05</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-7777550629595129685');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7777550629595129685"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-7777550629595129685"><table border="1" cellspacing="0" _TABLENUMBER=811490113665574376 table_name="scriptTable_30_21/scriptTable_28">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>rejects</td>
+<td>b</td>
+</tr>
+<tr><td>check not</td>
+<td>echo</td>
+<td>5.05</td>
+<td colspan="2"><span class="pass">5.05!~=5.0</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td colspan="4">&nbsp;</td>
+</tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>3&lt;=_&lt;=5</td>
+<td class=pass>accepts</td>
+<td class=pass>5</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('997143388349377841');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img997143388349377841"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="997143388349377841"><table border="1" cellspacing="0" _TABLENUMBER=3324715922593325573 table_name="scriptTable_30_22/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>5</td>
+<td colspan="2"><span class="pass">3<=5<=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>3&lt;=_&lt;=5</td>
+<td class=pass>accepts</td>
+<td class=pass>3</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-3774637367406066059');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-3774637367406066059"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-3774637367406066059"><table border="1" cellspacing="0" _TABLENUMBER=3383075989607009334 table_name="scriptTable_30_23/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>3</td>
+<td colspan="2"><span class="pass">3<=3<=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>3&lt;=_&lt;=5</td>
+<td class=pass>accepts</td>
+<td class=pass>4</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('1522919653325114849');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img1522919653325114849"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="1522919653325114849"><table border="1" cellspacing="0" _TABLENUMBER=204459591009932398 table_name="scriptTable_30_24/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>4</td>
+<td colspan="2"><span class="pass">3<=4<=5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>comparator</td>
+<td class=pass>3&lt;_&lt;5</td>
+<td class=pass>accepts</td>
+<td class=pass>4</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('7492869645117319445');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7492869645117319445"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="7492869645117319445"><table border="1" cellspacing="0" _TABLENUMBER=5995224043656384435 table_name="scriptTable_30_25/scriptTable_27">
+<tr><td>scenario</td>
+<td>comparator</td>
+<td>a</td>
+<td>accepts</td>
+<td>b</td>
+</tr>
+<tr><td>check</td>
+<td>echo</td>
+<td>4</td>
+<td colspan="2"><span class="pass">3<4<5</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table>
+<br/><br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('5734881155595633760');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5734881155595633760"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="5734881155595633760"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=739805574084328081>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestComparators</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(page driver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_4</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[nothing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_5</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_6</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given slim test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!define TEST_SYSTEM {slim}]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_7</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a href="@target"&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@source]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_9</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_10</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_11</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_12</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_13</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_15</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_16</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_17</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+                    <col><![CDATA[in line]]></col>
+                    <col><![CDATA[symbol]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$@symbol=]]></col>
+                    <col><![CDATA[line number containing]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_19</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_20</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[its test results should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_21</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test ressults for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_22</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_24</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_25</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[widget]]></col>
+                    <col><![CDATA[wikiText]]></col>
+                    <col><![CDATA[should render]]></col>
+                    <col><![CDATA[htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@wikiText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_26</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the line]]></col>
+                    <col><![CDATA[after]]></col>
+                    <col><![CDATA[should come after]]></col>
+                    <col><![CDATA[before]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo int]]></col>
+                    <col><![CDATA[$@before]]></col>
+                    <col><![CDATA[&lt; $@after]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@b]]></col>
+                    <col><![CDATA[@a]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@b]]></col>
+                    <col><![CDATA[@a]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_29</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(echo fixture)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[=5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_0/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[=5]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_1/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[!=5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_2/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[!=5]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_3/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&gt;=5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_4/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&gt;=5]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_5/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&gt;5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_6/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&gt;5]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_7/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&gt;5]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_8/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&lt;=5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_9/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&lt;=5]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_10/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&lt;5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_11/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&lt;5]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_12/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[&lt;5]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_13/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[~=5.0]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[4.95]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_14/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[~=5.0]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[5.05]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_15/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[~=5.0]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[4.94]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_16/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[~=5.0]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[5.06]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_17/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[!~=5.0]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[4.94]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_18/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[!~=5.0]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[5.06]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_19/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[!~=5.0]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[4.95]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_20/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[!~=5.0]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[5.05]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_21/scriptTable_28)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[3&lt;=_&lt;=5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_22/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[3&lt;=_&lt;=5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_23/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[3&lt;=_&lt;=5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_24/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[3&lt;_&lt;5]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_30_25/scriptTable_27)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_0/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(5=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_1/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(6=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_2/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(6!=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_3/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(5!=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_4/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(5>=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_5/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(4>=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_6/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(6>5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_7/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(5>5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_8/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(4>5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_9/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(5<=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_10/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(6<=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_11/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(4<5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_12/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(5<5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_13/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[pass(6<5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_14/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[4.95]]></col>
+                    <col><![CDATA[pass(4.95~=5.0)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_15/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5.05]]></col>
+                    <col><![CDATA[pass(5.05~=5.0)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_16/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[4.94]]></col>
+                    <col><![CDATA[pass(4.94~=5.0)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_17/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5.06]]></col>
+                    <col><![CDATA[pass(5.06~=5.0)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_18/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[4.94]]></col>
+                    <col><![CDATA[pass(4.94!~=5.0)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_19/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5.06]]></col>
+                    <col><![CDATA[pass(5.06!~=5.0)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_20/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[4.95]]></col>
+                    <col><![CDATA[pass(4.95!~=5.0)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_21/scriptTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[rejects]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check not]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5.05]]></col>
+                    <col><![CDATA[pass(5.05!~=5.0)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_22/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[pass(3<=5<=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_23/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[pass(3<=3<=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_24/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(3<=4<=5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_30_25/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[comparator]]></col>
+                    <col><![CDATA[a]]></col>
+                    <col><![CDATA[accepts]]></col>
+                    <col><![CDATA[b]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[pass(3<4<5)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_31</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, make, scriptTableActor, PageDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[page driver]]></expected>
+                              <evaluationMessage><![CDATA[pass(page driver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_29_0, make, scriptTableActor, EchoFixture]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_29_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[echo fixture]]></expected>
+                              <evaluationMessage><![CDATA[pass(echo fixture)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_0/scriptTable_27_0, call, scriptTableActor, echo, 5]]]></instruction>
+        <slimResult><![CDATA[5]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_0/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[5]]></actual>
+                              <expected><![CDATA[=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(5=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_0/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_1/scriptTable_28_0, call, scriptTableActor, echo, 6]]]></instruction>
+        <slimResult><![CDATA[6]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_1/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[6]]></actual>
+                              <expected><![CDATA[=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(6=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_1/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_2/scriptTable_27_0, call, scriptTableActor, echo, 6]]]></instruction>
+        <slimResult><![CDATA[6]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_2/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[6]]></actual>
+                              <expected><![CDATA[!=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(6!=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_2/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_3/scriptTable_28_0, call, scriptTableActor, echo, 5]]]></instruction>
+        <slimResult><![CDATA[5]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_3/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[5]]></actual>
+                              <expected><![CDATA[!=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(5!=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_3/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_4/scriptTable_27_0, call, scriptTableActor, echo, 5]]]></instruction>
+        <slimResult><![CDATA[5]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_4/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[5]]></actual>
+                              <expected><![CDATA[>=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(5>=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_4/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_5/scriptTable_28_0, call, scriptTableActor, echo, 4]]]></instruction>
+        <slimResult><![CDATA[4]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_5/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[4]]></actual>
+                              <expected><![CDATA[>=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(4>=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_5/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_6/scriptTable_27_0, call, scriptTableActor, echo, 6]]]></instruction>
+        <slimResult><![CDATA[6]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_6/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[6]]></actual>
+                              <expected><![CDATA[>5]]></expected>
+                              <evaluationMessage><![CDATA[pass(6>5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_6/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_7/scriptTable_28_0, call, scriptTableActor, echo, 5]]]></instruction>
+        <slimResult><![CDATA[5]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_7/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[5]]></actual>
+                              <expected><![CDATA[>5]]></expected>
+                              <evaluationMessage><![CDATA[pass(5>5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_7/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_8/scriptTable_28_0, call, scriptTableActor, echo, 4]]]></instruction>
+        <slimResult><![CDATA[4]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_8/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[4]]></actual>
+                              <expected><![CDATA[>5]]></expected>
+                              <evaluationMessage><![CDATA[pass(4>5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_8/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_9/scriptTable_27_0, call, scriptTableActor, echo, 5]]]></instruction>
+        <slimResult><![CDATA[5]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_9/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[5]]></actual>
+                              <expected><![CDATA[<=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(5<=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_9/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_10/scriptTable_28_0, call, scriptTableActor, echo, 6]]]></instruction>
+        <slimResult><![CDATA[6]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_10/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[6]]></actual>
+                              <expected><![CDATA[<=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(6<=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_10/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_11/scriptTable_27_0, call, scriptTableActor, echo, 4]]]></instruction>
+        <slimResult><![CDATA[4]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_11/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[4]]></actual>
+                              <expected><![CDATA[<5]]></expected>
+                              <evaluationMessage><![CDATA[pass(4<5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_11/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_12/scriptTable_28_0, call, scriptTableActor, echo, 5]]]></instruction>
+        <slimResult><![CDATA[5]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_12/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[5]]></actual>
+                              <expected><![CDATA[<5]]></expected>
+                              <evaluationMessage><![CDATA[pass(5<5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_12/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_13/scriptTable_28_0, call, scriptTableActor, echo, 6]]]></instruction>
+        <slimResult><![CDATA[6]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_13/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[6]]></actual>
+                              <expected><![CDATA[<5]]></expected>
+                              <evaluationMessage><![CDATA[pass(6<5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_13/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_14/scriptTable_27_0, call, scriptTableActor, echo, 4.95]]]></instruction>
+        <slimResult><![CDATA[4.95]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_14/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[4.95]]></actual>
+                              <expected><![CDATA[~=5.0]]></expected>
+                              <evaluationMessage><![CDATA[pass(4.95~=5.0)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_14/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_15/scriptTable_27_0, call, scriptTableActor, echo, 5.05]]]></instruction>
+        <slimResult><![CDATA[5.05]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_15/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[5.05]]></actual>
+                              <expected><![CDATA[~=5.0]]></expected>
+                              <evaluationMessage><![CDATA[pass(5.05~=5.0)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_15/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_16/scriptTable_28_0, call, scriptTableActor, echo, 4.94]]]></instruction>
+        <slimResult><![CDATA[4.94]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_16/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[4.94]]></actual>
+                              <expected><![CDATA[~=5.0]]></expected>
+                              <evaluationMessage><![CDATA[pass(4.94~=5.0)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_16/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_17/scriptTable_28_0, call, scriptTableActor, echo, 5.06]]]></instruction>
+        <slimResult><![CDATA[5.06]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_17/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[5.06]]></actual>
+                              <expected><![CDATA[~=5.0]]></expected>
+                              <evaluationMessage><![CDATA[pass(5.06~=5.0)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_17/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_18/scriptTable_27_0, call, scriptTableActor, echo, 4.94]]]></instruction>
+        <slimResult><![CDATA[4.94]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_18/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[4.94]]></actual>
+                              <expected><![CDATA[!~=5.0]]></expected>
+                              <evaluationMessage><![CDATA[pass(4.94!~=5.0)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_18/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_19/scriptTable_27_0, call, scriptTableActor, echo, 5.06]]]></instruction>
+        <slimResult><![CDATA[5.06]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_19/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[5.06]]></actual>
+                              <expected><![CDATA[!~=5.0]]></expected>
+                              <evaluationMessage><![CDATA[pass(5.06!~=5.0)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_19/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_20/scriptTable_28_0, call, scriptTableActor, echo, 4.95]]]></instruction>
+        <slimResult><![CDATA[4.95]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_20/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[4.95]]></actual>
+                              <expected><![CDATA[!~=5.0]]></expected>
+                              <evaluationMessage><![CDATA[pass(4.95!~=5.0)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_20/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_21/scriptTable_28_0, call, scriptTableActor, echo, 5.05]]]></instruction>
+        <slimResult><![CDATA[5.05]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_21/scriptTable_28_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>RejectedValueExpectation</type>
+                    <actual><![CDATA[5.05]]></actual>
+                              <expected><![CDATA[!~=5.0]]></expected>
+                              <evaluationMessage><![CDATA[pass(5.05!~=5.0)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_21/scriptTable_28_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_22/scriptTable_27_0, call, scriptTableActor, echo, 5]]]></instruction>
+        <slimResult><![CDATA[5]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_22/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[5]]></actual>
+                              <expected><![CDATA[3<=_<=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(3<=5<=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_22/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_23/scriptTable_27_0, call, scriptTableActor, echo, 3]]]></instruction>
+        <slimResult><![CDATA[3]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_23/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[3]]></actual>
+                              <expected><![CDATA[3<=_<=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(3<=3<=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_23/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_24/scriptTable_27_0, call, scriptTableActor, echo, 4]]]></instruction>
+        <slimResult><![CDATA[4]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_24/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[4]]></actual>
+                              <expected><![CDATA[3<=_<=5]]></expected>
+                              <evaluationMessage><![CDATA[pass(3<=4<=5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_24/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_30_25/scriptTable_27_0, call, scriptTableActor, echo, 4]]]></instruction>
+        <slimResult><![CDATA[4]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_30_25/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[4]]></actual>
+                              <expected><![CDATA[3<_<5]]></expected>
+                              <evaluationMessage><![CDATA[pass(3<4<5)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_30_25/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_0, make, decisionTable_31, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_31_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_31_1, call, decisionTable_31, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

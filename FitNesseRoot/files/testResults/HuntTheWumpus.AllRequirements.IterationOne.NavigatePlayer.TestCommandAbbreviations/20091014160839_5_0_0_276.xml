@@ -1,0 +1,3860 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestCommandAbbreviations</rootPath>
+    <result>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>276</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-2945735452471832424');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2945735452471832424"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-2945735452471832424"><table border="1" cellspacing="0" _TABLENUMBER=7401560123445201499>
+<tr><td>script</td>
+<td><span class="pass">HuntTheWumpus.fixtures.GameDriver</span></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3180655418138405756>
+<tr><td>Import</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+There are a number of abbreviations for the navigation commands.  You can see them being used below:<br/><br/><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('423994726479177019');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img423994726479177019"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="HuntTheWumpus.AllRequirements.IterationOne.NavigatePlayer.DonutMap">DonutMap</a> <a href="HuntTheWumpus.AllRequirements.IterationOne.NavigatePlayer.DonutMap?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="423994726479177019"><table border="1" cellspacing="0" _TABLENUMBER=8680319427933930578>
+<tr><td colspan="3"><span class="pass">Make map.</span></td>
+</tr>
+<tr><td>start</td>
+<td>end</td>
+<td>direction</td>
+</tr>
+<tr><td>1</td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td>2</td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr><td>3</td>
+<td>4</td>
+<td>S</td>
+</tr>
+<tr><td>4</td>
+<td>5</td>
+<td>S</td>
+</tr>
+<tr><td>5</td>
+<td>6</td>
+<td>W</td>
+</tr>
+<tr><td>6</td>
+<td>7</td>
+<td>W</td>
+</tr>
+<tr><td>7</td>
+<td>8</td>
+<td>N</td>
+</tr>
+<tr><td>8</td>
+<td>1</td>
+<td>N</td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=8547528366362213732>
+<tr><td colspan="6">script</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td colspan="5">''Go East''</td>
+</tr>
+<tr><td><span class="pass">put</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="3">1</td>
+</tr>
+<tr><td><span class="pass">enter command</span></td>
+<td colspan="5">Go East</td>
+</tr>
+<tr><td>check</td>
+<td>cavern</td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td><span class="pass">true</span></td>
+</tr>
+</table>
+<br/><i>E -&gt; Go East</i><br/><br/><table border="1" cellspacing="0" _TABLENUMBER=7921060795460291927>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_4. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_4. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_4. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">E</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_4. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_4. does not exist</span></td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>e -&gt; Go East</i><br/><table border="1" cellspacing="0" _TABLENUMBER=1345476806930882978>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_5. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_5. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_5. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">e</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_5. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_5. does not exist</span></td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>go east -&gt; Go East</i><br/><table border="1" cellspacing="0" _TABLENUMBER=4938787998145043684>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_6. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_6. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_6. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">go east</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_6. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_6. does not exist</span></td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>East -&gt; Go East</i><br/><table border="1" cellspacing="0" _TABLENUMBER=5194440995637209059>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_7. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_7. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_7. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">East</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_7. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_7. does not exist</span></td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>east -&gt; Go East</i><br/><table border="1" cellspacing="0" _TABLENUMBER=1373028372063881098>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_8. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_8. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_8. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">east</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_8. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_8. does not exist</span></td>
+<td>2</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><hr/>
+<br/><br/><i>Go South</i><br/><table border="1" cellspacing="0" _TABLENUMBER=3045647873708319625>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_9. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_9. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_9. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">Go South</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_9. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_9. does not exist</span></td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>S -&gt; Go South</i><br/><table border="1" cellspacing="0" _TABLENUMBER=5813426843197227961>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_10. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_10. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_10. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">S</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_10. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_10. does not exist</span></td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>s -&gt; Go South</i><br/><table border="1" cellspacing="0" _TABLENUMBER=2638501985262827110>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_11. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_11. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_11. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">s</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_11. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_11. does not exist</span></td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>go south-&gt; Go South</i><br/><table border="1" cellspacing="0" _TABLENUMBER=1781760926759682290>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_12. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_12. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_12. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">go south</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_12. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_12. does not exist</span></td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>South -&gt; Go South</i><br/><table border="1" cellspacing="0" _TABLENUMBER=5620774791168009945>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_13. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_13. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_13. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">South</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_13. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_13. does not exist</span></td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>south -&gt; Go South</i><br/><table border="1" cellspacing="0" _TABLENUMBER=2953731519585163634>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_14. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_14. does not exist</span></td>
+<td colspan="3">1 <span class="error">The instance decisionTable_14. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">south</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_14. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_14. does not exist</span></td>
+<td>8</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><hr/>
+<br/><br/><i>Go West</i><br/><table border="1" cellspacing="0" _TABLENUMBER=243693275220179017>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_15. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_15. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_15. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">Go West</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_15. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_15. does not exist</span></td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>W -&gt; Go West</i><br/><table border="1" cellspacing="0" _TABLENUMBER=7152232501250842115>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_16. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_16. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_16. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">W</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_16. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_16. does not exist</span></td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>w -&gt; Go West</i><br/><table border="1" cellspacing="0" _TABLENUMBER=5779149976528693877>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_17. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_17. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_17. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">w</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_17. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_17. does not exist</span></td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>go west -&gt; Go West</i><br/><table border="1" cellspacing="0" _TABLENUMBER=399355851139841039>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_18. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_18. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_18. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">go west</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_18. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_18. does not exist</span></td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>West -&gt; Go West</i><br/><table border="1" cellspacing="0" _TABLENUMBER=7657286109492575292>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_19. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_19. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_19. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">West</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_19. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_19. does not exist</span></td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>west -&gt; Go West</i><br/><table border="1" cellspacing="0" _TABLENUMBER=3289902681878794468>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_20. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_20. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_20. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">west</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_20. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_20. does not exist</span></td>
+<td>6</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><hr/>
+<br/><br/><i>Go North</i><br/><table border="1" cellspacing="0" _TABLENUMBER=2987752181740461090>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_21. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_21. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_21. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">Go North</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_21. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_21. does not exist</span></td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>N -&gt; Go North</i><br/><table border="1" cellspacing="0" _TABLENUMBER=9193767094781769887>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_22. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_22. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_22. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">N</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_22. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_22. does not exist</span></td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>n -&gt; Go North</i><br/><table border="1" cellspacing="0" _TABLENUMBER=4867629947798585999>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_23. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_23. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_23. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">n</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_23. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_23. does not exist</span></td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>go north -&gt; Go North</i><br/><table border="1" cellspacing="0" _TABLENUMBER=3174877772923366179>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_24. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_24. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_24. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">go north</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_24. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_24. does not exist</span></td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>North -&gt; Go North</i><br/><table border="1" cellspacing="0" _TABLENUMBER=975569544345852505>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_25. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_25. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_25. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">North</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_25. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_25. does not exist</span></td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><i>north -&gt; Go North</i><br/><table border="1" cellspacing="0" _TABLENUMBER=2900844971824169884>
+<tr><td>put <span class="error">Could not invoke constructor for put[3]</span></td>
+<td>player <span class="error">The instance decisionTable_26. does not exist</span></td>
+<td>in cavern <span class="error">The instance decisionTable_26. does not exist</span></td>
+<td colspan="3">5 <span class="error">The instance decisionTable_26. does not exist</span></td>
+</tr>
+<tr><td>enter command</td>
+<td colspan="5">north</td>
+</tr>
+<tr><td>check <span class="error">The instance decisionTable_26. does not exist</span></td>
+<td>cavern <span class="error">The instance decisionTable_26. does not exist</span></td>
+<td>4</td>
+<td>has</td>
+<td>player</td>
+<td>true</td>
+</tr>
+</table>
+<br/><br/>]]></content>
+    <relativePageName>TestCommandAbbreviations</relativePageName>
+    
+        <tables>
+            <table>
+        <name>scriptTable_0</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>import_1</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[HuntTheWumpus.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_2</name>
+                <row>
+                    <col><![CDATA[pass(Make map.)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[start]]></col>
+                    <col><![CDATA[end]]></col>
+                    <col><![CDATA[direction]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[3]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[5]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[W]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[7]]></col>
+                    <col><![CDATA[W]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[7]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[N]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[N]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_3</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[''Go East'']]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(put)]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[in cavern]]></col>
+                    <col><![CDATA[1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(enter command)]]></col>
+                    <col><![CDATA[Go East]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[cavern]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[pass(true)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_4</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_4. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_4. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_4. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[E]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_4. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_4. does not exist)]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_5</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_5. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_5. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_5. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[e]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_5. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_5. does not exist)]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_6</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_6. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_6. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_6. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[go east]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_6. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_6. does not exist)]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_7</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_7. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_7. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_7. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[East]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_7. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_7. does not exist)]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_8</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_8. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_8. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_8. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[east]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_8. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_8. does not exist)]]></col>
+                    <col><![CDATA[2]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_9</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_9. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_9. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_9. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[Go South]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_9. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_9. does not exist)]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_10</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_10. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_10. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_10. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[S]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_10. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_10. does not exist)]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_11</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_11. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_11. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_11. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[s]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_11. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_11. does not exist)]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_12</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_12. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_12. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_12. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[go south]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_12. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_12. does not exist)]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_13</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_13. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_13. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_13. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[South]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_13. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_13. does not exist)]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_14</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_14. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_14. does not exist)]]></col>
+                    <col><![CDATA[1 error(The instance decisionTable_14. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[south]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_14. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_14. does not exist)]]></col>
+                    <col><![CDATA[8]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_15</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_15. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_15. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_15. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[Go West]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_15. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_15. does not exist)]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_16</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_16. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_16. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_16. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[W]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_16. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_16. does not exist)]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_17</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_17. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_17. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_17. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[w]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_17. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_17. does not exist)]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_18</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_18. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_18. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_18. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[go west]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_18. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_18. does not exist)]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_19</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_19. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_19. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_19. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[West]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_19. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_19. does not exist)]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_20</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_20. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_20. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_20. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[west]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_20. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_20. does not exist)]]></col>
+                    <col><![CDATA[6]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_21</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_21. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_21. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_21. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[Go North]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_21. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_21. does not exist)]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_22</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_22. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_22. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_22. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[N]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_22. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_22. does not exist)]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_23</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_23. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_23. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_23. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[n]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_23. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_23. does not exist)]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_24</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_24. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_24. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_24. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[go north]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_24. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_24. does not exist)]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_25</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_25. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_25. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_25. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[North]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_25. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_25. does not exist)]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_26</name>
+                <row>
+                    <col><![CDATA[put error(Could not invoke constructor for put[3])]]></col>
+                    <col><![CDATA[player error(The instance decisionTable_26. does not exist)]]></col>
+                    <col><![CDATA[in cavern error(The instance decisionTable_26. does not exist)]]></col>
+                    <col><![CDATA[5 error(The instance decisionTable_26. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[enter command]]></col>
+                    <col><![CDATA[north]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check error(The instance decisionTable_26. does not exist)]]></col>
+                    <col><![CDATA[cavern error(The instance decisionTable_26. does not exist)]]></col>
+                    <col><![CDATA[4]]></col>
+                    <col><![CDATA[has]]></col>
+                    <col><![CDATA[player]]></col>
+                    <col><![CDATA[true]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_0_0, make, scriptTableActor, HuntTheWumpus.fixtures.GameDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_0_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[HuntTheWumpus.fixtures.GameDriver]]></expected>
+                              <evaluationMessage><![CDATA[pass(HuntTheWumpus.fixtures.GameDriver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[import_1_0, import, HuntTheWumpus.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_0, make, decisionTable_2, MakeMap]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_2_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Make map.]]></expected>
+                              <evaluationMessage><![CDATA[pass(Make map.)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_1, call, decisionTable_2, table, [[start, end, direction], [1, 2, E], [2, 3, E], [3, 4, S], [4, 5, S], [5, 6, W], [6, 7, W], [7, 8, N], [8, 1, N]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] HuntTheWumpus.fixtures.MakeMap.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_2, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_3, call, decisionTable_2, setStart, 1]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_4, call, decisionTable_2, setEnd, 2]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[2]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_5, call, decisionTable_2, setDirection, E]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_5</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_6, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_7, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_8, call, decisionTable_2, setStart, 2]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_8</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[2]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_9, call, decisionTable_2, setEnd, 3]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_9</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_10, call, decisionTable_2, setDirection, E]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_10</instructionId>
+          <col>2</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[E]]></expected>
+                              <evaluationMessage><![CDATA[E]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_11, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_12, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_13, call, decisionTable_2, setStart, 3]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_13</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[3]]></expected>
+                              <evaluationMessage><![CDATA[3]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_14, call, decisionTable_2, setEnd, 4]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_14</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[4]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_15, call, decisionTable_2, setDirection, S]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_15</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_16, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_17, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_18, call, decisionTable_2, setStart, 4]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_18</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[4]]></expected>
+                              <evaluationMessage><![CDATA[4]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_19, call, decisionTable_2, setEnd, 5]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_19</instructionId>
+          <col>1</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_20, call, decisionTable_2, setDirection, S]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_20</instructionId>
+          <col>2</col>
+          <row>5</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[S]]></expected>
+                              <evaluationMessage><![CDATA[S]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_21, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_22, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_23, call, decisionTable_2, setStart, 5]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_23</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_24, call, decisionTable_2, setEnd, 6]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_24</instructionId>
+          <col>1</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[6]]></expected>
+                              <evaluationMessage><![CDATA[6]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_25, call, decisionTable_2, setDirection, W]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_25</instructionId>
+          <col>2</col>
+          <row>6</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[W]]></expected>
+                              <evaluationMessage><![CDATA[W]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_26, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_27, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_28, call, decisionTable_2, setStart, 6]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_28</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[6]]></expected>
+                              <evaluationMessage><![CDATA[6]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_29, call, decisionTable_2, setEnd, 7]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_29</instructionId>
+          <col>1</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[7]]></expected>
+                              <evaluationMessage><![CDATA[7]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_30, call, decisionTable_2, setDirection, W]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_30</instructionId>
+          <col>2</col>
+          <row>7</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[W]]></expected>
+                              <evaluationMessage><![CDATA[W]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_31, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_32, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_33, call, decisionTable_2, setStart, 7]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_33</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[7]]></expected>
+                              <evaluationMessage><![CDATA[7]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_34, call, decisionTable_2, setEnd, 8]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_34</instructionId>
+          <col>1</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[8]]></expected>
+                              <evaluationMessage><![CDATA[8]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_35, call, decisionTable_2, setDirection, N]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_35</instructionId>
+          <col>2</col>
+          <row>8</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[N]]></expected>
+                              <evaluationMessage><![CDATA[N]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_36, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_37, call, decisionTable_2, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_38, call, decisionTable_2, setStart, 8]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_38</instructionId>
+          <col>0</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[8]]></expected>
+                              <evaluationMessage><![CDATA[8]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_39, call, decisionTable_2, setEnd, 1]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_39</instructionId>
+          <col>1</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_40, call, decisionTable_2, setDirection, N]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_2_40</instructionId>
+          <col>2</col>
+          <row>9</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[N]]></expected>
+                              <evaluationMessage><![CDATA[N]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_2_41, call, decisionTable_2, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_0, call, scriptTableActor, putInCavern, player, 1]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_0</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[pass(put)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_1, call, scriptTableActor, enterCommand, Go East]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_1</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[enter command]]></expected>
+                              <evaluationMessage><![CDATA[pass(enter command)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_2, call, scriptTableActor, cavernHas, 2, player]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>5</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[true]]></expected>
+                              <evaluationMessage><![CDATA[pass(true)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>2</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_2</instructionId>
+          <col>4</col>
+          <row>4</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_0, make, decisionTable_4, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_1, call, decisionTable_4, table, [[enter command, E], [check, cavern, 2, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_4. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_4. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_4. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_4. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_4. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_4. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_4. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_2, call, decisionTable_4, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_4. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_3, call, decisionTable_4, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_4. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_4. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_4. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_4, call, decisionTable_4, setE, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_4. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_4_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_4. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_4. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_4_5, call, decisionTable_4, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_4. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_5_0, make, decisionTable_5, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_5_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_5_1, call, decisionTable_5, table, [[enter command, e], [check, cavern, 2, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_5. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_5_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_5. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_5. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_5_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_5. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_5. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_5_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_5. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_5. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_5_2, call, decisionTable_5, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_5. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_5_3, call, decisionTable_5, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_5. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_5_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_5. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_5. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_5_4, call, decisionTable_5, setE, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_5. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_5_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_5. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_5. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_5_5, call, decisionTable_5, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_5. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_6_0, make, decisionTable_6, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_6_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_6_1, call, decisionTable_6, table, [[enter command, go east], [check, cavern, 2, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_6. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_6_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_6. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_6. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_6_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_6. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_6. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_6_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_6. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_6. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_6_2, call, decisionTable_6, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_6. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_6_3, call, decisionTable_6, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_6. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_6_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_6. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_6. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_6_4, call, decisionTable_6, setGoEast, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_6. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_6_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_6. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_6. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_6_5, call, decisionTable_6, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_6. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_0, make, decisionTable_7, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_1, call, decisionTable_7, table, [[enter command, East], [check, cavern, 2, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_7. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_7. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_7. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_7. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_7. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_7. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_7. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_2, call, decisionTable_7, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_7. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_3, call, decisionTable_7, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_7. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_7. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_7. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_4, call, decisionTable_7, setEast, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_7. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_7_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_7. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_7. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_7_5, call, decisionTable_7, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_7. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_8_0, make, decisionTable_8, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_8_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_8_1, call, decisionTable_8, table, [[enter command, east], [check, cavern, 2, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_8. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_8_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_8. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_8. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_8_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_8. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_8. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_8_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_8. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_8. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_8_2, call, decisionTable_8, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_8. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_8_3, call, decisionTable_8, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_8. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_8_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_8. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_8. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_8_4, call, decisionTable_8, setEast, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_8. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_8_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_8. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_8. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_8_5, call, decisionTable_8, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_8. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_0, make, decisionTable_9, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_1, call, decisionTable_9, table, [[enter command, Go South], [check, cavern, 8, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_9. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_9. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_9. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_9. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_9. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_9. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_9. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_2, call, decisionTable_9, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_9. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_3, call, decisionTable_9, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_9. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_9. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_9. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_4, call, decisionTable_9, setGoSouth, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_9. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_9_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_9. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_9. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_9_5, call, decisionTable_9, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_9. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_10_0, make, decisionTable_10, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_10_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_10_1, call, decisionTable_10, table, [[enter command, S], [check, cavern, 8, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_10. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_10_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_10. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_10. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_10_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_10. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_10. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_10_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_10. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_10. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_10_2, call, decisionTable_10, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_10. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_10_3, call, decisionTable_10, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_10. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_10_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_10. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_10. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_10_4, call, decisionTable_10, setS, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_10. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_10_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_10. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_10. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_10_5, call, decisionTable_10, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_10. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_11_0, make, decisionTable_11, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_11_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_11_1, call, decisionTable_11, table, [[enter command, s], [check, cavern, 8, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_11. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_11_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_11. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_11. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_11_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_11. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_11. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_11_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_11. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_11. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_11_2, call, decisionTable_11, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_11. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_11_3, call, decisionTable_11, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_11. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_11_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_11. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_11. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_11_4, call, decisionTable_11, setS, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_11. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_11_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_11. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_11. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_11_5, call, decisionTable_11, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_11. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_12_0, make, decisionTable_12, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_12_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_12_1, call, decisionTable_12, table, [[enter command, go south], [check, cavern, 8, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_12. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_12_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_12. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_12. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_12_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_12. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_12. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_12_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_12. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_12. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_12_2, call, decisionTable_12, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_12. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_12_3, call, decisionTable_12, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_12. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_12_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_12. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_12. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_12_4, call, decisionTable_12, setGoSouth, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_12. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_12_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_12. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_12. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_12_5, call, decisionTable_12, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_12. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_13_0, make, decisionTable_13, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_13_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_13_1, call, decisionTable_13, table, [[enter command, South], [check, cavern, 8, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_13. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_13_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_13. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_13. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_13_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_13. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_13. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_13_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_13. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_13. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_13_2, call, decisionTable_13, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_13. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_13_3, call, decisionTable_13, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_13. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_13_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_13. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_13. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_13_4, call, decisionTable_13, setSouth, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_13. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_13_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_13. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_13. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_13_5, call, decisionTable_13, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_13. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_14_0, make, decisionTable_14, put, player, in cavern, 1]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_14_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_14_1, call, decisionTable_14, table, [[enter command, south], [check, cavern, 8, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_14. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_14_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_14. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_14. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_14_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_14. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_14. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_14_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_14. does not exist]]></actual>
+                              <expected><![CDATA[1]]></expected>
+                              <evaluationMessage><![CDATA[1 error(The instance decisionTable_14. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_14_2, call, decisionTable_14, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_14. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_14_3, call, decisionTable_14, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_14. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_14_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_14. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_14. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_14_4, call, decisionTable_14, setSouth, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_14. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_14_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_14. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_14. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_14_5, call, decisionTable_14, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_14. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_15_0, make, decisionTable_15, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_15_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_15_1, call, decisionTable_15, table, [[enter command, Go West], [check, cavern, 6, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_15. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_15_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_15. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_15. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_15_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_15. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_15. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_15_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_15. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_15. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_15_2, call, decisionTable_15, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_15. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_15_3, call, decisionTable_15, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_15. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_15_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_15. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_15. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_15_4, call, decisionTable_15, setGoWest, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_15. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_15_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_15. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_15. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_15_5, call, decisionTable_15, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_15. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_16_0, make, decisionTable_16, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_16_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_16_1, call, decisionTable_16, table, [[enter command, W], [check, cavern, 6, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_16. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_16_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_16. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_16. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_16_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_16. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_16. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_16_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_16. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_16. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_16_2, call, decisionTable_16, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_16. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_16_3, call, decisionTable_16, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_16. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_16_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_16. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_16. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_16_4, call, decisionTable_16, setW, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_16. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_16_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_16. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_16. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_16_5, call, decisionTable_16, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_16. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_17_0, make, decisionTable_17, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_17_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_17_1, call, decisionTable_17, table, [[enter command, w], [check, cavern, 6, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_17. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_17_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_17. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_17. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_17_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_17. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_17. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_17_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_17. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_17. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_17_2, call, decisionTable_17, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_17. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_17_3, call, decisionTable_17, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_17. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_17_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_17. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_17. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_17_4, call, decisionTable_17, setW, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_17. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_17_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_17. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_17. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_17_5, call, decisionTable_17, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_17. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_18_0, make, decisionTable_18, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_18_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_18_1, call, decisionTable_18, table, [[enter command, go west], [check, cavern, 6, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_18. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_18_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_18. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_18. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_18_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_18. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_18. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_18_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_18. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_18. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_18_2, call, decisionTable_18, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_18. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_18_3, call, decisionTable_18, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_18. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_18_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_18. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_18. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_18_4, call, decisionTable_18, setGoWest, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_18. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_18_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_18. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_18. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_18_5, call, decisionTable_18, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_18. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_19_0, make, decisionTable_19, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_19_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_19_1, call, decisionTable_19, table, [[enter command, West], [check, cavern, 6, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_19. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_19_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_19. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_19. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_19_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_19. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_19. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_19_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_19. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_19. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_19_2, call, decisionTable_19, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_19. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_19_3, call, decisionTable_19, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_19. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_19_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_19. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_19. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_19_4, call, decisionTable_19, setWest, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_19. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_19_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_19. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_19. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_19_5, call, decisionTable_19, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_19. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_20_0, make, decisionTable_20, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_20_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_20_1, call, decisionTable_20, table, [[enter command, west], [check, cavern, 6, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_20. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_20_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_20. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_20. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_20_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_20. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_20. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_20_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_20. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_20. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_20_2, call, decisionTable_20, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_20. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_20_3, call, decisionTable_20, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_20. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_20_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_20. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_20. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_20_4, call, decisionTable_20, setWest, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_20. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_20_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_20. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_20. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_20_5, call, decisionTable_20, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_20. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_21_0, make, decisionTable_21, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_21_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_21_1, call, decisionTable_21, table, [[enter command, Go North], [check, cavern, 4, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_21. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_21_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_21. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_21. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_21_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_21. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_21. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_21_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_21. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_21. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_21_2, call, decisionTable_21, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_21. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_21_3, call, decisionTable_21, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_21. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_21_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_21. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_21. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_21_4, call, decisionTable_21, setGoNorth, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_21. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_21_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_21. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_21. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_21_5, call, decisionTable_21, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_21. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_22_0, make, decisionTable_22, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_22_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_22_1, call, decisionTable_22, table, [[enter command, N], [check, cavern, 4, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_22. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_22_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_22. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_22. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_22_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_22. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_22. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_22_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_22. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_22. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_22_2, call, decisionTable_22, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_22. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_22_3, call, decisionTable_22, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_22. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_22_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_22. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_22. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_22_4, call, decisionTable_22, setN, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_22. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_22_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_22. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_22. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_22_5, call, decisionTable_22, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_22. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_23_0, make, decisionTable_23, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_23_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_23_1, call, decisionTable_23, table, [[enter command, n], [check, cavern, 4, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_23. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_23_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_23. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_23. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_23_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_23. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_23. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_23_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_23. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_23. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_23_2, call, decisionTable_23, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_23. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_23_3, call, decisionTable_23, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_23. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_23_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_23. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_23. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_23_4, call, decisionTable_23, setN, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_23. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_23_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_23. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_23. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_23_5, call, decisionTable_23, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_23. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_24_0, make, decisionTable_24, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_24_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_24_1, call, decisionTable_24, table, [[enter command, go north], [check, cavern, 4, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_24. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_24_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_24. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_24. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_24_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_24. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_24. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_24_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_24. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_24. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_24_2, call, decisionTable_24, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_24. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_24_3, call, decisionTable_24, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_24. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_24_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_24. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_24. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_24_4, call, decisionTable_24, setGoNorth, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_24. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_24_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_24. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_24. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_24_5, call, decisionTable_24, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_24. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_25_0, make, decisionTable_25, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_25_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_25_1, call, decisionTable_25, table, [[enter command, North], [check, cavern, 4, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_25. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_25_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_25. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_25. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_25_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_25. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_25. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_25_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_25. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_25. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_25_2, call, decisionTable_25, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_25. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_25_3, call, decisionTable_25, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_25. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_25_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_25. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_25. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_25_4, call, decisionTable_25, setNorth, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_25. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_25_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_25. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_25. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_25_5, call, decisionTable_25, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_25. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_26_0, make, decisionTable_26, put, player, in cavern, 5]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for put[3]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_26_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for put[3]]]></actual>
+                              <expected><![CDATA[put]]></expected>
+                              <evaluationMessage><![CDATA[put error(Could not invoke constructor for put[3])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_26_1, call, decisionTable_26, table, [[enter command, north], [check, cavern, 4, has, player, true]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_26. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_26_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_26. does not exist]]></actual>
+                              <expected><![CDATA[player]]></expected>
+                              <evaluationMessage><![CDATA[player error(The instance decisionTable_26. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_26_1</instructionId>
+          <col>2</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_26. does not exist]]></actual>
+                              <expected><![CDATA[in cavern]]></expected>
+                              <evaluationMessage><![CDATA[in cavern error(The instance decisionTable_26. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_26_1</instructionId>
+          <col>3</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_26. does not exist]]></actual>
+                              <expected><![CDATA[5]]></expected>
+                              <evaluationMessage><![CDATA[5 error(The instance decisionTable_26. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_26_2, call, decisionTable_26, reset]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_26. does not exist]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_26_3, call, decisionTable_26, setEnterCommand, check]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_26. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_26_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_26. does not exist]]></actual>
+                              <expected><![CDATA[check]]></expected>
+                              <evaluationMessage><![CDATA[check error(The instance decisionTable_26. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_26_4, call, decisionTable_26, setNorth, cavern]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_26. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_26_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance decisionTable_26. does not exist]]></actual>
+                              <expected><![CDATA[cavern]]></expected>
+                              <evaluationMessage><![CDATA[cavern error(The instance decisionTable_26. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_26_5, call, decisionTable_26, execute]]]></instruction>
+        <slimResult><![CDATA[!error:The instance decisionTable_26. does not exist]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>QueryTable</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>6</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-6452389969823787502');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-6452389969823787502"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.UserGuide.SliM.SetUp">.FitNesse.UserGuide.SliM.SetUp</a> <a href="FitNesse.UserGuide.SliM.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-6452389969823787502"><div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-8331544808862812805');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-8331544808862812805"/>
+	</a>
+&nbsp;<span class="meta">setup </span>
+	<div class="hidden" id="-8331544808862812805"><table border="1" cellspacing="0" _TABLENUMBER=8250892158281228402>
+<tr><td>import</td>
+</tr>
+<tr><td>fitnesse.slim.test</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<table border="1" cellspacing="0" _TABLENUMBER=4655073254639985061>
+<tr><td>Query:employees hired before <span class="error">Could not invoke constructor for EmployeesHiredBefore[1]</span><span class="error">The instance queryTable_1. does not exist</span></td>
+<td colspan="3">10-Dec-1980 <span class="error">The instance queryTable_1. does not exist</span></td>
+</tr>
+<tr><td>employee number</td>
+<td>first name</td>
+<td>last name</td>
+<td>hire date</td>
+</tr>
+<tr><td>1429</td>
+<td>Bob</td>
+<td>Martin</td>
+<td>10-Oct-1975</td>
+</tr>
+<tr><td>9924</td>
+<td>Bill</td>
+<td>Mitchell</td>
+<td>19-Dec-1966</td>
+</tr>
+</table>
+<br/>The code for the fixture is: <pre><br/>package fitnesse.slim.test;<br/><br/>import static fitnesse.util.ListUtility.list;<br/><br/>import java.util.Date;<br/>import java.util.List;<br/><br/>public class EmployeesHiredBefore {<br/>  private Date date;<br/><br/>  public EmployeesHiredBefore(Date date) {<br/>    this.date = date;<br/>  }<br/><br/>  public void table(List&lt;List&lt;String&gt;&gt; table) {<br/>    //optional function<br/>  }<br/><br/>  public List&lt;Object&gt; query() {<br/><br/>    return<br/>      list(<br/>        list(<br/>          list("employee number", "1429"),<br/>          list("first name", "Bob"),<br/>          list("last name", "Martin"),<br/>          list("hire date", "10-Oct-1974")<br/>        ),<br/>        list(<br/>          list("employee number", "8832"),<br/>          list("first name", "James"),<br/>          list("last name", "Grenning"),<br/>          list("hire date", "15-Dec-1979")<br/>        )<br/>      );<br/>  }<br/>} </pre><br/>Note the <i>list</i> function simply builds an ArrayList from it's arguments.  It's in the ListUtility class<br/><br/>The first thing to notice is the <i>Query:</i> in the first cell of the table.  This tells the Slim table processor that this is a query table.  Next notice the constructor argument.  (See <a href="FitNesse.UserGuide.SliM.ConstructorArguments">ConstructorArguments</a>).  The column headers are <i>field names</i>.  The fixture class must have a <i>query</i> method that returns a list of rows.  Each row is a list of fields.  Each field is a two-element list composed of the <i>field name</i> and it's string value.<br/><br/>Each row in the table is checked to see if there is a match in the query response.  The fields are matched left to right.  If the leftmost field matches, then the row is considered to be "found".  Fields that don't matche are marked in error as in the 10-Oct-1974 field above.  If the first cell of a row cannot be matched, then the row is considered <i>missing</i>.  If there is an unmatched row remaining in the query response, it is added to the table and marked <i>surplus</i>. The order of the rows is irrelevant.<br/><br/>If a <span class="code">table</span> method is declared in the fixture it will be called before the <span class="code">query</span> function is called.  It will be passed a list of rows which are themselves lists of cells.  The rows and cells represent the all but the first row of the table.  This is the same format at the <span class="code">doTable</span> method of Table table, and the <span class="code">table</span> method of Decision table.<br/>]]></content>
+    <relativePageName>QueryTable</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.slim.test]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>queryTable_1</name>
+                <row>
+                    <col><![CDATA[Query:employees hired before error(Could not invoke constructor for EmployeesHiredBefore[1])error(The instance queryTable_1. does not exist)]]></col>
+                    <col><![CDATA[10-Dec-1980 error(The instance queryTable_1. does not exist)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[employee number]]></col>
+                    <col><![CDATA[first name]]></col>
+                    <col><![CDATA[last name]]></col>
+                    <col><![CDATA[hire date]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[1429]]></col>
+                    <col><![CDATA[Bob]]></col>
+                    <col><![CDATA[Martin]]></col>
+                    <col><![CDATA[10-Oct-1975]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[9924]]></col>
+                    <col><![CDATA[Bill]]></col>
+                    <col><![CDATA[Mitchell]]></col>
+                    <col><![CDATA[19-Dec-1966]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.slim.test]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[queryTable_1_0, make, queryTable_1, EmployeesHiredBefore, 10-Dec-1980]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for EmployeesHiredBefore[1]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>queryTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for EmployeesHiredBefore[1]]]></actual>
+                              <expected><![CDATA[Query:employees hired before]]></expected>
+                              <evaluationMessage><![CDATA[Query:employees hired before error(Could not invoke constructor for EmployeesHiredBefore[1])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[queryTable_1_1, call, queryTable_1, table, [[employee number, first name, last name, hire date], [1429, Bob, Martin, 10-Oct-1975], [9924, Bill, Mitchell, 19-Dec-1966]]]]]></instruction>
+        <slimResult><![CDATA[!error:The instance queryTable_1. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>queryTable_1_1</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[!error:The instance queryTable_1. does not exist]]></actual>
+                              <expected><![CDATA[10-Dec-1980]]></expected>
+                              <evaluationMessage><![CDATA[10-Dec-1980 error(The instance queryTable_1. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[queryTable_1_2, call, queryTable_1, query]]]></instruction>
+        <slimResult><![CDATA[!error:The instance queryTable_1. does not exist]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

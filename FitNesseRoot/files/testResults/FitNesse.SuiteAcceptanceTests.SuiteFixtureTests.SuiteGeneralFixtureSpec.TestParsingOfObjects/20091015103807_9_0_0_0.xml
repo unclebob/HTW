@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestParsingOfObjects</rootPath>
+    <result>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-4472736752784026305');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4472736752784026305"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-4472736752784026305"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+Table cells contain strings.  Fixtures deal with objects.  In order to convert the strings into the objects FIT needs to know how to parse the strings.  One way we accomplish this is to allow the objects to have the following method:<pre>Object parse(String s);</pre>The following table shows the result of adding two vectors.  Each vector is represented by an ordered pair which represents it's X and Y dimensions.  The class CartesianVector<a title="create page" href="FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteGeneralFixtureSpec.CartesianVector?edit&nonExistent=true">[?]</a> is used to parse, display, and sum the vectors.<br/><br/><table border="1" cellspacing="0">
+<tr><td colspan="3">fitnesse.testutil.VectorSum</td>
+</tr>
+<tr><td>v1</td>
+<td>v2</td>
+<td>sum?</td>
+</tr>
+<tr><td>(0,0)</td>
+<td>(0,1)</td>
+<td class="pass">(0,1)</td>
+</tr>
+<tr><td>(0,1)</td>
+<td>(0,1)</td>
+<td class="pass">(0,2)</td>
+</tr>
+<tr><td>(1,1)</td>
+<td>(1,1)</td>
+<td class="pass">(2,2)</td>
+</tr>
+</table>
+<br/>It is not always possible to add a parse method on the Object returned by the fixture.<br/><br/>For Ex. if your fixture returns java.awt.Point class which does not have a <pre>Object parse(String s);</pre> method, this approach won't work.<br/><br/>Following approach can be used to delegate the parse method to a different class (Parse Delegate class). The parse delegate class has the <pre>Object parse(String s);</pre> method which returns the Object we are interested in.<br/><br/>The following table shows the result of adding two points.  Each point is represented by an ordered pair which represents it's X and Y dimensions.<br/><br/><table border="1" cellspacing="0">
+<tr><td colspan="3">fitnesse.testutil.ObjectTranslatePoint</td>
+</tr>
+<tr><td>p1</td>
+<td>p2</td>
+<td>sum?</td>
+</tr>
+<tr><td>(0,0)</td>
+<td>(0,1)</td>
+<td class="pass">(0,1)</td>
+</tr>
+<tr><td>(0,1)</td>
+<td>(0,1)</td>
+<td class="pass">(0,2)</td>
+</tr>
+<tr><td>(1,1)</td>
+<td>(1,1)</td>
+<td class="pass">(2,2)</td>
+</tr>
+</table>
+<br/>In the ObjectTranslatePoint<a title="create page" href="FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteGeneralFixtureSpec.ObjectTranslatePoint?edit&nonExistent=true">[?]</a> fixture, we have a static block which registers the parse delegate object for a give Class type.<br/><br/>Ex:<br/><pre>static<br/>{<br/>        TypeAdapter.registerParseDelegate(java.awt.Point.class, new ObjectDelegatePointParser());<br/>}<br/></pre>Please note that we are passing a Object of the Parse Delegate class. It is also possible to pass a class instead of the object. Only difference being the parse delegate class should have a <pre>public static Object parse(String s);</pre> method.<br/><br/><table border="1" cellspacing="0">
+<tr><td colspan="3">fitnesse.testutil.ClassTranslatePoint</td>
+</tr>
+<tr><td>p1</td>
+<td>p2</td>
+<td>sum?</td>
+</tr>
+<tr><td>(0,0)</td>
+<td>(0,1)</td>
+<td class="pass">(0,1)</td>
+</tr>
+<tr><td>(0,1)</td>
+<td>(0,1)</td>
+<td class="pass">(0,2)</td>
+</tr>
+<tr><td>(1,1)</td>
+<td>(1,1)</td>
+<td class="pass">(2,2)</td>
+</tr>
+</table>
+<br/>In the ClassTranslatePoint<a title="create page" href="FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteGeneralFixtureSpec.ClassTranslatePoint?edit&nonExistent=true">[?]</a> fixture, we have a static block which registers the parse delegate class for a give Class type.<br/><br/>Ex:<br/><pre>static<br/>{<br/>        TypeAdapter.registerParseDelegate(java.awt.Point.class, ClassDelegatePointParser.class);<br/>}<br/></pre><br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7810113544993787754');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7810113544993787754"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-7810113544993787754"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestParsingOfObjects</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

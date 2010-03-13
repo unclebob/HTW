@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestMissingField</rootPath>
+    <result>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-5114220094574590197');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-5114220094574590197"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-5114220094574590197"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>SetUp</td>
+</tr>
+</table>
+</div>
+</div>
+<h3>When testing a column fixture, if the header row mentions a field that is not in the fixture, then the following message should appear in that cell:</h3><pre>Could not find field: fieldname.</pre><br/><br/><ul>
+	<li>Here is a fitnesse page that should generate the error</li>
+</ul>
+<span class="note">The !path must point to fitnesse.jar</span><br/><span class="note">ColumnFixtureTestFixture is a special class used for testing Column fixtures.</span><br/><table border="1" cellspacing="0">
+<tr><td colspan="3">Action fixture</td>
+</tr>
+<tr><td>start</td>
+<td colspan="2">Page builder</td>
+</tr>
+<tr><td>enter</td>
+<td>attributes</td>
+<td>Test=true</td>
+</tr>
+<tr><td>enter</td>
+<td>line</td>
+<td>!path ./classes</td>
+</tr>
+<tr><td>enter</td>
+<td>line</td>
+<td>!path ./fitnesse.jar</td>
+</tr>
+<tr><td>enter</td>
+<td>line</td>
+<td>|Import|</td>
+</tr>
+<tr><td>enter</td>
+<td>line</td>
+<td>|fitnesse.fixtures|</td>
+</tr>
+<tr><td>enter</td>
+<td>line</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>enter</td>
+<td>line</td>
+<td>|Column fixture test fixture|</td>
+</tr>
+<tr><td>enter</td>
+<td>line</td>
+<td>|no such field|</td>
+</tr>
+<tr><td>enter</td>
+<td>page</td>
+<td>ColumnFixtureTestPage</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">Response Requester</td>
+</tr>
+<tr><td>uri</td>
+<td>status?</td>
+</tr>
+<tr><td>ColumnFixtureTestPage?test</td>
+<td class="pass">200</td>
+</tr>
+</table>
+<br/><ul>
+	<li>The error message should show up in the response</li>
+</ul>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="4">Response examiner</td>
+</tr>
+<tr><td>type</td>
+<td>pattern</td>
+<td>matches?</td>
+<td>contents?</td>
+</tr>
+<tr><td>contents</td>
+<td>Could not find field: no such field</td>
+<td class="pass">true</td>
+<td>&nbsp; <span class="fit_grey">HTTP/1.1 200 OK
+Connection: close
+Server: FitNesse-v20091014
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+979
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Test Results: ColumnFixtureTestPage&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;
+				&lt;!--Test button--&gt;
+				&lt;a href="ColumnFixtureTestPage?test" accesskey="t"&gt;Test&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Edit button--&gt;
+				&lt;a href="ColumnFixtureTestPage?edit" accesskey="e"&gt;Edit&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Properties button--&gt;
+				&lt;a href="ColumnFixtureTestPage?properties" accesskey="p"&gt;Properties&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Refactor button--&gt;
+				&lt;a href="ColumnFixtureTestPage?refactor" accesskey="r"&gt;Refactor&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Where Used button--&gt;
+				&lt;a href="ColumnFixtureTestPage?whereUsed" accesskey="w"&gt;Where Used&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Search button--&gt;
+				&lt;a href="?searchForm" accesskey="s"&gt;Search&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Files button--&gt;
+				&lt;a href="/files" accesskey="f"&gt;Files&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Versions button--&gt;
+				&lt;a href="ColumnFixtureTestPage?versions" accesskey="v"&gt;Versions&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Recent Changes button--&gt;
+				&lt;a href="/RecentChanges" accesskey=""&gt;Recent Changes&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--User Guide button--&gt;
+				&lt;a href=".FitNesse.UserGuide" accesskey=""&gt;User Guide&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;!--Test History button--&gt;
+				&lt;a href="?testHistory" accesskey=""&gt;Test History&lt;/a&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+				&lt;div class="nav_break"&gt;&amp;nbsp;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/ColumnFixtureTestPage" class="page_title"&gt;ColumnFixtureTestPage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Test Results&lt;/span&gt;
+&amp;nbsp;&lt;a style="font-size:small;" href="ColumnFixtureTestPage?pageHistory"&gt; [history]&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class="main"&gt;&lt;div id="test-summary"&gt;Running Tests ...&lt;/div&gt;
+
+e3
+&lt;div id="stop-test"&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;
+		&lt;img src="/files/images/stop.gif"/&gt;
+	&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="#" onclick="doSilentRequest('?responder=stoptest&amp;id=1')"&gt;Stop Test&lt;/a&gt;
+&lt;/div&gt;
+
+d5
+&lt;span class="meta"&gt;classpath: ./classes&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: ./fitnesse.jar&lt;/span&gt;&lt;br/&gt;&lt;table border="1" cellspacing="0"&gt;
+&lt;tr&gt;&lt;td&gt;Import&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;fitnesse.fixtures&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+d9
+
+&lt;br/&gt;&lt;table border="1" cellspacing="0"&gt;
+&lt;tr&gt;&lt;td&gt;Column fixture test fixture&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="error"&gt;no such field&lt;hr/&gt; &lt;span class="fit_label"&gt;Could not find field: no such field.&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+46
+&lt;script&gt;document.getElementById("stop-test").innerHTML = "";&lt;/script&gt;
+
+cb
+&lt;script&gt;document.getElementById("test-summary").innerHTML = "&lt;strong&gt;Assertions:&lt;/strong&gt; 0 right, 0 wrong, 0 ignored, 1 exceptions";document.getElementById("test-summary").className = "error";&lt;/script&gt;
+
+cc
+&lt;div id="execution-status"&gt;
+	&lt;a href="ErrorLogs.ColumnFixtureTestPage"&gt;&lt;img src="/files/images/executionStatus/ok.gif"/&gt;
+&lt;/a&gt;
+&lt;br/&gt;
+	&lt;a href="ErrorLogs.ColumnFixtureTestPage"&gt;Tests Executed OK&lt;/a&gt;
+&lt;/div&gt;
+
+21
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+0
+Exit-Code: 1
+
+</span></td>
+</tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('3057921414558229084');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img3057921414558229084"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="3057921414558229084"><hr/>
+<br/><table border="1" cellspacing="0">
+<tr><td>tear down</td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestMissingField</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

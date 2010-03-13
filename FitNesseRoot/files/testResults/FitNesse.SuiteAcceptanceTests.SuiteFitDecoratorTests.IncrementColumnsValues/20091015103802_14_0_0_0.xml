@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>IncrementColumnsValues</rootPath>
+    <result>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-6401758871822955613');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-6401758871822955613"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-6401758871822955613"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit.decorator</td>
+</tr>
+<tr><td>fit.decorator.performance</td>
+</tr>
+<tr><td>eg</td>
+</tr>
+</table>
+</div>
+</div>
+What if you want to increment the value of one of the columns of your fixture table at run time? You can use the IncrementColumnsValue decorator. This lets you increment column's values. This decorator supports the following data types:<br/><ul>
+	<li>int or integer</li>
+	<li>double</li>
+	<li>string</li>
+	<li>date</li>
+</ul>
+<br/><table border="1" cellspacing="0">
+<tr><td>Increment Columns Value</td>
+<td>numerator</td>
+<td>of type</td>
+<td>int</td>
+<td>by</td>
+<td>5</td>
+</tr>
+<tr><td colspan="6">Division</td>
+</tr>
+<tr><td>numerator</td>
+<td>denominator</td>
+<td colspan="4">quotient()</td>
+</tr>
+<tr><td>10</td>
+<td>2</td>
+<td colspan="4" class="pass">5</td>
+</tr>
+<tr><td>15</td>
+<td>3</td>
+<td colspan="4" class="pass">5</td>
+</tr>
+<tr><td>20</td>
+<td>4</td>
+<td colspan="4" class="pass">5</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Increment Columns Value</td>
+<td>numerator</td>
+<td>of type</td>
+<td>integer</td>
+<td>by</td>
+<td>5</td>
+</tr>
+<tr><td colspan="6">Division</td>
+</tr>
+<tr><td>numerator</td>
+<td>denominator</td>
+<td colspan="4">quotient()</td>
+</tr>
+<tr><td>10</td>
+<td>2</td>
+<td colspan="4" class="pass">5</td>
+</tr>
+<tr><td>15</td>
+<td>3</td>
+<td colspan="4" class="pass">5</td>
+</tr>
+<tr><td>20</td>
+<td>4</td>
+<td colspan="4" class="pass">5</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Increment Columns Value</td>
+<td>numerator</td>
+<td>of type</td>
+<td>double</td>
+<td>by</td>
+<td>10.2</td>
+</tr>
+<tr><td colspan="6">Division</td>
+</tr>
+<tr><td>numerator</td>
+<td>denominator</td>
+<td colspan="4">quotient()</td>
+</tr>
+<tr><td>10.2</td>
+<td>2</td>
+<td colspan="4" class="pass">5.1</td>
+</tr>
+<tr><td>20.4</td>
+<td>4</td>
+<td colspan="4" class="pass">5.1</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Increment Columns Value</td>
+<td>numerator</td>
+<td>of type</td>
+<td>string</td>
+<td>by</td>
+<td>5</td>
+</tr>
+<tr><td colspan="6">Division</td>
+</tr>
+<tr><td>numerator</td>
+<td>denominator</td>
+<td colspan="4">quotient()</td>
+</tr>
+<tr><td>5</td>
+<td>1</td>
+<td colspan="4" class="pass">5</td>
+</tr>
+<tr><td>55</td>
+<td>11</td>
+<td colspan="4" class="pass">5</td>
+</tr>
+<tr><td>555</td>
+<td>111</td>
+<td colspan="4" class="pass">5</td>
+</tr>
+</table>
+<br/>Updates the dates by 5 days.<br/><table border="1" cellspacing="0">
+<tr><td>Increment Columns Value</td>
+<td>inDate</td>
+<td>of type</td>
+<td>date</td>
+<td>by</td>
+<td>5</td>
+</tr>
+<tr><td colspan="6">Get Dates</td>
+</tr>
+<tr><td>inDate</td>
+<td colspan="5">updatedDate()</td>
+</tr>
+<tr><td>12/02/2006</td>
+<td colspan="5" class="pass">12/02/2006</td>
+</tr>
+<tr><td>12/07/2006</td>
+<td colspan="5" class="pass">12/07/2006</td>
+</tr>
+<tr><td>01/01/2007</td>
+<td colspan="5" class="pass">01/01/2007</td>
+</tr>
+</table>
+<br/>This decorator by itself is not as useful. But piped with other decorators this can be really handy.<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-4864862763633631080');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4864862763633631080"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown">.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-4864862763633631080"><table border="1" cellspacing="0">
+<tr><td>fit.Summary</td>
+</tr>
+<tr>
+<td> <span class="fit_grey">EncapsulatedFixtureName</span></td>
+<td> <span class="fit_grey">Get Dates</span></td></tr>
+<tr>
+<td> <span class="fit_grey">columnName</span></td>
+<td> <span class="fit_grey">inDate</span></td></tr>
+<tr>
+<td> <span class="fit_grey">counts</span></td>
+<td class="pass"> <span class="fit_grey">14 right, 0 wrong, 0 ignored, 0 exceptions</span></td></tr>
+<tr>
+<td> <span class="fit_grey">delta</span></td>
+<td> <span class="fit_grey">DataType = 'date' and value = 5</span></td></tr>
+<tr>
+<td> <span class="fit_grey">run date</span></td>
+<td> <span class="fit_grey">Thu Oct 15 10:38:02 CEST 2009</span></td></tr>
+<tr>
+<td> <span class="fit_grey">run elapsed time</span></td>
+<td> <span class="fit_grey">0:00.04</span></td></tr></table>
+</div>
+</div>
+]]></content>
+    <relativePageName>IncrementColumnsValues</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

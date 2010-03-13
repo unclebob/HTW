@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TimedMultipleDivision</rootPath>
+    <result>
+    <counts>
+      <right>21</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-7247747061955139850');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-7247747061955139850"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-7247747061955139850"><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit.decorator</td>
+</tr>
+<tr><td>fit.decorator.performance</td>
+</tr>
+<tr><td>eg</td>
+</tr>
+</table>
+</div>
+</div>
+What if you want to run the same fitnesse fixture, 5 times and want to make sure that each time it runs it does not take more than 75 milliseconds? Also you want to make sure overall, it does not take more than 100 milliseconds.<br/><br/><table border="1" cellspacing="0">
+<tr><td>Max Time</td>
+<td class="pass">100<hr>actual 75.0</td>
+<td>milliseconds</td>
+</tr>
+<tr><td>Loop</td>
+<td>5</td>
+<td>times</td>
+</tr>
+<tr><td>Max Time</td>
+<td class="pass" class="pass" class="pass" class="pass" class="pass">75<hr>actual 2.0<hr>actual 16.0<hr>actual 5.0<hr>actual 1.0<hr>actual 44.0</td>
+<td>milliseconds</td>
+</tr>
+<tr><td colspan="3">Division</td>
+</tr>
+<tr><td>numerator</td>
+<td>denominator</td>
+<td>quotient()</td>
+</tr>
+<tr><td>10</td>
+<td>2</td>
+<td class="pass" class="pass" class="pass" class="pass" class="pass">5</td>
+</tr>
+<tr><td>12.6</td>
+<td>3</td>
+<td class="pass" class="pass" class="pass" class="pass" class="pass">4.2</td>
+</tr>
+<tr><td>100</td>
+<td>4</td>
+<td class="pass" class="pass" class="pass" class="pass" class="pass">25</td>
+</tr>
+</table>
+<br/><b>Note:</b> Again you can see here, how you can pipe different decorators and create powerful decorator patterns.<br/><br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-2886309668209582501');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-2886309668209582501"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown">.FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteFitDecoratorTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-2886309668209582501"><table border="1" cellspacing="0">
+<tr><td>fit.Summary</td>
+</tr>
+<tr>
+<td> <span class="fit_grey">EncapsulatedFixtureName</span></td>
+<td> <span class="fit_grey">Division</span></td></tr>
+<tr>
+<td> <span class="fit_grey">actualTimeTaken</span></td>
+<td> <span class="fit_grey">44</span></td></tr>
+<tr>
+<td> <span class="fit_grey">count</span></td>
+<td> <span class="fit_grey">5</span></td></tr>
+<tr>
+<td> <span class="fit_grey">counts</span></td>
+<td class="pass"> <span class="fit_grey">21 right, 0 wrong, 0 ignored, 0 exceptions</span></td></tr>
+<tr>
+<td> <span class="fit_grey">maxTime</span></td>
+<td> <span class="fit_grey">75</span></td></tr>
+<tr>
+<td> <span class="fit_grey">run date</span></td>
+<td> <span class="fit_grey">Thu Oct 15 10:38:02 CEST 2009</span></td></tr>
+<tr>
+<td> <span class="fit_grey">run elapsed time</span></td>
+<td> <span class="fit_grey">0:00.08</span></td></tr></table>
+</div>
+</div>
+]]></content>
+    <relativePageName>TimedMultipleDivision</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

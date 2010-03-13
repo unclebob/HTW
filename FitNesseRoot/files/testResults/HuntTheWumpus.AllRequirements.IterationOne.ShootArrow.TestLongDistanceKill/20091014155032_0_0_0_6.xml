@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestLongDistanceKill</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>6</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-6165024198550126046');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-6165024198550126046"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="HuntTheWumpus.SetUp">.HuntTheWumpus.SetUp</a> <a href="HuntTheWumpus.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-6165024198550126046"><table border="1" cellspacing="0">
+<tr><td colspan="2">fitlibrary.DoFixture</td>
+</tr>
+<tr><td>start</td>
+<td>HuntTheWumpus.fixtures.GameDriver</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>fit</td>
+</tr>
+<tr><td>HuntTheWumpus.fixtures</td>
+</tr>
+</table>
+</div>
+</div>
+Given the following map:<br/><pre><br/>[1][2][3][4][5]<br/> p    -&gt;     w<br/></pre><br/>If the player (in cavern 1) shoots east, the wumpus (in cavern 5) should die.<br/><br/><table border="1" cellspacing="0">
+<tr><td colspan="3">Make map.</td>
+</tr>
+<tr><td>start</td>
+<td>end</td>
+<td>direction</td>
+</tr>
+<tr><td>1</td>
+<td>2</td>
+<td>E</td>
+</tr>
+<tr><td>2</td>
+<td>3</td>
+<td>E</td>
+</tr>
+<tr><td>3</td>
+<td>4</td>
+<td>E</td>
+</tr>
+<tr><td>4</td>
+<td>5</td>
+<td>E</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="error">put<hr/> <span class="fit_label">Missing methods: public TypeOfResult putInCavern(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>player</td>
+<td>in cavern</td>
+<td colspan="2">1</td>
+</tr>
+<tr><td class="error">put<hr/> <span class="fit_label">Missing methods: public TypeOfResult putInCavern(Type1 arg1, Type2 arg2) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>wumpus</td>
+<td>in cavern</td>
+<td colspan="2">5</td>
+</tr>
+<tr><td class="error">set quiver to<hr/> <span class="fit_label">Missing methods: public TypeOfResult setQuiverTo(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="4">1</td>
+</tr>
+<tr><td class="error">enter command<hr/> <span class="fit_label">Missing methods: public TypeOfResult enterCommand(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td colspan="4">shoot east</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult getGameTerminated() { } OR: public TypeOfResult gameTerminated() { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>game terminated</td>
+<td colspan="3">true</td>
+</tr>
+<tr><td class="error">check<hr/> <span class="fit_label">Missing method: public TypeOfResult messageWasPrinted(Type1 arg1) { } in class fitlibrary.traverse.workflow.DoTraverse</span></td>
+<td>message</td>
+<td>You have killed the Wumpus.</td>
+<td>was printed</td>
+<td>true</td>
+</tr>
+</table>
+<br/>]]></content>
+    <relativePageName>TestLongDistanceKill</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

@@ -1,0 +1,3637 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091014</FitNesseVersion>
+  <rootPath>TestEditExistingPage</rootPath>
+    <result>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('5216751706650782461');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img5216751706650782461"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="FitNesse.SuiteAcceptanceTests.SuiteEditResponderTests.SetUp">.FitNesse.SuiteAcceptanceTests.SuiteEditResponderTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteEditResponderTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="5216751706650782461"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-3459877627696451185');">
+		<img src="/files/images/collapsableOpen.gif" class="left" id="img-3459877627696451185"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SetUp">&lt;SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="collapsable" id="-3459877627696451185"><table border="1" cellspacing="0" _TABLENUMBER=1615930212665743568>
+<tr><td>Import</td>
+</tr>
+<tr><td>fitnesse.fixtures</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4587834455268524065>
+<tr><td><span class="pass">SetUp</span></td>
+</tr>
+</table>
+</div>
+</div>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1808290643773765891>
+<tr><td>script</td>
+<td><span class="pass">page driver</span></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('7936754957552718127');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7936754957552718127"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="7936754957552718127"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-1996008533442157219');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-1996008533442157219"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-1996008533442157219"><table border="1" cellspacing="0" _TABLENUMBER=3839193410431756821>
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>@page</td>
+<td>with content</td>
+<td colspan="2">@content</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=9109078417934325952>
+<tr><td>scenario</td>
+<td>given page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>nothing</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4978347201935673723>
+<tr><td>scenario</td>
+<td>given test page</td>
+<td>page</td>
+</tr>
+<tr><td>given page</td>
+<td colspan="2">@page</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td>a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=176163044161312555>
+<tr><td>scenario</td>
+<td>given slim test page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>given page</td>
+<td>@page</td>
+<td>with content</td>
+<td>!define TEST_SYSTEM {slim}</td>
+</tr>
+<tr><td>make</td>
+<td>@page</td>
+<td colspan="2">a test page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4249254772705342876>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">&lt;a href="@target"&gt;</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="3">@source</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4649371261853893279>
+<tr><td>scenario</td>
+<td>it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1506280983774836983>
+<tr><td>scenario</td>
+<td>and it should have link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4565010838463715704>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should have creating link to</td>
+<td>target</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5564105457275490156>
+<tr><td>scenario</td>
+<td>it should have creating link to</td>
+<td colspan="2">target</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should have creating link to</td>
+<td>@target</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2964364173537744070>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4871780501508537941>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=9156155692496062052>
+<tr><td>scenario</td>
+<td>page</td>
+<td>source</td>
+<td>should match</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=715849198858263273>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=18566797736225970>
+<tr><td>scenario</td>
+<td>it should not contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should not contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=4396128392515613362>
+<tr><td>scenario</td>
+<td>it should contain</td>
+<td>text</td>
+<td>in line</td>
+<td>symbol</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>$@symbol=</td>
+<td>line number containing</td>
+<td colspan="3">@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=9111593580771188807>
+<tr><td>scenario</td>
+<td>it should match</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>page</td>
+<td>$IT</td>
+<td>should match</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6548996748576868122>
+<tr><td>scenario</td>
+<td>test results for page</td>
+<td>source</td>
+<td>should contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3369277698614416564>
+<tr><td>scenario</td>
+<td>its test results should contain</td>
+<td colspan="2">text</td>
+</tr>
+<tr><td>test results for page</td>
+<td>$IT</td>
+<td>should contain</td>
+<td>@text</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2612505867332012283>
+<tr><td>scenario</td>
+<td>test ressults for page</td>
+<td>source</td>
+<td>should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@source?test</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td colspan="3">@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=2822513820343901419>
+<tr><td>scenario</td>
+<td>and should contain</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1961438056856565057>
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1241141642792923624>
+<tr><td>scenario</td>
+<td>and should not contain</td>
+<td>text</td>
+</tr>
+<tr><td>reject</td>
+<td>content contains</td>
+<td>@text</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=971623613123859880>
+<tr><td>scenario</td>
+<td>widget</td>
+<td>wikiText</td>
+<td>should render</td>
+<td>htmlText</td>
+</tr>
+<tr><td>create page</td>
+<td>WidgetPage</td>
+<td>with content</td>
+<td colspan="2">@wikiText</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>WidgetPage</td>
+<td colspan="2">200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content matches</td>
+<td colspan="3">@htmlText</td>
+</tr>
+<tr><td>show</td>
+<td colspan="4">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3048795927028875579>
+<tr><td>scenario</td>
+<td>the line</td>
+<td>after</td>
+<td>should come after</td>
+<td>before</td>
+</tr>
+<tr><td>check</td>
+<td>echo int</td>
+<td>$@before</td>
+<td colspan="2">&lt; $@after</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-3101722744775600513');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-3101722744775600513"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SuiteEditResponderTests.ScenarioLibrary">.FitNesse.SuiteAcceptanceTests.SuiteEditResponderTests.ScenarioLibrary</a> <a href="FitNesse.SuiteAcceptanceTests.SuiteEditResponderTests.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-3101722744775600513"><table border="1" cellspacing="0" _TABLENUMBER=4422215615182799633>
+<tr><td>scenario</td>
+<td>the edit response should contain</td>
+<td colspan="2">contents</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT?edit</td>
+<td>200</td>
+</tr>
+<tr><td>ensure</td>
+<td>content contains</td>
+<td colspan="2">@contents</td>
+</tr>
+<tr><td>show</td>
+<td colspan="3">content</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7148879937973861934>
+<tr><td>scenario</td>
+<td>attempt to edit</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>@page?edit</td>
+<td>200</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6515509789446439938>
+<tr><td>scenario</td>
+<td>save page</td>
+<td>page</td>
+<td>with contents</td>
+<td colspan="2">contents</td>
+</tr>
+<tr><td>check</td>
+<td>request page save</td>
+<td>@page</td>
+<td>with contents</td>
+<td>@contents</td>
+<td>303</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="4">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3032608249703875523>
+<tr><td>scenario</td>
+<td>save page</td>
+<td>page</td>
+<td>with contents</td>
+<td>contents</td>
+<td>by user</td>
+<td colspan="4">user</td>
+</tr>
+<tr><td>check</td>
+<td>request page save</td>
+<td>@page</td>
+<td>with contents</td>
+<td>@contents</td>
+<td>by user</td>
+<td>@user</td>
+<td>and password</td>
+<td>empty</td>
+<td>303</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="8">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7458026070865498250>
+<tr><td>scenario</td>
+<td>save page</td>
+<td>page</td>
+<td>by user</td>
+<td colspan="6">user</td>
+</tr>
+<tr><td>check</td>
+<td>request page save</td>
+<td>@page</td>
+<td>with contents</td>
+<td>empty</td>
+<td>by user</td>
+<td>@user</td>
+<td>and password</td>
+<td>empty</td>
+<td>303</td>
+</tr>
+<tr><td>$IT=</td>
+<td>echo</td>
+<td colspan="8">@page</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=3929314678802969230>
+<tr><td>scenario</td>
+<td>save page</td>
+<td colspan="2">page</td>
+</tr>
+<tr><td>save page</td>
+<td>@page</td>
+<td>with contents</td>
+<td>empty</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6649369068727295019>
+<tr><td>scenario</td>
+<td>it's last modified by should be</td>
+<td colspan="2">user</td>
+</tr>
+<tr><td>check</td>
+<td>last modified of page</td>
+<td>$IT</td>
+<td>@user</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=5726083182743703909>
+<tr><td>scenario</td>
+<td>it's versions should contain</td>
+<td colspan="2">content</td>
+</tr>
+<tr><td>page</td>
+<td>$IT?versions</td>
+<td>should contain</td>
+<td>@content</td>
+</tr>
+</table>
+<br/><br/><br/><br/><br/></div>
+</div>
+</div>
+</div>
+<h2>Test editing an existent page.</h2>The form should have a normal header, an edit area filled with the current contents of the page, and a save button.<br/><hr/>
+<br/><br/><table border="1" cellspacing="0" _TABLENUMBER=470797424092384654>
+<tr><td colspan="4">script</td>
+</tr>
+<tr><td class=pass>given page</td>
+<td class=pass>SomePage</td>
+<td class=pass>with content</td>
+<td class=pass>some content</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-1127021628396368978');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-1127021628396368978"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-1127021628396368978"><table border="1" cellspacing="0" _TABLENUMBER=7678302363284640289 table_name="scriptTable_35_0/scriptTable_3">
+<tr><td>scenario</td>
+<td>given page</td>
+<td>page</td>
+<td>with content</td>
+<td>content</td>
+</tr>
+<tr><td>create page</td>
+<td>SomePage</td>
+<td>with content</td>
+<td colspan="2">some content</td>
+</tr>
+<tr><td>$IT<-[SomePage]</td>
+<td>echo</td>
+<td colspan="3">SomePage</td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>the edit response should contain</td>
+<td colspan="3" class=pass>SomePage</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-77870899886355746');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-77870899886355746"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-77870899886355746"><table border="1" cellspacing="0" _TABLENUMBER=2976784716567175250 table_name="scriptTable_35_1/scriptTable_27">
+<tr><td>scenario</td>
+<td>the edit response should contain</td>
+<td colspan="2">contents</td>
+</tr>
+<tr><td>check</td>
+<td>request page</td>
+<td>$IT->[SomePage]?edit</td>
+<td><span class="pass">200</span></td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content contains</td>
+<td colspan="2">SomePage</td>
+</tr>
+<tr><td>show</td>
+<td colspan="3">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>and should match</td>
+<td colspan="3" class=pass>&lt;textarea.*&gt;some content&lt;/textarea&gt;</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('707797539095544735');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img707797539095544735"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="707797539095544735"><table border="1" cellspacing="0" _TABLENUMBER=5447228149461645885 table_name="scriptTable_35_2/scriptTable_23">
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content matches</td>
+<td><textarea.*>some content</textarea></td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>and should match</td>
+<td colspan="3" class=pass>&lt;form.*&gt;</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-4062583494132078345');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4062583494132078345"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-4062583494132078345"><table border="1" cellspacing="0" _TABLENUMBER=3455165817091575573 table_name="scriptTable_35_3/scriptTable_23">
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content matches</td>
+<td><form.*></td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>and should match</td>
+<td colspan="3" class=pass>action="SomePage"</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('7155468556423120944');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7155468556423120944"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="7155468556423120944"><table border="1" cellspacing="0" _TABLENUMBER=2910680545573730077 table_name="scriptTable_35_4/scriptTable_23">
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content matches</td>
+<td>action="SomePage"</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>and should match</td>
+<td colspan="3" class=pass>&lt;input.*&gt;</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('8076361370268288457');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8076361370268288457"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="8076361370268288457"><table border="1" cellspacing="0" _TABLENUMBER=7530746009576062044 table_name="scriptTable_35_5/scriptTable_23">
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content matches</td>
+<td><input.*></td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>and should match</td>
+<td colspan="3" class=pass>type="submit"</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-3556592292262245290');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-3556592292262245290"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-3556592292262245290"><table border="1" cellspacing="0" _TABLENUMBER=2155984352715323315 table_name="scriptTable_35_6/scriptTable_23">
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content matches</td>
+<td>type="submit"</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=pass>and should match</td>
+<td colspan="3" class=pass>value="Save"</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('-4080275473346425139');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-4080275473346425139"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="-4080275473346425139"><table border="1" cellspacing="0" _TABLENUMBER=725330869643418796 table_name="scriptTable_35_7/scriptTable_23">
+<tr><td>scenario</td>
+<td>and should match</td>
+<td>text</td>
+</tr>
+<tr><td><span class="pass">ensure</span></td>
+<td>content matches</td>
+<td>value="Save"</td>
+</tr>
+<tr><td>show</td>
+<td colspan="2">content</td>
+<TD>HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TD></tr>
+</table></div>
+</div></TD></tr>
+</table>
+<br/><div class="teardown">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-3039182431233492848');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-3039182431233492848"/>
+	</a>
+&nbsp;<span class="meta">Tear Down: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="-3039182431233492848"><hr/>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7100818186387568979>
+<tr><td><span class="pass">tear down</span></td>
+</tr>
+</table>
+<br/></div>
+</div>
+]]></content>
+    <relativePageName>TestEditExistingPage</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[Import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fitnesse.fixtures]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(SetUp)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[pass(page driver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_4</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[nothing]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_5</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_6</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given slim test page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[!define TEST_SYSTEM {slim}]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[make]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[a test page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_7</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[&lt;a href="@target"&gt;]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@source]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_8</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_9</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and it should have link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_10</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@target&lt;a title="create page" href="@target?edit&amp;nonExistent=true"&gt;[?]&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_11</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should have creating link to]]></col>
+                    <col><![CDATA[target]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should have creating link to]]></col>
+                    <col><![CDATA[@target]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_12</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_13</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_14</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_15</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_16</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_17</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should contain]]></col>
+                    <col><![CDATA[text]]></col>
+                    <col><![CDATA[in line]]></col>
+                    <col><![CDATA[symbol]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$@symbol=]]></col>
+                    <col><![CDATA[line number containing]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_18</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should match]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_19</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_20</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[its test results should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[test results for page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_21</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[test ressults for page]]></col>
+                    <col><![CDATA[source]]></col>
+                    <col><![CDATA[should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@source?test]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_22</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_24</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should not contain]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[reject]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_25</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[widget]]></col>
+                    <col><![CDATA[wikiText]]></col>
+                    <col><![CDATA[should render]]></col>
+                    <col><![CDATA[htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[@wikiText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[WidgetPage]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[@htmlText]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_26</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the line]]></col>
+                    <col><![CDATA[after]]></col>
+                    <col><![CDATA[should come after]]></col>
+                    <col><![CDATA[before]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[echo int]]></col>
+                    <col><![CDATA[$@before]]></col>
+                    <col><![CDATA[&lt; $@after]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the edit response should contain]]></col>
+                    <col><![CDATA[contents]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT?edit]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[@contents]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_28</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[attempt to edit]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[@page?edit]]></col>
+                    <col><![CDATA[200]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_29</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[save page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with contents]]></col>
+                    <col><![CDATA[contents]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page save]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with contents]]></col>
+                    <col><![CDATA[@contents]]></col>
+                    <col><![CDATA[303]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_30</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[save page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with contents]]></col>
+                    <col><![CDATA[contents]]></col>
+                    <col><![CDATA[by user]]></col>
+                    <col><![CDATA[user]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page save]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with contents]]></col>
+                    <col><![CDATA[@contents]]></col>
+                    <col><![CDATA[by user]]></col>
+                    <col><![CDATA[@user]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[empty]]></col>
+                    <col><![CDATA[303]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_31</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[save page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[by user]]></col>
+                    <col><![CDATA[user]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page save]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with contents]]></col>
+                    <col><![CDATA[empty]]></col>
+                    <col><![CDATA[by user]]></col>
+                    <col><![CDATA[@user]]></col>
+                    <col><![CDATA[and password]]></col>
+                    <col><![CDATA[empty]]></col>
+                    <col><![CDATA[303]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT=]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[@page]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_32</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[save page]]></col>
+                    <col><![CDATA[page]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[save page]]></col>
+                    <col><![CDATA[@page]]></col>
+                    <col><![CDATA[with contents]]></col>
+                    <col><![CDATA[empty]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_33</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it's last modified by should be]]></col>
+                    <col><![CDATA[user]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[last modified of page]]></col>
+                    <col><![CDATA[$IT]]></col>
+                    <col><![CDATA[@user]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_34</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[it's versions should contain]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[$IT?versions]]></col>
+                    <col><![CDATA[should contain]]></col>
+                    <col><![CDATA[@content]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_35</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[SomePage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[some content]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_35_0/scriptTable_3)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[the edit response should contain]]></col>
+                    <col><![CDATA[SomePage]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_35_1/scriptTable_27)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[&lt;textarea.*&gt;some content&lt;/textarea&gt;]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_35_2/scriptTable_23)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[&lt;form.*&gt;]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_35_3/scriptTable_23)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[action="SomePage"]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_35_4/scriptTable_23)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[&lt;input.*&gt;]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_35_5/scriptTable_23)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[type="submit"]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_35_6/scriptTable_23)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[value="Save"]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_35_7/scriptTable_23)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_35_0/scriptTable_3</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[given page]]></col>
+                    <col><![CDATA[page]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[create page]]></col>
+                    <col><![CDATA[SomePage]]></col>
+                    <col><![CDATA[with content]]></col>
+                    <col><![CDATA[some content]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[$IT<-[SomePage]]]></col>
+                    <col><![CDATA[echo]]></col>
+                    <col><![CDATA[SomePage]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_35_1/scriptTable_27</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[the edit response should contain]]></col>
+                    <col><![CDATA[contents]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[request page]]></col>
+                    <col><![CDATA[$IT->[SomePage]?edit]]></col>
+                    <col><![CDATA[pass(200)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content contains]]></col>
+                    <col><![CDATA[SomePage]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_35_2/scriptTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[<textarea.*>some content</textarea>]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_35_3/scriptTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[<form.*>]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_35_4/scriptTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[action="SomePage"]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_35_5/scriptTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[<input.*>]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_35_6/scriptTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[type="submit"]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_35_7/scriptTable_23</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[and should match]]></col>
+                    <col><![CDATA[text]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(ensure)]]></col>
+                    <col><![CDATA[content matches]]></col>
+                    <col><![CDATA[value="Save"]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[content]]></col>
+                    <col><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit SomePage:&lt;/title&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/&gt;
+		&lt;link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/&gt;
+		&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body onload="document.f.pageContent.focus()"&gt;
+		&lt;div class="sidebar"&gt;
+			&lt;div class="art_niche" onclick="document.location='FrontPage'"&gt;&lt;/div&gt;
+			&lt;div class="actions"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="mainbar"&gt;
+			&lt;div class="header"&gt;
+				&lt;br/&gt;&lt;a href="/SomePage" class="page_title"&gt;SomePage&lt;/a&gt;
+&lt;br/&gt;				&lt;span class="page_type"&gt;Edit Page:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class="main"&gt;
+				&lt;form name="f" action="SomePage" method="post"&gt;
+					&lt;input type="hidden" name="responder" value="saveData"/&gt;
+					&lt;input type="hidden" name="editTime" value="1255675546071"/&gt;
+					&lt;input type="hidden" name="ticketId" value="348948877224556755"/&gt;
+					&lt;textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1"&gt;some content&lt;/textarea&gt;
+					&lt;div class="edit_buttons"&gt;
+						&lt;input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/&gt;
+						&lt;script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/WikiFormatter.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+						&lt;script src="/files/javascript/fitnesse.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+					&lt;div class="edit_options"&gt;
+						&lt;script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"&gt;&lt;/script&gt;
+					&lt;/div&gt;
+&lt;div class="hints"&gt;&lt;br /&gt;Hints:
+&lt;ul&gt;&lt;li&gt;Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!&lt;/li&gt;
+&lt;li&gt;Grab the lower-right corner of the text area to increase its size (works with some browsers).&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_36</name>
+                <row>
+                    <col><![CDATA[pass(tear down)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, fitnesse.fixtures]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, SetUp]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SetUp]]></expected>
+                              <evaluationMessage><![CDATA[pass(SetUp)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.SetUp.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, make, scriptTableActor, PageDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[page driver]]></expected>
+                              <evaluationMessage><![CDATA[pass(page driver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_0/scriptTable_3_0, call, scriptTableActor, createPageWithContent, SomePage, some content]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_0/scriptTable_3_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_0/scriptTable_3_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_0/scriptTable_3_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[create page]]></expected>
+                              <evaluationMessage><![CDATA[create page]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_0/scriptTable_3_1, callAndAssign, IT, scriptTableActor, echo, SomePage]]]></instruction>
+        <slimResult><![CDATA[SomePage]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_0/scriptTable_3_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>SymbolAssignmentExpectation</type>
+                    <actual><![CDATA[SomePage]]></actual>
+                              <expected><![CDATA[$IT=]]></expected>
+                              <evaluationMessage><![CDATA[$IT<-[SomePage]]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_0/scriptTable_3_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_1/scriptTable_27_0, call, scriptTableActor, requestPage, $IT?edit]]]></instruction>
+        <slimResult><![CDATA[200]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_35_1/scriptTable_27_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[200]]></actual>
+                              <expected><![CDATA[200]]></expected>
+                              <evaluationMessage><![CDATA[pass(200)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_1/scriptTable_27_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_1/scriptTable_27_1, call, scriptTableActor, contentContains, SomePage]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_35_1/scriptTable_27_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_1/scriptTable_27_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_1/scriptTable_27_2, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_1/scriptTable_27_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_2/scriptTable_23_0, call, scriptTableActor, contentMatches, <textarea.*>some content</textarea>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_35_2/scriptTable_23_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_2/scriptTable_23_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_2/scriptTable_23_1, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_2/scriptTable_23_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_3/scriptTable_23_0, call, scriptTableActor, contentMatches, <form.*>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_35_3/scriptTable_23_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_3/scriptTable_23_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_3/scriptTable_23_1, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_3/scriptTable_23_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_4/scriptTable_23_0, call, scriptTableActor, contentMatches, action="SomePage"]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_35_4/scriptTable_23_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_4/scriptTable_23_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_4/scriptTable_23_1, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_4/scriptTable_23_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_5/scriptTable_23_0, call, scriptTableActor, contentMatches, <input.*>]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_35_5/scriptTable_23_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_5/scriptTable_23_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_5/scriptTable_23_1, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_5/scriptTable_23_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_6/scriptTable_23_0, call, scriptTableActor, contentMatches, type="submit"]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_35_6/scriptTable_23_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_6/scriptTable_23_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_6/scriptTable_23_1, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_6/scriptTable_23_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_7/scriptTable_23_0, call, scriptTableActor, contentMatches, value="Save"]]]></instruction>
+        <slimResult><![CDATA[true]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>scriptTable_35_7/scriptTable_23_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[true]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[pass(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_7/scriptTable_23_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_35_7/scriptTable_23_1, call, scriptTableActor, content]]]></instruction>
+        <slimResult><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_35_7/scriptTable_23_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[HTTP/1.1 200 OK
+Content-Length: 2219
+Connection: close
+Server: FitNesse-v20091014
+Cache-Control: max-age=0
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Edit SomePage:</title>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="/files/css/fitnesse_print.css" media="print"/>
+		<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+	</head>
+	<body onload="document.f.pageContent.focus()">
+		<div class="sidebar">
+			<div class="art_niche" onclick="document.location='FrontPage'"></div>
+			<div class="actions"></div>
+		</div>
+		<div class="mainbar">
+			<div class="header">
+				<br/><a href="/SomePage" class="page_title">SomePage</a>
+<br/>				<span class="page_type">Edit Page:</span>
+			</div>
+			<div class="main">
+				<form name="f" action="SomePage" method="post">
+					<input type="hidden" name="responder" value="saveData"/>
+					<input type="hidden" name="editTime" value="1255675546071"/>
+					<input type="hidden" name="ticketId" value="348948877224556755"/>
+					<textarea class="pageContent no_wrap" wrap="off" name="pageContent" rows="30" cols="70" tabindex="1">some content</textarea>
+					<div class="edit_buttons">
+						<input type="submit" name="save" value="Save" tabindex="2" accesskey="s"/>
+						<script src="/files/javascript/SpreadsheetTranslator.js" type="text/javascript"></script>
+						<script src="/files/javascript/spreadsheetSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/WikiFormatter.js" type="text/javascript"></script>
+						<script src="/files/javascript/wikiFormatterSupport.js" type="text/javascript"></script>
+						<script src="/files/javascript/fitnesse.js" type="text/javascript"></script>
+					</div>
+					<div class="edit_options">
+						<script src="/files/javascript/textareaWrapSupport.js" type="text/javascript"></script>
+					</div>
+<div class="hints"><br />Hints:
+<ul><li>Use alt+s (Windows) or control+s (Mac OS X) to save your changes. Or, tab from the text area to the "Save" button!</li>
+<li>Grab the lower-right corner of the text area to increase its size (works with some browsers).</li>
+</ul></div>				</form>
+			</div>
+		</div>
+	</body>
+</html>
+]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_36_0, make, decisionTable_36, TearDown]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_36_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[tear down]]></expected>
+                              <evaluationMessage><![CDATA[pass(tear down)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_36_1, call, decisionTable_36, table, []]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] fitnesse.fixtures.TearDown.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:637)
+]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+
