@@ -1,0 +1,45 @@
+<project name="HTW" default="unit_tests" basedir=".">
+	<description>HTW is a console game where you try and find and kill the wumpus before it finds and kills you.</description>
+
+	<property name="src" location="src" />
+	<property name="classes" location="classes" />
+
+	<path id="classpath">
+		<pathelement path="classes" />
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="build" depends="clean, compile" description="clean, then compile the source" />
+
+	<target name="unit_tests" depends="clean, unit_test" description="builds code from scratch, runs all the unit tests" />
+
+	<target name="compile" depends="init" description="compile the source (make)">
+		<javac srcdir="src" destdir="classes" classpathref="classpath" debug="true" source="1.6" target="1.6" />
+	</target>
+    
+    <target name="clean" description="delete everything in the classes directory and test results directory">
+		<delete dir="classes" />
+		<delete dir="test-results" />
+	</target>
+
+	<target name="unit_test" depends="compile" description="run the unit tests">
+		<junit forkmode="once" fork="yes" printsummary="no" haltonfailure="yes" haltonerror="yes" dir="${basedir}">
+			<classpath refid="classpath" />
+			<formatter type="xml" usefile="true" />
+			<formatter type="plain" usefile="false" />
+			<batchtest todir="test-results">
+				<fileset dir="src">
+					<include name="**/*Test.java" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+
+	<target name="init">
+		<mkdir dir="classes" />
+		<mkdir dir="test-results" />
+	</target>
+
+</project>
