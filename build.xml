@@ -35,9 +35,13 @@
 				</fileset>
 			</batchtest>
 		</junit>
-	</target>
+    </target>
 
-	<target name="init">
+    <target name="HTW" depends="compile" description="runs HTW">
+        <java classpath="classes" classname="HuntTheWumpus.Runner" failonerror="true"/> 
+    </target>
+
+    <target name="init">
 		<mkdir dir="classes" />
 		<mkdir dir="test-results" />
 	</target>
