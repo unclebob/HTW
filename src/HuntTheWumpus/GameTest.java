@@ -7,10 +7,12 @@ import junit.framework.TestCase;
 
 public class GameTest extends TestCase {
   private Game g;
+  private ShootInteractor shootInteractor;
   private MockConsole mc;
 
   protected void setUp() throws Exception {
     g = new Game();
+    shootInteractor = g.getShootInteractor();
   }
 
   public void testGoEast() throws Exception {
@@ -59,7 +61,7 @@ public class GameTest extends TestCase {
     g.addPath(2, 3, EAST);
     g.putPlayerInCavern(1);
     g.setQuiver(1);
-    assertTrue(g.shoot(EAST));
+    assertTrue(shootInteractor.shoot(EAST).wasShot());
     assertEquals(0, g.getQuiver());
     assertEquals(1, g.arrowsInCavern(3));
     assertEquals(0, g.arrowsInCavern(2));
@@ -70,7 +72,7 @@ public class GameTest extends TestCase {
     g.addPath(1, 2, EAST);
     g.putPlayerInCavern(1);
     g.setQuiver(0);
-    assertFalse(g.shoot(EAST));
+    assertFalse(shootInteractor.shoot(EAST).wasShot());
     assertEquals(0, g.getQuiver());
     assertEquals(0, g.arrowsInCavern(2));
   }
@@ -78,7 +80,7 @@ public class GameTest extends TestCase {
   public void testPlayerDiesIfShootsAtWall() throws Exception {
     g.putPlayerInCavern(1);
     g.setQuiver(1);
-    g.shoot(EAST);
+    assertTrue(shootInteractor.shoot(EAST).wasShot());
     assertTrue(g.gameTerminated());
   }
 
@@ -108,7 +110,7 @@ public class GameTest extends TestCase {
     g.putWumpusInCavern(3);
     g.putPlayerInCavern(1);
     g.setQuiver(1);
-    g.shoot(EAST);
+    g.getShootInteractor().shoot(EAST).wasShot();
     assertTrue(g.wumpusHitByArrow());
     assertTrue(g.gameTerminated());
   }
@@ -118,7 +120,8 @@ public class GameTest extends TestCase {
     g.putWumpusInCavern(2);
     g.putPlayerInCavern(1);
     g.setQuiver(1);
-    g.shoot(EAST);
+    ShootResponse shootResponse = shootInteractor.shoot(EAST);
+    assertTrue(shootResponse.wasShot());
     assertTrue(g.wumpusHitByArrow());
     assertTrue(g.gameTerminated());
   }

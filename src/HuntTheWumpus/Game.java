@@ -1,6 +1,7 @@
 package HuntTheWumpus;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Game {
   public static final String EAST = "e";
@@ -92,7 +93,7 @@ public class Game {
   }
 
   private void transportPlayer() {
-    Path selectedPath = paths.get((int)(Math.random() * paths.size()));
+    Path selectedPath = paths.get((int) (Math.random() * paths.size()));
     playerCavern = selectedPath.start;
   }
 
@@ -162,20 +163,8 @@ public class Game {
     return killedByArrowBounce;
   }
 
-  public boolean shoot(String direction) {
-    if (quiver > 0) {
-      quiver--;
-      if (adjacentTo(direction, playerCavern) == 0) {
-        gameTerminated = true;
-        killedByArrowBounce = true;
-      } else {
-        int endCavern = shootAsFarAsPossible(direction, playerCavern);
-        putArrowInCavern(endCavern);
-        moveWumpus();
-      }
-      return true;
-    } else
-      return false;
+  public ShootInteractor getShootInteractor() {
+    return new ShootInteractorImpl();
   }
 
   private int shootAsFarAsPossible(String direction, int cavern) {
@@ -245,8 +234,7 @@ public class Game {
     return eatenByWumpus;
   }
 
-  public boolean hitByOwnArrow()
-  {
+  public boolean hitByOwnArrow() {
     return hitByOwnArrow;
   }
 
@@ -309,4 +297,23 @@ public class Game {
       this.direction = direction;
     }
   }// private class Path
+
+  private class ShootInteractorImpl implements ShootInteractor {
+    public ShootResponse shoot(String direction) {
+      ShootResponse response = new ShootResponse();
+      if (quiver > 0) {
+        quiver--;
+        if (adjacentTo(direction, playerCavern) == 0) {
+          gameTerminated = true;
+          killedByArrowBounce = true;
+        } else {
+          int endCavern = shootAsFarAsPossible(direction, playerCavern);
+          putArrowInCavern(endCavern);
+          moveWumpus();
+        }
+        response.setShot();
+      }
+      return response;
+    }
+  }
 }

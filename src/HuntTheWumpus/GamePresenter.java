@@ -6,6 +6,7 @@ public class GamePresenter {
 
   private Console console;
   private final Game game = new Game();
+  private ShootInteractor shootInteractor = game.getShootInteractor();
 
   public GamePresenter() {
     this(null);
@@ -134,7 +135,8 @@ public class GamePresenter {
   }
 
   private void shootArrow(String direction) {
-    if (game.shoot(direction) == false)
+    ShootResponse response = shootInteractor.shoot(direction);
+    if (!response.wasShot())
       console.print("You don't have any arrows.");
     else
       console.print("The arrow flies away in silence.");
